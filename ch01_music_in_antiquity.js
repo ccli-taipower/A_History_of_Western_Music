@@ -167,7 +167,7 @@ function bottomBar(s, color) {
   })), { x: 0.4, y: 1.35, w: 5.7, h: 4.0 });
 
   // Right column — key image caption box
-  s.addShape(pres.ShapeType.rect, { x: 6.3, y: 0.9, w: 3.3, h: 4.4, fill: { color: C.wine }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 6.3, y: 0.9, w: 3.3, h: 4.55, fill: { color: C.wine }, rounding: true });
   s.addText("■ Hohle Fels 骨笛", { x: 6.4, y: 1.0, w: 3.1, h: 0.45, fontSize: 15, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
   s.addText([
     { text: "• 距今約 40,000–42,000 年\n", options: { bold: true } },
@@ -176,9 +176,9 @@ function bottomBar(s, color) {
     { text: "40,000–42,000 years old\nMade from griffon vulture wing bone\n5 finger holes — most complete early flute found", options: { italic: true } },
   ], { x: 6.4, y: 1.55, w: 3.1, h: 2.5, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" });
 
-  s.addText("■ 關鍵觀念 Key Insight", { x: 6.4, y: 4.0, w: 3.1, h: 0.35, fontSize: 14, bold: true, color: C.gold, align: "center" });
+  s.addText("■ 關鍵觀念 Key Insight", { x: 6.4, y: 3.85, w: 3.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, align: "center" });
   s.addText("文字的發明標誌史前時代的結束，\n也是音樂歷史的真正起點。\nWriting marks the true beginning\nof music history.", {
-    x: 6.4, y: 4.35, w: 3.1, h: 0.9, fontSize: 14, color: C.sand, fontFace: "Calibri", align: "center", valign: "top",
+    x: 6.4, y: 4.18, w: 3.1, h: 1.05, fontSize: 14, color: C.sand, fontFace: "Calibri", align: "center", valign: "top",
   });
 }
 
@@ -260,8 +260,8 @@ function bottomBar(s, color) {
     s.addText(bullDesc, { x: 0.6, y: 4.26, w: 9.0, h: 0.52, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   }
 
-  s.addText("烏爾出土的豎琴（ca. 2500 BCE）是現存最早的撥弦樂器實物之一\nThe lyres and harps from Ur (ca. 2500 BCE) are among the earliest surviving plucked string instruments.", {
-    x: 0.4, y: 5.1, w: 9.2, h: 0.35, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", valign: "top",
+  s.addText("烏爾出土的豎琴（ca. 2500 BCE）是現存最早的撥弦樂器實物之一 · The lyres and harps from Ur are among the earliest surviving plucked string instruments", {
+    x: 0.4, y: 5.0, w: 9.2, h: 0.48, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", valign: "top",
   });
 }
 
@@ -560,10 +560,10 @@ function bottomBar(s, color) {
   s.addText("音樂與倫理 Music and Ethos", {
     x: 0.4, y: 0.18, w: 9.2, h: 0.52, fontSize: 26, bold: true, color: C.rust, fontFace: "Georgia", margin: 0,
   });
-  s.addText("希臘哲學家相信音樂能直接影響人的性格與道德 · Greek philosophers believed music could affect ethical character", {
-    x: 0.4, y: 0.7, w: 9.2, h: 0.35, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", margin: 0, valign: "top",
+  s.addText("希臘哲學家相信音樂能直接影響人的性格與道德\nGreek philosophers believed music could affect ethical character", {
+    x: 0.4, y: 0.7, w: 9.2, h: 0.52, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", margin: 0, valign: "top",
   });
-  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.07, w: 9.2, h: 0.03, fill: { color: C.sand } });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.24, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   // Two philosopher boxes
   const philos = [
@@ -603,13 +603,13 @@ function bottomBar(s, color) {
 
   philos.forEach(({ name, years, book, color, points }, i) => {
     const x = 0.35 + i * 4.8;
-    s.addShape(pres.ShapeType.rect, { x, y: 1.15, w: 4.5, h: 4.1, fill: { color }, rounding: true });
-    s.addText(name, { x: x + 0.1, y: 1.25, w: 4.3, h: 0.45, fontSize: 18, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-    s.addText(`${years} · ${book}`, { x: x + 0.1, y: 1.7, w: 4.3, h: 0.32, fontSize: 14, color: C.sand, align: "center", italic: true, fontFace: "Calibri", valign: "top" });
-    s.addShape(pres.ShapeType.rect, { x: x + 0.3, y: 2.05, w: 3.9, h: 0.03, fill: { color: C.gold } });
+    s.addShape(pres.ShapeType.rect, { x, y: 1.32, w: 4.5, h: 4.05, fill: { color }, rounding: true });
+    s.addText(name, { x: x + 0.1, y: 1.42, w: 4.3, h: 0.45, fontSize: 18, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
+    s.addText(`${years} · ${book}`, { x: x + 0.1, y: 1.87, w: 4.3, h: 0.32, fontSize: 14, color: C.sand, align: "center", italic: true, fontFace: "Calibri", valign: "top" });
+    s.addShape(pres.ShapeType.rect, { x: x + 0.3, y: 2.22, w: 3.9, h: 0.03, fill: { color: C.gold } });
     s.addText(points.map((t, j) => ({
       text: t, options: { bullet: true, breakLine: j < points.length - 1, fontSize: 14, color: C.cream, fontFace: "Calibri", paraSpaceAfter: 2 }, valign: "top",
-    })), { x: x + 0.1, y: 2.1, w: 4.3, h: 3.1 });
+    })), { x: x + 0.1, y: 2.28, w: 4.3, h: 3.02 });
   });
 }
 
