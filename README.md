@@ -4,27 +4,27 @@ Programmatically generated lecture slides for **A History of Western Music, 10th
 
 ## Chapters
 
-| # | Title | JS Source | PPTX |
-|---|-------|-----------|------|
-| 1 | Music in Antiquity | `ch01_music_in_antiquity.js` | `Ch01_Music_in_Antiquity.pptx` |
-| 2 | The Christian Church | `ch02_christian_church.js` | `Ch02_Christian_Church.pptx` |
-| 3 | Roman Liturgy | `ch03_roman_liturgy.js` | `Ch03_Roman_Liturgy.pptx` |
-| 4 | Song and Dance | `ch04_song_dance.js` | `Ch04_Song_and_Dance.pptx` |
-| 5 | Polyphony | `ch05_polyphony.js` | `Ch05_Polyphony.pptx` |
-| 6 | The Fourteenth Century | `ch06_fourteenth_century.js` | `Ch06_Fourteenth_Century.pptx` |
-| 7 | The Renaissance | `ch07_renaissance.js` | `Ch07_Renaissance.pptx` |
-| 8 | England and Burgundy | `ch08_england_burgundy.js` | `Ch08_England_Burgundy.pptx` |
-| 9 | Franco-Flemish Composers | `ch09_franco_flemish.js` | `Ch09_Franco_Flemish.pptx` |
-| 10 | The Madrigal | `ch10_madrigal.js` | `Ch10_Madrigal.pptx` |
-| 11 | The Reformation | `ch11_reformation.js` | `Ch11_Reformation.pptx` |
-| 12 | Instrumental Music | `ch12_instrumental.js` | `Ch12_Instrumental.pptx` |
-| 13 | New Styles in the 17th Century | `ch13_new_styles.js` | `Ch13_New_Styles.pptx` |
-| 14 | Opera | `ch14_opera.js` | `Ch14_Opera.pptx` |
-| 15 | Chamber and Church Music | `ch15_chamber_church.js` | `Ch15_Chamber_Church.pptx` |
-| 16 | France, England, Spain, the New World, and Russia | `ch16_france_england.js` | `Ch16_France_England.pptx` |
-| 17 | Italy and Germany in the Late 17th Century | `ch17_italy_germany.js` | `Ch17_Italy_Germany.pptx` |
-| 18 | The Early Eighteenth Century | `ch18_early_eighteenth.js` | `Ch18_Early_Eighteenth.pptx` |
-| 19 | German Composers of the Late Baroque | `ch19_german_composers.js` | `Ch19_German_Composers.pptx` |
+| # | Title | JS Source | PPTX | PDF |
+|---|-------|-----------|------|-----|
+| 1 | Music in Antiquity | `ch01_music_in_antiquity.js` | `Ch01_Music_in_Antiquity.pptx` | `Ch01_Music_in_Antiquity.pdf` |
+| 2 | The Christian Church | `ch02_christian_church.js` | `Ch02_Christian_Church.pptx` | `Ch02_Christian_Church.pdf` |
+| 3 | Roman Liturgy | `ch03_roman_liturgy.js` | `Ch03_Roman_Liturgy.pptx` | `Ch03_Roman_Liturgy.pdf` |
+| 4 | Song and Dance | `ch04_song_dance.js` | `Ch04_Song_and_Dance.pptx` | `Ch04_Song_and_Dance.pdf` |
+| 5 | Polyphony | `ch05_polyphony.js` | `Ch05_Polyphony.pptx` | `Ch05_Polyphony.pdf` |
+| 6 | The Fourteenth Century | `ch06_fourteenth_century.js` | `Ch06_Fourteenth_Century.pptx` | `Ch06_Fourteenth_Century.pdf` |
+| 7 | The Renaissance | `ch07_renaissance.js` | `Ch07_Renaissance.pptx` | `Ch07_Renaissance.pdf` |
+| 8 | England and Burgundy | `ch08_england_burgundy.js` | `Ch08_England_Burgundy.pptx` | `Ch08_England_Burgundy.pdf` |
+| 9 | Franco-Flemish Composers | `ch09_franco_flemish.js` | `Ch09_Franco_Flemish.pptx` | `Ch09_Franco_Flemish.pdf` |
+| 10 | The Madrigal | `ch10_madrigal.js` | `Ch10_Madrigal.pptx` | `Ch10_Madrigal.pdf` |
+| 11 | The Reformation | `ch11_reformation.js` | `Ch11_Reformation.pptx` | `Ch11_Reformation.pdf` |
+| 12 | Instrumental Music | `ch12_instrumental.js` | `Ch12_Instrumental.pptx` | `Ch12_Instrumental.pdf` |
+| 13 | New Styles in the 17th Century | `ch13_new_styles.js` | `Ch13_New_Styles.pptx` | `Ch13_New_Styles.pdf` |
+| 14 | Opera | `ch14_opera.js` | `Ch14_Opera.pptx` | `Ch14_Opera.pdf` |
+| 15 | Chamber and Church Music | `ch15_chamber_church.js` | `Ch15_Chamber_Church.pptx` | `Ch15_Chamber_Church.pdf` |
+| 16 | France, England, Spain, the New World, and Russia | `ch16_france_england.js` | `Ch16_France_England.pptx` | `Ch16_France_England.pdf` |
+| 17 | Italy and Germany in the Late 17th Century | `ch17_italy_germany.js` | `Ch17_Italy_Germany.pptx` | `Ch17_Italy_Germany.pdf` |
+| 18 | The Early Eighteenth Century | `ch18_early_eighteenth.js` | `Ch18_Early_Eighteenth.pptx` | `Ch18_Early_Eighteenth.pdf` |
+| 19 | German Composers of the Late Baroque | `ch19_german_composers.js` | `Ch19_German_Composers.pptx` | `Ch19_German_Composers.pdf` |
 
 ## Features
 
