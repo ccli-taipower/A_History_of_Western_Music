@@ -4,219 +4,685 @@ pres.layout = "LAYOUT_16x9";
 pres.title = "Chapter 14: The Invention of Opera";
 pres.author = "A History of Western Music, 10th ed.";
 
+// Opera palette — theatrical plum / gold / cream
 const C = {
-  darkBg:   "2A0A1A",
-  gold:     "D4A830",
-  cream:    "FBF5E6",
-  crimson:  "8A1030",
-  rose:     "B03050",
-  darkText: "2A0A1A",
-  lightText:"FBF5E6",
+  darkBg:   "2D1B2E",
+  gold:     "C8A030",
+  cream:    "F5F0E0",
+  plum:     "5B2C6F",
+  mauve:    "7D3C98",
+  darkText: "2D1B2E",
+  lightText:"F5F0E0",
   sand:     "E8D8A8",
-  slate:    "3A1A2A",
-  blush:    "E8A0B0",
+  slate:    "3A1F3D",
+  wine:     "6C2040",
+  rose:     "884060",
 };
 
-function darkSlide(p) { const s = p.addSlide(); s.background = { color: C.darkBg }; return s; }
-function lightSlide(p) { const s = p.addSlide(); s.background = { color: C.cream }; return s; }
-function topBar(s, c) { s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.12, fill: { color: c || C.gold } }); }
-function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w: "100%", h: 0.125, fill: { color: c || C.gold } }); }
+function darkSlide(pres) { const s = pres.addSlide(); s.background = { color: C.darkBg }; return s; }
+function lightSlide(pres) { const s = pres.addSlide(); s.background = { color: C.cream }; return s; }
+function topBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.12, fill: { color: color || C.gold } }); }
+function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w: "100%", h: 0.125, fill: { color: color || C.gold } }); }
 
-// ── SLIDE 1 · Title ──────────────────────────────────────────────────────────
+// ── SLIDE 1 · Title ─────────────────────────────────────────────────────────
 {
   const s = darkSlide(pres);
   s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.15, fill: { color: C.gold } });
   s.addShape(pres.ShapeType.rect, { x: 0, y: 5.47, w: "100%", h: 0.155, fill: { color: C.gold } });
-  s.addText("A HISTORY OF WESTERN MUSIC · TENTH EDITION", { x: 0.5, y: 0.45, w: 9, h: 0.35, fontSize: 11, color: C.sand, charSpacing: 3, align: "center", fontFace: "Georgia" });
-  s.addText("CHAPTER 14", { x: 0.5, y: 0.9, w: 9, h: 0.55, fontSize: 20, color: C.gold, bold: true, align: "center", fontFace: "Georgia", charSpacing: 6 });
-  s.addText("THE INVENTION\nOF OPERA", { x: 0.3, y: 1.5, w: 9.4, h: 2.0, fontSize: 36, color: C.lightText, bold: true, align: "center", fontFace: "Georgia" });
+
+  s.addText("A HISTORY OF WESTERN MUSIC · TENTH EDITION", {
+    x: 0.5, y: 0.45, w: 9, h: 0.4, fontSize: 18, color: C.sand, charSpacing: 3, align: "center", fontFace: "Georgia",
+  });
+  s.addText("CHAPTER 14", {
+    x: 0.5, y: 1.0, w: 9, h: 0.6, fontSize: 24, color: C.gold, bold: true, align: "center", fontFace: "Georgia", charSpacing: 6,
+  });
+  s.addText("THE INVENTION OF OPERA\n歌劇的誕生", {
+    x: 0.3, y: 1.7, w: 9.4, h: 1.8, fontSize: 38, color: C.lightText, bold: true, align: "center", fontFace: "Georgia",
+  });
   s.addShape(pres.ShapeType.rect, { x: 2.5, y: 3.65, w: 5, h: 0.04, fill: { color: C.gold } });
-  s.addText("Camerata · Peri · Monteverdi · L'Orfeo · Poppea · Venice", { x: 0.4, y: 3.8, w: 9.2, h: 0.4, fontSize: 13, color: C.sand, align: "center", fontFace: "Georgia" });
-  s.addText("Textbook pp. 297–316", { x: 0.5, y: 4.8, w: 9, h: 0.3, fontSize: 11, color: C.gold, align: "center", fontFace: "Calibri" });
-}
-
-// ── SLIDE 2 · Chapter Overview ───────────────────────────────────────────────
-{
-  const s = lightSlide(pres);
-  topBar(s, C.crimson); bottomBar(s, C.crimson);
-  s.addText("本章概覽 Chapter Overview", { x: 0.4, y: 0.2, w: 9.2, h: 0.6, fontSize: 26, bold: true, color: C.crimson, fontFace: "Georgia" });
-  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.82, w: 9.2, h: 0.03, fill: { color: C.sand } });
-  const sections = [
-    ["🏛", "Forerunners 歌劇先驅", "Intermedio · Pastoral drama · Camerata · Greek tragedy revival"],
-    ["🎤", "First Operas 首批歌劇", "Peri Euridice (NAWM 77) · Recitative 的誕生"],
-    ["🌟", "Monteverdi L'Orfeo", "1607 首部偉大歌劇 · 戲劇力量 (NAWM 78)"],
-    ["🏢", "Public Opera in Venice", "1637 第一座公共歌劇院 · 商業模式 · Impresario"],
-    ["👑", "L'incoronazione di Poppea", "Monteverdi 最後傑作 · Pur ti miro (NAWM 79)"],
-    ["🎭", "Opera as Drama", "Aria · Recitative · Cesti Orontea (NAWM 80)"],
-  ];
-  sections.forEach(([icon, title, sub], i) => {
-    const y = 1.0 + i * 0.75;
-    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 0.6, h: 0.58, fill: { color: C.crimson }, rounding: true });
-    s.addText(icon, { x: 0.4, y: y + 0.05, w: 0.6, h: 0.5, fontSize: 20, align: "center", margin: 0 });
-    s.addText(title, { x: 1.15, y, w: 8.4, h: 0.3, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", margin: 0 });
-    s.addText(sub, { x: 1.15, y: y + 0.28, w: 8.4, h: 0.26, fontSize: 11, color: C.rose, fontFace: "Calibri", margin: 0 });
+  s.addText("Peri · Caccini · Monteverdi · Cavalli · Cesti", {
+    x: 0.4, y: 3.85, w: 9.2, h: 0.45, fontSize: 20, color: C.sand, align: "center", fontFace: "Georgia",
+  });
+  s.addText("Textbook pp. 302–325", {
+    x: 0.5, y: 4.8, w: 9, h: 0.35, fontSize: 18, color: C.gold, align: "center", fontFace: "Calibri", valign: "top",
   });
 }
 
-// ── SLIDE 3 · Forerunners ────────────────────────────────────────────────────
+// ── SLIDE 2 · Chapter Overview ──────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.plum); bottomBar(s, C.plum);
+
+  s.addText("本章概覽 Chapter Overview", {
+    x: 0.4, y: 0.25, w: 9.2, h: 0.6, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "1.  歌劇前身：Intermedio 與田園劇 Pastoral Drama\n" +
+    "2.  Florentine Camerata 與希臘復興理念\n" +
+    "3.  Peri《Euridice》— 最早存世的完整歌劇\n" +
+    "4.  Monteverdi《L'Orfeo》— 歌劇的突破\n" +
+    "5.  威尼斯公共歌劇院 (1637) 與商業化\n" +
+    "6.  Aria vs Recitative 的發展與定型",
+    { x: 0.5, y: 1.1, w: 9.0, h: 4.2, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 3 · Precursors: Intermedio & Pastoral Drama ───────────────────────
 {
   const s = darkSlide(pres);
   topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("歌劇的先驅", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Intermedio · Pastoral · Camerata · Galilei", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎭 Intermedio & Pastoral", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("Intermedio（幕間劇）\n• 插入戲劇各幕之間的音樂/舞台表演\n• 1539 佛羅倫斯婚禮慶典——最早大型實例\n• 1589 Medici 婚禮 intermedi = 歷史上最奢華\n  — 6 段 · 歌唱、舞蹈、佈景\n  — 參與者包括 Caccini、Peri\n\nPastoral Drama（田園劇）\n• 以 Arcadia 為背景的舞台劇\n• Tasso《Aminta》(1573)\n• Guarini《Il pastor fido》(1590)\n• 結合音樂的田園場景\n• 提供歌劇題材——牧羊人、仙女、自然\n\n⚠ 問題：如何讓整部戲劇用歌唱？\n• 需要一種新的歌唱方式——\n  像說話一樣自然，但有音樂的情感力量", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("歌劇的前身 Precursors to Opera", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
+  s.addText("Intermedio · Pastoral Drama · Monody", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 20, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🏛 Camerata & Greek Revival", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("Florentine Camerata (ca. 1573–87)\n• Count Giovanni de' Bardi 主持的文化沙龍\n• 知識分子、詩人、音樂家聚會\n• 討論如何恢復古希臘悲劇的音樂力量\n\n🌟 Vincenzo Galilei (ca. 1520–1591)\n• Galileo 之父 · 魯特琴家\n• Dialogo della musica antica et moderna (1581)\n• 批評：複音使文字不可理解\n• 主張：只有單聲才能表達情感——\n  因為古希臘正是用單旋律吟唱\n\n📖 Girolamo Mei (1519–1594)\n• 研究古希臘音樂文獻的學者\n• 結論：希臘音樂為單聲、以旋律表達情感\n• 間接影響 Camerata 的方向\n\n💡 Camerata 的成果\n• 催生 monody 與 recitative 的實驗\n• 催生歌劇——全劇歌唱的戲劇", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
+  s.addText(
+    "Intermedio 幕間劇\n" +
+    "  • 戲劇幕間的音樂娛樂，含歌唱、舞蹈、奇觀佈景\n" +
+    "  • 1589 年佛羅倫斯婚禮盛大 intermedi 最具影響力\n\n" +
+    "Pastoral Drama 田園劇\n" +
+    "  • 以神話牧歌為題材的舞台劇\n" +
+    "  • 含合唱、獨唱段落 → 歌劇的直接先驅",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 20, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.35 }
+  );
 }
 
-// ── SLIDE 4 · First Operas ───────────────────────────────────────────────────
+// ── SLIDE 4 · Florentine Camerata & Greek Revival ───────────────────────────
 {
   const s = lightSlide(pres);
-  topBar(s, C.crimson); bottomBar(s, C.crimson);
-  s.addText("首批歌劇 · Peri Euridice", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.crimson, fontFace: "Georgia", align: "center" });
-  s.addText("Dafne · Euridice · Recitative Style (NAWM 77)", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 13, color: C.rose, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.crimson } });
+  topBar(s, C.wine); bottomBar(s, C.wine);
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: "F8E0E8" }, rounding: true });
-  s.addText("🌿 Dafne & Euridice", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.crimson, fontFace: "Georgia" });
-  s.addText("Dafne (1598)\n• 第一部歌劇——音樂已遺失\n• 詩：Rinuccini · 曲：Peri (可能含 Corsi)\n• 私人上演於 Corsi 宮邸\n\nEuridice (1600)\n• 首部完整保存的歌劇\n• 為 Maria de' Medici 與 Henri IV 婚禮而作\n• 兩版：Peri 版（1601 出版）· Caccini 版（1601 搶先出版）\n\n🌟 Jacopo Peri (1561–1633)\n• 佛羅倫斯歌手/作曲家\n• 發明「stile recitativo」（吟唱風格）\n• Euridice 序言描述其方法：\n  — 介於歌唱與說話之間\n  — Bass 在和聲變化點才移動\n  — 聲線模仿自然語調", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("佛羅倫斯同好會 Florentine Camerata", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
   });
+  s.addText("復興古希臘音樂的理想 Reviving Greek Music", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: "F8E0E8" }, rounding: true });
-  s.addText("🎵 NAWM 77: Euridice 片段", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.crimson, fontFace: "Georgia" });
-  s.addText("Recitative 的特徵\n• Voice 自由跟隨語言節奏\n• Bass 在語意轉折處才移動\n• 不協和音自然出現——表現情感\n• 「heightened speech」——提升的說話\n\n三種歌唱層次（Peri 的區分）\n1. Narrative recitative · 敘事\n   — 低張力 · 快速 · bass 簡單\n2. Expressive recitative · 情感高潮\n   — 不協和增多 · 更多裝飾\n3. Song-like passages · 近似歌曲\n   — 有旋律輪廓 · 但仍非正式 aria\n\n💡 為何重要？\n• Recitative 成為歌劇的基石——\n  推進情節、交代對話\n• 後來分化為 secco / accompagnato\n• 至今歌劇仍使用 recitative + aria 架構", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
+  s.addText(
+    "• Giovanni de' Bardi 伯爵府上的知識分子聚會\n" +
+    "• Vincenzo Galilei《古今音樂對話》(1581) 批判對位法\n" +
+    "• 主張：古希臘人以單聲旋律 (monody) 感動聽者\n" +
+    "• 目標：用歌唱模仿「說話」— 旋律應追隨語言\n" +
+    "• 這個理念直接催生了 recitative 宣敘調",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
 }
 
-// ── SLIDE 5 · Monteverdi L'Orfeo ─────────────────────────────────────────────
+// ── SLIDE 5 · Peri's Dafne & Euridice ───────────────────────────────────────
 {
   const s = darkSlide(pres);
   topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("蒙特威爾第 · 奧菲歐", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("L'Orfeo (1607) · The First Great Opera (NAWM 78)", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("📖 L'Orfeo 概述", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 1607 於 Mantua Gonzaga 宮廷首演\n• 劇本：Alessandro Striggio\n• Orpheus 與 Eurydice 的神話\n• 五幕 + Prologue（「音樂女神」開場）\n\n📊 音樂資源\n• 大型管弦樂團（約 40 人）——有具體編制指定\n• Toccata（銅管開場）→ 歌劇樂隊的先聲\n• 多種 recitative 風格交織\n• Strophic song · Dance · Chorus · Ritornello\n• 比 Euridice 豐富十倍的音樂語彙\n\n🌟 戲劇高潮\n• 第 2 幕：信使報告 Eurydice 之死\n  — Orpheus「Tu se' morta」——震撼的 recitative\n• 第 3 幕：Possente spirto（NAWM 78 核心）\n  — Orpheus 以歌聲感動冥府守門人\n  — 精美裝飾唱段 + 管弦伴奏", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("首批歌劇 The First Operas", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
+  s.addText("Jacopo Peri (1561–1633)", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎵 NAWM 78 分析", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("Possente spirto / Tu se' morta\n\n「Possente spirto」\n• Orpheus 對冥河擺渡人 Caronte 的哀歌\n• Strophic variation 形式\n  — 每節相同的 bass pattern\n  — 旋律逐節裝飾加重\n• 兩版本並印：plain + ornamented\n  — 展示裝飾唱法的「教學」功能\n• 器樂伴奏逐節變化（小提琴→長笛→號角→低音提琴）\n\n「Tu se' morta」\n• 得知 Eurydice 死訊後的獨白\n• 簡潔 recitative——幾乎無裝飾\n• 半音下行 · 不協和 · 沉重\n• 音樂史最動人的 recitative 之一\n\n💡 L'Orfeo 的歷史意義\n• 首部融合所有現有技法的歌劇\n• 證明音樂戲劇可以達到感人至深\n• 至今仍是常演劇目", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 7.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
+  s.addText(
+    "《Dafne》(1598) — 最早的歌劇（樂譜已佚）\n" +
+    "  • Rinuccini 作詞、Peri (& Corsi) 作曲\n\n" +
+    "《L'Euridice》(1600) — 最早完整存世的歌劇\n" +
+    "  • 為法國國王亨利四世婚禮慶典演出\n" +
+    "  • Caccini 也為同劇本譜曲 → 兩版並存\n" +
+    "  • Peri 版更適合戲劇表達",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 21, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.4 }
+  );
 }
 
-// ── SLIDE 6 · Public Opera in Venice ─────────────────────────────────────────
+// ── SLIDE 6 · Peri's Recitative Style ───────────────────────────────────────
 {
   const s = lightSlide(pres);
-  topBar(s, C.crimson); bottomBar(s, C.crimson);
-  s.addText("威尼斯公共歌劇", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.crimson, fontFace: "Georgia", align: "center" });
-  s.addText("Public Opera · Impresario · Diva · Poppea (NAWM 79)", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 13, color: C.rose, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.crimson } });
+  topBar(s, C.plum); bottomBar(s, C.plum);
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: "F8E0E8" }, rounding: true });
-  s.addText("🏢 1637：商業歌劇誕生", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.crimson, fontFace: "Georgia" });
-  s.addText("• 1637 威尼斯 Teatro San Cassiano\n  — 第一座售票的公共歌劇院\n• 17 世紀末威尼斯已有 9 座歌劇院\n• 由 impresario（經理人）經營——自負盈虧\n\n📊 商業模式\n• 貴族投資場地——impresario 負責製作\n• 觀眾買票入場——非宮廷獨享\n• 歌手是最大賣點——明星制度誕生\n• Castrato · Soprano 成為偶像\n\n🎭 歌劇的變化\n• 題材從神話 → 歷史 · 宮廷陰謀\n• 減少合唱 · 降低成本\n• 增加獨唱：aria 越來越重要\n• Recitative + Aria 分化日益明顯\n• 佈景機關驚人——飛天、變景、特效", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("Peri 的宣敘調風格 Recitative Style", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
   });
+  s.addText("\"介於歌唱與說話之間\" — halfway between speech and song", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 20, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: "F8E0E8" }, rounding: true });
-  s.addText("👑 Poppea · Pur ti miro (NAWM 79)", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.crimson, fontFace: "Georgia" });
-  s.addText("L'incoronazione di Poppea (1643)\n• Monteverdi 最後一部歌劇\n• 第一部以歷史（非神話）為題材的歌劇\n• Nero 與 Poppea 的愛情/陰謀\n\n📊 特色\n• 道德模糊——邪惡戰勝正義、色慾得償\n• 角色心理刻畫——比之前任何歌劇都深入\n• Recitative 極富表情 · aria 旋律優美\n\n🎵 「Pur ti miro」終場二重唱\n• Nero 與 Poppea 的愛情二重唱\n• 簡單的 ground bass pattern\n• 兩聲交纏 · 旋律模仿 · 合三唱\n• 西方歌劇最美的一首二重唱\n• 可能非 Monteverdi 親筆——學術有爭議\n\n💡 Poppea 的意義\n• 歌劇從宮廷→市場——內容也隨之世俗化\n• 為後世歌劇（Handel · Mozart · Verdi）鋪路", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 7.5, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText(
+    "• 援引古希臘「diastematic motion」理論\n" +
+    "• 持續低音固定和聲 → 歌聲自由地穿越協和與不協和\n" +
+    "• 重音音節落在協和音上、經過音可不協和\n" +
+    "• 兩種模式：敘事性宣敘調 vs 抒情性宣敘調\n" +
+    "• 融合了牧歌、詠嘆調、田園劇的傳統",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 7 · NAWM 77: Peri Euridice ────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.mauve); bottomBar(s, C.mauve);
+
+  s.addText("NAWM 77 — Peri《Euridice》選段", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Narrative & Expressive Recitative", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "Tirsi 的詠嘆調 (strophic aria)\n" +
+    "  • 以 sinfonia 引入 → ritornello 反覆\n" +
+    "  • 節奏活潑如 canzonetta 舞曲風格\n\n" +
+    "Dafne 報告死訊 — 敘事性宣敘調\n" +
+    "  • 無固定節奏、無旋律型態 → 純語言節奏\n\n" +
+    "Orfeo 哀歌 — 抒情性宣敘調\n" +
+    "  • 休止符表達驚愕、不協和表現悲痛",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 20, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.3 }
+  );
+
+  s.addText("https://www.youtube.com/watch?v=bt8KaCIGBEk", {
+    x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.gold, fontFace: "Calibri", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=bt8KaCIGBEk" },
   });
 }
 
-// ── SLIDE 7 · Cesti & Opera Conventions ──────────────────────────────────────
+// ── SLIDE 8 · Monteverdi Biography ──────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.wine); bottomBar(s, C.wine);
+
+  s.addText("蒙台威爾第 Claudio Monteverdi", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addText("ca. 1567–1643 · 歌劇藝術的奠基者", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• 生於 Cremona · 少年即出版聲樂作品\n" +
+    "• 1590 入 Mantua 宮廷 → 1601 任宮廷教堂主管\n" +
+    "• 1613 任威尼斯聖馬可教堂樂長（至去世）\n" +
+    "• 出版九冊牧歌集：從文藝復興到巴洛克的轉型\n" +
+    "• 三部存世歌劇：L'Orfeo, Il ritorno d'Ulisse,\n" +
+    "  L'incoronazione di Poppea",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 9 · L'Orfeo Overview ──────────────────────────────────────────────
 {
   const s = darkSlide(pres);
   topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("歌劇慣例的成形", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Cesti · Orontea (NAWM 80) · Aria & Recitative 分化", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🌟 Antonio Cesti (1623–1669)", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 方濟會修士——卻成為最受歡迎的歌劇作曲家\n• 活躍於威尼斯、Innsbruck、維也納\n• 超過 100 部歌劇（多數已失）\n\n📖 Orontea (1656)\n• 17 世紀中期最受歡迎的歌劇之一\n• 女王 Orontea 的愛情喜劇\n\n🎵 NAWM 80: Intorno all'idol mio\n• Orontea 的獨唱 Aria\n  — 她在夢中對睡著的情人傾訴愛意\n• 結構：ABA（da capo 的前身）\n• 旋律優美 · 抒情 · 感傷\n• 已接近後世 bel canto 的美學\n• Bass 更有規律——走向 tonal harmony", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("蒙台威爾第《奧菲歐》L'Orfeo (1607)", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
+  s.addText("Mantua · Libretto: Alessandro Striggio", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("📊 Aria vs. Recitative 分化", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("17 世紀中期的趨勢\n\nRecitative（宣敘調）\n• 推進情節 · 對話 · 敘事\n• 語音式 · 自由節拍\n• 簡單的 continuo 伴奏\n• 「drama 的引擎」\n\nAria（詠嘆調）\n• 表達情感 · 反思 · 獨白\n• 有固定旋律 · 節拍規則\n• 旋律美 · 展現歌手技巧\n• 逐漸成為觀眾最愛\n\nArioso\n• 介於 recitative 與 aria 之間\n• 比 recitative 更旋律化\n• 但未成為獨立曲段\n\n💡 這個分化到 1660s 基本完成\n• 之後歌劇 = recitative (敘事) + aria (情感)\n• Da capo aria (ABA) 到 1680s 成為標準\n• 此架構延續到 Mozart 甚至 Verdi", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText(
+    "• 五幕結構 · 每幕以 Orfeo 歌聲為中心\n" +
+    "• 希臘悲劇式合唱團 · 開場與結尾呼應\n" +
+    "• 豐富的器樂編制：木管銅管弦樂管風琴豎琴\n" +
+    "• Strophic variation 分節變奏手法\n" +
+    "• 比 Peri 更多樣的風格：從歌唱到痛苦的宣敘調",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 10 · L'Orfeo Structure ────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.plum); bottomBar(s, C.plum);
+
+  s.addText("《L'Orfeo》五幕結構", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  // Left column
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.1, w: 4.55, h: 4.2, fill: { color: C.sand }, rectRadius: 0.1 });
+  s.addText(
+    "Prologue\n" +
+    "  Music 女神以分節變奏詠唱\n\n" +
+    "Act I — 婚禮慶典\n" +
+    "  靜態拱形結構 · 合唱+牧歌\n\n" +
+    "Act II — 喜轉悲\n" +
+    "  使者報噩耗 · Tu se' morta 哀歌",
+    { x: 0.45, y: 1.2, w: 4.25, h: 3.95, fontSize: 20, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.25 }
+  );
+
+  // Right column
+  s.addShape(pres.ShapeType.rect, { x: 5.15, y: 1.1, w: 4.55, h: 4.2, fill: { color: C.sand }, rectRadius: 0.1 });
+  s.addText(
+    "Act III — 冥界入口\n" +
+    "  Possente spirto 炫技唱段\n\n" +
+    "Act IV — 回望失敗\n" +
+    "  Orfeo 回頭 · 再失 Euridice\n\n" +
+    "Act V — 升天\n" +
+    "  Apollo 攜子升天 · 合唱結尾",
+    { x: 5.3, y: 1.2, w: 4.25, h: 3.95, fontSize: 20, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.25 }
+  );
+}
+
+// ── SLIDE 11 · NAWM 78a: Possente spirto ────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.mauve); bottomBar(s, C.mauve);
+
+  s.addText("NAWM 78a — Possente spirto", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("L'Orfeo Act III · Orfeo 懇求冥河船夫 Caronte", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 20, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Strophic variation：每一節旋律不同但和聲相近\n" +
+    "• 前四節寫出華麗裝飾奏 (ornamental version)\n" +
+    "• 展示 Orfeo 超凡歌藝 → 說服冥界\n" +
+    "• 器樂 obbligato 對話：小提琴、短號、豎琴\n" +
+    "• 最後轉為樸素的宣敘調 → 真情流露",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+
+  s.addText("https://www.youtube.com/watch?v=LUvJmIcp7z0", {
+    x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.gold, fontFace: "Calibri", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=LUvJmIcp7z0" },
   });
 }
 
-// ── SLIDE 8 · Timeline ───────────────────────────────────────────────────────
+// ── SLIDE 12 · NAWM 78b: Tu se' morta ───────────────────────────────────────
 {
   const s = lightSlide(pres);
-  topBar(s, C.crimson); bottomBar(s, C.crimson);
-  s.addText("時間軸 · Timeline", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.crimson, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 0.82, w: 5, h: 0.04, fill: { color: C.crimson } });
+  topBar(s, C.wine); bottomBar(s, C.wine);
+
+  s.addText("NAWM 78b — Tu se' morta", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addText("L'Orfeo Act II · Orfeo 的哀歌 Lament", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• 抒情性宣敘調的巔峰之作\n" +
+    "• 每一句音樂層層遞進 · 情感逐步升高\n" +
+    "• 不協和音對持續和弦：表現 Orfeo 苦澀的感受\n" +
+    "• E 大調→ G 小調：他仍活著而她已死去的諷刺\n" +
+    "• 遠超 Peri 的單聲實驗 → 真正的戲劇抒情",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+
+  s.addText("https://www.youtube.com/watch?v=MIadFIEB1cg", {
+    x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.wine, fontFace: "Calibri", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=MIadFIEB1cg" },
+  });
+}
+
+// ── SLIDE 13 · Opera from Florence to Rome ──────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("歌劇的傳播 Florence → Rome", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Gagliano · Francesca Caccini · Roman Opera", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Gagliano 新版《Dafne》(1608) 廣受好評\n" +
+    "• Francesca Caccini《La liberazione di Ruggiero》\n" +
+    "  (1625) — 女性作曲家的重要歌劇\n" +
+    "• 1620s 羅馬：Barberini 家族贊助歌劇\n" +
+    "• 羅馬歌劇發展出 arioso（半詠嘆調）\n" +
+    "• 女性禁演 → castrati 閹伶登場",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 21, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.4 }
+  );
+}
+
+// ── SLIDE 14 · Public Opera in Venice ───────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.plum); bottomBar(s, C.plum);
+
+  s.addText("威尼斯公共歌劇 Public Opera in Venice", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addText("Teatro San Cassiano (1637) — 歷史性的轉變", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• 1637 第一座公共歌劇院開幕 · 售票入場\n" +
+    "• Carnival 嘉年華季節演出 → 吸引各階層觀眾\n" +
+    "• 至 1678 年威尼斯已有九座歌劇院競爭\n" +
+    "• Impresario 經紀人制度：雇用作曲家與歌手\n" +
+    "• 歌劇從貴族私人娛樂 → 商業化公眾藝術",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 15 · Venetian Opera Conventions ───────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("威尼斯歌劇的慣例 Venetian Conventions", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• 三幕結構（取代早期五幕）+ 序幕\n" +
+    "• 題材：神話、史詩、歷史 — 含戲劇衝突與奇觀\n" +
+    "• Prima donna / Primo uomo 明星制度\n" +
+    "• 詠嘆調數量增至 50-60 首 · 合唱大幅減少\n" +
+    "• Recitative: versi sciolti（自由詩）\n" +
+    "  Aria: 規律韻律的押韻詩",
+    { x: 0.5, y: 1.1, w: 9.0, h: 4.2, fontSize: 22, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 16 · The Impresario & Diva ────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.wine); bottomBar(s, C.wine);
+
+  s.addText("經紀人與歌劇天后 Impresario & Diva", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Impresario 相當於現代製作人\n" +
+    "  — 管理劇院、僱用全部人員、承擔盈虧\n" +
+    "• Diva 現象始於 Anna Renzi (1640s)\n" +
+    "  — 歌手比作曲家更有票房號召力\n" +
+    "• 歌手薪酬可達作曲家的 2-6 倍\n" +
+    "• Prima donna 影響劇本與角色創作",
+    { x: 0.5, y: 1.1, w: 9.0, h: 4.2, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 17 · Monteverdi L'incoronazione di Poppea ─────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("《波佩雅的加冕》L'incoronazione di Poppea", {
+    x: 0.3, y: 0.2, w: 9.4, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Monteverdi · Venice 1643 · 常被視為其最高傑作", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 18, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• 歷史題材：羅馬暴君 Nero 與情婦 Poppea\n" +
+    "• 為商業劇院而寫 → 編制精簡\n" +
+    "  （大鍵琴+低音提琴+兩把小提琴）\n" +
+    "• 風格多變：宣敘調、詠嘆調、arioso 交替\n" +
+    "• 人物刻畫與情感深度超越《Orfeo》",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 18 · NAWM 79: Pur ti miro ────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.mauve); bottomBar(s, C.mauve);
+
+  s.addText("NAWM 79 — Pur ti miro", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addText("L'incoronazione di Poppea · 終曲二重唱", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Nero 與 Poppea 的愛情二重唱\n" +
+    "• 抒情三拍子 · 旋律優美而甜蜜\n" +
+    "• 聲部交織 → 象徵兩人結合\n" +
+    "• 歌劇史上最著名的終曲之一\n" +
+    "• 學者爭議：可能非 Monteverdi 親筆",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+
+  s.addText("https://www.youtube.com/watch?v=v_Se1XVkOiU", {
+    x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.plum, fontFace: "Calibri", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=v_Se1XVkOiU" },
+  });
+}
+
+// ── SLIDE 19 · Francesco Cavalli ────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("卡瓦利 Francesco Cavalli (1602–1676)", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("威尼斯歌劇的第一人 Leading Venetian Opera Composer", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 20, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Monteverdi 的學生 · 聖馬可管風琴師→樂長\n" +
+    "• 1639–1673 作近 30 部歌劇 · 最成功的歌劇作曲家\n" +
+    "• 與劇作家 Faustini 合作確立威尼斯歌劇慣例\n" +
+    "• 音樂特色：宣敘調捕捉語言情感\n" +
+    "  詠嘆調以三拍子優雅旋律見長",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 20 · Cesti & Orontea / NAWM 80 ────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.plum); bottomBar(s, C.plum);
+
+  s.addText("切斯提與《Orontea》Cesti & NAWM 80", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addText("Antonio Cesti (1623–1669) · Innsbruck Opera", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Innsbruck Tyrol 宮廷 · 義大利歌劇走向國際\n" +
+    "• 《Orontea》(1656) 是 17 世紀最常上演的歌劇之一\n" +
+    "• 義大利歌劇傳播至維也納、巴黎、英國\n" +
+    "• NAWM 80: Intorno all'idol mio\n" +
+    "  — 優美的搖籃曲式詠嘆調 · 旋律流暢",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+
+  s.addText("https://www.youtube.com/watch?v=WjrNblgYAhw", {
+    x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.plum, fontFace: "Calibri", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=WjrNblgYAhw" },
+  });
+}
+
+// ── SLIDE 21 · Aria vs Recitative Development ───────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("詠嘆調 vs 宣敘調的演化", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Aria vs Recitative — How they differentiated", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.sand, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  // Left column — Recitative
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.5, w: 4.55, h: 3.8, fill: { color: C.slate }, rectRadius: 0.1 });
+  s.addText("Recitative 宣敘調", {
+    x: 0.45, y: 1.6, w: 4.25, h: 0.45, fontSize: 24, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText(
+    "• 推動劇情、對話\n" +
+    "• 自由節奏 · 追隨語言\n" +
+    "• Versi sciolti 自由詩\n" +
+    "• 和聲簡單 · 音節式",
+    { x: 0.5, y: 2.15, w: 4.2, h: 2.8, fontSize: 20, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+
+  // Right column — Aria
+  s.addShape(pres.ShapeType.rect, { x: 5.15, y: 1.5, w: 4.55, h: 3.8, fill: { color: C.slate }, rectRadius: 0.1 });
+  s.addText("Aria 詠嘆調", {
+    x: 5.3, y: 1.6, w: 4.25, h: 0.45, fontSize: 24, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText(
+    "• 抒發情感、反思\n" +
+    "• 規律節拍 · 常為三拍\n" +
+    "• 押韻定型詩行\n" +
+    "• 旋律性強 · 流暢優美",
+    { x: 5.35, y: 2.15, w: 4.2, h: 2.8, fontSize: 20, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 22 · Combattimento & Stile Concitato ──────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.wine); bottomBar(s, C.wine);
+
+  s.addText("戰鬥與激情風格 Stile Concitato", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addText("Combattimento di Tancredi e Clorinda (1624)", {
+    x: 0.4, y: 0.85, w: 9.2, h: 0.4, fontSize: 22, color: C.wine, fontFace: "Georgia", italic: true,
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.3, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  s.addText(
+    "• Tasso《耶路撒冷的解放》中的戰鬥場面\n" +
+    "• 結合敘事者（男高音）、角色演唱與啞劇\n" +
+    "• Stile concitato 激情風格：快速反覆同音\n" +
+    "  → 弦樂 tremolo 技法的先驅\n" +
+    "• Monteverdi 最具創新性的戲劇實驗之一",
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
+  );
+}
+
+// ── SLIDE 23 · Timeline ─────────────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("歌劇誕生年表 Timeline", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
   const events = [
-    ["ca. 1573", "Camerata meetings at Bardi's"],
-    ["1581", "Galilei · Dialogo"],
-    ["1589", "Medici 婚禮 intermedi"],
-    ["1598", "Peri/Corsi · Dafne (music lost)"],
-    ["1600", "Peri · Euridice (première)"],
-    ["1601", "Caccini · Euridice (published first)"],
-    ["1602", "Caccini · Le nuove musiche"],
-    ["1607", "Monteverdi · L'Orfeo"],
-    ["1608", "Monteverdi · L'Arianna (lament survives)"],
-    ["1637", "Teatro San Cassiano — public opera"],
-    ["1640", "Monteverdi · Il ritorno d'Ulisse"],
-    ["1643", "Monteverdi · L'incoronazione di Poppea"],
-    ["1649", "Cavalli · Giasone"],
-    ["1656", "Cesti · Orontea"],
+    ["1573", "Florentine Camerata 成立"],
+    ["1598", "Peri《Dafne》首演（樂譜已佚）"],
+    ["1600", "Peri & Caccini《Euridice》"],
+    ["1607", "Monteverdi《L'Orfeo》· Mantua"],
+    ["1624", "Monteverdi《Combattimento》"],
+    ["1625", "F. Caccini《La liberazione di Ruggiero》"],
+    ["1637", "威尼斯第一座公共歌劇院"],
+    ["1643", "Monteverdi《L'incoronazione di Poppea》"],
+    ["1656", "Cesti《Orontea》· Innsbruck"],
   ];
-  events.forEach(([date, desc], i) => {
-    const row = Math.floor(i / 2);
-    const col = i % 2;
-    const x = 0.3 + col * 4.8;
-    const y = 1.0 + row * 0.55;
-    s.addShape(pres.ShapeType.rect, { x, y, w: 1.1, h: 0.44, fill: { color: C.crimson } });
-    s.addText(date, { x: x + 0.05, y: y + 0.06, w: 1.0, h: 0.32, fontSize: 9, bold: true, color: C.lightText, align: "center", fontFace: "Georgia" });
-    s.addText(desc, { x: x + 1.2, y, w: 3.55, h: 0.44, fontSize: 8, color: C.darkText, fontFace: "Calibri", valign: "middle" });
+
+  events.forEach(([year, desc], i) => {
+    const y = 1.05 + i * 0.48;
+    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 1.2, h: 0.4, fill: { color: C.mauve }, rectRadius: 0.05 });
+    s.addText(year, { x: 0.4, y, w: 1.2, h: 0.4, fontSize: 18, bold: true, color: C.lightText, fontFace: "Georgia", align: "center" });
+    s.addText(desc, { x: 1.8, y, w: 7.8, h: 0.4, fontSize: 18, color: C.sand, fontFace: "Calibri", valign: "top" });
   });
 }
 
-// ── SLIDE 9 · Key Terms & Listening ──────────────────────────────────────────
+// ── SLIDE 24 · Key Terms ────────────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.plum); bottomBar(s, C.plum);
+
+  s.addText("核心術語 Key Terms", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.plum, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
+
+  // Left column
+  s.addText(
+    "Recitative 宣敘調\n" +
+    "  模仿語言的歌唱風格\n\n" +
+    "Aria 詠嘆調\n" +
+    "  抒情歌唱段落\n\n" +
+    "Arioso 半詠嘆調\n" +
+    "  介於宣敘調與詠嘆調之間\n\n" +
+    "Strophic variation\n" +
+    "  分節變奏",
+    { x: 0.4, y: 1.05, w: 4.5, h: 4.3, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.2 }
+  );
+
+  // Right column
+  s.addText(
+    "Ritornello 反覆奏\n" +
+    "  器樂反覆的間奏段\n\n" +
+    "Sinfonia 序曲\n" +
+    "  器樂前奏\n\n" +
+    "Castrato 閹伶\n" +
+    "  為保高音而閹割的歌手\n\n" +
+    "Impresario 經紀人\n" +
+    "  歌劇製作人",
+    { x: 5.2, y: 1.05, w: 4.5, h: 4.3, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.2 }
+  );
+}
+
+// ── SLIDE 25 · NAWM Listening Guide ─────────────────────────────────────────
 {
   const s = darkSlide(pres);
-  topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("關鍵詞彙 · 延伸閱讀", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Key Terms & Further Reading", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
+  topBar(s, C.mauve); bottomBar(s, C.mauve);
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🔑 Key Terms", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• opera · libretto · librettist\n• intermedio · pastoral drama\n• Florentine Camerata · Count Bardi\n• stile recitativo · recitative\n• monody · basso continuo\n• aria · arioso · da capo aria\n• strophic variation\n• secco recitative · accompagnato\n• castrato · prima donna · diva\n• impresario · public opera\n• basso ostinato · ground bass\n• ritornello · sinfonia\n• L'Orfeo · L'incoronazione di Poppea\n• Euridice · Orontea", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("聆聽指南 NAWM Listening Guide", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.65, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("📚 Further Reading & 🎧 Listening", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• Carter & Goldthwaite. Orpheus in the Marketplace (2017)\n• Whenham, John (ed.). Claudio Monteverdi: Orfeo (1986)\n• Rosand, Ellen. Opera in Seventeenth-Century Venice (1991)\n• Heller, Wendy. Emblems of Eloquence (2003)\n\n🎧 NAWM 精選聆聽 (YouTube)\n• 77 · Peri · Euridice: Nel puro ardor  youtu.be/1hBM_keRlRo\n• 78 · Monteverdi · L'Orfeo: Possente spirto  youtu.be/ngeurQnM4qM\n• 79 · Monteverdi · Poppea: Pur ti miro  youtu.be/AjlIwv0ljX8\n• 80 · Cesti · Orontea: Intorno all'idol mio  youtu.be/u6k11o1JEkM", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  const pieces = [
+    ["NAWM 77", "Peri · Euridice 選段", "bt8KaCIGBEk"],
+    ["NAWM 78a", "Monteverdi · Possente spirto", "LUvJmIcp7z0"],
+    ["NAWM 78b", "Monteverdi · Tu se' morta", "MIadFIEB1cg"],
+    ["NAWM 79", "Monteverdi · Pur ti miro", "v_Se1XVkOiU"],
+    ["NAWM 80", "Cesti · Orontea (Intorno all'idol mio)", "WjrNblgYAhw"],
+  ];
+
+  pieces.forEach(([nawm, desc, vid], i) => {
+    const y = 1.1 + i * 0.85;
+    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 9.2, h: 0.75, fill: { color: C.slate }, rectRadius: 0.08 });
+    s.addText(nawm, { x: 0.55, y: y + 0.05, w: 2.0, h: 0.35, fontSize: 20, bold: true, color: C.gold, fontFace: "Georgia" });
+    s.addText(desc, { x: 0.55, y: y + 0.38, w: 5.5, h: 0.3, fontSize: 18, color: C.sand, fontFace: "Calibri", valign: "top" });
+    s.addText("YouTube", {
+      x: 7.5, y: y + 0.15, w: 1.8, h: 0.4, fontSize: 18, bold: true, color: C.gold, fontFace: "Calibri", align: "center", valign: "top",
+      hyperlink: { url: `https://www.youtube.com/watch?v=${vid}` },
+    });
   });
 }
 
+// ── Generate ────────────────────────────────────────────────────────────────
 pres.writeFile({ fileName: "Ch14_Opera.pptx" })
-  .then(fn => console.log(`✅ ${fn} created successfully`))
-  .catch(err => console.error("❌ Error:", err));
+  .then(() => console.log("■ Ch14_Opera.pptx created — 25 slides"))
+  .catch(err => console.error(err));

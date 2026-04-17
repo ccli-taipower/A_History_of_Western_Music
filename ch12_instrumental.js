@@ -4,6 +4,7 @@ pres.layout = "LAYOUT_16x9";
 pres.title = "Chapter 12: The Rise of Instrumental Music";
 pres.author = "A History of Western Music, 10th ed.";
 
+// Forest/earth palette — organic, instrumental warmth
 const C = {
   darkBg:   "1E2D1E",
   gold:     "C8A020",
@@ -20,229 +21,767 @@ const C = {
 
 function darkSlide(p) { const s = p.addSlide(); s.background = { color: C.darkBg }; return s; }
 function lightSlide(p) { const s = p.addSlide(); s.background = { color: C.cream }; return s; }
-function topBar(s, c) { s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.12, fill: { color: c || C.gold } }); }
-function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w: "100%", h: 0.125, fill: { color: c || C.gold } }); }
+function topBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:0, w:"100%", h:0.12, fill:{color:c||C.gold} }); }
+function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%", h:0.125, fill:{color:c||C.gold} }); }
 
-// ── SLIDE 1 · Title ──────────────────────────────────────────────────────────
+// ── SLIDE 1 · Title ─────────────────────────────────────────────────────────
 {
   const s = darkSlide(pres);
-  s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.15, fill: { color: C.gold } });
-  s.addShape(pres.ShapeType.rect, { x: 0, y: 5.47, w: "100%", h: 0.155, fill: { color: C.gold } });
-  s.addText("A HISTORY OF WESTERN MUSIC · TENTH EDITION", { x: 0.5, y: 0.45, w: 9, h: 0.35, fontSize: 11, color: C.sand, charSpacing: 3, align: "center", fontFace: "Georgia" });
-  s.addText("CHAPTER 12", { x: 0.5, y: 0.9, w: 9, h: 0.55, fontSize: 20, color: C.gold, bold: true, align: "center", fontFace: "Georgia", charSpacing: 6 });
-  s.addText("THE RISE OF\nINSTRUMENTAL MUSIC", { x: 0.3, y: 1.5, w: 9.4, h: 2.0, fontSize: 34, color: C.lightText, bold: true, align: "center", fontFace: "Georgia" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 3.65, w: 5, h: 0.04, fill: { color: C.gold } });
-  s.addText("Dance · Intabulation · Variation · Canzona · Toccata · Venice", { x: 0.4, y: 3.8, w: 9.2, h: 0.4, fontSize: 13, color: C.sand, align: "center", fontFace: "Georgia" });
-  s.addText("Textbook pp. 254–277", { x: 0.5, y: 4.8, w: 9, h: 0.3, fontSize: 11, color: C.gold, align: "center", fontFace: "Calibri" });
+  s.addShape(pres.ShapeType.rect, { x:0, y:0, w:"100%", h:0.15, fill:{color:C.gold} });
+  s.addShape(pres.ShapeType.rect, { x:0, y:5.47, w:"100%", h:0.155, fill:{color:C.gold} });
+
+  s.addText("A HISTORY OF WESTERN MUSIC · TENTH EDITION", {
+    x:0.5, y:0.45, w:9, h:0.35, fontSize:18, color:C.sand, charSpacing:3, align:"center", fontFace:"Georgia",
+  });
+  s.addText("CHAPTER 12", {
+    x:0.5, y:1.0, w:9, h:0.55, fontSize:24, color:C.gold, bold:true, align:"center", fontFace:"Georgia", charSpacing:6,
+  });
+  s.addText("THE RISE OF\nINSTRUMENTAL MUSIC", {
+    x:0.3, y:1.6, w:9.4, h:2.0, fontSize:38, color:C.lightText, bold:true, align:"center", fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:2.5, y:3.75, w:5, h:0.04, fill:{color:C.gold} });
+  s.addText("Susato · Narvaez · Byrd · Merulo · Andrea & Giovanni Gabrieli", {
+    x:0.4, y:3.9, w:9.2, h:0.4, fontSize:18, color:C.sand, align:"center", fontFace:"Georgia",
+  });
+  s.addText("Textbook pp. 254-277", {
+    x:0.5, y:4.8, w:9, h:0.3, fontSize:18, color:C.gold, align:"center", fontFace:"Calibri",
+  });
 }
 
-// ── SLIDE 2 · Chapter Overview ───────────────────────────────────────────────
+// ── SLIDE 2 · Chapter Overview ──────────────────────────────────────────────
 {
   const s = lightSlide(pres);
   topBar(s, C.forest); bottomBar(s, C.forest);
-  s.addText("本章概覽 Chapter Overview", { x: 0.4, y: 0.2, w: 9.2, h: 0.6, fontSize: 26, bold: true, color: C.forest, fontFace: "Georgia" });
-  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.82, w: 9.2, h: 0.03, fill: { color: C.sand } });
-  const sections = [
-    ["🎻", "Instruments & Ensembles", "家族式樂器 · consort · haut/bas · 記譜傳統興起"],
-    ["💃", "Dance Music 舞曲", "Pavane · Galliard · Susato Danserye (NAWM 67)"],
-    ["🎸", "Intabulation 鍵盤/魯特改編", "Narváez vihuela · Byrd keyboard variations (NAWM 68–69)"],
-    ["🏛", "Abstract Genres 抽象樂種", "Ricercar · Canzona · Toccata · Prelude · Fantasia"],
-    ["⛪", "Music in Venice 威尼斯", "Cori spezzati · Gabrieli 叔姪 · Sonata pian' e forte (NAWM 70–73)"],
-    ["🎼", "Independence 獨立地位", "器樂從附屬→獨立——為巴洛克器樂鋪路"],
+
+  s.addText("本章概覽 Chapter Overview", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:9.2, h:0.03, fill:{color:C.sand} });
+
+  const items = [
+    "器樂的興起：1480年後器樂逐漸獲得獨立地位\nThe Rise: Instrumental music gains status after 1480",
+    "樂器與合奏：家族樂器、consort、高音/低音之分\nInstruments & Ensembles: families, consorts, haut/bas",
+    "舞曲音樂：pavane-galliard 配對、Susato Danserye\nDance Music: paired dances, Susato's Danserye (1551)",
+    "聲樂改編與變奏：intabulation、Narvaez、Byrd\nArrangements & Variations: intabulation, Narvaez, Byrd",
+    "抽象器樂：ricercar、fantasia、canzona、toccata\nAbstract Works: ricercar, fantasia, canzona, toccata",
+    "威尼斯與聖馬可：Gabrieli 家族的輝煌音樂\nVenice & St. Mark's: the splendor of the Gabrielis",
   ];
-  sections.forEach(([icon, title, sub], i) => {
-    const y = 1.0 + i * 0.75;
-    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 0.6, h: 0.58, fill: { color: C.forest }, rounding: true });
-    s.addText(icon, { x: 0.4, y: y + 0.05, w: 0.6, h: 0.5, fontSize: 20, align: "center", margin: 0 });
-    s.addText(title, { x: 1.15, y, w: 8.4, h: 0.3, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", margin: 0 });
-    s.addText(sub, { x: 1.15, y: y + 0.28, w: 8.4, h: 0.26, fontSize: 11, color: C.olive, fontFace: "Calibri", margin: 0 });
+  items.forEach((txt, i) => {
+    const y = 1.05 + i * 0.73;
+    s.addShape(pres.ShapeType.rect, { x:0.4, y, w:0.08, h:0.55, fill:{color:C.forest}, rounding:true });
+    s.addText(txt, { x:0.65, y, w:8.9, h:0.65, fontSize:18, color:C.darkText, fontFace:"Calibri", valign:"middle" });
   });
 }
 
-// ── SLIDE 3 · Instruments & Ensembles ────────────────────────────────────────
+// ── SLIDE 3 · Why Instrumental Music Rose ───────────────────────────────────
 {
   const s = darkSlide(pres);
-  topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("樂器與合奏", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Instruments, Ensembles & Embellishment in the 16th Century", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
+  topBar(s); bottomBar(s);
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎻 Instrumental Families 樂器家族", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 同族樂器 soprano→bass——統一音色\n• Consort（英文）= 同族三到七件樂器合奏\n• Whole consort = 同族 · Broken consort = 混合\n\n🎵 常見家族\n• Recorder（直笛）家族\n• Viol（維奧爾琴）家族——有品\n• Violin（小提琴）家族——1530s 出現\n• Cornett + Sackbut（木管號角+長號）\n• Shawm（蕭姆管）家族\n• Keyboard：Organ · Harpsichord · Clavichord\n• Lute/Vihuela——16 世紀最流行的獨奏樂器\n\n📚 重要文獻\n• Virdung, Musica getutscht (1511)\n• Praetorius, Syntagma musicum (1618–20)\n• Agricola, Musica instrumentalis (1529/45)", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("器樂為何興起？ Why Did Instrumental Music Rise?", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
   });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎨 Embellishment 裝飾法", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 16 世紀演奏者有義務即興裝飾旋律\n• Passaggi（快速走句）= 分割長音符為短音群\n• Graces（裝飾音）= 顫音、附倚音\n\n📖 裝飾法教本\n• Silvestro Ganassi, Opera intitulata Fontegara (1535)\n  ——直笛裝飾手冊\n• Diego Ortiz, Tratado de glosas (1553)\n  ——viol 即興法\n• Girolamo Dalla Casa, Il vero modo (1584)\n\n💡 為何重要？\n• 器樂如同聲樂——以裝飾展現技藝\n• 寫定 vs. 即興的分界模糊\n• HIP（歷史知情演奏）中的核心議題\n\n🏛 社交舞蹈\n• 宮廷舞蹈為社交要求 · 出版大量舞譜\n• Arbeau, Orchésographie (1589)\n  ——舞步 + 節奏對照圖", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-}
-
-// ── SLIDE 4 · Dance Music ────────────────────────────────────────────────────
-{
-  const s = lightSlide(pres);
-  topBar(s, C.forest); bottomBar(s, C.forest);
-  s.addText("舞曲 Dance Music", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.forest, fontFace: "Georgia", align: "center" });
-  s.addText("Pavane & Galliard · Susato · Danserye (NAWM 67)", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 13, color: C.olive, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.forest } });
-
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E8E0D0" }, rounding: true });
-  s.addText("💃 舞曲配對", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.forest, fontFace: "Georgia" });
-  s.addText("• 16 世紀慣例：慢舞 + 快舞成對\n• Pavane（莊重 · 二拍）+ Galliard（活潑 · 三拍）\n• Passamezzo + Saltarello（義大利）\n• Allemande + Courante（法國）\n• 兩首通常共享旋律素材\n\n📊 Pavane 特徵\n• 緩慢 · 莊嚴 · 通常 duple meter\n• 三段式 AABB'CC'\n• 適合遊行或開場\n\n📊 Galliard 特徵\n• 活潑跳躍 · triple meter\n• 常以 pavane 旋律作三拍改編\n• hemiola 效果頻繁（3+3 vs 2+2+2）", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8.5, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E8E0D0" }, rounding: true });
-  s.addText("🎵 Susato · Danserye (1551)", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.forest, fontFace: "Georgia" });
-  s.addText("🌟 Tielman Susato (ca. 1510/15–after 1570)\n• 安特衛普的樂器演奏家、印刷商\n• 出版樂譜數十種——包括 chanson 與器樂曲集\n\n📖 Het derde musyck boexken (1551)\n• Danserye = 六冊舞曲集中的第三冊\n• 為四聲部合奏寫成\n• 包含 Pavane「La dona」+ Galliard (NAWM 67)\n\n🎵 NAWM 67 分析\n• Pavane: 三段 · 同節奏 · 旋律在 superius\n• Galliard: 改用三拍 · 旋律為 pavane 變體\n• 各段重複（||: A :||: B :||: C :||）\n• 清晰、短小、適合業餘合奏\n\n📈 影響\n• 舞曲集成為 16–17 世紀印刷暢銷品\n• 為 Baroque suite（組曲）的前身", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-}
-
-// ── SLIDE 5 · Intabulation & Variations ─────────────────────────────────────
-{
-  const s = darkSlide(pres);
-  topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("改編與變奏", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Intabulation · Narváez (NAWM 68) · Byrd Variations (NAWM 69)", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
-
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎸 Intabulation 改編譜", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 將聲樂作品改編為鍵盤或弦撥樂器獨奏譜\n• 使用 tablature（圖譜）記譜法\n  — lute tab = 指法 + 弦位\n  — organ tab = 字母或數字代音\n• 16 世紀最大宗的器樂出版品\n\n🎸 Luis de Narváez (fl. 1526–49)\n• 西班牙 vihuela（維韋拉琴）大師\n• Los seys libros del Delphin (1538)\n  — 六冊維韋拉曲集\n• 包含 Josquin Mille regretz 改編 (NAWM 68)\n\n🎵 NAWM 68 分析\n• 忠於原作四聲部架構\n• 添加大量 passaggi 裝飾——\n  展現 vihuela 的觸弦特色\n• 重要：展示 16 世紀「改編＝再創作」的觀念", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎹 Variations 變奏曲", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 變奏曲是器樂首批真正的「獨立類型」\n• 以既有旋律為基礎 · 反覆但每次變化\n\n三種類型\n1. Cantus firmus variations — 旋律不變 · 對位變化\n2. Melodic paraphrase — 旋律裝飾性改變\n3. Ground bass / Harmonic — 和聲骨架不變 · 上方自由\n\n🌟 William Byrd (ca. 1540–1623)\n• 英國 virginal（小型鍵盤）音樂大師\n• John come kiss me now (NAWM 69)\n  — 以流行歌曲旋律為基礎\n  — 16 段變奏 · 漸進式複雜化\n  — 技巧漸增 · 節奏越來越快\n  — 鍵盤特有的 figuration 展現\n\n📚 The Fitzwilliam Virginal Book\n• 英國最大鍵盤曲手稿集\n• 300 首——Byrd、Bull、Gibbons 等\n• 變奏曲占大比例", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-}
-
-// ── SLIDE 6 · Abstract Genres ────────────────────────────────────────────────
-{
-  const s = lightSlide(pres);
-  topBar(s, C.forest); bottomBar(s, C.forest);
-  s.addText("抽象器樂曲種", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.forest, fontFace: "Georgia", align: "center" });
-  s.addText("Ricercar · Fantasia · Canzona · Toccata · Prelude", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 13, color: C.olive, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.forest } });
-
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E8E0D0" }, rounding: true });
-  s.addText("📜 模仿式樂種", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.forest, fontFace: "Georgia" });
-  s.addText("🎵 Ricercar（利切卡爾）\n• 源自「尋找 (ricercare)」——最初即興性質\n• 16 世紀後轉為嚴謹的模仿對位曲\n• 一個或多個主題 · 各段以新主題進入\n• 功能如 motet 的器樂版\n• 代表：Andrea Gabrieli 12° tuono ricercar (NAWM 71)\n\n🎵 Fantasia\n• 與 ricercar 近似但更自由\n• 速度與織度變化更大\n• 英國：Fancy (viol consort 代表曲種)\n\n🎵 Canzona（坎佐那）\n• 源自 chanson 的器樂改編\n• 特徵：「長-短-短」開頭節奏\n• 多段式 · 各段對比 · 接近後來的 sonata\n• Giovanni Gabrieli · Canzon septimi toni (NAWM 70)", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E8E0D0" }, rounding: true });
-  s.addText("⌨ 即興式樂種", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.forest, fontFace: "Georgia" });
-  s.addText("🎵 Toccata（觸技曲）\n• 源自 toccare = 觸碰——鍵盤樂器專屬\n• 即興風格 · 快速音群 · 自由和聲\n• 展現演奏者技藝 · 常有踏板音\n• 早期：Andrea Gabrieli · Claudio Merulo\n• 後期：Frescobaldi 將 toccata 提升至藝術頂峰\n\n🎵 Prelude / Praeambulum\n• 禮拜或演奏前的引奏\n• 建立調性 · 暖手 · 即興性質\n• 為後世 Prelude & Fugue 配對的前身\n\n🎵 Intonazione\n• 威尼斯管風琴家為合唱定音的短曲\n• Andrea & Giovanni Gabrieli 有許多範例\n\n💡 共通趨勢\n• 16 世紀器樂從「模仿聲樂」走向「發展獨特語彙」\n• 到世紀末：canzona → sonata · ricercar → fugue", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-}
-
-// ── SLIDE 7 · Venice & the Gabrielis ─────────────────────────────────────────
-{
-  const s = darkSlide(pres);
-  topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("威尼斯與加布里埃利", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("St. Mark's · Cori Spezzati · Andrea & Giovanni Gabrieli", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
-
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🏛 St. Mark's 聖馬可大教堂", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 威尼斯共和國的國家教堂\n• 建築特殊：對置的雙管風琴閣樓\n  → 啟發「對唱合唱」(cori spezzati)\n\n⛪ Cori spezzati 分置合唱\n• 兩組或多組合唱（+器樂）分置教堂兩端\n• 輪流唱、齊唱、呼應——空間音效\n• Adrian Willaert（1527–62 任樂長）開創傳統\n\n🌟 Andrea Gabrieli (ca. 1532–1585)\n• St. Mark's 管風琴師\n• 器樂：ricercar · intonazione · canzona\n• 聲樂：大型慶典音樂\n• Ricercar del 12° tuono (NAWM 71)\n  — 單主題嚴謹模仿——接近後來的 fugue\n  — 四聲部 · 管風琴", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🌟 Giovanni Gabrieli (ca. 1554/7–1612)", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• Andrea 的姪子——繼任 St. Mark's 管風琴師\n• 16 世紀末最重要的威尼斯作曲家\n• 吸引全歐學生（包括 Schütz）\n\n📖 Sacrae symphoniae (1597)\n• 宗教聲樂 + 器樂合集\n• 包含 Canzon septimi toni à 8 (NAWM 70)\n  — 八聲部分為兩組 SATB 合奏\n  — 模仿、呼應、齊奏交替\n  — chanson 開頭節奏（長-短-短）\n\n🎵 Sonata pian' e forte (NAWM 73)\n• 音樂史上首次在譜面標明力度對比\n• 八聲部分兩組——cornett/violin + sackbut\n• piano (p) 與 forte (f) 交替\n• 重要：器樂「音色」首次作為結構元素\n\n🎵 In ecclesiis (NAWM 72)\n• Grand concerto——聲樂+合唱+器樂+管風琴\n• 多層次 concertato 織度——巴洛克的預兆", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 7.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-}
-
-// ── SLIDE 8 · Instrumental Independence ──────────────────────────────────────
-{
-  const s = lightSlide(pres);
-  topBar(s, C.forest); bottomBar(s, C.forest);
-  s.addText("器樂的獨立", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.forest, fontFace: "Georgia", align: "center" });
-  s.addText("Instrumental Music Gains Independence", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 13, color: C.olive, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.forest } });
-
-  const points = [
-    ["📊", "從附屬到獨立", "16 世紀前器樂多為舞蹈伴奏或聲樂改編——1600 年後器樂開始追求自身美學\nBefore 1600: functional / derivative → After 1600: autonomous art music"],
-    ["🎻", "樂器特性語彙", "作曲家開始為特定樂器寫作——鍵盤 figuration、弦樂弓法、管樂呼吸——不再照搬聲樂\nIdiomatic writing: composers exploited each instrument's unique capabilities"],
-    ["📖", "記譜法完善", "Tablature → Staff notation · 出版樂譜市場成形——器樂首次大量保存\nMore instrumental music was written down, published, and preserved"],
-    ["🏛", "威尼斯典範", "Gabrieli 的空間化大型合奏 → 為 Baroque concertato 與 concerto 鋪路\nVenice's polychoral grand concerto foreshadowed Baroque orchestral music"],
-    ["🔗", "類型的演化", "canzona → sonata · ricercar → fugue · dance pairs → suite · toccata → prelude\nGenre evolution set the agenda for the next 200 years of instrumental music"],
+  const bullets = [
+    "1480年後教會、宮廷、城市、業餘愛好者日益培養器樂\nAfter 1480, churches, courts, cities & amateurs cultivated instruments",
+    "器樂被記譜保存 — 顯示其地位提升，值得書寫傳播\nMore music written down — shows it was deemed worthy of preservation",
+    "演奏者識譜能力提高，樂器教學書籍大量出版\nPerformers more literate; instruction books published in growing numbers",
+    "新體裁不再依賴舞蹈或歌唱：variations、ricercar、toccata 等\nNew genres independent of dance/song: variations, ricercar, toccata",
   ];
-  points.forEach(([icon, title, desc], i) => {
-    const y = 1.2 + i * 0.85;
-    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 0.55, h: 0.55, fill: { color: C.forest }, rounding: true });
-    s.addText(icon, { x: 0.4, y: y + 0.06, w: 0.55, h: 0.44, fontSize: 18, align: "center" });
-    s.addText(title, { x: 1.1, y, w: 8.5, h: 0.28, fontSize: 13, bold: true, color: C.darkText, fontFace: "Georgia" });
-    s.addText(desc, { x: 1.1, y: y + 0.28, w: 8.5, h: 0.46, fontSize: 9, color: C.brown, fontFace: "Calibri" });
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:19, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:24,
+    });
   });
 }
 
-// ── SLIDE 9 · Timeline ───────────────────────────────────────────────────────
+// ── SLIDE 4 · Instruments & Ensembles ───────────────────────────────────────
 {
   const s = lightSlide(pres);
   topBar(s, C.forest); bottomBar(s, C.forest);
-  s.addText("時間軸 · Timeline", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.forest, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 0.82, w: 5, h: 0.04, fill: { color: C.forest } });
+
+  s.addText("樂器與合奏 Instruments & Ensembles", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "樂器教學書：Virdung《Musica getutscht》(1511)、Praetorius《Syntagma musicum》\nInstruction books: Virdung (1511), Praetorius Syntagma musicum (1618-20)",
+    "家族樂器 (instrumental families)：同音色從高到低音，統一的音色\nInstrumental families: uniform timbre from soprano to bass range",
+    "Consort（同族合奏）= 3-7件同族樂器；晚15世紀起流行\nConsort = 3-7 instruments of same family; popular from late 15th c.",
+    "高音/低音之分：haut (alta) = 管樂舞會；bas = 室內弦樂/鍵盤\nHaut vs. bas: loud winds for dances; soft strings/keyboards for chambers",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 5 · Wind, String & Keyboard ───────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("主要樂器類別 Major Instrument Categories", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  // Three boxes
+  const cats = [
+    { title:"管樂 Winds", items:"直笛 recorder、橫笛 transverse flute\n蕭姆管 shawm、小號 cornett\nSackbut（長號前身）、Crumhorn" },
+    { title:"弦樂 Strings", items:"魯特琴 lute（最流行家用樂器）\nVihuela（西班牙吉他形魯特琴）\nViol / viola da gamba（腿上弓弦）\n小提琴 violin（16世紀初出現）" },
+    { title:"鍵盤 Keyboards", items:"管風琴 organ（教堂/正面風琴）\nClavichord（擊弦、可漸強）\nHarpsichord（撥弦，較響亮）\n= virginal / clavecin / clavicembalo" },
+  ];
+  cats.forEach((cat, i) => {
+    const x = 0.3 + i * 3.2;
+    s.addShape(pres.ShapeType.rect, { x, y:1.1, w:3.0, h:0.5, fill:{color:C.forest}, rounding:true });
+    s.addText(cat.title, { x, y:1.1, w:3.0, h:0.5, fontSize:20, bold:true, color:C.lightText, align:"center", fontFace:"Georgia" });
+    s.addText(cat.items, { x, y:1.7, w:3.0, h:3.5, fontSize:18, color:C.lightText, fontFace:"Calibri", lineSpacing:26 });
+  });
+}
+
+// ── SLIDE 6 · Embellishment & Diminutions ───────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.brown); bottomBar(s, C.brown);
+
+  s.addText("裝飾法與教學書 Embellishment & Treatises", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.brown, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "16世紀演奏者被期待即興裝飾旋律（diminutions/divisions）\nPerformers expected to embellish melodies with diminutions/divisions",
+    "Ganassi《Opera intitulata Fontegara》(1535)：直笛裝飾法經典\nGanassi's Fontegara (1535): classic recorder ornamentation manual",
+    "Ortiz《Tratado de glosas》(1553)：古提琴裝飾的重要論著\nOrtiz's Tratado de glosas (1553): key treatise on viol diminutions",
+    "裝飾保留原始旋律輪廓，避免平行五/八度等禁止進行\nOrnaments preserve melodic outline; avoid parallel 5ths/octaves",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 7 · Five Categories of Instrumental Music ─────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("文藝復興器樂的五大類別 Five Categories", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const cats = [
+    ["1", "舞曲音樂 Dance Music", "pavane、galliard、allemande、basse danse"],
+    ["2", "聲樂多聲部改編 Arrangements of Vocal Music", "合奏或獨奏器樂版的經文歌/尚頌"],
+    ["3", "既有旋律的設定 Settings of Existing Melodies", "聖歌管風琴曲、In Nomine 傳統"],
+    ["4", "變奏曲 Variations", "在主題上的一系列裝飾變化"],
+    ["5", "抽象器樂 Abstract Instrumental Works", "ricercar、fantasia、canzona、toccata、sonata"],
+  ];
+  cats.forEach(([num, title, sub], i) => {
+    const y = 1.05 + i * 0.85;
+    s.addShape(pres.ShapeType.rect, { x:0.4, y, w:0.55, h:0.55, fill:{color:C.forest}, rounding:true });
+    s.addText(num, { x:0.4, y, w:0.55, h:0.55, fontSize:22, bold:true, color:C.lightText, align:"center", fontFace:"Georgia", valign:"middle" });
+    s.addText(title, { x:1.1, y, w:8.5, h:0.3, fontSize:20, bold:true, color:C.gold, fontFace:"Georgia" });
+    s.addText(sub, { x:1.1, y:y+0.32, w:8.5, h:0.28, fontSize:18, color:C.sand, fontFace:"Calibri" });
+  });
+}
+
+// ── SLIDE 8 · Dance Music ───────────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("舞曲音樂 Dance Music", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "文藝復興社交舞極為重要 — 展現優雅、社交能力、健康\nSocial dance was vital — displayed grace, social skill, fitness",
+    "舞曲常成對出現：慢二拍 + 快三拍（同旋律的變奏）\nDances often paired: slow duple + fast triple (varied from same tune)",
+    "Basse danse（低舞）= 15-16世紀初最受歡迎的宮廷舞\nBasse danse = most popular courtly dance, 15th-early 16th c.",
+    "Pavane（莊嚴二拍）+ Galliard（活潑三拍，含跳躍踢腿）\nPavane (stately duple) + Galliard (lively triple with hops & kicks)",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 9 · Renaissance Dances Table ──────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("四種文藝復興舞曲 Four Renaissance Dances", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const rows = [
+    [{ text:"舞曲 Dance", options:{bold:true,fontSize:19,color:C.darkBg,fontFace:"Georgia"} },
+     { text:"拍子 Meter", options:{bold:true,fontSize:19,color:C.darkBg,fontFace:"Georgia"} },
+     { text:"曲式 Form", options:{bold:true,fontSize:19,color:C.darkBg,fontFace:"Georgia"} },
+     { text:"特徵 Character", options:{bold:true,fontSize:19,color:C.darkBg,fontFace:"Georgia"} }],
+    [{ text:"Basse danse", options:{fontSize:18,color:C.lightText} },
+     { text:"二/三拍", options:{fontSize:18,color:C.lightText} },
+     { text:"反覆樂句", options:{fontSize:18,color:C.lightText} },
+     { text:"莊嚴優雅 Stately, graceful", options:{fontSize:18,color:C.lightText} }],
+    [{ text:"Pavane", options:{fontSize:18,color:C.lightText} },
+     { text:"二拍 Duple", options:{fontSize:18,color:C.lightText} },
+     { text:"AABBCC", options:{fontSize:18,color:C.lightText} },
+     { text:"滑步莊嚴 Stately, gliding", options:{fontSize:18,color:C.lightText} }],
+    [{ text:"Galliard", options:{fontSize:18,color:C.lightText} },
+     { text:"三拍 Triple", options:{fontSize:18,color:C.lightText} },
+     { text:"AABBCC", options:{fontSize:18,color:C.lightText} },
+     { text:"活潑跳躍 Lively, hops & kicks", options:{fontSize:18,color:C.lightText} }],
+    [{ text:"Allemande", options:{fontSize:18,color:C.lightText} },
+     { text:"二拍 Duple", options:{fontSize:18,color:C.lightText} },
+     { text:"2-3段反覆", options:{fontSize:18,color:C.lightText} },
+     { text:"中庸簡潔 Moderate, upbeat start", options:{fontSize:18,color:C.lightText} }],
+  ];
+  const colW = [2.0, 1.8, 2.0, 3.8];
+  const border = { pt:1, color:C.olive };
+  s.addTable(rows, {
+    x:0.4, y:1.1, w:9.6, colW,
+    border, rowH:[0.55, 0.55, 0.55, 0.55, 0.55],
+    autoPage:false,
+  });
+  // Header row fill
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:1.1, w:9.6, h:0.55, fill:{color:C.gold} });
+  // Re-add table on top
+  s.addTable(rows, {
+    x:0.4, y:1.1, w:9.6, colW,
+    border, rowH:[0.55, 0.55, 0.55, 0.55, 0.55],
+    autoPage:false,
+  });
+}
+
+// ── SLIDE 10 · NAWM 67 — Susato Danserye ────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("NAWM 67 · Susato《Danserye》(1551)", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:26, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "Tielman Susato 約1551年在安特衛普出版《Danserye》\nTielman Susato published Danserye in Antwerp, 1551",
+    "收錄多對 pavane-galliard 舞曲，含 La dona 等配對\nContains pavane-galliard pairs including La dona (NAWM 66a-b)",
+    "consort 合奏的理想曲目：可用 viols、recorders 等演奏\nIdeal consort music: playable on viols, recorders, or other instruments",
+    "旋律在最高聲部，織體主要為和聲式（主調音樂）\nMelody in top voice; texture mostly homophonic",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.0, w:8.8, h:0.9, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
+  s.addText("YouTube: https://www.youtube.com/watch?v=fMPVMFpONRU", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 11 · Intabulation — Narvaez ───────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("移植改編 Intabulation", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const bullets = [
+    "Intabulation = 將聲樂作品改編為魯特琴/鍵盤的 tablature\nIntabulation = arranging vocal pieces into lute/keyboard tablature",
+    "最早的 tablature 記錄：Robertsbridge Codex（約1360年）\nEarliest surviving tablature: Robertsbridge Codex (ca. 1360)",
+    "由於撥弦樂器無法持續音，改編者需用裝飾音填補\nPlucked instruments can't sustain; arrangers fill with ornamental runs",
+    "16世紀大量 intabulation 出版，顯示其極高人氣\nGreat numbers published in 16th c., testifying to their popularity",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 12 · NAWM 68 — Narvaez ───────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.brown); bottomBar(s, C.brown);
+
+  s.addText("NAWM 68 · Narvaez: Cancion Mille regretz", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.brown, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "Luys de Narvaez (fl. 1526-49)：西班牙 vihuela 大師\nLuys de Narvaez (fl. 1526-49): Spanish vihuela master",
+    "1538年出版《Los seys libros del Delphin》：含最早的變奏曲集\nPublished Los seys libros del Delphin (1538): first published variation sets",
+    "改編 Josquin 的四聲部《Mille regretz》為 vihuela 版\nIntabulation of Josquin's 4-voice Mille regretz for vihuela",
+    "保留原作織體，加入 runs、turns、diminutions 增添趣味\nPreserves original texture; adds runs, turns & diminutions",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.0, w:8.8, h:0.9, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.brown}, rounding:true });
+  s.addText("YouTube: https://www.youtube.com/watch?v=8E7zcsal98U", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 13 · Variations ───────────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("變奏曲 Variations", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const bullets = [
+    "變奏曲 = 16世紀的發明：在主題上呈現一系列裝飾變化\nVariation form = 16th-c. invention: series of embellished variants on a theme",
+    "主題可為既有旋律、低音線、和聲進行或新創曲調\nTheme can be an existing tune, bass line, harmonic plan, or new melody",
+    "最早的書面變奏：Dalza 的 pavane 變奏 (1508, 魯特琴)\nEarliest written variations: Dalza's pavane variations (1508, lute tablature)",
+    "固定低音 (ostinato) 變奏：passamezzo antico/moderno、romanesca\nOstinato variations: passamezzo antico/moderno, romanesca, Ruggiero",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 14 · English Virginalists & Byrd ──────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("英國維乃琴樂派 English Virginalists", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "Virginal = 英國小型撥弦鍵盤樂器（harpsichord 家族）\nVirginal = small English harpsichord-family keyboard instrument",
+    "三大作曲家：William Byrd、John Bull、Orlando Gibbons\nThree masters: William Byrd, John Bull, Orlando Gibbons",
+    "《Parthenia》(1613)：最早出版的 virginal 作品集\nParthenia (1613): first published collection of virginal music",
+    "英國人偏好旋律變奏（vs. 西班牙/義大利的低音變奏）\nEnglish preferred melodic variation (vs. Spanish/Italian bass patterns)",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.0, w:8.8, h:0.9, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 15 · NAWM 69 — Byrd ──────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("NAWM 69 · Byrd: John come kiss me now", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:26, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const bullets = [
+    "以流行歌曲為主題的 virginal 變奏曲\nVirginal variations on a popular song of the time",
+    "旋律貫穿每一變奏，多在高音部或中音部\nSong melody present in every variation, mostly in treble or middle voice",
+    "每段變奏引入新的動機或節奏型態，漸次加速\nEach variation introduces a new motivic/rhythmic figure, gradually quickening",
+    "從四分音符→八分音符→十六分音符，形成節奏高潮\nPace accelerates: quarter → eighth → sixteenth notes, building rhythmic climax",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:24,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
+  s.addText("YouTube: https://www.youtube.com/watch?v=5C1gfQ3I_8E", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 16 · Abstract Works: Prelude, Fantasia, Ricercar ──────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.brown); bottomBar(s, C.brown);
+
+  s.addText("前奏曲·幻想曲·利乃爾卡 Prelude, Fantasia, Ricercar", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.brown, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "Prelude / Fantasia / Ricercar：不依賴既有旋律的自由即興風格\nPrelude / Fantasia / Ricercar: free improvisatory style, no borrowed tune",
+    "最早的 ricercar 為魯特琴即興小品；轉入鍵盤後加入模仿\nEarliest ricercari: brief lute improvisations; gained imitation on keyboard",
+    "1540年後 ricercar 發展為連續模仿主題的「無詞經文歌」\nBy 1540, ricercar = successive imitative themes — a textless motet",
+    "Luis Milan《El Maestro》(1536)：vihuela fantasia 的代表作\nLuis Milan's El Maestro (1536): exemplary vihuela fantasias",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 17 · NAWM 70 — Andrea Gabrieli Ricercar ───────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("NAWM 70 · A. Gabrieli: Ricercar del 12 tuono", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const bullets = [
+    "Andrea Gabrieli (ca. 1532-1585)：威尼斯聖馬可教堂管風琴師\nAndrea Gabrieli (ca. 1532-1585): organist at St. Mark's, Venice",
+    "此 ricercar 為連續模仿作品，結構如同無詞經文歌\nThis ricercar unfolds as successive imitation — a textless motet",
+    "多個主題依次發展，各段以終止式劃分\nMultiple subjects developed in turn, sections defined by cadences",
+    "展現鍵盤上對位法的精湛技巧\nDemonstrates mastery of contrapuntal writing for keyboard",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:24,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
+  s.addText("YouTube: https://www.youtube.com/watch?v=Ud0WKFMiZfg", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 18 · Canzona & Toccata ────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("坎佐那與觸技曲 Canzona & Toccata", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  // Two-column comparison
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:1.1, w:4.3, h:0.5, fill:{color:C.forest}, rounding:true });
+  s.addText("Canzona 坎佐那", { x:0.4, y:1.1, w:4.3, h:0.5, fontSize:20, bold:true, color:C.lightText, align:"center", fontFace:"Georgia" });
+  s.addText(
+    "源自法國 chanson 的器樂改編\nOriginated from French chanson\n\n輕快、節奏鮮明、對位織體\nLight, rhythmic, contrapuntal\n\n典型開頭：長-短-短節奏型\nTypical opening: long-short-short\n\n多段對比樂段依次展開\nMultiple contrasting sections",
+    { x:0.4, y:1.75, w:4.3, h:3.5, fontSize:18, color:C.darkText, fontFace:"Calibri", lineSpacing:24 }
+  );
+
+  s.addShape(pres.ShapeType.rect, { x:5.3, y:1.1, w:4.3, h:0.5, fill:{color:C.brown}, rounding:true });
+  s.addText("Toccata 觸技曲", { x:5.3, y:1.1, w:4.3, h:0.5, fontSize:20, bold:true, color:C.lightText, align:"center", fontFace:"Georgia" });
+  s.addText(
+    "名稱源自 toccare（「觸摸」）\nName from Italian toccare (\"to touch\")\n\n即興風格的鍵盤獨奏曲\nImprovisatory-style keyboard solo\n\n展現演奏者的技巧與想像力\nShowcases performer's skill & imagination\n\n自由段落與模仿段落交替\nFree passages alternate with imitative",
+    { x:5.3, y:1.75, w:4.3, h:3.5, fontSize:18, color:C.darkText, fontFace:"Calibri", lineSpacing:24 }
+  );
+}
+
+// ── SLIDE 19 · NAWM 71 — Merulo Toccata ─────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("NAWM 71 · Merulo: Toccata IV (6th Mode)", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const bullets = [
+    "Claudio Merulo (1533-1604)：威尼斯聖馬可教堂管風琴師\nClaudio Merulo (1533-1604): organist at St. Mark's, Venice",
+    "Toccata IV 收錄於1604年第二冊觸技曲集\nToccata IV from his second book of toccatas (1604)",
+    "結構：自由和弦開頭 → 模仿中段 → 華麗自由尾聲\nStructure: free chordal opening → imitative middle → brilliant free closing",
+    "利用管風琴持續音的能力：延留音、不協和音、音階跑動\nExploits organ's sustaining power: suspensions, dissonances, scale runs",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:24,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
+  s.addText("YouTube: search \"Merulo Toccata quarta\"", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 20 · Venice & St. Mark's ──────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("威尼斯與聖馬可教堂 Venice & St. Mark's", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "威尼斯 = 僅次於羅馬的義大利第二大城，貿易帝國\nVenice = second most important Italian city after Rome; trading empire",
+    "政府大量投資公共音樂活動作為文化宣傳\nGovernment invested lavishly in public music as cultural propaganda",
+    "聖馬可大教堂：拜占庭風格，義大利最令人嚮往的音樂職位\nSt. Mark's: Byzantine-style basilica, most coveted musical post in Italy",
+    "1568年起建立常設器樂團：cornett、sackbut、violin、dulcian\nPermanent instrumental ensemble from 1568: cornetts, sackbuts, violins",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 21 · The Gabrielis ────────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("Gabrieli 家族 The Gabrielis at St. Mark's", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  // Two columns
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:1.1, w:4.3, h:0.65, fill:{color:C.forest}, rounding:true });
+  s.addText("Andrea Gabrieli\n(ca. 1532–1585)", { x:0.4, y:1.1, w:4.3, h:0.65, fontSize:18, bold:true, color:C.lightText, align:"center", fontFace:"Georgia", valign:"middle", lineSpacingMultiple:0.9 });
+  s.addText(
+    "聖馬可教堂管風琴師\nOrganist at St. Mark's\n\n大量多合唱團作品\nNumerous polychoral works\n\nRicercar、canzona、toccata\nKey organ genres",
+    { x:0.4, y:1.9, w:4.3, h:2.85, fontSize:19, color:C.lightText, fontFace:"Calibri", lineSpacing:28 }
+  );
+
+  s.addShape(pres.ShapeType.rect, { x:5.3, y:1.1, w:4.3, h:0.55, fill:{color:C.amber}, rounding:true });
+  s.addText("G. Gabrieli (1555–1612)", { x:5.3, y:1.1, w:4.3, h:0.55, fontSize:18, bold:true, color:C.darkBg, align:"center", fontFace:"Georgia", valign:"middle" });
+  s.addText(
+    "Andrea 的姪子，接任管風琴師\nAndrea's nephew; succeeded him\n\n~100 經文歌、37 合奏坎佐那、7 奏鳴曲\n~100 motets, 37 canzonas, 7 sonatas\n\n首創指定樂器、標示力度記號\nFirst to specify instruments & dynamics",
+    { x:5.3, y:1.95, w:4.3, h:2.8, fontSize:18, color:C.lightText, fontFace:"Calibri", lineSpacing:26, margin:0 }
+  );
+}
+
+// ── SLIDE 22 · Polychoral Music & Cori Spezzati ─────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("多合唱團音樂 Polychoral Music (Cori spezzati)", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "Cori spezzati = 分離合唱團：2-5組合唱團分置教堂不同位置\nCori spezzati = divided choirs: 2-5 groups placed in different locations",
+    "Willaert 1550年出版雙合唱團詩篇集，引領風潮\nWillaert published double-choir psalms in 1550, sparking the fashion",
+    "Andrea Gabrieli 將其發展為大型慶典的常規形式\nAndrea Gabrieli developed it as standard for grand ceremonies",
+    "Giovanni Gabrieli 混合高低聲部與不同音色的樂器群\nGiovanni mixed high/low voices with diverse instrumental timbres",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── SLIDE 23 · NAWM 72 — Sonata pian' e forte ───────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("NAWM 72 · G. Gabrieli: Sonata pian' e forte", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
+  const bullets = [
+    "收錄於《Sacrae symphoniae》(1597)：音樂史上的里程碑\nFrom Sacrae symphoniae (1597): a landmark in music history",
+    "最早指定樂器的合奏曲之一：第一組 cornett + 3 sackbut，第二組 violin + 3 sackbut\nAmong first to specify instruments: Choir 1 cornett + 3 sackbuts; Choir 2 violin + 3 sackbuts",
+    "最早標示力度 pian (弱) 與 forte (強) 的作品之一\nAmong first to mark dynamics: pian (soft) & forte (loud)",
+    "兩組對話、對比、合奏 — 純器樂作品的深度與多樣性\nTwo groups dialogue, contrast & join — depth & variety in pure instrumental music",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.lightText, fontFace:"Calibri",
+      bullet:{ code:"25C6" }, lineSpacing:22,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
+  s.addText("YouTube: https://www.youtube.com/watch?v=U_FMsBmtI7g", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 24 · NAWM 73 — In ecclesiis ───────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("NAWM 73 · G. Gabrieli: In ecclesiis", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:26, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "壯麗的多合唱團經文歌（聲樂 + 器樂 + 管風琴）\nGrand polychoral motet: voices + instruments + organ",
+    "獨唱、合唱、器樂群交替與合奏，展現威尼斯音響的極致\nSoloists, choir & instruments alternate and combine — Venetian splendor",
+    "Alleluia 副歌貫穿全曲，形成統一結構\nAlleluia refrain runs throughout, creating structural unity",
+    "代表文藝復興晚期到巴洛克早期的過渡風格\nRepresents the transitional style from late Renaissance to early Baroque",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.0, w:8.8, h:0.9, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
+  s.addText("YouTube: https://www.youtube.com/watch?v=Xsuz4p3PdkM", {
+    x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
+  });
+}
+
+// ── SLIDE 25 · Timeline ─────────────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s); bottomBar(s);
+
+  s.addText("年表 Timeline", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
+
   const events = [
-    ["1511", "Virdung · Musica getutscht"],
-    ["1529/45", "Agricola · Musica instrumentalis"],
-    ["1535", "Ganassi · Fontegara (recorder)"],
-    ["1538", "Narváez · Los seys libros del Delphin"],
-    ["1549", "Willaert → di Rore 繼任 St. Mark's"],
-    ["1551", "Susato · Danserye"],
-    ["1553", "Ortiz · Tratado de glosas"],
-    ["1584", "Merulo · Toccate d'intavolatura"],
-    ["1585", "Andrea Gabrieli 逝世"],
-    ["1589", "Arbeau · Orchésographie"],
-    ["1593", "Fitzwilliam Virginal Book 開始抄寫"],
-    ["1597", "G. Gabrieli · Sacrae symphoniae (Sonata pian' e forte)"],
-    ["1612", "G. Gabrieli 逝世"],
-    ["1615", "G. Gabrieli · Canzoni et sonate (posthumous)"],
-    ["1618–20", "Praetorius · Syntagma musicum"],
+    ["ca.1480s", "Martini《La Martinella》— 最早廣泛流傳的器樂作品"],
+    ["1501", "Petrucci 出版《Odhecaton》— 首部活字印刷音樂集"],
+    ["1507", "Petrucci 首部魯特琴 tablature 出版"],
+    ["1511", "Virdung《Musica getutscht》— 首部樂器教學書"],
+    ["1535", "Ganassi《Fontegara》— 直笛裝飾法"],
+    ["1538", "Narvaez《Los seys libros del Delphin》— 含首部變奏曲集"],
+    ["1551", "Susato《Danserye》— 安特衛普舞曲集"],
+    ["1585-1612", "Giovanni Gabrieli 任職聖馬可教堂"],
+    ["1597", "Gabrieli《Sacrae symphoniae》含 Sonata pian' e forte"],
+    ["1604", "Merulo 觸技曲第二冊出版"],
+    ["1613", "《Parthenia》— 首部維乃琴作品集出版"],
   ];
-  events.forEach(([date, desc], i) => {
-    const row = Math.floor(i / 2);
-    const col = i % 2;
-    const x = 0.3 + col * 4.8;
-    const y = 1.0 + row * 0.52;
-    s.addShape(pres.ShapeType.rect, { x, y, w: 1.1, h: 0.42, fill: { color: C.forest } });
-    s.addText(date, { x: x + 0.05, y: y + 0.06, w: 1.0, h: 0.3, fontSize: 9, bold: true, color: C.lightText, align: "center", fontFace: "Georgia" });
-    s.addText(desc, { x: x + 1.2, y, w: 3.55, h: 0.42, fontSize: 8, color: C.darkText, fontFace: "Calibri", valign: "middle" });
+
+  events.forEach(([yr, desc], i) => {
+    const y = 1.05 + i * 0.39;
+    s.addText(yr, { x:0.4, y, w:1.5, h:0.36, fontSize:18, bold:true, color:C.gold, fontFace:"Georgia", align:"right" });
+    s.addText(desc, { x:2.1, y, w:7.5, h:0.36, fontSize:18, color:C.lightText, fontFace:"Calibri" });
   });
 }
 
-// ── SLIDE 10 · Key Terms & Further Reading ───────────────────────────────────
+// ── SLIDE 26 · Key Terms ────────────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.brown); bottomBar(s, C.brown);
+
+  s.addText("重要術語 Key Terms", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.brown, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const terms = [
+    ["Consort 同族合奏", "同一樂器家族的合奏組合"],
+    ["Diminutions 裝飾音", "將長音符分割為短裝飾音群"],
+    ["Intabulation 移植改編", "聲樂作品改編為樂器 tablature"],
+    ["Variations 變奏曲", "在主題上的一系列裝飾變化"],
+    ["Ricercar 利乃爾卡", "連續模仿主題的器樂曲（無詞經文歌）"],
+    ["Canzona 坎佐那", "源自 chanson 的對位器樂曲"],
+    ["Toccata 觸技曲", "即興風格的鍵盤獨奏炫技曲"],
+    ["Sonata 奏鳴曲", "「被奏出的」— canzona 的近親"],
+    ["Cori spezzati", "分離合唱團（威尼斯多合唱團風格）"],
+    ["Ostinato 固定低音", "不斷反覆的低音型態"],
+  ];
+
+  terms.forEach(([term, def], i) => {
+    const y = 1.0 + i * 0.43;
+    s.addText(term, { x:0.4, y, w:3.4, h:0.4, fontSize:18, bold:true, color:C.brown, fontFace:"Georgia" });
+    s.addText(def, { x:3.9, y, w:5.7, h:0.4, fontSize:18, color:C.darkText, fontFace:"Calibri" });
+  });
+}
+
+// ── SLIDE 27 · NAWM Listening Guide ─────────────────────────────────────────
 {
   const s = darkSlide(pres);
-  topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("關鍵詞彙 · 延伸閱讀", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Key Terms & Further Reading", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
+  topBar(s); bottomBar(s);
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🔑 Key Terms", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• consort · whole consort · broken consort\n• haut / bas instruments\n• tablature · intabulation\n• pavane · galliard · passamezzo · saltarello\n• variation · cantus firmus var. · ground bass\n• passaggi · divisions · diminution\n• ricercar · fantasia · fancy\n• canzona · long-short-short rhythm\n• toccata · prelude · intonazione\n• sonata (earliest usage)\n• cori spezzati · polychoral\n• concertato · grand concerto\n• Sacrae symphoniae\n• Sonata pian' e forte\n• Fitzwilliam Virginal Book\n• Danserye · Orchésographie", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("聆聽指南 NAWM Listening Guide", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:28, bold:true, color:C.gold, fontFace:"Georgia",
   });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("📚 Further Reading & 🎧 Listening", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• Selfridge-Field. Venetian Instrumental Music from Gabrieli to Vivaldi (1975/94)\n• Silbiger, ed. Keyboard Music Before 1700 (2004)\n• Brown, Howard M. Instrumental Music Printed Before 1600\n• Holman. Four and Twenty Fiddlers (1993)\n\n🎧 NAWM 精選聆聽 (YouTube)\n• 67 · Susato · Pavane + Galliard  youtu.be/Ln7ea-5dsoo\n• 68 · Narváez · Mille regretz (vihuela)  youtu.be/INGuCsQtefA\n• 69 · Byrd · John come kiss me now  youtu.be/DD7luwIuM40\n• 70 · G. Gabrieli · Canzon septimi toni  youtu.be/5DgJdrZcYoA\n• 71 · A. Gabrieli · Ricercar 12° tuono  youtu.be/7Nhe7m8Q_9s\n• 72 · G. Gabrieli · In ecclesiis  youtu.be/1kZ_Ld9-wH4\n• 73 · G. Gabrieli · Sonata pian' e forte  youtu.be/QXRITlQBitc", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  const nawms = [
+    ["NAWM 67", "Susato: Pavane & Galliard (Danserye)", "youtube.com/watch?v=fMPVMFpONRU"],
+    ["NAWM 68", "Narvaez: Cancion Mille regretz (vihuela)", "youtube.com/watch?v=8E7zcsal98U"],
+    ["NAWM 69", "Byrd: John come kiss me now (virginal)", "youtube.com/watch?v=5C1gfQ3I_8E"],
+    ["NAWM 70", "A. Gabrieli: Ricercar del 12 tuono", "youtube.com/watch?v=Ud0WKFMiZfg"],
+    ["NAWM 71", "Merulo: Toccata IV (6th Mode)", "search: Merulo Toccata quarta"],
+    ["NAWM 72", "G. Gabrieli: Sonata pian' e forte", "youtube.com/watch?v=U_FMsBmtI7g"],
+    ["NAWM 73", "G. Gabrieli: In ecclesiis", "youtube.com/watch?v=Xsuz4p3PdkM"],
+  ];
+
+  nawms.forEach(([num, title, url], i) => {
+    const y = 1.05 + i * 0.6;
+    s.addShape(pres.ShapeType.rect, { x:0.4, y, w:1.3, h:0.5, fill:{color:C.forest}, rounding:true });
+    s.addText(num, { x:0.4, y, w:1.3, h:0.5, fontSize:18, bold:true, color:C.lightText, align:"center", fontFace:"Georgia", valign:"middle" });
+    s.addText(title, { x:1.85, y, w:5.0, h:0.28, fontSize:18, bold:true, color:C.gold, fontFace:"Calibri" });
+    s.addText(url, { x:1.85, y:y+0.26, w:7.7, h:0.24, fontSize:18, color:C.sand, fontFace:"Calibri" });
   });
 }
 
+// ── SLIDE 28 · Instrumental Music Gains Independence ────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.forest); bottomBar(s, C.forest);
+
+  s.addText("器樂的獨立 Instrumental Music Gains Independence", {
+    x:0.4, y:0.25, w:9.2, h:0.6, fontSize:24, bold:true, color:C.forest, fontFace:"Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.sand} });
+
+  const bullets = [
+    "16世紀器樂逐漸脫離舞蹈與聲樂，成為獨立藝術\nInstrumental music gradually freed from dance/voice, becoming an art in itself",
+    "作曲家開始指定樂器與力度 — 書寫音樂的精確度提升\nComposers began specifying instruments & dynamics — precision in written music",
+    "Gabrieli 的作品證明純器樂可與聲樂媲美深度與表現力\nGabrieli proved purely instrumental works could rival vocal music in depth",
+    "為巴洛克時期奏鳴曲、協奏曲、交響曲奠定基礎\nLaid foundations for Baroque sonatas, concertos & symphonies",
+  ];
+  bullets.forEach((txt, i) => {
+    s.addText(txt, {
+      x:0.6, y:1.1 + i * 1.05, w:8.8, h:0.95, fontSize:18, color:C.darkText, fontFace:"Calibri",
+      bullet:true, lineSpacing:24,
+    });
+  });
+}
+
+// ── Generate ────────────────────────────────────────────────────────────────
 pres.writeFile({ fileName: "Ch12_Instrumental.pptx" })
-  .then(fn => console.log(`✅ ${fn} created successfully`))
-  .catch(err => console.error("❌ Error:", err));
+  .then(() => console.log("Ch12_Instrumental.pptx created"))
+  .catch(err => console.error(err));

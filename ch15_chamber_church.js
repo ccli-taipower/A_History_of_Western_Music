@@ -4,198 +4,853 @@ pres.layout = "LAYOUT_16x9";
 pres.title = "Chapter 15: Music for Chamber and Church in the Early Seventeenth Century";
 pres.author = "A History of Western Music, 10th ed.";
 
+// Early 17C palette — warm, olive-gold, old master tonality
 const C = {
-  darkBg:   "1A2030",
-  gold:     "C89440",
+  darkBg:   "1C1C14",
+  gold:     "C8A030",
   cream:    "F5F0E0",
-  navy:     "1A3050",
-  teal:     "2A6A6A",
-  darkText: "1A2030",
+  olive:    "556B2F",
+  sage:     "6B8E4E",
+  darkText: "1C1C14",
   lightText:"F5F0E0",
   sand:     "E8D8A8",
-  slate:    "1A2838",
-  steel:    "5A7A8A",
+  slate:    "2A2A1E",
+  bronze:   "8C7853",
+  moss:     "4A5A2A",
 };
 
-function darkSlide(p) { const s = p.addSlide(); s.background = { color: C.darkBg }; return s; }
-function lightSlide(p) { const s = p.addSlide(); s.background = { color: C.cream }; return s; }
-function topBar(s, c) { s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.12, fill: { color: c || C.gold } }); }
-function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w: "100%", h: 0.125, fill: { color: c || C.gold } }); }
+function darkSlide(pres) { const s = pres.addSlide(); s.background = { color: C.darkBg }; return s; }
+function lightSlide(pres) { const s = pres.addSlide(); s.background = { color: C.cream }; return s; }
+function topBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.12, fill: { color: color || C.gold } }); }
+function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w: "100%", h: 0.125, fill: { color: color || C.gold } }); }
 
 // ── SLIDE 1 · Title ──────────────────────────────────────────────────────────
 {
   const s = darkSlide(pres);
   s.addShape(pres.ShapeType.rect, { x: 0, y: 0, w: "100%", h: 0.15, fill: { color: C.gold } });
   s.addShape(pres.ShapeType.rect, { x: 0, y: 5.47, w: "100%", h: 0.155, fill: { color: C.gold } });
-  s.addText("A HISTORY OF WESTERN MUSIC · TENTH EDITION", { x: 0.5, y: 0.45, w: 9, h: 0.35, fontSize: 11, color: C.sand, charSpacing: 3, align: "center", fontFace: "Georgia" });
-  s.addText("CHAPTER 15", { x: 0.5, y: 0.9, w: 9, h: 0.55, fontSize: 20, color: C.gold, bold: true, align: "center", fontFace: "Georgia", charSpacing: 6 });
-  s.addText("MUSIC FOR CHAMBER AND\nCHURCH IN THE EARLY\nSEVENTEENTH CENTURY", { x: 0.3, y: 1.4, w: 9.4, h: 2.2, fontSize: 28, color: C.lightText, bold: true, align: "center", fontFace: "Georgia" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 3.75, w: 5, h: 0.04, fill: { color: C.gold } });
-  s.addText("Concertato Madrigal · Oratorio · Schütz · Frescobaldi · Violin Sonata", { x: 0.4, y: 3.9, w: 9.2, h: 0.4, fontSize: 12, color: C.sand, align: "center", fontFace: "Georgia" });
-  s.addText("Textbook pp. 317–338", { x: 0.5, y: 4.8, w: 9, h: 0.3, fontSize: 11, color: C.gold, align: "center", fontFace: "Calibri" });
+
+  s.addText("A HISTORY OF WESTERN MUSIC · TENTH EDITION", {
+    x: 0.5, y: 0.45, w: 9, h: 0.35, fontSize: 14, color: C.sand, charSpacing: 3, align: "center", fontFace: "Georgia",
+  });
+  s.addText("CHAPTER 15", {
+    x: 0.5, y: 0.9, w: 9, h: 0.55, fontSize: 20, color: C.gold, bold: true, align: "center", fontFace: "Georgia", charSpacing: 6,
+  });
+  s.addText("MUSIC FOR CHAMBER AND CHURCH\nIN THE EARLY SEVENTEENTH CENTURY", {
+    x: 0.3, y: 1.55, w: 9.4, h: 1.8, fontSize: 32, color: C.lightText, bold: true, align: "center", fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 3.5, w: 5, h: 0.04, fill: { color: C.gold } });
+  s.addText("十七世紀初的室內樂與教會音樂", {
+    x: 0.4, y: 3.65, w: 9.2, h: 0.5, fontSize: 24, color: C.sand, align: "center", fontFace: "Georgia",
+  });
+  s.addText("Monteverdi · Strozzi · Carissimi · Schütz · Frescobaldi · Marini", {
+    x: 0.4, y: 4.25, w: 9.2, h: 0.4, fontSize: 18, color: C.bronze, align: "center", fontFace: "Georgia",
+  });
+  s.addText("Textbook pp. 326–353", {
+    x: 0.5, y: 4.9, w: 9, h: 0.35, fontSize: 18, color: C.gold, align: "center", fontFace: "Calibri", valign: "top",
+  });
 }
 
 // ── SLIDE 2 · Chapter Overview ───────────────────────────────────────────────
 {
   const s = lightSlide(pres);
-  topBar(s, C.teal); bottomBar(s, C.teal);
-  s.addText("本章概覽 Chapter Overview", { x: 0.4, y: 0.2, w: 9.2, h: 0.6, fontSize: 26, bold: true, color: C.navy, fontFace: "Georgia" });
-  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.82, w: 9.2, h: 0.03, fill: { color: C.sand } });
-  const sections = [
-    ["🎤", "Italian Vocal Chamber", "Concertato madrigal · Monteverdi (NAWM 82) · Cantata 興起"],
-    ["⛪", "Catholic Sacred Music", "Sacred concerto · Grandi (NAWM 83) · Carissimi Jephte (NAWM 84)"],
-    ["✝", "Lutheran Church Music", "Schütz · Saul (NAWM 85) · Kleine geistliche Concerte (NAWM 86)"],
-    ["🕍", "Jewish Music", "Salamone Rossi · 會堂音樂與記譜"],
-    ["⌨", "Keyboard: Frescobaldi", "Toccata No. 3 (NAWM 87) · Organ Mass · Stylus fantasticus"],
-    ["🎻", "Violin: Marini", "Sonata per il violino (NAWM 88) · 小提琴的獨立"],
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("本章概覽 Chapter Overview", {
+    x: 0.4, y: 0.2, w: 9.2, h: 0.6, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.85, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const bullets = [
+    "Italian Vocal Chamber Music 義大利聲樂室內樂\n  — Concertato madrigal, basso ostinato, cantata",
+    "Catholic Sacred Music 天主教聖樂\n  — Sacred concerto, oratorio (Grandi · Carissimi)",
+    "Lutheran Church Music 路德宗教會音樂\n  — Heinrich Schütz: Italian style meets German text",
+    "Jewish Liturgical Music 猶太禮儀音樂\n  — Salamone Rossi: polyphony in the synagogue",
+    "Instrumental Music 器樂\n  — Frescobaldi (toccata) · Marini (violin sonata)",
   ];
-  sections.forEach(([icon, title, sub], i) => {
-    const y = 1.0 + i * 0.75;
-    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 0.6, h: 0.58, fill: { color: C.teal }, rounding: true });
-    s.addText(icon, { x: 0.4, y: y + 0.05, w: 0.6, h: 0.5, fontSize: 20, align: "center", margin: 0 });
-    s.addText(title, { x: 1.15, y, w: 8.4, h: 0.3, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", margin: 0 });
-    s.addText(sub, { x: 1.15, y: y + 0.28, w: 8.4, h: 0.26, fontSize: 11, color: C.teal, fontFace: "Calibri", margin: 0 });
+  bullets.forEach((txt, i) => {
+    const y = 1.05 + i * 0.88;
+    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 9.2, h: 0.78, fill: { color: i % 2 === 0 ? C.sand : "EDE5CC" }, rectRadius: 0.08 });
+    s.addText(txt, { x: 0.6, y: y + 0.05, w: 8.8, h: 0.7, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "middle" });
   });
 }
 
-// ── SLIDE 3 · Italian Vocal Chamber Music ────────────────────────────────────
+// ── SLIDE 3 · Italian Vocal Chamber Music: Concertato Madrigal ───────────────
 {
   const s = darkSlide(pres);
   topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("義大利世俗聲樂", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Concertato Madrigal · Basso Ostinato · Cantata", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎤 Concertato Madrigal", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 從 a cappella 牧歌 → 有 basso continuo 伴奏\n• Monteverdi 第 5–8 部牧歌集的演變\n• 少數聲部 + 器樂 ritornello + continuo\n• 兼具室內樂親密感與劇場表現力\n\n🎵 NAWM 82: Monteverdi · Ohimè ch'io cado\n• 第七部牧歌集 (Concerto, 1619)\n• 二聲部 + basso continuo\n• 表現跌倒、痛苦——半音下行\n• 示範 concertato madrigal 的新語彙\n\n📊 Basso Ostinato（固定低音）\n• 重複 bass pattern 上方旋律自由變化\n• Ciaccona（恰空）/ Passacaglia（帕薩卡利亞）\n• Romanesca · Ruggiero 等固定 bass 模式\n• → Purcell · Pachelbel · Bach 的重要技法", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("義大利聲樂室內樂：協奏曲風牧歌", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
+  s.addText("Italian Vocal Chamber Music: The Concertato Madrigal", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("📜 Cantata 清唱曲的興起", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• Cantata = 「被唱的」(cantare)\n  對比 Sonata = 「被奏的」(sonare)\n• 1620 年代興起——義大利室內聲樂的主流\n\n📊 早期形式\n• Strophic variation（分節變奏）\n• 或 recitative + aria 交替\n• 通常獨唱 + continuo\n• 長度 5–15 分鐘\n• 為貴族或學院私人場合演唱\n\n🌟 重要作曲家\n• Luigi Rossi (1597–1653)\n• Giacomo Carissimi (1605–1674)\n• Barbara Strozzi (1619–1677)\n  — 最多產的 17 世紀女性作曲家\n  — 8 冊出版物——幾乎全為世俗聲樂\n  — Cantata · Arietta · Duet\n\n💡 Cantata 到世紀末成為：\n• 義大利最精緻的聲樂形式\n• 作曲家的能力檢驗標準\n• → A. Scarlatti · Handel · Bach 繼承", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 7.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  const pts = [
+    "Concertato medium 協奏媒介: solo voices + basso continuo\n  + optional instruments — texture contrast is key",
+    "Monteverdi's Books 5–8 (1605–1638) trace the evolution:\n  from polyphonic madrigal → concerted madrigal with continuo",
+    "Book 7 Concerto (1619): strophic variations, canzonettas\n  Book 8 Madrigali guerrieri et amorosi (1638): stile concitato",
+    "Forms include madrigals, canzonettas, arias, recitatives,\n  dialogues — all with ritornellos & basso continuo",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: { type: "number", numberStartAt: i + 1, color: C.gold },
+    });
   });
 }
 
-// ── SLIDE 4 · Catholic Sacred Music ──────────────────────────────────────────
+// ── SLIDE 4 · NAWM 82: Monteverdi Ohimè dov'è il mio ben ───────────────────
 {
   const s = lightSlide(pres);
-  topBar(s, C.teal); bottomBar(s, C.teal);
-  s.addText("天主教宗教音樂", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.navy, fontFace: "Georgia", align: "center" });
-  s.addText("Sacred Concerto · Grandi (NAWM 83) · Carissimi Jephte (NAWM 84)", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 12, color: C.teal, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.teal } });
+  topBar(s, C.olive); bottomBar(s, C.olive);
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E0ECE8" }, rounding: true });
-  s.addText("⛪ Sacred Concerto 宗教協奏曲", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.navy, fontFace: "Georgia" });
-  s.addText("• 宗教歌詞 + concertato 技法\n• 聲樂 + 器樂 + continuo\n• 從 G. Gabrieli In ecclesiis 延伸\n• 1–多聲部皆可 · 規模差異大\n\n🌟 Alessandro Grandi (ca. 1586–1630)\n• 威尼斯 St. Mark's 副樂長（Monteverdi 之下）\n• O quam tu pulchra es (NAWM 83)\n  — 獨唱 + continuo\n  — 雅歌文字 · 旋律溫柔\n  — Recitative + aria 段落交替\n  — 小型 sacred concerto 典範\n\n📊 Stile antico vs. Stile moderno\n• 教會同時保留兩種風格\n• Palestrina 風格繼續用於正式禮儀\n• 新 concertato 風格用於節慶/特殊場合\n• 兩者共存——作曲家需掌握兩套技術", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("NAWM 82: Monteverdi — Ohimè dov'è il mio ben", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 26, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("蒙特威爾第《噢，我的愛人在何方》", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Romanesca bass pattern: repeating harmonic progression\nover which two soprano voices weave expressive duet",
+    "From Book 7 Concerto (1619): strophic variations on a\nground bass — each stanza varies melody over same bass",
+    "Two sopranos + basso continuo: intimate chamber texture;\nritornello frames each section (instrumental interlude)",
+    "Demonstrates shift from polyphonic madrigal → concertato\nchamber song with basso continuo as structural foundation",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
   });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E0ECE8" }, rounding: true });
-  s.addText("🎭 Oratorio 神劇的興起", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.navy, fontFace: "Georgia" });
-  s.addText("• 宗教題材 · 有戲劇情節 · 但不上舞台\n• 源於 Filippo Neri 的 Oratory（祈禱會）\n• Narration + dialogue + chorus\n• 不用佈景、服裝、動作\n\n🌟 Giacomo Carissimi (1605–1674)\n• 羅馬 Collegio Germanico 樂長\n• 拉丁神劇大師\n\n🎵 Jephte (NAWM 84)\n• 舊約士師記：Jephtha 戰勝後須獻祭女兒\n• Historicus（敘事者）+ 角色 + 合唱\n• 「Plorate, colles」——女兒的哀歌\n  — 女聲獨唱 · 悲痛的下行半音\n  — 合唱呼應「Plorate」——催淚\n• 不協和 + 半音 = 巴洛克情感力量\n\n💡 Oratorio → Handel Messiah · Bach Passion\n• 成為巴洛克大型宗教音樂的核心類型", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=bJfHoxZlMYw", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=bJfHoxZlMYw" },
   });
 }
 
-// ── SLIDE 5 · Schütz & Lutheran Music ────────────────────────────────────────
+// ── SLIDE 5 · Basso Ostinato ─────────────────────────────────────────────────
 {
   const s = darkSlide(pres);
   topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("許茨與路德宗音樂", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Heinrich Schütz · Saul (NAWM 85) · Kleine geistliche Concerte (NAWM 86)", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 11, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🌟 Heinrich Schütz (1585–1672)", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 17 世紀最重要的德國作曲家\n• 橫跨義大利新風格與德國路德宗傳統的橋樑\n\n📖 生平\n• 1609–12/1628 兩度赴威尼斯學習\n  — 師事 G. Gabrieli → 後師事 Monteverdi\n• 1617 起任 Dresden 宮廷樂長——直至逝世\n• 三十年戰爭期間極力維持音樂生活\n\n📊 主要作品集\n• Psalmen Davids (1619) · 威尼斯 polychoral 風格\n• Cantiones sacrae (1625) · 拉丁經文歌\n• Symphoniae sacrae I–III (1629/47/50)\n• Kleine geistliche Concerte I–II (1636/39)\n  — 戰時縮編：1–5 聲 + continuo\n• Musikalische Exequien (1636) · 德文安魂曲\n• 3 部 Passion（晚年無伴奏）", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("固定低音 Basso Ostinato / Ground Bass", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
-
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🎵 NAWM 85 & 86", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("NAWM 85 · Saul, Saul, was verfolgst du mich?\n• Symphoniae sacrae III (1650)\n• 使徒行傳 9:4 ——「掃羅，你為何逼迫我？」\n• 大型 concertato：6 聲部 + 2 小提琴 + continuo\n  + 補充合唱 (cappella)\n• 耶穌呼喊「Saul」——echo 效果\n• 力度從 fortissimo → pianissimo\n  — 聲音漸遠 = 神聖聲音的消逝\n• 融合威尼斯 polychoral + 劇場戲劇性\n\nNAWM 86 · O lieber Herre Gott\n• Kleine geistliche Concerte (1636)\n• 戰爭時期——樂團縮編\n• 獨唱 + continuo 的小型 sacred concerto\n• 以路德聖歌旋律為基礎\n• 簡單但深情——戰時的信仰表達\n\n💡 Schütz 為 Bach 鋪路\n• 義大利技法 + 德國虔誠 = 路德宗音樂的典範", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 7.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("Repeating Bass Patterns as Structural Foundation", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
   });
-}
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
 
-// ── SLIDE 6 · Frescobaldi & Keyboard ─────────────────────────────────────────
-{
-  const s = lightSlide(pres);
-  topBar(s, C.teal); bottomBar(s, C.teal);
-  s.addText("弗雷斯科巴爾迪與鍵盤音樂", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 22, bold: true, color: C.navy, fontFace: "Georgia", align: "center" });
-  s.addText("Frescobaldi · Toccata (NAWM 87) · Organ Mass · Stylus fantasticus", { x: 0.4, y: 0.76, w: 9.2, h: 0.35, fontSize: 12, color: C.teal, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.15, w: 5, h: 0.04, fill: { color: C.teal } });
-
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E0ECE8" }, rounding: true });
-  s.addText("🌟 Girolamo Frescobaldi (1583–1643)", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 11, bold: true, color: C.navy, fontFace: "Georgia" });
-  s.addText("• 巴洛克初期最偉大的鍵盤作曲家\n• 1608–1628/1634–43 任 St. Peter's (Roma) 管風琴師\n• 傳聞首場演出吸引 3 萬名聽眾（誇張但象徵其名望）\n\n📊 主要作品\n• Toccate e partite d'intavolatura, libro I (1615)\n  — 12 首 Toccata · 序言說明彈性速度\n• Ricercar · Canzona · Capriccio\n• Fiori musicali (1635)\n  — 三套管風琴彌撒\n  — Bach 親手抄寫此譜\n\n🎵 NAWM 87: Toccata No. 3\n• 多段式 · 各段不同 tempo 與織度\n• 自由段 vs. 模仿段交替\n• Frescobaldi 自己說：\n  「開頭要慢 · 依表情調整速度」\n• 展現 stylus fantasticus（幻想風格）", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
-  });
-
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: "E0ECE8" }, rounding: true });
-  s.addText("🎻 Marini & Violin Sonata", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.navy, fontFace: "Georgia" });
-  s.addText("小提琴：17 世紀獨奏之王\n\n📊 從合奏樂器到獨奏明星\n• 16 世紀：小提琴主要用於舞蹈伴奏\n• 1600 後：進入教堂與室內——地位躍升\n• 義大利製琴師：Amati → Stradivari → Guarneri\n\n🌟 Biagio Marini (1594–1663)\n• 小提琴家 · 作曲家\n• 曾任 St. Mark's 樂手（Monteverdi 的樂團）\n\n🎵 NAWM 88: Sonata IV per il violino (Op. 8)\n• Violin + continuo\n• 多段式 · 各段不同速度與風格\n• 使用 double stops（雙音）\n  — 為小提琴首批技巧性寫作\n• 有 affetti（情感效果段落）\n• 展示小提琴獨有的音色語彙\n\n💡 意義\n• 小提琴 sonata 成為 17–18 世紀核心類型\n• → Corelli · Vivaldi · Tartini · Bach · Mozart", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 7.5, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 2,
+  const pts = [
+    "Basso ostinato 固定低音: a bass pattern that repeats while\nmelody changes above — usually 2, 4, or 8 bars in triple meter",
+    "Romanesca, Ruggiero: well-known bass patterns from\nSpain/Italy used for songs & instrumental variations",
+    "Descending tetrachord 下行四度: stepwise descent spanning\na 4th — associated with lament; Monteverdi's Lamento della ninfa",
+    "Chacona / Ciaccona 夏乾舞曲: from the Americas via Spain;\nI–V–vi–V bass progression; Monteverdi's Zefiro torna (1632)",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
   });
 }
 
-// ── SLIDE 7 · Timeline ───────────────────────────────────────────────────────
+// ── SLIDE 6 · Cantata Development ────────────────────────────────────────────
 {
   const s = lightSlide(pres);
-  topBar(s, C.teal); bottomBar(s, C.teal);
-  s.addText("時間軸 · Timeline", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.navy, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 2.5, y: 0.82, w: 5, h: 0.04, fill: { color: C.teal } });
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("清唱套曲的發展 The Cantata", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("From Strophic Song to Multi-Section Drama", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Cantata = \"a piece to be sung\" (It. cantare);\nbefore 1620 meant a published collection of strophic arias",
+    "By mid-century: secular composition for solo voice + continuo,\nmultiple sections of recitative + aria on a dramatic text",
+    "Composed for private aristocratic performances;\npreserved mostly in manuscripts, not printed",
+    "Leading cantata composers: Luigi Rossi, Antonio Cesti,\nGiacomo Carissimi, and Barbara Strozzi",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+}
+
+// ── SLIDE 7 · Barbara Strozzi ────────────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("芭芭拉·史特羅乞 Barbara Strozzi (1619–1677)", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("The Most Prolific Composer of Secular Vocal Music of Her Century", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 20, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Born in Venice; adopted (perhaps biological) daughter of\npoet Giulio Strozzi; studied with Cavalli (Monteverdi's student)",
+    "Published 8 collections (1644–1664): over 100 madrigals,\narias, cantatas, motets — more cantatas than any peer",
+    "Lagrime mie (NAWM 77): solo cantata alternating recitative,\narioso, & aria; focus on unrequited love; dissonant expression",
+    "Did not perform publicly due to social class;\npublished as a way to be \"heard\" beyond private gatherings",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 8 · Catholic Sacred Music: Sacred Concerto ─────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("天主教聖樂：宗教協奏曲", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("Catholic Sacred Music: The Sacred Concerto", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Stile antico 古風 vs. stile moderno 現代風 coexist;\nPalestrina's style preserved alongside basso continuo textures",
+    "Large sacred concerto 大型宗教協奏曲: cori spezzati,\nmultiple choirs + soloists + instruments (G. Gabrieli tradition)",
+    "Small sacred concerto 小型宗教協奏曲: 1–4 solo voices +\ncontinuo (± 1–2 violins); practical for smaller churches",
+    "Viadana's Cento concerti ecclesiastici (1602):\nfirst printed sacred vocal music with basso continuo",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+}
+
+// ── SLIDE 9 · NAWM 83: Grandi O quam tu pulchra es ──────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("NAWM 83: Grandi — O quam tu pulchra es", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 26, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("格蘭第《妳多麼美麗》(1625)", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Alessandro Grandi (1586–1630): Monteverdi's deputy at\nSt. Mark's, Venice; pioneered the solo motet with continuo",
+    "Text from Song of Songs 雅歌: dialogue of lovers read as\nmetaphor for God's love for the Church",
+    "Blends recitative style (\"O quam tu pulchra es\") with\nlyric aria in triple meter (\"Surge, propera, sponsa mea\")",
+    "Contrasting styles within a single piece mirror the new\noperatic vocabulary applied to sacred expression",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=KkDj_rJCk6E", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=KkDj_rJCk6E" },
+  });
+}
+
+// ── SLIDE 10 · Music in Convents ─────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("修道院中的音樂 Music in Convents", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("Hidden Musical Cultures Behind Convent Walls", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Church officials restricted music in convents, barring\nmale teachers; yet nuns developed thriving musical cultures",
+    "Lucrezia Vizzana (1590–1662): entered Santa Cristina in\nBologna as a child; Componimenti musicali (1623) — motets",
+    "Chiara Margarita Cozzolani (1602–ca. 1677): four collections\nof sacred concertos; polychoral Vespers with modern arias",
+    "These women published despite restrictions, showing\nconvent music rivalled standards outside convent walls",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+}
+
+// ── SLIDE 11 · Oratorio & Carissimi ──────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("神劇 Oratorio", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 38, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Sacred Drama Without Staging", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 24, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Oratorio = sacred dramatic work combining narrative,\ndialogue, & commentary; NOT staged, with a narrator (testo)",
+    "Italian oratorio 義大利語神劇: vernacular, shorter,\nfor spreading faith to commoners; performed during Lent",
+    "Latin oratorio 拉丁語神劇: for aristocratic courts;\nlonger, more elaborate — like opera without costumes",
+    "Named after the oratory (prayer hall) where devotional\nmeetings with music were held in 17th-century Rome",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 12 · NAWM 84: Carissimi Jephte ────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("NAWM 84: Carissimi — Historia di Jephte", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 30, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("卡里西米《耶弗他》(ca. 1648)", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Giacomo Carissimi (1605–1674): leading Latin oratorio\ncomposer; based on Judges 11:29–40 (Jephtha's vow)",
+    "Narrator in recitative; Jephtha's victory recounted by\n6-voice ensemble with stile concitato battle effects",
+    "Final scene: daughter laments with descending tetrachord\nbass; two sopranos echo her cadential flourishes",
+    "Six-voice chorus responds with polychoral & madrigalistic\neffects — blending operatic drama with sacred purpose",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=2s1Gf3b2wRs", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=2s1Gf3b2wRs" },
+  });
+}
+
+// ── SLIDE 13 · Lutheran Church Music ─────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("路德宗教會音樂", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 38, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Lutheran Church Music: Italian Influence in Germany", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "German composers absorbed Italian monodic & concertato\ntechniques while maintaining polyphonic chorale traditions",
+    "Sacred concerto in Germany: Hassler, Praetorius adopted\nthe large-scale Venetian model; small concerto even more common",
+    "J. H. Schein: Opella nova (1618, 1626) — German sacred\nconcertos blending Lutheran chorale with Italian concertato",
+    "Thirty Years' War (1618–48): devastated resources;\nforced smaller-scale works suited to reduced church forces",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 14 · Heinrich Schütz: Life ─────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("海因里希·許茨 Heinrich Schütz (1585–1672)", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.7, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("Master of Conveying the Meaning of Words Through Music", {
+    x: 0.4, y: 0.88, w: 9.2, h: 0.35, fontSize: 18, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Innkeeper's son; singing talent noticed by Landgrave of\nHesse at age 12; sent to study law, then music in Venice",
+    "Studied with Giovanni Gabrieli in Venice (1609–1612);\nvisited again during Monteverdi's era — absorbed both styles",
+    "Chapelmaster at the Saxon court in Dresden (1615–1672);\nfirst German opera (Dafne, 1627, music lost)",
+    "Thirty Years' War forced him to publish Kleine geistliche\nKonzerte (1636, 1639) for reduced forces — widely popular",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+}
+
+// ── SLIDE 15 · Schütz: Major Works ───────────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("乖茨的主要作品 Schütz: Major Works", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Sacred Collections Spanning Five Decades", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Psalmen Davids (1619): German polychoral psalms —\nVenetian grandeur with sensitive German text treatment",
+    "Cantiones sacrae (1625): Latin motets with harmonic\nnovelties; Symphoniae sacrae I (1629): Italian concertato style",
+    "Kleine geistliche Konzerte (1636, 1639): 1–5 voices +\ncontinuo only — composed for war-depleted church resources",
+    "Symphoniae sacrae III (1650): large-scale concertos;\nHistoria (Seven Last Words), Christmas History, 3 Passions",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 16 · NAWM 85: Schütz — Saul, Saul, was verfolgst du mich ─────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("NAWM 85: Schütz — Saul, Saul, was verfolgst du mich", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("乖茨《掃羅，掃羅，你為何迫害我？》(1650)", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 20, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "From Symphoniae sacrae III (1650): large sacred concerto\nfor 2 choirs + 6 soloists + 2 violins + continuo",
+    "Based on Acts 9 & 26: Christ's blinding voice to Saul\non the road to Damascus — a dramatic conversion scene",
+    "Musical figures: cadentiae duriusculae (harsh dissonances)\nat \"Saul\"; saltus duriusculus (harsh leap) in solo section",
+    "Combines Gabrieli's polychoral grandeur with Monteverdi's\ndissonant rhetoric — Italian form with German sacred purpose",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=RCDI_Jy6bEk", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=RCDI_Jy6bEk" },
+  });
+}
+
+// ── SLIDE 17 · NAWM 86: Schütz — O lieber Herre Gott ────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("NAWM 86: Schütz — O lieber Herre Gott", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 26, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("乖茨《親愛的主，上帝》— Kleine geistliche Konzerte", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 20, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "From Kleine geistliche Konzerte (1636): small sacred\nconcerto for solo voice + basso continuo only",
+    "Wartime austerity: no instruments beyond continuo;\nyet Schütz achieves profound expression with minimal forces",
+    "Musical figures capture every nuance of the German text;\nword-painting conveys meaning through melody & harmony",
+    "Popular throughout Germany — suitable for small churches\nwith limited resources during the Thirty Years' War",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.gold }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=eZZMrP9bET4", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.darkBg, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=eZZMrP9bET4" },
+  });
+}
+
+// ── SLIDE 18 · Schütz Legacy ─────────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("乖茨的遺產 Schütz's Legacy", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("Bridging Italian Innovation and German Sacred Tradition", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Historia tradition: The Seven Last Words of Christ (1650s?)\nand Christmas History (1664) — narrative + concertato scenes",
+    "Three Passions (1666): returned to the older German\ntradition of plainsong narrative + polyphonic motet choruses",
+    "During his lifetime known mainly in Lutheran areas;\nrediscovered in the 19th–20th centuries as a towering figure",
+    "His synthesis of German & Italian elements laid the\nfoundation from Schein to Bach to Brahms",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+}
+
+// ── SLIDE 19 · Jewish Liturgical Music ───────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("猶太禮儀音樂 Jewish Liturgical Music", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Salamone Rossi & Polyphony in the Synagogue", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Cantillation remained primary Jewish musical form;\nnew techniques emerged in early 1600s despite rabbinical resistance",
+    "Leon Modena (1571–1648): rabbi & humanist; promoted\npolyphony at the Venice synagogue from 1607 onward",
+    "Salamone Rossi (ca. 1570–ca. 1630): Mantuan composer;\nHashirim asher lish'lomo (Songs of Solomon, 1622–23)",
+    "33 Hebrew psalms, hymns, synagogue songs in Italian\npolyphonic style — first published Jewish liturgical polyphony",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 20 · Instrumental Music: Types & Categories ────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("器樂類型 Types of Instrumental Music", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("Four Ways to Categorize Baroque Instrumental Works", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  // Two-column comparison
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.6, w: 4.4, h: 3.7, fill: { color: C.sand }, rectRadius: 0.08 });
+  s.addText("Improvisatory Style 即興風格", { x: 0.5, y: 1.65, w: 4.2, h: 0.35, fontSize: 20, bold: true, color: C.olive, fontFace: "Georgia" });
+  s.addText("Toccata, fantasia, prelude\n觸技曲、幻想曲、前奏曲\n\nImitative Counterpoint 模仿對位\nRicercare, fugue, canzona\n利切卡爾、賦格、坎佐那\n\nVariations 變奏\nPartita, chaconne, passacaglia\n帕蒂塔、夏康、帕薩卡利亞", {
+    x: 0.55, y: 1.85, w: 4.15, h: 3.3, fontSize: 18, color: C.darkText, fontFace: "Calibri", valign: "top",
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 5.2, y: 1.6, w: 4.4, h: 3.7, fill: { color: C.sand }, rectRadius: 0.08 });
+  s.addText("Settings / Dance 舞曲", { x: 5.3, y: 1.65, w: 4.2, h: 0.35, fontSize: 20, bold: true, color: C.olive, fontFace: "Georgia" });
+  s.addText("Organ verse, chorale prelude\n風琴聖詠前奏曲\n\nSonata 奏鳴曲\nContrasting sections for 1–2\nmelody instruments + continuo\n\nSuite 組曲\nPadouana, gagliarda, courante,\nallemande — linked dances", {
+    x: 5.35, y: 1.85, w: 4.15, h: 3.3, fontSize: 18, color: C.darkText, fontFace: "Calibri", valign: "top",
+  });
+}
+
+// ── SLIDE 21 · Frescobaldi: Keyboard Master ──────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("乎雷斯科巴第 Girolamo Frescobaldi (1583–1643)", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 26, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Organist at St. Peter's, Rome — Keyboard Genius", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Born in Ferrara; organist at St. Peter's, Rome from 1608;\nalso served the Grand Duke of Tuscany & Barberini family",
+    "Toccatas: succession of brief sections, each with a distinct\nfigure; tempo is free, not tied to a regular beat (affetti)",
+    "Fiori musicali (Musical Flowers, 1635): 3 organ masses\nwith toccatas, ricercares, canzonas for liturgical use",
+    "His keyboard works were a model for J. S. & C. P. E. Bach;\nFroberger (his student) spread the style across Europe",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 22 · NAWM 87: Frescobaldi Toccata No. 3 ───────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("NAWM 87: Frescobaldi — Toccata No. 3 (1615)", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 30, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("乎雷斯科巴第《觸技曲第三號》", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "From Primo Libro di Toccate (First Book of Toccatas, 1615):\nfor harpsichord — succession of brief contrasting sections",
+    "Each section focuses on a particular figure: virtuoso\npassagework, imitative exchanges, cadential weakening",
+    "Sections can be played separately; player may end at any\ncadence — written music as a platform for performance",
+    "Tempo varies with mood: \"not subject to a regular beat\nbut modified according to the affections\" (Frescobaldi)",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=6dJmqSi_qlM", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=6dJmqSi_qlM" },
+  });
+}
+
+// ── SLIDE 23 · Ricercare, Canzona, Sonata ────────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("利切卡爾·坎佐那·奏鳴曲", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Ricercare, Canzona, and Sonata", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 24, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Ricercare: serious imitative work for organ/harpsichord;\none subject developed continuously — ancestor of the fugue",
+    "Canzona: imitative piece in contrasting sections;\nmarkedly rhythmic themes; for keyboard or ensemble",
+    "Sonata 奏鳴曲: originally any instrumental piece; by\nmid-century = contrasting sections for 1–2 instruments + continuo",
+    "By c. 1650 canzona and sonata had merged;\n\"sonata\" became the standard term for both",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 24 · NAWM 88: Marini Sonata IV ─────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("NAWM 88: Marini — Sonata IV, Op. 8 (1629)", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 30, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addText("馬里尼《第四奏鳴曲》— 小提琴 + 數字低音", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 20, color: C.bronze, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.45, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
+  const pts = [
+    "Biagio Marini (1594–1663): violinist at St. Mark's under\nMonteverdi; published 22 collections of vocal & instrumental music",
+    "Sonata IV per il violino per sonar con due corde:\n\"instrumental monody\" — idiomatic violin writing with continuo",
+    "Contrasting sections: expressive opening like a Caccini\nmadrigal → virtuosic figuration, double stops, large leaps",
+    "Rhapsodic & metrical sections alternate; recitative and\naria styles adapted from vocal music to the violin",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.62 + i * 0.82, w: 9, h: 0.78, fontSize: 19, color: C.darkText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.olive,
+    });
+  });
+
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
+  s.addText("https://www.youtube.com/watch?v=1OyyJb3WNGI", {
+    x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
+    hyperlink: { url: "https://www.youtube.com/watch?v=1OyyJb3WNGI" },
+  });
+}
+
+// ── SLIDE 25 · Variations, Chaconne & Suite ──────────────────────────────────
+{
+  const s = darkSlide(pres);
+  topBar(s, C.gold); bottomBar(s, C.gold);
+
+  s.addText("變奏·夏康·組曲", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 38, bold: true, color: C.gold, fontFace: "Georgia",
+  });
+  s.addText("Variations, Chaconne / Passacaglia, and Suite", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
+
+  const pts = [
+    "Variations 變奏: on borrowed or newly composed themes;\ncantus-firmus type, melodic embellishment, or harmonic bass",
+    "Chaconne 夏康 & Passacaglia 帕薩卡利亞: variations over\na ground bass; triple meter, 4 bars; Frescobaldi's Partite (1627)",
+    "Suite 組曲: linked dances sharing a key; J. H. Schein's\nBanchetto musicale (1617) — padouana, gagliarda, courante, etc.",
+    "By 1700 chaconne and passacaglia merged as terms;\nsuites became a major genre of the late Baroque",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
+  });
+}
+
+// ── SLIDE 26 · Timeline ──────────────────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("年表 Timeline", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.78, w: 9.2, h: 0.04, fill: { color: C.sand } });
+
   const events = [
-    ["1607", "Monteverdi · L'Orfeo · Schütz 赴 Venice"],
-    ["1615", "Frescobaldi · Toccate libro I"],
-    ["1617", "Schütz 任 Dresden 樂長"],
-    ["1618–48", "三十年戰爭"],
-    ["1619", "Monteverdi · Seventh Book (Concerto)"],
-    ["1623", "Rossi · Hashirim asher lishlomo"],
-    ["1626", "Schütz · Cantiones sacrae"],
-    ["1629", "Schütz · Symphoniae sacrae I"],
-    ["1635", "Frescobaldi · Fiori musicali"],
-    ["1636", "Schütz · Kleine geistliche Concerte I"],
-    ["ca. 1640", "Carissimi · Jephte"],
-    ["1643", "Frescobaldi · Monteverdi 逝世"],
-    ["1650", "Schütz · Symphoniae sacrae III"],
-    ["1655", "Marini · Op. 8 Violin Sonatas"],
+    ["1600", "Peri, L'Euridice — first opera whose music survives"],
+    ["1602", "Viadana, Cento concerti ecclesiastici (first printed sacred + bc)"],
+    ["1605", "Monteverdi, Fifth Book of Madrigals (basso continuo)"],
+    ["1615", "Frescobaldi, First Book of Toccatas"],
+    ["1618–48", "Thirty Years' War devastates Germany"],
+    ["1619", "Schütz, Psalmen Davids; Monteverdi, Book 7"],
+    ["1622–23", "Salamone Rossi, Hashirim asher lish'lomo"],
+    ["1625", "Grandi, O quam tu pulchra es"],
+    ["1629", "Marini, Sonate, Op. 8; Schütz, Symphoniae sacrae I"],
+    ["1635", "Frescobaldi, Fiori musicali (organ masses)"],
+    ["1636–39", "Schütz, Kleine geistliche Konzerte (I & II)"],
+    ["ca. 1648", "Carissimi, Historia di Jephte"],
+    ["1650", "Schütz, Symphoniae sacrae III (Saul)"],
+    ["1659", "Strozzi, Diporti di Euterpe (Lagrime mie)"],
   ];
-  events.forEach(([date, desc], i) => {
-    const row = Math.floor(i / 2);
-    const col = i % 2;
-    const x = 0.3 + col * 4.8;
-    const y = 1.0 + row * 0.55;
-    s.addShape(pres.ShapeType.rect, { x, y, w: 1.1, h: 0.44, fill: { color: C.teal } });
-    s.addText(date, { x: x + 0.05, y: y + 0.06, w: 1.0, h: 0.32, fontSize: 9, bold: true, color: C.lightText, align: "center", fontFace: "Georgia" });
-    s.addText(desc, { x: x + 1.2, y, w: 3.55, h: 0.44, fontSize: 8, color: C.darkText, fontFace: "Calibri", valign: "middle" });
+
+  events.forEach(([yr, desc], i) => {
+    const y = 0.92 + i * 0.32;
+    const bgColor = i % 2 === 0 ? C.sand : "EDE5CC";
+    s.addShape(pres.ShapeType.rect, { x: 0.4, y, w: 9.2, h: 0.3, fill: { color: bgColor } });
+    s.addText(yr, { x: 0.45, y, w: 1.3, h: 0.3, fontSize: 18, bold: true, color: C.olive, fontFace: "Georgia", valign: "middle" });
+    s.addText(desc, { x: 1.8, y, w: 7.7, h: 0.3, fontSize: 18, color: C.darkText, fontFace: "Calibri", valign: "middle" });
   });
 }
 
-// ── SLIDE 8 · Key Terms & Listening ──────────────────────────────────────────
+// ── SLIDE 27 · Tradition and Innovation ──────────────────────────────────────
 {
   const s = darkSlide(pres);
   topBar(s, C.gold); bottomBar(s, C.gold);
-  s.addText("關鍵詞彙 · 延伸閱讀", { x: 0.4, y: 0.18, w: 9.2, h: 0.55, fontSize: 26, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
-  s.addText("Key Terms & Further Reading", { x: 0.4, y: 0.72, w: 9.2, h: 0.38, fontSize: 13, color: C.sand, fontFace: "Georgia", align: "center" });
-  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("🔑 Key Terms", { x: 0.45, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• concertato madrigal · concerted\n• basso ostinato · ciaccona · passacaglia\n• romanesca · ruggiero · folia\n• cantata · strophic variation\n• sacred concerto · grand concerto\n• oratorio · historicus · chorus\n• Kleine geistliche Concerte\n• Symphoniae sacrae\n• toccata · ricercar · canzona · capriccio\n• stylus fantasticus · tempo rubato\n• Fiori musicali · organ Mass\n• sonata · violin sonata\n• double stops · affetti\n• Barbara Strozzi · Salamone Rossi", {
-    x: 0.5, y: 1.72, w: 4.35, h: 3.45, fontSize: 8.5, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  s.addText("傳統與創新 Tradition and Innovation", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.9, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
   });
+  s.addText("The Lasting Significance of Early 17th-Century Music", {
+    x: 0.4, y: 1.08, w: 9.2, h: 0.35, fontSize: 22, color: C.sand, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.45, w: 7, h: 0.04, fill: { color: C.gold } });
 
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 3.95, fill: { color: C.slate }, rounding: true });
-  s.addText("📚 Further Reading & 🎧 Listening", { x: 5.25, y: 1.38, w: 4.3, h: 0.32, fontSize: 12, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• Silbiger. Frescobaldi (2004)\n• Moser/Pfatteicher. Heinrich Schütz (1959)\n• Smither. A History of the Oratorio (1977)\n• Allsop. The Italian Trio Sonata (1992)\n\n🎧 NAWM 精選聆聽 (YouTube)\n• 81 · Caccini · Sfogava con le stelle  youtu.be/gVcc4ZNBLPw\n• 82 · Monteverdi · Ohimè ch'io cado  youtu.be/OOpUglExpoA\n• 83 · Grandi · O quam tu pulchra es  youtu.be/G-u-bieKf24\n• 84 · Carissimi · Jephte: Plorate  youtu.be/aEk9vLzCPBw\n• 85 · Schütz · Saul, Saul  youtu.be/vTiMOsMsv2I\n• 86 · Schütz · O lieber Herre Gott  youtu.be/HX9JhVVC-l8\n• 87 · Frescobaldi · Toccata No. 3  youtu.be/PV4VRPIwbYw\n• 88 · Marini · Sonata IV  youtu.be/DsaYKQI6elQ", {
-    x: 5.3, y: 1.72, w: 4.35, h: 3.45, fontSize: 8, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 2,
+  const pts = [
+    "New genres: cantata, sacred concerto, oratorio, sonata,\npartita, chaconne, passacaglia, dance suite",
+    "New techniques: basso continuo, concertato medium,\nground bass — all became foundational for later Baroque",
+    "Recognition that different styles suit different purposes:\nstile antico for sacred tradition, stile moderno for expression",
+    "Instrumental music gained independence from vocal music;\ntoccatas & ricercares compared to orations in rhetorical power",
+  ];
+  pts.forEach((txt, i) => {
+    s.addText(txt, {
+      x: 0.5, y: 1.67 + i * 0.92, w: 9, h: 0.82, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top",
+      bullet: true, bulletColor: C.gold,
+    });
   });
 }
 
+// ── SLIDE 28 · Key Terms & Listening ─────────────────────────────────────────
+{
+  const s = lightSlide(pres);
+  topBar(s, C.olive); bottomBar(s, C.olive);
+
+  s.addText("關鍵術語與聆聽 Key Terms & Listening", {
+    x: 0.4, y: 0.15, w: 9.2, h: 0.75, fontSize: 26, bold: true, color: C.olive, fontFace: "Georgia",
+  });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.95, w: 9.2, h: 0.03, fill: { color: C.sand } });
+
+  // Left column: Key Terms
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.08, w: 4.4, h: 4.28, fill: { color: C.sand }, rectRadius: 0.08 });
+  s.addText("Key Terms 關鍵術語", { x: 0.5, y: 1.15, w: 4.2, h: 0.32, fontSize: 18, bold: true, color: C.olive, fontFace: "Georgia" });
+  s.addText(
+    "Concertato madrigal 協奏曲風牧歌\n" +
+    "Basso ostinato / ground bass 固定低音\n" +
+    "Descending tetrachord 下行四度\n" +
+    "Cantata 清唱套曲\n" +
+    "Sacred concerto 宗教協奏曲\n" +
+    "Oratorio 神劇\n" +
+    "Stile antico / stile moderno\n" +
+    "Toccata 觸技曲\n" +
+    "Ricercare 利切卡爾 / Fugue 賦格\n" +
+    "Canzona 坎佐那 / Sonata 奏鳴曲\n" +
+    "Chaconne 夏康 / Passacaglia\n" +
+    "Suite 組曲 / Musical figures 音樂修辭",
+    { x: 0.55, y: 1.55, w: 4.15, h: 3.75, fontSize: 14, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.2 }
+  );
+
+  // Right column: NAWM Listening
+  s.addShape(pres.ShapeType.rect, { x: 5.2, y: 1.08, w: 4.4, h: 4.28, fill: { color: C.sand }, rectRadius: 0.08 });
+  s.addText("NAWM Listening 聆聽清單", { x: 5.3, y: 1.15, w: 4.2, h: 0.32, fontSize: 18, bold: true, color: C.olive, fontFace: "Georgia" });
+  const links = [
+    ["82  Monteverdi, Ohimè dov'è il mio ben", "https://www.youtube.com/watch?v=bJfHoxZlMYw"],
+    ["83  Grandi, O quam tu pulchra es", "https://www.youtube.com/watch?v=KkDj_rJCk6E"],
+    ["84  Carissimi, Historia di Jephte", "https://www.youtube.com/watch?v=2s1Gf3b2wRs"],
+    ["85  Schütz, Saul, was verfolgst du mich", "https://www.youtube.com/watch?v=RCDI_Jy6bEk"],
+    ["86  Schütz, O lieber Herre Gott", "https://www.youtube.com/watch?v=eZZMrP9bET4"],
+    ["87  Frescobaldi, Toccata No. 3", "https://www.youtube.com/watch?v=6dJmqSi_qlM"],
+    ["88  Marini, Sonata IV, Op. 8", "https://www.youtube.com/watch?v=1OyyJb3WNGI"],
+  ];
+  links.forEach(([label, url], i) => {
+    s.addText(label, {
+      x: 5.35, y: 1.55 + i * 0.5, w: 4.1, h: 0.45, fontSize: 14, color: C.olive, fontFace: "Calibri", valign: "top",
+      hyperlink: { url },
+    });
+  });
+}
+
+// ── Save ─────────────────────────────────────────────────────────────────────
 pres.writeFile({ fileName: "Ch15_Chamber_Church.pptx" })
-  .then(fn => console.log(`✅ ${fn} created successfully`))
-  .catch(err => console.error("❌ Error:", err));
+  .then(() => console.log("Ch15_Chamber_Church.pptx created"))
+  .catch(e => console.error(e));
