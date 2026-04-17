@@ -23,6 +23,8 @@ Programmatically generated lecture slides for **A History of Western Music, 10th
 | 15 | Chamber and Church Music | `ch15_chamber_church.js` | `Ch15_Chamber_Church.pptx` |
 | 16 | France, England, Spain, the New World, and Russia | `ch16_france_england.js` | `Ch16_France_England.pptx` |
 | 17 | Italy and Germany in the Late 17th Century | `ch17_italy_germany.js` | `Ch17_Italy_Germany.pptx` |
+| 18 | The Early Eighteenth Century | `ch18_early_eighteenth.js` | `Ch18_Early_Eighteenth.pptx` |
+| 19 | German Composers of the Late Baroque | `ch19_german_composers.js` | `Ch19_German_Composers.pptx` |
 
 ## Features
 
