@@ -184,11 +184,11 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     "  • 無固定節奏、無旋律型態 → 純語言節奏\n\n" +
     "Orfeo 哀歌 — 抒情性宣敘調\n" +
     "  • 休止符表達驚愕、不協和表現悲痛",
-    { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 20, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.3 }
+    { x: 0.5, y: 1.5, w: 9.0, h: 3.4, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.2 }
   );
 
   s.addText("https://www.youtube.com/watch?v=bt8KaCIGBEk", {
-    x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.gold, fontFace: "Calibri", valign: "top",
+    x: 0.5, y: 5.15, w: 9.0, h: 0.3, fontSize: 16, color: C.gold, fontFace: "Calibri", valign: "top",
     hyperlink: { url: "https://www.youtube.com/watch?v=bt8KaCIGBEk" },
   });
 }
