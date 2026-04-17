@@ -184,7 +184,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // De plus en plus
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 4.15, fill: { color: "2A3E2E" }, rounding: true });
   s.addText("■ De plus en plus (NAWM 34, ca. 1425)", { x: 5.25, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-  s.addText("形式：rondeau (ABaAabAB)\n15 世紀最常見的 chanson 形式\n\n風格混合\n• 6/8 拍 · hemiola 交叉節奏\n• cantus 宣告清晰 · 音節對音為主\n• 主旋律上行三和弦後級進下行\n• tenor 節奏較慢 · 旋律優美\n• contratenor 填補和聲\n• 大量三度與六度——幾乎完全協和\n\n終止式\n• 傳統 major 6th → octave\n• 新式 contratenor 八度躍升→像屬→主", {
+  s.addText("形式：rondeau (ABaAabAB) · 15 世紀最常見的 chanson\n\n風格混合\n• 6/8 拍 · hemiola 交叉節奏\n• cantus 清晰宣告，音節對音為主\n• 主旋律上行三和弦後級進下行\n• tenor 節奏較慢、旋律優美\n• contratenor 填補和聲\n• 大量三度與六度——幾近完全協和\n\n終止式\n• 傳統：major 6th → octave\n• 新式：contratenor 八度躍升像屬→主", {
     x: 5.3, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }
@@ -208,7 +208,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // Major works
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.75, w: 9.4, h: 1.6, fill: { color: "F3E5C5" }, rounding: true });
   s.addText("■ 主要作品 Major Works", { x: 0.45, y: 3.83, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia", margin: 0 });
-  s.addText("• 至少 6 部 masses · 35 部其他彌撒樂章 · 4 部 Magnificats\n• 60 首聖詩聖歌設定 · 24 部 motets · 34 首 plainchant 旋律\n• 60 首 rondeaux · 8 首 ballades · 13 首其他世俗歌曲\n• 代表作：Resvellies vous (NAWM 35)、Christe redemptor (NAWM 36)、\n  Missa Se la face ay pale (NAWM 37)、Nuper rosarum flores", {
+  s.addText("• 至少 6 部 masses · 35 部其他彌撒樂章 · 4 部 Magnificats\n• 60 首聖詩聖歌 · 24 部 motets · 34 首 plainchant\n• 60 rondeaux · 8 ballades · 13 其他世俗歌曲\n• 代表作：Resvellies vous (NAWM 35) · Missa Se la face ay pale (NAWM 37) · Nuper rosarum flores", {
     x: 0.5, y: 4.28, w: 9.0, h: 1.05, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }
@@ -226,7 +226,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     ["Resvellies vous (1423, NAWM 35)", "Ballade 形式 · 寫於 Rimini 婚禮 · 法義元素、少見英格蘭特徵 · Ars Subtilior 式快速音型"],
     ["Christe redemptor omnium (NAWM 36)", "Office hymn · 使用 fauxbourdon · cantus 中 paraphrase chant · 偶數詩節為複音、奇數為齊唱"],
     ["Se la face ay pale (ca. 1430s, NAWM 37a)", "Ballade · 自由創作而非固定形式 · 強烈英格蘭影響——成熟國際風格"],
-    ["Nuper rosarum flores (1436)", "Isorhythmic motet · 寫於佛羅倫斯大教堂 Brunelleschi 穹頂落成典禮 · 兩條 isorhythmic tenor 呼應雙層穹頂結構"],
+    ["Nuper rosarum flores (1436)", "Isorhythmic motet · 為佛羅倫斯大教堂穹頂落成典禮 · 兩條 tenor 呼應建築結構"],
     ["Supremum est mortalibus bonum (1433)", "混合 isorhythm、fauxbourdon、自由對位 · 教宗 Eugene 與神聖羅馬皇帝 Sigismund 會晤"],
     ["Missa Se la face ay pale (1450s)", "Cantus-firmus mass · 首部以世俗歌曲為 cantus firmus 的完整彌撒（見下頁）"],
   ];
@@ -251,7 +251,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // Explanation
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 9.4, h: 1.7, fill: { color: "E0EEDA" }, rounding: true });
   s.addText("■ 技法說明 The Technique", { x: 0.45, y: 1.38, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.forest, fontFace: "Georgia", margin: 0 });
-  s.addText("• 只寫出兩個聲部：cantus 與 tenor——主要以平行六度進行\n• 第三聲部不寫出——由歌手自動唱在 cantus 下方精確的平行四度\n• 結果形成連續的 6/3 和弦（類似英格蘭 faburden）\n• 每樂句末終止於開放五度與八度\n• 受英格蘭 faburden 啟發——但技法不同", {
+  s.addText("• 只寫兩聲部：cantus 與 tenor，主要平行六度進行\n• 第三聲部由歌手自動唱 cantus 下方平行四度（不寫出）\n• 連續 6/3 和弦，句末終止於開放五度八度\n• 受英格蘭 faburden 啟發，但技法不同", {
     x: 0.5, y: 1.88, w: 9.0, h: 1.09, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 
@@ -264,7 +264,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 3.1, w: 4.6, h: 2.15, fill: { color: "E0EEDA" }, rounding: true });
   s.addText("🆚 Faburden vs. Fauxbourdon", { x: 5.25, y: 3.18, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.forest, fontFace: "Georgia", margin: 0 });
-  s.addText("Faburden（英格蘭）\n• 中聲部 = chant · 上下三四度\n• 即興、規則式\n\nFauxbourdon（歐陸）\n• cantus = paraphrased chant\n• 中聲部四度以下（未寫出）\n• 寫譜作品", {
+  s.addText("Faburden（英格蘭）\n• 中聲部 = chant · 即興\n\nFauxbourdon（歐陸）\n• cantus = paraphrased chant\n• 中聲部四度以下（未寫出）\n• 寫譜作品", {
     x: 5.3, y: 3.68, w: 4.35, h: 1.54, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }

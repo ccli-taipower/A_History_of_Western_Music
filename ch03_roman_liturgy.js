@@ -160,7 +160,7 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.06, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   // Proper box
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.2, w: 4.6, h: 4.0, fill: { color: C.wine }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.2, w: 4.6, h: 3.9, fill: { color: C.wine }, rounding: true });
   s.addText("■ Proper 變化部分", {
     x: 0.45, y: 1.28, w: 4.3, h: 0.4, fontSize: 16, bold: true, color: C.gold, fontFace: "Georgia",
   });
@@ -185,7 +185,7 @@ function bottomBar(s, color) {
   })), { x: 0.5, y: 2.1, w: 4.2, h: 3.0 });
 
   // Ordinary box
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.2, w: 4.6, h: 4.0, fill: { color: C.midBrown }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.2, w: 4.6, h: 3.9, fill: { color: C.midBrown }, rounding: true });
   s.addText("■ Ordinary 固定部分", {
     x: 5.25, y: 1.28, w: 4.3, h: 0.4, fontSize: 16, bold: true, color: C.gold, fontFace: "Georgia",
   });
@@ -211,7 +211,7 @@ function bottomBar(s, color) {
   })), { x: 5.3, y: 2.1, w: 4.3, h: 3.0 });
 
   s.addText("■ = 彌撒中最華麗的音樂高潮（Gradual, Alleluia, Offertory）—— 由獨唱者與唱詩班以應答式演唱", {
-    x: 0.4, y: 5.26, w: 9.2, h: 0.22, fontSize: 14, color: C.rust, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+    x: 0.4, y: 5.18, w: 9.2, h: 0.28, fontSize: 14, color: C.rust, italic: true, fontFace: "Calibri", align: "center", valign: "top", margin: 0,
   });
 }
 
@@ -398,21 +398,21 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.06, w: 7, h: 0.04, fill: { color: C.gold } });
 
   const chants = [
-    ["Introit 進堂詠", "Antiphonal", "Neumatic", "開堂遊行時由唱詩班唱 · 對唱歌 + 一詩節 + 小聖三頌\nEntrance chant — antiphon + psalm verse + Lesser Doxology"],
-    ["Communion 領主曲", "Antiphonal", "Neumatic", "領聖體時演唱 · 後來縮短為僅對唱歌\nSung during communion; eventually shortened to antiphon only"],
-    ["Gradual 升階經 ■", "Responsorial", "Melismatic", "書信誦讀之後 · 以階梯（gradus）得名 · 獨唱者 + 唱詩班\nAfter Epistle; named from the stair (gradus); soloist + choir"],
-    ["Alleluia 哈利路亞 ■", "Responsorial", "Melismatic", "「alleluia」的最後音節延伸為「jubilus」長花腔——「言語無法表達的喜悅」\nExtended jubilus melisma on final syllable: \"joy beyond words\""],
-    ["Tract 牽引經", "Direct solo", "Very florid", "大齋期中取代 Alleluia · 最長的聖詠，僅限 mode 2 或 8\nReplaces Alleluia in Lent; longest chants, only in modes 2 or 8"],
-    ["Offertory 奉獻詠 ■", "Responsorial", "Melismatic", "神父預備餅酒時演唱 · 如 Gradual 般華麗\nDuring the offering of bread and wine; as melismatic as Graduals"],
+    ["Introit 進堂詠", "Antiphonal", "Neumatic", "開堂遊行；對唱歌 + 一詩節 + 小聖三頌\nEntrance chant — antiphon + verse + Doxology"],
+    ["Communion 領主曲", "Antiphonal", "Neumatic", "領聖體時演唱；後縮短為僅對唱歌\nSung at communion; later antiphon only"],
+    ["Gradual 升階經 ■", "Responsorial", "Melismatic", "書信之後；以階梯 gradus 得名；獨唱 + 唱詩班\nAfter Epistle; named from gradus; soloist + choir"],
+    ["Alleluia 哈利路亞 ■", "Responsorial", "Melismatic", "最後音節延伸為「jubilus」長花腔——言語無法表達的喜悅\nJubilus melisma on final syllable: \"joy beyond words\""],
+    ["Tract 牽引經", "Direct solo", "Very florid", "大齋期取代 Alleluia；最長的聖詠，僅限 mode 2 或 8\nReplaces Alleluia in Lent; longest, modes 2 or 8 only"],
+    ["Offertory 奉獻詠 ■", "Responsorial", "Melismatic", "預備餅酒時演唱；如 Gradual 般華麗\nDuring offering of bread and wine; melismatic"],
   ];
 
   chants.forEach(([name, manner, style, desc], i) => {
-    const y = 1.2 + i * 0.67;
-    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.6, fill: { color: "3A2015" }, rounding: true });
-    s.addText(name, { x: 0.45, y: y + 0.05, w: 2.1, h: 0.5, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-    s.addText(`${manner}\n${style}`, { x: 2.55, y: y + 0.05, w: 1.9, h: 0.52, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
-    s.addShape(pres.ShapeType.rect, { x: 4.5, y: y + 0.1, w: 0.025, h: 0.42, fill: { color: C.gold } });
-    s.addText(desc, { x: 4.6, y: y + 0.04, w: 5.05, h: 0.55, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
+    const y = 1.15 + i * 0.70;
+    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.66, fill: { color: "3A2015" }, rounding: true });
+    s.addText(name, { x: 0.4, y: y + 0.06, w: 2.1, h: 0.58, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+    s.addText(`${manner}\n${style}`, { x: 2.55, y: y + 0.06, w: 1.5, h: 0.58, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addShape(pres.ShapeType.rect, { x: 4.1, y: y + 0.1, w: 0.025, h: 0.5, fill: { color: C.gold } });
+    s.addText(desc, { x: 4.2, y: y + 0.04, w: 5.4, h: 0.62, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 }
 
@@ -430,31 +430,31 @@ function bottomBar(s, color) {
   });
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.02, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
-  s.addText("Trope 的功能：在「授權聖詠」邊緣提供創作出口，類似中世紀學者在聖經邊註評論。文字增飾提供「釋義」（gloss），把聖詠文本與當日場合更緊密連結。\nTropes gave musicians creative outlets in the margins of the authorized repertory. Added words served as glosses, linking chant texts more closely to the occasion.", {
-    x: 0.4, y: 1.15, w: 9.2, h: 0.65, fontSize: 14, color: C.slate, italic: true, fontFace: "Calibri", valign: "top",
+  s.addText("Trope 在「授權聖詠」邊緣提供創作出口；文字增飾提供「釋義」（gloss），把聖詠文本與當日場合更緊密連結。\nTropes gave creative outlets in the margins of authorized chant; added words served as glosses linking chant to the occasion.", {
+    x: 0.4, y: 1.12, w: 9.2, h: 0.88, fontSize: 14, color: C.slate, italic: true, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   const tropes = [
-    ["① 新文字 + 新音樂", "Text + Music", "在聖詠之前（introductory trope）\n或每個樂句之前（intercalated）\nBefore the chant or before each phrase",
-     "範例：Quem queritis in presepe（聖誕節 Introit 前的對話型 trope，late 10th c.）"],
-    ["② 僅音樂", "Music only", "延伸既有 melisma 或新增 melisma\nExtending existing melismas or adding new ones",
+    ["① 新文字 + 新音樂", "Text + Music", "在聖詠之前（introductory trope）\n或每個樂句之前（intercalated）\nBefore chant or each phrase",
+     "範例：Quem queritis in presepe（聖誕節 Introit 前對話型 trope，late 10th c.）"],
+    ["② 僅音樂", "Music only", "延伸既有 melisma 或新增 melisma\nExtending or adding new melismas",
      "Introit 結尾加入無字花腔 textless melisma"],
     ["③ 僅文字", "Text only — prosula", "為既有 melisma 填上文字，使之成為音節式\nAdding text to existing melismas",
-     "新詞的母音常模仿被取代音節的母音——產生迴響效果"],
+     "新詞母音常模仿被取代音節的母音——迴響效果"],
   ];
 
   tropes.forEach(([title, subtitle, mech, ex], i) => {
-    const y = 1.88 + i * 1.12;
-    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 1.0, fill: { color: C.wine }, rounding: true });
-    s.addText(title, { x: 0.45, y: y + 0.08, w: 2.6, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-    s.addText(subtitle, { x: 0.45, y: y + 0.38, w: 2.6, h: 0.26, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
-    s.addShape(pres.ShapeType.rect, { x: 3.2, y: y + 0.12, w: 0.03, h: 0.76, fill: { color: C.gold } });
-    s.addText(mech, { x: 3.3, y: y + 0.08, w: 3.3, h: 0.85, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
-    s.addText(ex, { x: 6.65, y: y + 0.08, w: 3.0, h: 0.85, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
+    const y = 2.08 + i * 1.02;
+    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.94, fill: { color: C.wine }, rounding: true });
+    s.addText(title, { x: 0.45, y: y + 0.07, w: 2.6, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+    s.addText(subtitle, { x: 0.45, y: y + 0.36, w: 2.6, h: 0.26, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addShape(pres.ShapeType.rect, { x: 3.2, y: y + 0.1, w: 0.03, h: 0.74, fill: { color: C.gold } });
+    s.addText(mech, { x: 3.3, y: y + 0.06, w: 3.3, h: 0.84, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addText(ex, { x: 6.65, y: y + 0.06, w: 3.0, h: 0.84, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 
   s.addText("興盛於 9-11 世紀修道院；12 世紀後式微；1562-63 特倫多會議全面禁止", {
-    x: 0.4, y: 5.2, w: 9.2, h: 0.25, fontSize: 14, color: C.rust, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+    x: 0.4, y: 5.18, w: 9.2, h: 0.28, fontSize: 14, color: C.rust, italic: true, fontFace: "Calibri", align: "center", valign: "top", margin: 0,
   });
 }
 
@@ -473,32 +473,32 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.06, w: 7, h: 0.04, fill: { color: C.gold } });
 
   // Form box
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.2, w: 9.4, h: 1.35, fill: { color: "3A2015" }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.18, w: 9.4, h: 0.96, fill: { color: "3A2015" }, rounding: true });
   s.addText("■ 形式 Form", {
-    x: 0.45, y: 1.28, w: 9.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia",
+    x: 0.45, y: 1.24, w: 9.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("以音節式設定的詩句，多數成對（couplet）· 一對之內兩句音節數相同、共用同一旋律 · 每對新音樂、新歌詞\n結構：A BB CC DD … N（首末單獨詩句 + 中間成對詩句）· 與 Alleluia 之後的 sequentia 長花腔有歷史關聯", {
-    x: 0.5, y: 1.6, w: 9.0, h: 0.85, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
+  s.addText("音節式詩句成對（couplet）；每對音節數相同、共用旋律；結構 A BB CC DD … N。\nStrophic couplets of syllabic verse; structure A BB CC DD … N; derived from post-Alleluia sequentia.", {
+    x: 0.5, y: 1.54, w: 9.0, h: 0.58, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   // Three famous sequences
   const seqs = [
-    ["■ Notker Balbulus\n諾特克·巴爾布魯斯", "ca. 840–912", "聖加侖修道院的法蘭克修士；最著名的早期繼抒詠詞作者；884 完成《Liber hymnorum》\nFrankish monk at St. Gall; most famous early sequence writer; completed Liber hymnorum 884"],
-    ["■ Wipo\n維波", "ca. 995–1050", "神聖羅馬皇帝的宮廷牧師；創作 Victimae paschali laudes（復活節繼抒詠）——現存四首仍被保留的古繼抒詠之一\nImperial chaplain; composed Victimae paschali laudes (Easter)"],
-    ["■ Thomas of Celano\n切拉諾的托馬斯", "ca. 1190–1260", "聖方濟各的傳記作者；創作 Dies irae（末日經）——中世紀最著名詩作之一；形式 AA BB CC / AA BB CC / AA BB C / D E\nBiographer of St. Francis; composed Dies irae — one of the most famous poems of the Middle Ages"],
+    ["■ Notker Balbulus\n諾特克·巴爾布魯斯", "ca. 840–912", "聖加侖修士；884《Liber hymnorum》\nSt. Gall monk; famous early sequence composer"],
+    ["■ Wipo\n維波", "ca. 995–1050", "神聖羅馬皇帝宮廷牧師；Victimae paschali laudes（復活節）\nImperial chaplain; Victimae paschali laudes (Easter)"],
+    ["■ Thomas of Celano\n切拉諾的托馬斯", "ca. 1190–1260", "聖方濟各傳記作者；Dies irae——中世紀名詩\nBiographer of St. Francis; composed Dies irae"],
   ];
 
   seqs.forEach(([name, date, desc], i) => {
-    const y = 2.68 + i * 0.88;
-    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.8, fill: { color: C.wine }, rounding: true });
-    s.addText(name, { x: 0.45, y: y + 0.06, w: 2.6, h: 0.65, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+    const y = 2.24 + i * 0.94;
+    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.86, fill: { color: C.wine }, rounding: true });
+    s.addText(name, { x: 0.45, y: y + 0.06, w: 2.6, h: 0.72, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
     s.addText(date, { x: 3.1, y: y + 0.1, w: 1.3, h: 0.3, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
-    s.addShape(pres.ShapeType.rect, { x: 4.45, y: y + 0.12, w: 0.03, h: 0.55, fill: { color: C.gold } });
-    s.addText(desc, { x: 4.55, y: y + 0.06, w: 5.1, h: 0.7, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addShape(pres.ShapeType.rect, { x: 4.45, y: y + 0.12, w: 0.03, h: 0.62, fill: { color: C.gold } });
+    s.addText(desc, { x: 4.55, y: y + 0.06, w: 5.1, h: 0.78, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 
   s.addText("■ 特倫多會議（1562–63）禁用大多數繼抒詠，僅保留四首（含 Victimae paschali laudes 與 Dies irae）", {
-    x: 0.4, y: 5.26, w: 9.2, h: 0.22, fontSize: 14, color: C.gold, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+    x: 0.4, y: 5.18, w: 9.2, h: 0.28, fontSize: 14, color: C.gold, italic: true, fontFace: "Calibri", align: "center", valign: "top", margin: 0,
   });
 }
 
@@ -607,16 +607,16 @@ function bottomBar(s, color) {
     ["1098–1146",        "Adam of St. Victor 活躍於巴黎 · Adam of St. Victor active in Paris"],
     ["ca. 1151",         "Hildegard, Ordo virtutum"],
     ["ca. 1210–50",      "Thomas of Celano, Dies irae"],
-    ["1562–63",          "特倫多會議禁用大多數 trope 與 sequence · Council of Trent bans tropes, most sequences"],
+    ["1562–63",          "特倫多會議禁用大多數 trope 與 sequence · Trent bans most tropes/sequences"],
   ];
 
-  s.addShape(pres.ShapeType.rect, { x: 2.6, y: 0.85, w: 0.05, h: 4.55, fill: { color: C.gold } });
+  s.addShape(pres.ShapeType.rect, { x: 2.6, y: 0.82, w: 0.05, h: 4.45, fill: { color: C.gold } });
 
   events.forEach(([date, event], i) => {
-    const y = 0.85 + i * 0.285;
-    s.addShape(pres.ShapeType.ellipse, { x: 2.47, y: y + 0.04, w: 0.26, h: 0.26, fill: { color: C.gold } });
-    s.addText(date, { x: 0.1, y, w: 2.28, h: 0.28, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", align: "right", margin: 0 });
-    s.addText(event, { x: 2.92, y, w: 6.8, h: 0.28, fontSize: 14, color: C.lightText, fontFace: "Calibri", valign: "top", margin: 0 });
+    const y = 0.82 + i * 0.275;
+    s.addShape(pres.ShapeType.ellipse, { x: 2.47, y: y + 0.02, w: 0.24, h: 0.24, fill: { color: C.gold } });
+    s.addText(date, { x: 0.1, y, w: 2.28, h: 0.26, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", align: "right", margin: 0 });
+    s.addText(event, { x: 2.92, y, w: 6.8, h: 0.26, fontSize: 14, color: C.lightText, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 }
 
@@ -635,21 +635,21 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.05, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   const eras = [
-    ["■", "中世紀—16 世紀", "Middle Ages – 16th c.", "Léonin、Du Fay、Ockeghem、Josquin、Palestrina 等作曲家主要工作是演唱和指揮聖詠；多聲部音樂以聖詠為基礎發展\nMajor composers spent most of their time singing and directing chant; polyphony built on chant foundation"],
-    ["■", "宗教改革—19 世紀", "Reformation – 19th c.", "聖詠旋律改編為新教眾讚歌（chorale）與聖公會聖歌；在天主教地區持續使用\nChant melodies adapted for Protestant chorales and Anglican hymns; still used in Catholic areas"],
-    ["■", "梵二會議 1962–65", "Vatican II", "允許以地方語言舉行彌撒；拉丁聖詠不再是必須——從定期禮拜中幾近消失\nPermitted vernacular Mass; Latin chant no longer required, virtually disappeared from regular services"],
-    ["*", "當代復興", "Contemporary revival", "1993 Silos 修士《Chant》專輯歐洲暢銷冠軍；2008 Heiligenkreuz《Chant》全球熱銷；電玩《Halo》等使用聖詠風格\n1993 Chant album bestseller; 2008 Heiligenkreuz platinum; Halo uses chant style"],
+    ["■", "中世紀—16 世紀", "Middle Ages – 16th c.", "Léonin、Du Fay、Josquin、Palestrina 等作曲家主要工作是演唱和指揮聖詠\nMajor composers spent most of their time singing and directing chant"],
+    ["■", "宗教改革—19 世紀", "Reformation – 19th c.", "聖詠旋律改編為新教眾讚歌（chorale）與聖公會聖歌\nChant melodies adapted for Protestant chorales and Anglican hymns"],
+    ["■", "梵二會議 1962–65", "Vatican II", "允許以地方語言舉行彌撒；拉丁聖詠不再是必須\nPermitted vernacular Mass; Latin chant no longer required"],
+    ["*", "當代復興", "Contemporary revival", "1993 Silos 修士《Chant》歐洲暢銷冠軍；電玩《Halo》使用聖詠風格\n1993 Chant album bestseller; Halo uses chant style"],
   ];
 
   eras.forEach(([icon, title, subtitle, desc], i) => {
-    const y = 1.18 + i * 1.03;
+    const y = 1.15 + i * 1.02;
     s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.92, fill: { color: C.wine }, rounding: true });
     s.addShape(pres.ShapeType.rect, { x: 0.4, y: y + 0.08, w: 0.75, h: 0.76, fill: { color: C.gold }, rounding: true });
     s.addText(icon, { x: 0.4, y: y + 0.14, w: 0.75, h: 0.65, fontSize: 22, align: "center", margin: 0 });
     s.addText(title, { x: 1.3, y: y + 0.07, w: 3.5, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
     s.addText(subtitle, { x: 1.3, y: y + 0.34, w: 3.5, h: 0.25, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
     s.addShape(pres.ShapeType.rect, { x: 4.85, y: y + 0.12, w: 0.03, h: 0.68, fill: { color: C.gold } });
-    s.addText(desc, { x: 4.95, y: y + 0.08, w: 4.7, h: 0.8, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addText(desc, { x: 4.95, y: y + 0.06, w: 4.7, h: 0.84, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 }
 
@@ -665,19 +665,19 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 0.76, w: 7, h: 0.04, fill: { color: C.gold } });
 
   const points = [
-    ["■", "羅馬禮儀的雙重目的：對上帝獻頌讚，對信徒傳教義；彌撒為中心，日課為日常\nRoman liturgy's dual aim: praise to God + instruction for worshippers; Mass central, Office daily"],
-    ["■", "彌撒分為 Proper（隨日變動）與 Ordinary（固定不變）；音樂高潮為 Gradual、Alleluia、Offertory\nMass = Proper (varies) + Ordinary (fixed); musical peaks: Gradual, Alleluia, Offertory"],
-    ["■", "聖詠依演唱方式分 responsorial/antiphonal/direct，依歌詞設定分 syllabic/neumatic/melismatic\nChants classified by performance (responsorial/antiphonal/direct) and text setting (syllabic/neumatic/melismatic)"],
-    ["■", "Trope（增飾）與 Sequence（繼抒詠）是 9–12 世紀創作的出口，在授權聖詠的「邊緣」發揮創意\nTropes and sequences gave 9–12 c. musicians creative outlets in the margins of the authorized repertory"],
-    ["■", "禮儀劇由對話型 trope 發展而來（如 Quem queritis in sepulchro）；由神職人員在教堂內演出\nLiturgical drama grew from dialogue tropes (Quem queritis in sepulchro); performed in church by clergy"],
-    ["■", "Hildegard of Bingen 是中世紀留下最多聖詠的作曲家，也是第一位留下完整音樂劇（Ordo virtutum）的女性\nHildegard left more chants than any medieval composer; her Ordo virtutum is the earliest surviving non-liturgical music drama"],
+    ["■", "羅馬禮儀雙重目的：頌讚上帝 + 教導信徒；彌撒為中心，日課為日常\nRoman liturgy: praise + instruction; Mass central, Office daily"],
+    ["■", "彌撒分 Proper（隨日變）與 Ordinary（固定）；音樂高潮為 Gradual、Alleluia、Offertory\nMass = Proper (varies) + Ordinary (fixed); peaks: Gradual, Alleluia, Offertory"],
+    ["■", "聖詠依演唱分 responsorial/antiphonal/direct；依歌詞分 syllabic/neumatic/melismatic\nChants by performance (resp./antiph./direct) and text setting (syll./neum./melism.)"],
+    ["■", "Trope 與 Sequence 是 9–12 世紀在授權聖詠「邊緣」的創作出口\nTropes and sequences gave 9–12 c. creative outlets in the chant margins"],
+    ["■", "禮儀劇由對話型 trope 發展而來（如 Quem queritis in sepulchro），由神職人員演出\nLiturgical drama grew from dialogue tropes; performed in church by clergy"],
+    ["■", "Hildegard of Bingen：留下最多聖詠的中世紀作曲家；Ordo virtutum 為現存最早音樂劇\nHildegard: most medieval chants; Ordo virtutum = earliest music drama"],
   ];
 
   points.forEach(([icon, text], i) => {
-    const y = 0.9 + i * 0.77;
-    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.66, fill: { color: "3A2015" }, rounding: true });
-    s.addText(icon, { x: 0.4, y: y + 0.08, w: 0.55, h: 0.5, fontSize: 20, align: "center", margin: 0 });
-    s.addText(text, { x: 1.05, y: y + 0.05, w: 8.5, h: 0.58, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", margin: 0 });
+    const y = 0.88 + i * 0.75;
+    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.70, fill: { color: "3A2015" }, rounding: true });
+    s.addText(icon, { x: 0.4, y: y + 0.10, w: 0.55, h: 0.5, fontSize: 20, align: "center", margin: 0 });
+    s.addText(text, { x: 1.05, y: y + 0.05, w: 8.5, h: 0.62, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 }
 

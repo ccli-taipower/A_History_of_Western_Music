@@ -315,7 +315,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   const masses = [
     { title: "Missa Pange lingua (NAWM 45)", type: "Paraphrase Mass", desc: "以 Pange lingua 聖體讚美詩為素材——旋律分解進入各聲部——成為 paraphrase mass 的典範" },
-    { title: "Missa L'homme armé super voces musicales", type: "Cantus-firmus Mass", desc: "將 L'homme armé 曲調依序置於六個六音音階位置（ut–la）——技巧高超的系統性建構" },
+    { title: "Missa L'homme armé s.v.m.", type: "Cantus-firmus Mass", desc: "將 L'homme armé 曲調依序置於六個六音音階位置（ut–la）——技巧高超的系統性建構（super voces musicales）" },
     { title: "Missa Hercules dux Ferrariae", type: "Soggetto cavato", desc: "由 Ercole d'Este 大公名字的母音抽出「re-ut-re-ut-re-fa-mi-re」八音動機作主題——為 Ferrara 獻禮" },
     { title: "Missa Fortuna desperata", type: "Imitation / Parody 前身", desc: "取用 Busnoys 同名香頌全部聲部——預示了日後的 imitation mass" },
   ];

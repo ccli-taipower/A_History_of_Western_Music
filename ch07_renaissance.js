@@ -140,7 +140,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 9.4, h: 0.35, fill: { color: C.gold } });
   s.addText("藝術元素", { x: 0.4, y: 1.32, w: 2.9, h: 0.4, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", align: "center" });
   s.addText("藝術中的表現 Artistic Expression", { x: 3.3, y: 1.32, w: 3.4, h: 0.4, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", align: "center" });
-  s.addText("音樂中的對應 Musical Parallel", { x: 6.7, y: 1.32, w: 3.0, h: 0.4, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", align: "center" });
+  s.addText("音樂對應 Music", { x: 6.7, y: 1.32, w: 3.0, h: 0.3, fontSize: 14, bold: true, color: C.darkText, fontFace: "Georgia", align: "center" });
 
   artRows.forEach(([k, a, m], i) => {
     const y = 1.68 + i * 0.63;
@@ -307,14 +307,14 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // Timeline of printing developments
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 9.4, h: 1.85, fill: { color: "2A3C50" }, rounding: true });
   s.addText("■ 印刷技術的發展 Development of Printing Technology", { x: 0.45, y: 1.38, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-  s.addText("• ca. 1450：Johann Gutenberg 在歐洲完善活字印刷術\n• 1470s：活字首次用於音樂——禮拜用書的 chant 記譜\n• 1501：Ottaviano Petrucci（1466–1539）在威尼斯出版 Harmonice musices odhecaton A——第一本完全用活字印刷的複音樂譜（96 首作品）\n  三次壓印：譜線、文字、音符與花體字母分三次印刷——費時但精美\n• ca. 1520：John Rastell 在倫敦首創「單次壓印」\n• 1528：Pierre Attaingnant（ca. 1494–1551/52）在巴黎大規模使用單次壓印——譜線斷續但便宜實用——成為後續標準", {
+  s.addText("• ca. 1450：Gutenberg 完善活字印刷術\n• 1470s：活字首次用於音樂（chant）\n• 1501：Petrucci 於威尼斯出版 Harmonice musices odhecaton A（三次壓印·精美但費時）\n• ca. 1520：Rastell 於倫敦首創單次壓印\n• 1528：Attaingnant 於巴黎大規模採用單次壓印，成為後續標準", {
     x: 0.5, y: 1.88, w: 9.0, h: 1.24, fontSize: 14, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 
   // Impact
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.25, w: 9.4, h: 2.0, fill: { color: "2A3C50" }, rounding: true });
   s.addText("■ 印刷術的衝擊 Impact of Music Printing", { x: 0.45, y: 3.33, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-  s.addText("• 樂譜價格大幅降低——業餘愛好者可負擔\n• 音樂識讀能力普及——中產階級家庭成為音樂場域\n• 作曲家名聲跨越地域——音樂「作品」概念成形\n• 新類型蓬勃：madrigal、chanson、villancico、lute song\n• 器樂譜首次大量問世：toccata、ricercare、canzona\n• 印刷中心：Venice、Paris、Rome、Nuremberg、London\n• 宗教改革借助印刷快速傳播新音樂類型", {
+  s.addText("• 樂譜價格大幅降低——業餘愛好者可負擔\n• 音樂識讀普及——中產家庭成為音樂場域\n• 作曲家名聲跨越地域——音樂「作品」概念成形\n• 新類型蓬勃：madrigal、chanson、villancico、lute song\n• 器樂譜首次問世：toccata、ricercare、canzona\n• 中心：Venice / Paris / Rome / Nuremberg / London", {
     x: 0.5, y: 3.83, w: 9.0, h: 1.37, fontSize: 14, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }
@@ -328,14 +328,14 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 2.5, y: 0.82, w: 5, h: 0.03, fill: { color: C.wine } });
 
   const figures = [
-    ["Johannes Tinctoris", "ca. 1435–1511", "Liber de arte contrapuncti (1477) · 12 部論著 · 新對位法典範"],
+    ["Johannes Tinctoris", "ca. 1435–1511", "Liber de arte contrapuncti (1477) · 新對位法典範"],
     ["Franchino Gaffurio", "1451–1522", "Theorica musice (1492) · 融合古希臘理論與當代實踐"],
-    ["Pietro Aaron", "ca. 1480–ca. 1550", "Toscanello in musica (1523) · 首位以義大利文寫作的理論家"],
-    ["Heinrich Glareanus", "1488–1563", "Dodecachordon (1547) · 新增 Aeolian、Ionian 四個調式"],
-    ["Gioseffo Zarlino", "1517–1590", "Le istitutioni harmoniche (1558) · 對位法與和聲理論的集大成者"],
-    ["Johann Gutenberg", "ca. 1400–1468", "活字印刷術的完善者——改變知識傳播"],
-    ["Ottaviano Petrucci", "1466–1539", "1501 威尼斯首本複音樂印刷集——Harmonice musices odhecaton"],
-    ["Pierre Attaingnant", "ca. 1494–1551/52", "單次壓印法巴黎推廣者——使樂譜便宜普及"],
+    ["Pietro Aaron", "ca. 1480–ca. 1550", "Toscanello in musica (1523) · 首位以義大利文寫作"],
+    ["Heinrich Glareanus", "1488–1563", "Dodecachordon (1547) · 新增 Aeolian、Ionian 調式"],
+    ["Gioseffo Zarlino", "1517–1590", "Le istitutioni harmoniche (1558) · 對位與和聲集大成"],
+    ["Johann Gutenberg", "ca. 1400–1468", "活字印刷術完善者——改變知識傳播"],
+    ["Ottaviano Petrucci", "1466–1539", "1501 威尼斯首本複音樂印刷集 (Odhecaton)"],
+    ["Pierre Attaingnant", "ca. 1494–1551/52", "巴黎推廣單次壓印法——樂譜便宜普及"],
   ];
   figures.forEach(([name, dates, desc], i) => {
     const col = i % 2;
@@ -368,7 +368,8 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     ["1477", "Tinctoris · Liber de arte contrapuncti"],
     ["1482", "Ramis de Pareia 提出純律"],
     ["1487", "葡萄牙繞過好望角"],
-    ["1492", "Columbus 抵達西印度群島 · Gaffurio Theorica"],
+    ["1492", "Columbus 抵達西印度群島"],
+    ["1492", "Gaffurio · Theorica musice"],
     ["1495", "Leonardo da Vinci《最後的晚餐》"],
     ["1501", "Petrucci 出版 Odhecaton"],
     ["1517", "Luther 宗教改革開始"],
@@ -425,7 +426,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 2.5, y: 1.12, w: 5, h: 0.04, fill: { color: C.gold } });
 
   // Key terms
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 9.4, h: 2.3, fill: { color: "2A3C50" }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 9.4, h: 2.0, fill: { color: "2A3C50" }, rounding: true });
   s.addText("■ 重要術語 Key Terms", { x: 0.45, y: 1.36, w: 9.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
 
   const termsLeft = [
@@ -445,27 +446,27 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     "Haut and bas instruments",
   ];
   termsLeft.forEach((t, i) => {
-    s.addText("• " + t, { x: 0.5, y: 1.7 + i * 0.3, w: 4.1, h: 0.28, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" });
+    s.addText("• " + t, { x: 0.5, y: 1.66 + i * 0.26, w: 4.1, h: 0.26, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" });
   });
   termsRight.forEach((t, i) => {
-    s.addText("• " + t, { x: 4.7, y: 1.7 + i * 0.3, w: 4.95, h: 0.28, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" });
+    s.addText("• " + t, { x: 4.7, y: 1.66 + i * 0.26, w: 4.95, h: 0.26, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" });
   });
 
   // Listening (new)
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.7, w: 9.4, h: 1.0, fill: { color: "3A2015" }, rounding: true });
-  s.addText("■ 聆聽 Listen (文藝復興代表曲)", { x: 0.45, y: 3.76, w: 9.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.4, w: 9.4, h: 1.15, fill: { color: "3A2015" }, rounding: true });
+  s.addText("■ 聆聽 Listen (文藝復興代表曲)", { x: 0.45, y: 3.46, w: 9.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
   s.addText(
     "Tinctoris — Missa L'homme armé: Kyrie  youtu.be/VwbnG2XD540\n" +
     "Josquin — Ave Maria...virgo serena (Tallis Scholars)  youtu.be/scQ5YBRpwNg\n" +
     "Palestrina — Sicut cervus (Cambridge Singers)  youtu.be/0yd5EE0hAB8",
-    { x: 0.5, y: 4.04, w: 9.1, h: 0.65, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" }
+    { x: 0.5, y: 3.76, w: 9.1, h: 0.78, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top" }
   );
 
   // Further reading
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 4.75, w: 9.4, h: 0.85, fill: { color: "3E2030" }, rounding: true });
-  s.addText("■ 延伸閱讀 Further Reading", { x: 0.45, y: 4.78, w: 9.1, h: 0.25, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 4.65, w: 9.4, h: 0.8, fill: { color: "3E2030" }, rounding: true });
+  s.addText("■ 延伸閱讀 Further Reading", { x: 0.45, y: 4.70, w: 9.1, h: 0.25, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
   s.addText("Leeman Perkins, Music in the Age of the Renaissance (1999) · Allan Atlas, Renaissance Music (1998)\nReinhard Strohm, The Rise of European Music 1380–1500 (1993) · Tinctoris, The Art of Counterpoint (trans. Seay)", {
-    x: 0.5, y: 5.03, w: 9.1, h: 0.55, fontSize: 14, color: C.sand, fontFace: "Calibri", italic: true, valign: "top",
+    x: 0.5, y: 4.95, w: 9.1, h: 0.48, fontSize: 14, color: C.sand, fontFace: "Calibri", italic: true, valign: "top",
   });
 }
 

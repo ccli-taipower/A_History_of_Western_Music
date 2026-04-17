@@ -156,7 +156,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.parchment }, rounding: true });
   s.addText("■ Geneva Psalter (1562)", { x: 5.25, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia", margin: 0 });
-  s.addText("• 150 篇押韻法文詩篇集\n• 詞：Marot · de Bèze\n• 曲：Loys Bourgeois (ca. 1510–60)\n\n特徵\n• 每篇獨立旋律——共 125 首曲調\n• 自然音階 · 旋律優雅上口\n\n■ Psalm 134 (NAWM 59)\n• 後改填為 Doxology\n• 英語「Old 100th」旋律源自此\n\n■ 傳播\n• 翻譯 20+ 種語言 · 法語圈、荷、蘇格蘭\n• 加爾文派禮拜基石 · 至今仍用", {
+  s.addText("• 150 篇押韻法文詩篇集\n• 詞：Marot · de Bèze · 曲：Bourgeois\n• 每篇獨立旋律——共 125 首曲調\n• 自然音階 · 旋律優雅上口\n\n■ Psalm 134 (NAWM 59)\n• 後改填為 Doxology\n• 英語「Old 100th」旋律源自此\n\n■ 傳播\n• 譯 20+ 語 · 法語圈、荷、蘇格蘭\n• 加爾文派禮拜基石 · 至今仍用", {
     x: 5.3, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }
@@ -194,13 +194,13 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.parchment }, rounding: true });
   s.addText("■ Trent 對音樂的討論", { x: 0.45, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia", margin: 0 });
-  s.addText("• 1545–1563 間三次開會\n• 討論：彌撒音樂是否過度世俗化？\n\n改革派訴求\n• 文字必須清晰可辨\n• 驅逐世俗 cantus firmus 彌撒\n• 激進派主張驅逐所有複音\n\n最終決議 (1562)\n• 允許複音 · 文字必須聽懂\n• 禁止「猥褻」旋律\n• 未指定特定風格\n\n■ 地方執行各異\n• Borromeo 在米蘭積極推行", {
+  s.addText("• 1545–1563 間三次開會\n• 討論彌撒音樂世俗化問題\n\n改革派訴求\n• 文字必須清晰可辨\n• 驅逐世俗 cantus firmus 彌撒\n\n最終決議 (1562)\n• 允許複音 · 文字須聽懂\n• 禁「猥褻」旋律 · 未指定風格\n\n■ 地方執行各異\n• Borromeo 在米蘭積極推行", {
     x: 0.5, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.parchment }, rounding: true });
   s.addText("■ Palestrina 傳說", { x: 5.25, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia", margin: 0 });
-  s.addText("流傳的故事\n• Palestrina《Missa Papae Marcelli》\n  拯救複音免被禁\n• 以清晰文字說服樞機團\n\n事實\n• 此彌撒 1562–3 年創作\n• 清晰風格已是改革共識\n\n■ 象徵意義\n• 19 世紀視為「天主教音樂的救主」\n• Pfitzner 1917 歌劇《Palestrina》\n\n■ 後續\n• Palestrina 對位成標準教材\n• Fux《Gradus ad Parnassum》(1725)", {
+  s.addText("流傳的故事\n• Palestrina《Missa Papae Marcelli》\n  拯救複音免被禁\n• 以清晰文字說服樞機團\n\n事實\n• 1562–3 創作 · 風格已是改革共識\n\n■ 象徵意義\n• 19 世紀視為「天主教音樂救主」\n• Pfitzner 1917《Palestrina》歌劇\n\n■ 後續\n• 對位成標準教材 · Fux (1725)", {
     x: 5.3, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }
@@ -238,7 +238,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.parchment }, rounding: true });
   s.addText("■ 背景", { x: 0.45, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia", margin: 0 });
-  s.addText("• 1562–3 創作 · 1567 收入第二部 Mass 集\n• 獻給 Marcellus II（在位 3 週, 1555）\n• 6 聲部 SATTBB\n• paraphrase 技法（非固定 cantus firmus）\n• 無世俗旋律——符合 Trent 精神\n\n■ Credo 特徵\n• 長文字需清晰\n• 大部分同節奏 (homorhythm)\n• 聲部幾乎同時換字\n• et incarnatus / crucifixus 靜思感\n• 模仿段落較少——優先清晰度\n\n■ 織度\n• 每段獨立分節\n• SA · TB · 全體 · 六聲部輪流", {
+  s.addText("• 1562–3 創作 · 1567 出版\n• 獻給 Marcellus II（在位 3 週, 1555）\n• 6 聲部 SATTBB · paraphrase 技法\n• 無世俗旋律——符合 Trent 精神\n\n■ Credo 特徵\n• 長文字需清晰 · homorhythm 為主\n• 聲部幾乎同時換字\n• et incarnatus / crucifixus 靜思感\n• 模仿段落較少——優先清晰度\n\n■ 織度\n• 每段獨立分節 · SA / TB / 全體輪流", {
     x: 0.5, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 
@@ -266,7 +266,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.slate }, rounding: true });
   s.addText("■ New World Polyphony", { x: 5.25, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-  s.addText("• 西班牙征服使複音首度抵達美洲\n• 墨西哥 (1521) · 秘魯 Cuzco\n• 原住民子弟入修道院學拉丁與五線譜\n\n■ 教學與作曲\n• 方濟會、道明會傳教士教導\n• 聖詠本、譜冊普及各聖堂\n• 原住民與西班牙樂長並肩工作\n\n■ Hernando Franco (1532–1585)\n• 西班牙 Galicia 出生 · 1554 抵墨西哥\n• 1575–85 任 Mexico City 樂長\n\n■ Salve regina (NAWM 64)\n• 織度近似 Palestrina——未「美洲化」", {
+  s.addText("• 西班牙征服使複音首度抵達美洲\n• 墨西哥 (1521) · 秘魯 Cuzco\n• 原住民子弟入修道院學拉丁與五線譜\n\n■ 教學與作曲\n• 方濟會、道明會傳教士教導\n• 聖詠本普及 · 原住民與西班牙並肩\n\n■ Hernando Franco (1532–1585)\n• Galicia 出生 · 1554 抵墨西哥\n• 1575–85 任 Mexico City 樂長\n\n■ Salve regina (NAWM 64)\n• 織度近似 Palestrina", {
     x: 5.3, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }
@@ -282,7 +282,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.parchment }, rounding: true });
   s.addText("■ Orlande de Lassus (1532–1594)", { x: 0.45, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia", margin: 0 });
-  s.addText("• Franco-Flemish · Munich 宮廷 1556–94\n• 拉、義、法、德四語創作\n• 2,000+ 作品跨各體裁\n• 天主教徒但作品新舊兩教共享\n\n■ Cum essem parvulus (NAWM 65)\n• 六聲部拉丁 motet\n• 《林前 13:11》「我小時候...」\n• 高聲部代表童聲 · 低聲部代表成人\n• Lassus 文字敏感度的巔峰\n\n■ 影響\n• Jesuit 教育體系推廣全歐\n• 承 Palestrina 清晰原則 + 表達力\n• 16 世紀後半最重要國際音樂家", {
+  s.addText("• Franco-Flemish · Munich 宮廷 1556–94\n• 拉、義、法、德四語創作\n• 2,000+ 作品跨各體裁\n• 天主教徒但作品新舊兩教共享\n\n■ Cum essem parvulus (NAWM 65)\n• 六聲部拉丁 motet\n• 《林前 13:11》「我小時候...」\n• 高聲部童聲 · 低聲部成人\n\n■ 影響\n• Jesuit 教育體系推廣全歐\n• 16 世紀後半最重要國際音樂家", {
     x: 0.5, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 
@@ -310,7 +310,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.3, w: 4.6, h: 4.1, fill: { color: C.slate }, rounding: true });
   s.addText("■ The Legacy of 16c Sacred Music", { x: 5.25, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-  s.addText("• 16 世紀：西歐四種神學 · 四種音樂\n\n■ 長遠影響\n• Lutheran chorale → Bach 聖詠\n• Calvinist psalmody → 英語聖詩\n• Anglican anthem → Purcell · Handel\n• Palestrina 對位 → 神學院必修\n\n■ 音樂作為宗教認同\n• 每教派以獨特聲音界定自身\n• 音樂風格帶神學意涵\n\n■ 全球化起點\n• 歐洲多聲部抵達美洲\n• 傳教士帶拉丁禮儀至中、日、菲", {
+  s.addText("• 16 世紀：西歐四種神學 · 四種音樂\n\n■ 長遠影響\n• Lutheran chorale → Bach 聖詠\n• Calvinist psalmody → 英語聖詩\n• Anglican anthem → Purcell · Handel\n• Palestrina 對位 → 神學院必修\n\n■ 音樂作為宗教認同\n• 每教派以獨特聲音界定自身\n\n■ 全球化起點\n• 歐洲多聲部抵達美洲\n• 傳教士將拉丁禮儀帶到中、日、菲", {
     x: 5.3, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 }

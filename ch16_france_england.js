@@ -153,7 +153,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addText("Vingt-quatre Violons du Roi (24 Violins) — 首個大型弦樂合奏 = 現代管弦樂團原型\nPetits Violons (18 strings) — Louis XIV 的私人樂團", {
-    x: 0.5, y: 4.95, w: 9, h: 0.5, fontSize: 18, color: C.gold, fontFace: "Calibri", lineSpacingMultiple: 1.05, valign: "top",
+    x: 0.5, y: 4.95, w: 9, h: 0.52, fontSize: 14, color: C.gold, fontFace: "Calibri", lineSpacingMultiple: 1.1, valign: "top",
   });
 }
 
@@ -557,7 +557,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   topBar(s, C.gold); bottomBar(s, C.gold);
 
   s.addText("NAWM 90b · Purcell, \"When I am laid in earth\"", {
-    x: 0.4, y: 0.2, w: 9.2, h: 0.6, fontSize: 28, bold: true, color: C.gold, fontFace: "Georgia",
+    x: 0.4, y: 0.2, w: 9.2, h: 0.6, fontSize: 24, bold: true, color: C.gold, fontFace: "Georgia",
   });
   s.addText("Dido's Lament — 歌劇史上最動人的詠嘆調之一", {
     x: 0.4, y: 0.78, w: 9.2, h: 0.4, fontSize: 20, color: C.sand, fontFace: "Calibri", valign: "top",

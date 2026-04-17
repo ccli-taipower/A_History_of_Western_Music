@@ -226,7 +226,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // Light genres
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 4.15, fill: { color: "3A2840" }, rounding: true });
   s.addText("■ Light Genres", { x: 0.45, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("Villanella\n• 1540s 於 Naples 興起\n• 三聲部、活潑、同節奏\n• 故意寫平行五度 → 模仿鄉村樸拙\n• 常戲擬嚴肅 madrigal\n\nCanzonetta（小歌）\n• Orazio Vecchi · 1580–1597 六冊\n• 融合 madrigal 與 villanella\n\nBalletto（小舞曲）\n• Gastoldi · 1591/1594\n• AABB 分節曲式 · 「fa-la-la」副歌\n• Morley《Sing we and chant it》仿 Gastoldi (NAWM 55)", {
+  s.addText("Villanella\n• 1540s 於 Naples 興起 · 三聲部、活潑、同節奏\n• 寫平行五度模仿鄉村樸拙，常戲擬 madrigal\n\nCanzonetta（小歌）\n• Orazio Vecchi · 1580–1597 六冊\n• 融合 madrigal 與 villanella\n\nBalletto（小舞曲）\n• Gastoldi · 1591/1594 · AABB 分節曲式\n• 「fa-la-la」副歌\n• Morley · Sing we and chant it (NAWM 55)", {
     x: 0.5, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.sand, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 
@@ -251,7 +251,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     { title: "Lyric Chanson 抒情香頌", ex: "Sermisy · Tant que vivray (NAWM 51)", desc: "第一人稱抒情——愛情主題 · 音節、同節奏、頂部主旋律 · Marot 詩 · 短句樂段明確" },
     { title: "Narrative Chanson 敘事香頌", ex: "Janequin · Martin menoit son pourceau (NAWM 52)", desc: "低俗幽默故事 · 點狀模仿開句、同聲終止 · 模仿喜歌劇般的口白節奏" },
     { title: "Descriptive Chanson 描繪香頌", ex: "Janequin · La guerre · Le chant des oiseaux", desc: "模擬鳥鳴、戰號、街市叫賣 · 長度較長 · 織度變化多端" },
-    { title: "Musique Mesurée 量音香頌", ex: "Le Jeune · Revecy venir du printans (NAWM 54)", desc: "Académie de Poésie et de Musique (1570) · Baïf 的 vers mesurés · 長音節配長音 · 二三拍自由交替" },
+    { title: "Musique Mesurée 量音香頌", ex: "Le Jeune · Revecy venir (NAWM 54)", desc: "Académie de Poésie et de Musique (1570) · Baïf 的 vers mesurés · 長音配長音節" },
   ];
 
   chansons.forEach((c, i) => {
@@ -302,7 +302,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // Meistersinger
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 4.6, h: 4.15, fill: { color: "F3DDE5" }, rounding: true });
   s.addText("■ Meistersinger 工匠名歌手", { x: 0.45, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.wine, fontFace: "Georgia" });
-  s.addText("• 都市商人與工匠的歌唱行會\n• 承 Minnesinger 單聲歌曲傳統\n• 嚴格規則創作 · 公開比賽\n• 14 世紀始 → 16 世紀顛峰 → 19 世紀消亡\n\n■ Töne（旋律模式）\n• 每首詩依既有 Ton 模板填詞\n• 皆為 bar form（AAB）\n• 許多源自 Minnelied 舊譜\n\n■ Hans Sachs (1494–1576)\n• 紐倫堡製鞋匠\n• 作詞數千首 · 新創 13 首 Toöne\n• Wagner《紐倫堡的名歌手》主角", {
+  s.addText("• 德語城市工匠的音樂行會\n• 承 Minnesinger 單聲歌曲傳統\n• 嚴格規則創作 · 公開比賽\n• 14 世紀始 → 16 世紀顛峰 → 19 世紀消亡\n\n■ Töne（旋律模式）\n• 每首詩依既有 Ton 模板填詞\n• 皆為 bar form（AAB）\n• 許多源自 Minnelied 舊譜\n\n■ Hans Sachs (1494–1576)\n• 紐倫堡製鞋匠\n• 作詞數千首 · 新創 13 首 Toöne\n• Wagner《紐倫堡的名歌手》主角", {
     x: 0.5, y: 1.88, w: 4.35, h: 3.55, fontSize: 14, color: C.darkText, fontFace: "Calibri", paraSpaceAfter: 1, valign: "top",
   });
 

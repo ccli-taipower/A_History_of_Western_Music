@@ -210,11 +210,8 @@ function bottomBar(s, color) {
     s.addText(desc, { x: 3.4, y: y + 0.08, w: 6.2, h: 0.65, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 
-  s.addText("■ 里程碑：1321 年巴黎的 Confrérie de St.-Julien des Menestriers 成立，37 位男女樂師共同簽署章程", {
-    x: 0.4, y: 4.85, w: 9.2, h: 0.3, fontSize: 14, color: C.gold, italic: true, fontFace: "Calibri", align: "center", valign: "top",
-  });
-  s.addText("Milestone: In 1321 Paris musicians formed the Confrérie de St.-Julien des Menestriers — 37 men and women signatories", {
-    x: 0.4, y: 5.1, w: 9.2, h: 0.3, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+  s.addText("■ 里程碑：1321 年巴黎 Confrérie de St.-Julien des Menestriers 成立，37 位男女樂師共同簽署章程\nMilestone: 1321 Paris Confrérie de St.-Julien des Menestriers — 37 signatories", {
+    x: 0.4, y: 4.78, w: 9.2, h: 0.68, fontSize: 14, color: C.gold, italic: true, fontFace: "Calibri", align: "center", valign: "top", margin: 0,
   });
 }
 
@@ -241,8 +238,8 @@ function bottomBar(s, color) {
     x: 0.45, y: 1.65, w: 4.3, h: 0.3, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top",
   });
   s.addShape(pres.ShapeType.rect, { x: 0.55, y: 2.0, w: 4.1, h: 0.02, fill: { color: C.gold } });
-  s.addText("• Trobador（陰性 trobairitz）\n• Trobar = 「創作歌曲」→「找到」「發明」\n• 存 ca. 2,600 首詩 · 約 1/10 有旋律\n\n重要人物:\n◆ Guillaume IX（亞奎丹公爵，1071–1126）\n   現存最早留名的 troubadour\n◆ Bernart de Ventadorn (ca. 1130–1200)\n   最具影響力之一 · 城堡僕役之子\n◆ Comtessa de Dia（12 世紀末 / 13 世紀初）\n   唯一有音樂留存的女性遊唱詩人 trobairitz", {
-    x: 0.5, y: 2.08, w: 4.2, h: 3.1, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• Trobador（陰性 trobairitz）\n• Trobar =「創作」→「找到」「發明」\n• 存 ca. 2,600 首詩；約 1/10 有旋律\n\n重要人物：\n◆ Guillaume IX（1071–1126）\n   亞奎丹公爵；最早留名者\n◆ Bernart de Ventadorn\n   ca. 1130–1200；最具影響力\n◆ Comtessa de Dia（12–13 世紀）\n   唯一音樂留存的 trobairitz", {
+    x: 0.5, y: 2.08, w: 4.2, h: 3.1, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   // Trouvère box
@@ -254,12 +251,12 @@ function bottomBar(s, color) {
     x: 5.25, y: 1.65, w: 4.3, h: 0.3, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top",
   });
   s.addShape(pres.ShapeType.rect, { x: 5.35, y: 2.0, w: 4.1, h: 0.02, fill: { color: C.gold } });
-  s.addText("• Trover 也意為「創作歌曲」\n• 存 ca. 2,100 首詩 · 2/3 有旋律（遠高於 troubadour）\n• 由南法北傳 · Bernart de Ventadorn 功不可沒\n\n重要人物:\n◆ Eleanor of Aquitaine (1122–1204)\n   亞奎丹女公爵、法國與英國王后 · 贊助 Bernart\n◆ Richard I（獅心王，1157–1199）\n   Eleanor 之子，本人就是 trouvère，以法文作詞\n◆ Adam de la Halle (ca. 1240–1288)\n   第一位完整作品被集結手稿的方言詩人\n   代表作：Jeu de Robin et de Marion", {
-    x: 5.3, y: 2.08, w: 4.2, h: 3.1, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• Trover 亦意「創作歌曲」\n• 存 ca. 2,100 首詩；2/3 有旋律\n• 由南法北傳；Bernart 功不可沒\n\n重要人物：\n◆ Eleanor of Aquitaine\n   1122–1204；英法王后，贊助 Bernart\n◆ Richard I（獅心王）\n   1157–1199；本人即 trouvère\n◆ Adam de la Halle\n   ca. 1240–1288；Jeu de Robin et de Marion", {
+    x: 5.3, y: 2.08, w: 4.2, h: 3.1, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   s.addText("歌曲收錄於手稿集「Chansonnier」（歌曲集）· 現存大多為 13 世紀中後期抄本", {
-    x: 0.4, y: 5.25, w: 9.2, h: 0.22, fontSize: 14, color: C.wine, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+    x: 0.4, y: 5.22, w: 9.2, h: 0.28, fontSize: 14, color: C.wine, italic: true, fontFace: "Calibri", align: "center", valign: "top", margin: 0,
   });
 }
 
@@ -330,8 +327,8 @@ function bottomBar(s, color) {
     x: 0.45, y: 1.28, w: 4.3, h: 0.35, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia",
   });
   s.addShape(pres.ShapeType.rect, { x: 0.55, y: 1.66, w: 4.1, h: 0.02, fill: { color: C.gold } });
-  s.addText("• 分節歌式（strophic）\n  每段歌詞共用同一旋律\n\n• 多半音節式（mostly syllabic）\n  偶有兩三音的 neume\n\n• 音域窄，少超過九度\n  Range seldom over a ninth\n\n• 主要級進，偶有三度跳進\n\n• 樂句呈「弧形」：升至高點後下行\n  Phrases arch-shaped\n\n• 符合教會調式 mode 1、mode 7", {
-    x: 0.5, y: 1.78, w: 4.2, h: 3.4, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• 分節歌式（strophic）\n  每段歌詞共用同一旋律\n• 多半音節式（mostly syllabic）\n  偶有兩三音的 neume\n• 音域窄，少超過九度\n  Range seldom over a ninth\n• 主要級進，偶有三度跳進\n• 樂句呈「弧形」：升至高點後下行\n  Phrases arch-shaped\n• 符合教會調式 mode 1、mode 7", {
+    x: 0.5, y: 1.78, w: 4.2, h: 3.4, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   // AAB form
@@ -340,12 +337,12 @@ function bottomBar(s, color) {
     x: 5.25, y: 1.28, w: 4.3, h: 0.35, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia",
   });
   s.addShape(pres.ShapeType.rect, { x: 5.35, y: 1.66, w: 4.1, h: 0.02, fill: { color: C.gold } });
-  s.addText("• 一段樂句群唱兩次（第二次填新詞）+ 對比段\n  Section sung twice (new text) + contrasting section\n\n• A 段與 B 段常以相同樂句結束\n  → 產生「音樂韻腳」(musical rhyme)\n\n• 德國 Minnesinger 稱為 Bar Form\n  A 段 = Stollen（下唇）\n  B 段 = Abgesang（末唱）\n\n• 四首 NAWM 範例:\n  A chantar（Comtessa de Dia）\n  Palästinalied（Walther）\n  Robins m'aime（Adam de la Halle）\n  Non sofre Santa María（Cantiga 159）", {
-    x: 5.3, y: 1.78, w: 4.2, h: 3.4, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• 一段樂句群唱兩次（新詞）+ 對比段\n  Section sung twice (new text) + contrasting\n• A 段與 B 段常以相同樂句結束\n  → 產生「音樂韻腳」(musical rhyme)\n• 德國 Minnesinger 稱為 Bar Form\n  A = Stollen / B = Abgesang\n• NAWM 範例：\n  A chantar（Comtessa de Dia）\n  Palästinalied（Walther）\n  Robins m'aime（Adam de la Halle）\n  Non sofre Santa María（Cantiga 159）", {
+    x: 5.3, y: 1.78, w: 4.2, h: 3.4, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   s.addText("■ 節奏記譜：以聖詠音高符號寫成，不指示節奏——演出時可自由（愛情歌）或按韻律節拍（舞歌）", {
-    x: 0.4, y: 5.26, w: 9.2, h: 0.22, fontSize: 14, color: C.rust, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+    x: 0.4, y: 5.22, w: 9.2, h: 0.28, fontSize: 14, color: C.rust, italic: true, fontFace: "Calibri", align: "center", valign: "top", margin: 0,
   });
 }
 
@@ -455,8 +452,8 @@ function bottomBar(s, color) {
   s.addText("■ Estampie 埃斯坦皮舞曲", {
     x: 0.45, y: 3.18, w: 9.1, h: 0.35, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia",
   });
-  s.addText("現存最常見的中世紀器樂舞曲形式 · 13–14 世紀 · 約 50 首現存（多為單音，少數有鍵盤複音設定）\nThe most common surviving medieval dance; ca. 50 extant tunes (mostly monophonic)\n\n• 結構：數個樂段，每段演奏兩次，使用兩種不同結尾：\n  ① Ouvert 開放結尾（半終止）\n  ② Clos 封閉結尾（完全終止）\n  Each section played twice: open (ouvert) + closed (clos) endings\n• 法國 estampie 全部為三拍子 · 義大利 istampita 用二拍或複合拍，段落較長\n• 範例：Le manuscrit du roi（國王手稿）中的八首「皇家 estampies」（NAWM 13 為第四首）", {
-    x: 0.5, y: 3.52, w: 9.0, h: 1.7, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
+  s.addText("現存最常見的中世紀器樂舞曲；13–14 世紀；約 50 首現存（多為單音）\nMost common surviving medieval dance; ca. 50 extant tunes (mostly monophonic)\n• 結構：數個樂段，每段演奏兩次，使用兩種結尾：\n  ① Ouvert 開放結尾（半終止）／② Clos 封閉結尾（完全終止）\n  Each section played twice: open + closed endings\n• 法國 estampie 為三拍子；義大利 istampita 用二拍或複合拍\n• 範例：Le manuscrit du roi 中八首「皇家 estampies」（NAWM 13）", {
+    x: 0.5, y: 3.52, w: 9.0, h: 1.7, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", margin: 0,
   });
 }
 
@@ -472,22 +469,22 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.78, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   const figures = [
-    ["■", "Guillaume IX", "1071–1126", "亞奎丹公爵、普瓦提埃伯爵；現存最早留名的 troubadour。貴族出身顯示這一藝術深植於上流社會。"],
-    ["■", "Bernart de Ventadorn", "?ca. 1130–?ca. 1200", "最具影響力的 troubadour 之一；Ventadorn 城堡麵包師/僕役之子；後為 Eleanor of Aquitaine 服務，把 troubadour 傳統帶入北法，催生 trouvère 運動。代表作《Can vei la lauzeta mover》"],
-    ["■", "Comtessa de Dia", "fl. late 12th – early 13th c.", "極少數留下音樂作品的 trobairitz（女性遊唱詩人）。《A chantar》是唯一有旋律保存下來的 trobairitz 歌曲（AAB 形式、mode 1）"],
-    ["■", "Walther von der Vogelweide", "?ca. 1170–?ca. 1230", "最著名的 Minnesinger；以宮廷詩歌與政治詩聞名；代表作《Palästinalied》（十字軍歌）仍被當代「中世紀搖滾」樂團改編演奏"],
-    ["■", "Adam de la Halle", "ca. 1240–?1288", "Arras 的 trouvère；第一位完整作品被集結為手稿的方言詩人；《Jeu de Robin et de Marion》（ca. 1284）是最早的世俗音樂劇之一；《Robins m'aime》為 rondeau 形式"],
-    ["■", "Alfonso X el Sabio", "King of Castile 1252–1284", "卡斯提爾與萊昂國王「智者阿方索」；監督編纂《Cantigas de Santa María》——400+ 首讚美聖母的歌，收錄於四部華麗的插圖手稿中"],
+    ["■", "Guillaume IX", "1071–1126", "亞奎丹公爵；現存最早留名的 troubadour；貴族出身顯示此藝術深植上流社會"],
+    ["■", "Bernart de Ventadorn", "?ca. 1130–?ca. 1200", "最具影響力 troubadour 之一；僕役之子；服務 Eleanor 並將傳統帶入北法；代表作 Can vei la lauzeta mover"],
+    ["■", "Comtessa de Dia", "fl. late 12th – early 13th c.", "極少數留下音樂作品的 trobairitz；A chantar 為唯一旋律保存的 trobairitz 歌曲（AAB、mode 1）"],
+    ["■", "Walther von der Vogelweide", "?ca. 1170–?ca. 1230", "最著名 Minnesinger；以宮廷詩與政治詩聞名；代表作 Palästinalied（十字軍歌）"],
+    ["■", "Adam de la Halle", "ca. 1240–?1288", "Arras 的 trouvère；第一位完整作品集結手稿的方言詩人；Jeu de Robin et de Marion（ca. 1284）"],
+    ["■", "Alfonso X el Sabio", "King of Castile 1252–1284", "「智者阿方索」；監督編纂 Cantigas de Santa María——400+ 首讚美聖母歌，四部插圖手稿"],
   ];
 
   figures.forEach(([icon, name, date, desc], i) => {
-    const y = 0.9 + i * 0.76;
-    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.65, fill: { color: C.wine }, rounding: true });
-    s.addText(icon, { x: 0.4, y: y + 0.1, w: 0.55, h: 0.45, fontSize: 18, align: "center", margin: 0 });
+    const y = 0.86 + i * 0.76;
+    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.70, fill: { color: C.wine }, rounding: true });
+    s.addText(icon, { x: 0.4, y: y + 0.12, w: 0.55, h: 0.45, fontSize: 18, align: "center", margin: 0 });
     s.addText(name, { x: 1.0, y: y + 0.05, w: 3.1, h: 0.3, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-    s.addText(date, { x: 1.0, y: y + 0.32, w: 3.1, h: 0.28, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
-    s.addShape(pres.ShapeType.rect, { x: 4.15, y: y + 0.1, w: 0.025, h: 0.45, fill: { color: C.gold } });
-    s.addText(desc, { x: 4.25, y: y + 0.04, w: 5.4, h: 0.58, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addText(date, { x: 1.0, y: y + 0.34, w: 3.1, h: 0.3, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", valign: "top", margin: 0 });
+    s.addShape(pres.ShapeType.rect, { x: 4.15, y: y + 0.1, w: 0.025, h: 0.5, fill: { color: C.gold } });
+    s.addText(desc, { x: 4.25, y: y + 0.04, w: 5.4, h: 0.62, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 }
 
@@ -556,12 +553,12 @@ function bottomBar(s, color) {
   });
 
   // Revival box
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.18, w: 9.4, h: 2.0, fill: { color: C.rust }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.15, w: 9.4, h: 2.30, fill: { color: C.rust }, rounding: true });
   s.addText("■ 後世的重新發現 Rediscovery", {
-    x: 0.45, y: 3.26, w: 9.1, h: 0.35, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia",
+    x: 0.45, y: 3.22, w: 9.1, h: 0.32, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("• 18–19 世紀：民族文化復興 → 對中世紀的興趣重燃 · 收集整理 trouvère 歌曲配鋼琴伴奏出版\n  18th–19th c.: nationalism revives interest in the Middle Ages\n• 1872：Adam de la Halle 音樂作品被轉寫並出版\n  1872: Adam de la Halle's works transcribed and published\n• 20 世紀：更多中世紀曲目版本陸續問世\n• 近幾十年：中世紀世俗歌曲與器樂舞曲復興——音樂會與錄音\n  Recent decades: revival in concerts and recordings\n• 當代「中世紀搖滾」改編如 Walther von der Vogelweide《Palästinalied》（被多支歐洲樂團錄製）\n  Contemporary \"medieval rock\" arrangements", {
-    x: 0.5, y: 3.62, w: 9.0, h: 1.55, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• 18–19 世紀：民族文化復興，對中世紀興趣重燃；trouvère 歌曲配鋼琴伴奏出版\n  18th–19th c.: nationalism revives medieval interest\n• 1872：Adam de la Halle 音樂作品被轉寫並出版\n• 近幾十年：中世紀世俗歌曲與器樂舞曲復興——音樂會與錄音\n  Recent decades: concert and recording revival\n• 當代「中世紀搖滾」改編如 Palästinalied\n  Contemporary \"medieval rock\" arrangements", {
+    x: 0.5, y: 3.56, w: 9.0, h: 1.85, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 }
 

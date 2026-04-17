@@ -168,21 +168,21 @@ function bottomBar(s, color) {
   });
 
   // Note-against-note
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.35, w: 4.6, h: 1.9, fill: { color: C.rust }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.3, w: 4.6, h: 2.0, fill: { color: C.rust }, rounding: true });
   s.addText("③ 音對音奧爾加農 Note-Against-Note", {
-    x: 0.45, y: 3.42, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
+    x: 0.45, y: 3.36, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("• 11 世紀後期 · 附加聲部置於聖詠之上\n• 使用逆向（contrary）與斜行（oblique）\n• 聲部常交叉——更自由的橫向線條\n• 已使用三度作為協和音程\n• 由 organal voice 變為 upper voice", {
-    x: 0.5, y: 3.92, w: 4.2, h: 1.29, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• 11 世紀後期；附加聲部置於聖詠之上\n• 使用逆向（contrary）與斜行（oblique）\n• 聲部常交叉——更自由的橫向線條\n• 已使用三度作為協和音程\n• 由 organal voice 變為 upper voice", {
+    x: 0.5, y: 3.82, w: 4.2, h: 1.44, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   // Ad organum faciendum
-  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 3.35, w: 4.6, h: 1.9, fill: { color: C.slate }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 5.1, y: 3.3, w: 4.6, h: 2.0, fill: { color: C.slate }, rounding: true });
   s.addText("■ Ad organum faciendum", {
-    x: 5.25, y: 3.42, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
+    x: 5.25, y: 3.36, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("「如何作奧爾加農」· ca. 1100\n• 最重要的早期複音實用教本\n• 提供音對音複音的具體範例\n• 此時複音仍被視為對聖詠的即興裝飾\n• 手稿中的記譜僅供教學——實際演唱\n  大多仍為即興與口傳", {
-    x: 5.3, y: 3.92, w: 4.2, h: 1.29, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("「如何作奧爾加農」· ca. 1100\n• 最重要的早期複音實用教本\n• 提供音對音複音具體範例\n• 複音仍被視為對聖詠的即興裝飾\n• 記譜僅供教學；實際多為即興口傳", {
+    x: 5.3, y: 3.82, w: 4.2, h: 1.44, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 }
 
@@ -245,21 +245,21 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.04, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   // Cathedral / context
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.2, w: 9.4, h: 1.9, fill: { color: C.wine }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.18, w: 9.4, h: 2.0, fill: { color: C.wine }, rounding: true });
   s.addText("■ 聖母院與大學 Cathedral & University", {
-    x: 0.45, y: 1.27, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
+    x: 0.45, y: 1.24, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("• 建築工程：奠基 ca. 1160 · 祭壇區 1182 · 首祭 1183 · 中殿 ca. 1200 · 正立面 ca. 1250\n  Foundations ca. 1160, choir 1182, first mass 1183, nave ca. 1200, façade ca. 1250\n• 與巴黎大學（ca. 1150 創立）在地理與人脈上密不可分——是哲學與神學的中心\n  Linked to the nascent University of Paris — a center of Scholastic thought\n• 其建築的高度、華麗、結構複雜——音樂也對應地變得又長、又繁、又結構化\n  The music paralleled the cathedral: long, intricate, carefully structured", {
-    x: 0.5, y: 1.77, w: 9.0, h: 1.28, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• 建築：奠基 ca. 1160、祭壇 1182、中殿 ca. 1200、正立面 ca. 1250\n  Choir 1182, nave ca. 1200, façade ca. 1250\n• 與巴黎大學（ca. 1150）密不可分——哲學與神學的中心\n  Linked to the University of Paris — center of Scholastic thought\n• 音樂亦長、繁、結構化——仿教堂建築\n  Music paralleled the cathedral: long, intricate, structured", {
+    x: 0.5, y: 1.70, w: 9.0, h: 1.45, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 
   // Transmission
-  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.2, w: 9.4, h: 2.05, fill: { color: C.rust }, rounding: true });
+  s.addShape(pres.ShapeType.rect, { x: 0.3, y: 3.25, w: 9.4, h: 2.0, fill: { color: C.rust }, rounding: true });
   s.addText("■ 傳播與口頭傳承 Transmission & Orality", {
-    x: 0.45, y: 3.27, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
+    x: 0.45, y: 3.32, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("• 此曲目在西歐傳唱逾一世紀——從西班牙到波蘭、從義大利到蘇格蘭\n  Repertory sung for over a century across Europe from Spain to Poland\n• 現存最早手稿來自 1240 年代——比曲目本身晚了數十年\n  Earliest manuscripts date from 1240s, decades after the music was first created\n• 同一曲在不同手稿中文本差異明顯 → 顯示口傳與即興仍為主要媒介\n  Versions vary between manuscripts — evidence of oral transmission alongside writing\n• 梵蒂岡所藏一份 ca. 1200 年巴黎抄本描述「如何即興演唱 Notre Dame 風格的奧爾加農」", {
-    x: 0.5, y: 3.77, w: 9.0, h: 1.43, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
+  s.addText("• 曲目在西歐傳唱逾一世紀——從西班牙到蘇格蘭\n  Sung across Europe for over a century\n• 現存最早手稿來自 1240 年代，晚於曲目數十年\n  Earliest manuscripts from the 1240s\n• 同曲在不同手稿中文本差異——顯示口傳為主要媒介\n  Manuscript variations show oral transmission", {
+    x: 0.5, y: 3.78, w: 9.0, h: 1.45, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0,
   });
 }
 
@@ -278,8 +278,8 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
   // Context
-  s.addText("Johannes de Garlandia (ca. 1260) 在 De mensurabili musica 中歸納為六種「模式」，以連音符組合（ligatures）表示", {
-    x: 0.4, y: 1.25, w: 9.2, h: 0.3, fontSize: 14, color: C.sand, fontFace: "Calibri", italic: true, align: "center", valign: "top",
+  s.addText("Johannes de Garlandia (ca. 1260) 在 De mensurabili musica 歸納為六種「模式」，以連音符組合表示", {
+    x: 0.4, y: 1.22, w: 9.2, h: 0.35, fontSize: 14, color: C.sand, fontFace: "Calibri", italic: true, align: "center", valign: "top", margin: 0,
   });
 
   // Modes table header
@@ -408,7 +408,7 @@ function bottomBar(s, color) {
   s.addText("■ 起源 Origin", {
     x: 0.45, y: 1.26, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("• 巴黎聖母院樂手在 13 世紀初，為 discant clausula 的上聲部\n  加上新的拉丁歌詞——如同之前為花唱填詞而成的 tropes 和 sequences\n• 產生的新體裁稱為「motet」（拉丁 motetus，源自法文 mot =「字」）\n• 由此，一段原本無詞的音樂裝飾（clausula），反過來被「加上文字裝飾」\n  A musical decoration gets decorated in turn with words\n• 經文歌常以各聲部第一字組成複合標題：如 Factum est salutare / Dominus", {
+  s.addText("• 13 世紀初，巴黎樂手為 discant clausula 上聲部加上拉丁新詞（如同 tropes 之於花唱）\n• 新體裁稱為「motet」：拉丁 motetus < 法文 mot 字\n• 音樂裝飾反過來被文字裝飾：decoration gets decorated in turn\n• 常以各聲部首字組成複合標題：Factum est salutare / Dominus", {
     x: 0.5, y: 1.76, w: 9.0, h: 1.16, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
   });
 
@@ -417,7 +417,7 @@ function bottomBar(s, color) {
   s.addText("■ 演變 Development Over the 13th Century", {
     x: 0.45, y: 3.13, w: 9.1, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("• 初期：拉丁宗教文本，以 clausula 為骨架 · 可在彌撒中演唱\n• 中期：增加第三、第四聲部 → double motet（兩歌詞）· triple motet（三歌詞）\n• 後期：使用法文、世俗主題 → motet 脫離教會 · 成為文化菁英的娛樂\n• tenor 原為聖詠段落，後成為純粹的音樂骨幹——Hieronymus de Moravia\n  ca. 1270 稱其為「cantus firmus」（固定曲調）\n• 至 13 世紀中葉，經文歌已取代 organum 與 conductus，成為主導的複音體裁\n  By mid-century, the motet displaced organum and conductus as the leading genre", {
+  s.addText("• 初期：拉丁宗教文本以 clausula 為骨架，可在彌撒中演唱\n• 中期：加入三、四聲部 → double / triple motet（多歌詞）\n• 後期：法文、世俗主題 → 脫離教會，成為菁英的娛樂\n• tenor 由聖詠段落轉為純音樂骨幹 → Hieronymus de Moravia ca. 1270 稱「cantus firmus」\n• 13 世紀中葉 motet 取代 organum 與 conductus，成為主導體裁", {
     x: 0.5, y: 3.63, w: 9.0, h: 1.55, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
   });
 }
@@ -450,7 +450,7 @@ function bottomBar(s, color) {
   s.addText("■ 後期經文歌風格", {
     x: 5.25, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0,
   });
-  s.addText("① Franconian Motet\n• 以 Franco 命名的新式經文歌\n• 各上聲部獨立節奏 · 不再遵循節奏模式\n• 例：Adam de la Halle\n\n② Petronian Motet\n• Petrus de Cruce / Pierre de la Croix\n• 每 tempus 可容納多達 7 個 semibreves\n• 三聲部速度層級：tenor(慢)+duplum(中)+triplum(快)\n• 例：Aucun ont trouvé (NAWM 22)\n\n③ Choirbook Format\n• 三聲部分寫於同頁或對頁\n• triplum · motetus · tenor 各佔區域\n• 1280 起至 16 世紀沿用", {
+  s.addText("① Franconian Motet\n• 以 Franco 命名的新式經文歌\n• 各上聲部獨立節奏，不遵循節奏模式\n• 例：Adam de la Halle\n\n② Petronian Motet\n• Petrus de Cruce / Pierre de la Croix\n• 每 tempus 可容納多達 7 個 semibreves\n• 三聲部速度層級：tenor 慢+duplum 中+triplum 快\n• 例：Aucun ont trouvé (NAWM 22)\n\n③ Choirbook Format\n• 三聲部分寫於同頁或對頁\n• 1280 起至 16 世紀沿用", {
     x: 5.3, y: 1.88, w: 4.2, h: 3.55, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
   });
 }
@@ -581,12 +581,12 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.12, w: 7, h: 0.04, fill: { color: C.gold } });
 
   const points = [
-    ["■", "11–13 世紀複音的興起是西方音樂史上的重大轉折——多聲部協調、對位、和聲、垂直音響成為西方傳統的核心\nThe rise of polyphony 11th–13th c. was a turning point: coordinated parts, counterpoint, harmony"],
-    ["■", "當代為複音而發展的記譜法引入兩項永久特徵：聲部垂直對齊、用不同音符形狀表示相對時值\nNotation innovations: vertical alignment of parts; note shapes indicating duration"],
-    ["■", "巴黎聖母院學派創造了前所未見的音樂複雜度——長度、結構、三四聲部的協調，皆如同大教堂的建築\nNotre Dame's music matched the cathedral: unprecedented length, structure, grandeur"],
-    ["■", "經文歌從 clausula 的填詞演變為世俗菁英的娛樂——成為複音音樂的主導體裁直到中世紀末\nThe motet evolved from clausula trope to elite entertainment, dominating through the late Middle Ages"],
-    ["■", "大多數中世紀複音只存活了一兩代——後被視為「粗糙」· 直到 20 世紀才重新被發掘\nMost medieval polyphony faded within a generation or two; revived only in the 20th century"],
-    ["■", "中世紀的聲響啟發了 Debussy 的平行和弦、極簡主義的重複模式、嘻哈的分層文本——古老音樂的回聲\nMedieval sounds echo in Debussy, minimalism, and even the layered texts of hip hop"],
+    ["■", "11–13 世紀複音興起：對位、和聲、垂直音響成為西方傳統核心\nPolyphony 11th–13th c.: counterpoint and harmony enter Western tradition"],
+    ["■", "記譜法引入兩大特徵：聲部垂直對齊、音符形狀表時值\nNotation: vertical alignment of parts; note shapes indicating duration"],
+    ["■", "聖母院學派的音樂如大教堂——長度、結構、多聲部協調前所未見\nNotre Dame music matched the cathedral: length, structure, grandeur"],
+    ["■", "經文歌由 clausula 填詞演變為世俗娛樂，主導中世紀晚期\nThe motet evolved from clausula trope to elite entertainment"],
+    ["■", "大多中世紀複音一兩代後即被視為粗糙，20 世紀才重新發掘\nMost medieval polyphony faded quickly, revived only in the 20th c."],
+    ["■", "中世紀聲響回聲於 Debussy 的平行和弦、極簡主義、嘻哈分層文本\nMedieval sounds echo in Debussy, minimalism, and hip hop"],
   ];
 
   points.forEach(([icon, text], i) => {

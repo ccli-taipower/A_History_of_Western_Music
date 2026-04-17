@@ -190,7 +190,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   // Mass
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.3, w: 9.4, h: 1.55, fill: { color: "3A2015" }, rounding: true });
   s.addText("■ La Messe de Nostre Dame (ca. 1360s)", { x: 0.45, y: 1.36, w: 9.1, h: 0.32, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia" });
-  s.addText("• 首部由單一作曲家設想為整體的常規彌撒（Mass Ordinary）複音曲\n• 4 聲部 · 加入 contratenor 與 tenor 同音域（上下互換）· 為 Reims 主教座堂聖母禮拜所作\n• Kyrie / Sanctus / Agnus Dei / Ite missa est — isorhythmic · 帶 cantus firmus\n• Gloria / Credo — discant / conductus 風格（syllabic、同節奏聲部）· Gloria 的 \"Jesu Christe\" 以持續和弦突顯\n• 前三樂章以 D 為調心，後三樂章以 F 為調心 —— 風格統一", {
+  s.addText("• 首部由單一作曲家構思為整體的常規彌撒（Mass Ordinary）複音曲，為 Reims 主教座堂聖母禮所作\n• 4 聲部：加入 contratenor 與 tenor 同音域，上下互換\n• Kyrie / Sanctus / Agnus Dei / Ite missa est 採 isorhythmic + cantus firmus\n• Gloria / Credo 採 discant / conductus 風格（syllabic、同節奏）", {
     x: 0.5, y: 1.7, w: 9.0, h: 1.15, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
   });
 
@@ -253,9 +253,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   // Three genres
   const genres = [
-    ["■ Madrigal", "14 世紀的牧歌", "兩到三聲部 · 全部聲部唱相同歌詞\n• 詩節結構：aa b（ritornello 尾韻）\n• 田園、諷刺、或情詩主題\n• Jacopo da Bologna: Non al suo amante（NAWM 29）"],
-    ["■ Caccia", "狩獵歌", "字面意為「狩獵」· 上兩聲部嚴格卡農\n• 下方 untexted tenor 緩慢支持\n• 主題：狩獵、市集、戰鬥——\n  生動的對話與回聲 · 常用 hocket\n• Landini: Così pensoso（NAWM 30）"],
-    ["■ Ballata", "舞曲歌", "「ballare」= 跳舞 · AbbaA 形式\n• 類似法國 virelai 的單一詩節\n• 1365 年後多為 2–3 聲部複音\n• 高聲部主導（受法國 chanson 影響）\n• Landini: Non avrà ma' pietà（NAWM 31）"],
+    ["■ Madrigal", "14 世紀牧歌", "兩到三聲部 · 各聲部同詞\n• 結構：aa b（ritornello 尾韻）\n• 田園、諷刺、情詩主題\n• Jacopo: Non al suo amante (NAWM 29)"],
+    ["■ Caccia", "狩獵歌", "「狩獵」· 上兩聲部嚴格卡農\n• tenor 緩慢支持\n• 主題：狩獵、市集、戰鬥\n• 常用 hocket 表現回聲\n• Landini: Così pensoso (NAWM 30)"],
+    ["■ Ballata", "舞曲歌", "「ballare」= 跳舞 · AbbaA\n• 類似法國 virelai 單一詩節\n• 1365 後多為 2–3 聲部\n• 高聲部主導（chanson 影響）\n• Landini: Non avrà (NAWM 31)"],
   ];
   genres.forEach(([name, tag, desc], i) => {
     const x = 0.3 + i * 3.18;
@@ -281,7 +281,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.2, w: 4.6, h: 4.15, fill: { color: C.wine }, rounding: true });
   s.addText("■ 生平", { x: 0.45, y: 1.28, w: 4.3, h: 0.35, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia" });
   s.addShape(pres.ShapeType.rect, { x: 0.55, y: 1.66, w: 4.1, h: 0.02, fill: { color: C.gold } });
-  s.addText("• 出生於佛羅倫斯（或鄰近 Fiesole）\n• 畫家之子 · 幼年染天花失明\n• 轉向音樂——成為卓越的演奏家、作曲家、詩人\n• 擅長多種樂器，尤以 organetto\n  （小型可攜式管風琴）聞名\n• 1361–65 任 Santa Trinità 管風琴師\n• 1365–97 任 San Lorenzo 教堂 chaplain\n\n■ 軼事（Giovanni da Prato 記載）：\n  據說當 Landini 彈奏 organetto 時，\n  樹上的鳥群會停止歌唱而傾聽，\n  其中一隻夜鶯棲在他頭上\n  的樹枝繼續鳴叫", {
+  s.addText("• 生於佛羅倫斯（或鄰近 Fiesole）\n• 畫家之子 · 幼年染天花失明\n• 轉向音樂 — 成為傑出演奏家、作曲家、詩人\n• 以 organetto 小型管風琴聞名\n• 1361–65 任 Santa Trinità 管風琴師\n• 1365–97 任 San Lorenzo chaplain\n\n■ 軼事（Giovanni da Prato 記載）\n  Landini 彈奏時鳥群會停下傾聽，\n  夜鶯甚至棲在其頭上樹枝鳴叫", {
     x: 0.5, y: 1.78, w: 4.2, h: 3.6, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
   });
 
@@ -289,7 +289,7 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 5.1, y: 1.2, w: 4.6, h: 4.15, fill: { color: C.midBrown }, rounding: true });
   s.addText("■ 音樂特徵 Musical Style", { x: 5.25, y: 1.28, w: 4.3, h: 0.35, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia" });
   s.addShape(pres.ShapeType.rect, { x: 5.35, y: 1.66, w: 4.1, h: 0.02, fill: { color: C.gold } });
-  s.addText("■ 作品：140 ballate · 12 madrigals\n  · 1 caccia · 1 virelai —— 無宗教音樂\n\n■ 旋律優雅如拱——級進為主、弧形線條\n  比 Machaut 更平滑流暢\n\n■ 三度與六度的和聲頻繁——甜美\n\n■ 每行詩首末音節加花唱，\n  中間為音節式宣讀\n\n■ Landini 終止式（Landini cadence）：\n  上聲部先下行到下鄰音，\n  再上跳三度到主音\n  14–15 世紀法義音樂普及\n\n■ 埋葬於 San Lorenzo\n  墓碑刻其彈奏 organetto 形象", {
+  s.addText("■ 作品：140 ballate · 12 madrigals\n  1 caccia · 1 virelai · 無宗教音樂\n\n■ 旋律如拱——級進為主、弧形線條\n  比 Machaut 更平滑流暢\n\n■ 三度與六度和聲頻繁——甜美\n\n■ 詩首末音節加花，中間音節式宣讀\n\n■ Landini 終止式（Landini cadence）：\n  上聲部下行到下鄰音，\n  再上跳三度到主音 · 14–15 世紀普及\n\n■ 葬於 San Lorenzo · 墓碑刻 organetto", {
     x: 5.3, y: 1.78, w: 4.2, h: 3.6, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top",
   });
 }
@@ -396,11 +396,11 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   const points = [
     ["■", "Ars Nova 記譜是現代記譜的直系祖先——首次能精確記下任何節奏，包括切分音\nArs Nova notation is the direct ancestor of modern notation, first able to capture any rhythm"],
-    ["■", "精確記譜使作品能獨立流通——催生作曲家的「作者意識」，Machaut 是第一個主動編全集的例子\nAccurate notation enabled composers to take pride in authorship, first seen in Machaut"],
+    ["■", "精確記譜讓作品獨立流通，催生作曲家的「作者意識」\nAccurate notation enabled composer authorship, first seen in Machaut"],
     ["■", "動盪的世紀產出最精緻的藝術——結構（isorhythm、formes fixes）與感官愉悅並重\nA turbulent century produced the most refined art: structure and sensory pleasure in balance"],
     ["■", "三度與六度的甜美與平行五八度的古老並存——14 世紀和聲的獨特聲響\nThirds and sixths coexist with parallel fifths and octaves—a distinctive 14th-century sound"],
     ["FRIT", "法國理性結構與義大利旋律流暢——為 15 世紀國際風格鋪路\nFrench structure + Italian lyricism foreshadow the 15th-century international style"],
-    ["■", "Messiaen、Ligeti 受 Ars Subtilior 影響；Panda Bear 取樣 Machaut；Landini 進入 Judy Collins 的專輯\nModern echoes: Messiaen, Ligeti, Panda Bear's \"I'm Not\", Judy Collins's Wildflowers"],
+    ["■", "Messiaen、Ligeti 受 Ars Subtilior 啟發；Machaut 與 Landini 進入流行音樂取樣\nModern echoes: Messiaen, Ligeti, Panda Bear, Judy Collins"],
   ];
   points.forEach(([icon, text], i) => {
     const y = 1.15 + i * 0.72;
