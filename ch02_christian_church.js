@@ -388,18 +388,18 @@ function bottomBar(s, color) {
   });
 
   const stages = [
-    ["① 口耳相傳\nOral Transmission", "記譜法出現前，聖詠靠口傳記憶；歌手學習數以百計的旋律，全靠記憶\nBefore notation, chants were memorized through oral transmission; singers memorized hundreds of melodies"],
-    ["② 紐姆符號\nNeumes (9th c.)", "寫在文字上方的記號（gesture/shape），提示旋律輪廓——但不指定確切音高\nSigns placed above text to indicate melodic contour—direction, shape—but not precise pitches or intervals"],
-    ["③ 有高度紐姆\nHeighted Neumes (10–11th c.)", "紐姆符號寫在不同高度以指示音高；加一條橫線輔助辨識音高（音高相對但仍不確定）\nNeumes placed at varying heights above text to indicate relative pitch; a scratched line helped identify one note"],
-    ["④ 線譜與音符\nLines, Clef & Staff", "阿雷佐的桂多（ca. 991–1033）：四線譜，F、C 譜號，紐姆符號改良為精確音符\nGuido of Arezzo: four-line staff with F and C clefs; neumes reshaped to indicate pitch exactly; music could now be read at sight"],
+    ["① 口耳相傳\nOral Transmission", "記譜法出現前，聖詠靠口傳記憶；歌手須記數百旋律\nBefore notation, chants memorized orally; hundreds of melodies"],
+    ["② 紐姆符號\nNeumes (9th c.)", "文字上方記號（gesture/shape），提示旋律輪廓但不定音高\nSigns above text show melodic contour — no precise pitch"],
+    ["③ 有高度紐姆\nHeighted Neumes (10–11th c.)", "紐姆寫在不同高度以指示音高；加一條橫線輔助辨識\nNeumes at varying heights show relative pitch; one scratched line added"],
+    ["④ 線譜與音符\nLines, Clef & Staff", "阿雷佐桂多（ca. 991–1033）：四線譜，F、C 譜號，精確音符\nGuido of Arezzo: four-line staff with F/C clefs — precise pitch"],
   ];
 
   stages.forEach(([title, desc], i) => {
-    const y = 1.42 + i * 0.98;
-    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.86, fill: { color: C.wine }, rounding: true });
-    s.addText(title, { x: 0.45, y: y + 0.06, w: 2.4, h: 0.72, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
-    s.addShape(pres.ShapeType.rect, { x: 2.95, y: y + 0.12, w: 0.04, h: 0.6, fill: { color: C.gold } });
-    s.addText(desc, { x: 3.08, y: y + 0.07, w: 6.5, h: 0.72, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
+    const y = 1.38 + i * 1.0;
+    s.addShape(pres.ShapeType.rect, { x: 0.3, y, w: 9.4, h: 0.94, fill: { color: C.wine }, rounding: true });
+    s.addText(title, { x: 0.45, y: y + 0.07, w: 2.6, h: 0.8, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0, valign: "top" });
+    s.addShape(pres.ShapeType.rect, { x: 3.15, y: y + 0.1, w: 0.04, h: 0.72, fill: { color: C.gold } });
+    s.addText(desc, { x: 3.28, y: y + 0.05, w: 6.25, h: 0.88, fontSize: 14, color: C.cream, fontFace: "Calibri", valign: "top", margin: 0 });
   });
 }
 
@@ -418,8 +418,8 @@ function bottomBar(s, color) {
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 1.1, w: 7, h: 0.04, fill: { color: C.gold } });
 
   // Context
-  s.addText("波愛修斯生於羅馬貴族，後受哥德統治者狄奧多里克任命，依據希臘文獻（畢達哥拉斯、托勒密）撰寫《音樂基礎》。此書在中世紀被奉為最高音樂理論權威超過一千年。\nBoethius, born into Roman nobility, compiled De institutione musica from Greek sources (Pythagoras, Ptolemy). It was the authoritative text on music theory for over a thousand years.", {
-    x: 0.4, y: 1.18, w: 9.2, h: 0.75, fontSize: 14, color: C.sand, fontFace: "Calibri", italic: false, valign: "top",
+  s.addText("波愛修斯依據希臘文獻（畢達哥拉斯、托勒密）撰寫《音樂基礎》，在中世紀被奉為最高音樂理論權威\nBoethius compiled De institutione musica from Greek sources; authoritative medieval music theory text for a millennium", {
+    x: 0.4, y: 1.18, w: 9.2, h: 0.72, fontSize: 14, color: C.sand, fontFace: "Calibri", italic: false, valign: "top",
   });
 
   // Three types of music
@@ -446,15 +446,15 @@ function bottomBar(s, color) {
 
   types.forEach(({ name, desc, color, icon }, i) => {
     const x = 0.3 + i * 3.25;
-    s.addShape(pres.ShapeType.rect, { x, y: 2.05, w: 3.05, h: 2.75, fill: { color }, rounding: true });
-    s.addText(icon, { x, y: 2.1, w: 3.05, h: 0.45, fontSize: 22, align: "center" });
-    s.addText(name, { x: x + 0.1, y: 2.55, w: 2.85, h: 0.6, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
+    s.addShape(pres.ShapeType.rect, { x, y: 2.08, w: 3.05, h: 2.62, fill: { color }, rounding: true });
+    s.addText(icon, { x, y: 2.13, w: 3.05, h: 0.45, fontSize: 22, align: "center" });
+    s.addText(name, { x: x + 0.1, y: 2.58, w: 2.85, h: 0.6, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", align: "center" });
     s.addShape(pres.ShapeType.rect, { x: x + 0.3, y: 3.18, w: 2.45, h: 0.03, fill: { color: C.gold } });
-    s.addText(desc, { x: x + 0.1, y: 3.3, w: 2.85, h: 1.4, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", align: "center" });
+    s.addText(desc, { x: x + 0.1, y: 3.28, w: 2.85, h: 1.35, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top", align: "center" });
   });
 
-  s.addText("對波愛修斯而言，音樂首先是知識的對象；真正的音樂家是「理解」音樂的人，而非演奏者\nFor Boethius, music is knowledge, not practice; the true musician understands, not plays", {
-    x: 0.4, y: 4.92, w: 9.2, h: 0.5, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", align: "center", valign: "top",
+  s.addText("對波愛修斯而言，音樂首先是知識的對象；真正的音樂家是「理解」音樂的人，而非演奏者\nFor Boethius, music is knowledge; the true musician understands, not plays", {
+    x: 0.4, y: 4.82, w: 9.2, h: 0.58, fontSize: 14, color: C.sand, italic: true, fontFace: "Calibri", align: "center", valign: "top",
   });
 }
 
@@ -467,18 +467,18 @@ function bottomBar(s, color) {
   s.addText("教會調式體系 The Church Modes", {
     x: 0.4, y: 0.18, w: 9.2, h: 0.52, fontSize: 26, bold: true, color: C.wine, fontFace: "Georgia", margin: 0,
   });
-  s.addText("源自拜占庭的八種 echoi，是組織與記憶格里高利聖詠的核心工具 · Adapted from Byzantine echoi; central tool for classifying and memorizing Gregorian chant", {
-    x: 0.4, y: 0.7, w: 9.2, h: 0.35, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", margin: 0, valign: "top",
+  s.addText("源自拜占庭的八種 echoi · 組織與記憶格里高利聖詠的核心工具\nBased on Byzantine echoi · central tool for classifying Gregorian chant", {
+    x: 0.4, y: 0.7, w: 9.2, h: 0.52, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", margin: 0, valign: "top",
   });
-  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.06, w: 9.2, h: 0.03, fill: { color: C.sand } });
+  s.addShape(pres.ShapeType.rect, { x: 0.4, y: 1.24, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   // Table header
   const headers = ["調式 Mode", "最終音 Final", "類型 Type", "音程特徵 Intervals", "調式名 Greek Name"];
   const hWidths = [2.15, 1.1, 1.45, 2.3, 2.2];
   let hx = 0.35;
   headers.forEach((h, i) => {
-    s.addShape(pres.ShapeType.rect, { x: hx, y: 1.12, w: hWidths[i] - 0.05, h: 0.4, fill: { color: C.wine }, rounding: false });
-    s.addText(h, { x: hx + 0.05, y: 1.14, w: hWidths[i] - 0.1, h: 0.36, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+    s.addShape(pres.ShapeType.rect, { x: hx, y: 1.30, w: hWidths[i] - 0.05, h: 0.38, fill: { color: C.wine }, rounding: false });
+    s.addText(h, { x: hx + 0.05, y: 1.32, w: hWidths[i] - 0.1, h: 0.34, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
     hx += hWidths[i];
   });
 
@@ -495,14 +495,14 @@ function bottomBar(s, color) {
   ];
 
   modes.forEach(([mode, final, type, intervals, greek], i) => {
-    const y = 1.55 + i * 0.42;
+    const y = 1.72 + i * 0.40;
     const bg = i % 2 === 0 ? "F0E8D8" : C.cream;
     const row = [mode, final, type, intervals, greek];
     let rx = 0.35;
     row.forEach((cell, j) => {
-      s.addShape(pres.ShapeType.rect, { x: rx, y, w: hWidths[j] - 0.05, h: 0.4, fill: { color: bg } });
+      s.addShape(pres.ShapeType.rect, { x: rx, y, w: hWidths[j] - 0.05, h: 0.38, fill: { color: bg } });
       s.addText(cell, {
-        x: rx + 0.05, y: y + 0.02, w: hWidths[j] - 0.1, h: 0.36,
+        x: rx + 0.05, y: y + 0.02, w: hWidths[j] - 0.1, h: 0.34,
         fontSize: 14,
         bold: j === 0,
         color: j === 0 ? C.wine : C.darkText,
@@ -513,7 +513,7 @@ function bottomBar(s, color) {
     });
   });
 
-  s.addText("正格 (authentic)：音域從 final 上行一個八度；變格 (plagal)：音域跨越 final 上下\nAuthentic: range extends up an octave from final; Plagal: range spans both sides of final", {
+  s.addText("正格 (authentic)：音域從 final 上行一個八度；變格 (plagal)：音域跨越 final 上下\nAuthentic: range extends octave up from final; Plagal: range spans both sides", {
     x: 0.35, y: 4.95, w: 9.3, h: 0.5, fontSize: 14, color: C.midBrown, italic: true, fontFace: "Calibri", valign: "top",
   });
 }
@@ -538,7 +538,7 @@ function bottomBar(s, color) {
     x: 0.45, y: 1.26, w: 4.8, h: 0.45, fontSize: 16, bold: true, color: C.gold, fontFace: "Georgia",
   });
   s.addText("桂多從讚美詩《Ut queant laxis》每句開頭音節命名六個音\nGuido named six syllables from the hymn Ut queant laxis", {
-    x: 0.45, y: 1.74, w: 4.8, h: 0.55, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
+    x: 0.45, y: 1.74, w: 4.8, h: 0.72, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
   });
 
   // Syllable table
@@ -552,13 +552,13 @@ function bottomBar(s, color) {
   ];
   syllables.forEach(([syl, note], i) => {
     const sx = 0.55 + i * 0.8;
-    s.addShape(pres.ShapeType.rect, { x: sx, y: 2.35, w: 0.68, h: 0.9, fill: { color: C.wine }, rounding: true });
-    s.addText(syl, { x: sx, y: 2.4, w: 0.68, h: 0.42, fontSize: 18, bold: true, color: C.gold, align: "center", fontFace: "Georgia" });
-    s.addText(note, { x: sx, y: 2.82, w: 0.68, h: 0.38, fontSize: 14, color: C.cream, align: "center", fontFace: "Calibri", valign: "top" });
+    s.addShape(pres.ShapeType.rect, { x: sx, y: 2.52, w: 0.68, h: 0.82, fill: { color: C.wine }, rounding: true });
+    s.addText(syl, { x: sx, y: 2.57, w: 0.68, h: 0.42, fontSize: 18, bold: true, color: C.gold, align: "center", fontFace: "Georgia" });
+    s.addText(note, { x: sx, y: 2.96, w: 0.68, h: 0.36, fontSize: 14, color: C.cream, align: "center", fontFace: "Calibri", valign: "top" });
   });
 
   s.addText("* ut 後改為 do (later changed to do)\n唱名法的功能：幫助歌手辨識音程；mi→fa 是半音，其他相鄰音為全音\nSolmization helped singers identify intervals: mi–fa is a semitone, all others are whole tones", {
-    x: 0.45, y: 3.35, w: 4.8, h: 1.75, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
+    x: 0.45, y: 3.45, w: 4.8, h: 1.72, fontSize: 14, color: C.sand, fontFace: "Calibri", valign: "top",
   });
 
   // Right: Guido achievements
