@@ -819,7 +819,7 @@ function bottomBar(s, color) {
         "Seikilos Epitaph（最古老完整歌曲，里拉琴版）: youtube.com/watch?v=8Vkcolt-nmU",
         "Hurrian Hymn H.6（胡利安頌歌重建版，Peter Pringle）: youtube.com/watch?v=w8tfBLvlN98",
         "古希臘音樂重建 · Euripides Orestes合唱（牛津大學）: youtube.com/watch?v=4hOK7bU0S1Y",
-        "古羅馬音樂重建 Synaulia（弦樂卷）: youtube.com/watch?v=zT6dOMKh3-w",
+        "古羅馬音樂重建 Synaulia（弦樂卷）: youtube.com/watch?v=HlFpiNAOdUo",
         "Michael Levy 古希臘里拉琴演奏系列: youtube.com/channel/UCJ1X6F7lGMEadnNETSzTv8A",
       ],
     },

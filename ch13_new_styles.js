@@ -239,9 +239,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     s.addText(txt, { x: 0.6, y, w: 8.8, h: 0.8, fontSize: 18, color: C.darkText, fontFace: "Calibri", bullet: true, valign: "middle" });
   });
 
-  s.addText("https://www.youtube.com/watch?v=8elXHf0gXTM", {
+  s.addText("https://www.youtube.com/watch?v=bKTQQ28sSNo", {
     x: 0.6, y: 5.0, w: 8.8, h: 0.35, fontSize: 18, color: C.teal, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=8elXHf0gXTM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=bKTQQ28sSNo" },
   });
 }
 
@@ -309,9 +309,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     s.addText(txt, { x: 0.6, y, w: 8.8, h: 0.8, fontSize: 18, color: C.lightText, fontFace: "Calibri", bullet: true, valign: "middle" });
   });
 
-  s.addText("https://www.youtube.com/watch?v=urqSFnKGjIQ", {
+  s.addText("https://www.youtube.com/watch?v=s-DaH6zpLjs", {
     x: 0.6, y: 5.0, w: 8.8, h: 0.35, fontSize: 18, color: C.gold, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=urqSFnKGjIQ" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=s-DaH6zpLjs" },
   });
 }
 
@@ -402,9 +402,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     s.addText(txt, { x: 0.6, y, w: 8.8, h: 0.65, fontSize: 18, color: C.lightText, fontFace: "Calibri", bullet: true, valign: "middle" });
   });
 
-  s.addText("https://www.youtube.com/watch?v=Q3T9pinGCrM", {
+  s.addText("https://www.youtube.com/watch?v=020L1rGjnng", {
     x: 0.6, y: 5.05, w: 8.8, h: 0.35, fontSize: 16, color: C.gold, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=Q3T9pinGCrM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=020L1rGjnng" },
   });
 }
 
@@ -602,15 +602,15 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
 
   s.addText("NAWM 74  Caccini, Vedro 'l mio sol", {
     x: 0.5, y: 4.35, w: 4.5, h: 0.3, fontSize: 18, color: C.lightText, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=urqSFnKGjIQ" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=s-DaH6zpLjs" },
   });
   s.addText("NAWM 75  Monteverdi, Cruda Amarilli", {
     x: 0.5, y: 4.65, w: 4.5, h: 0.3, fontSize: 18, color: C.lightText, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=8elXHf0gXTM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=bKTQQ28sSNo" },
   });
   s.addText("NAWM 76  Monteverdi, Zefiro torna", {
     x: 0.5, y: 4.95, w: 4.5, h: 0.3, fontSize: 18, color: C.lightText, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=Q3T9pinGCrM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=020L1rGjnng" },
   });
 }
 

@@ -129,9 +129,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=bJfHoxZlMYw", {
+  s.addText("https://www.youtube.com/watch?v=GH0PLm6Q8V4", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=bJfHoxZlMYw" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=GH0PLm6Q8V4" },
   });
 }
 
@@ -270,9 +270,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=KkDj_rJCk6E", {
+  s.addText("https://www.youtube.com/watch?v=b9x6eFXZqd0", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=KkDj_rJCk6E" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=b9x6eFXZqd0" },
   });
 }
 
@@ -357,9 +357,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=2s1Gf3b2wRs", {
+  s.addText("https://www.youtube.com/watch?v=2PLnla_I9gQ", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=2s1Gf3b2wRs" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=2PLnla_I9gQ" },
   });
 }
 
@@ -471,9 +471,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=RCDI_Jy6bEk", {
+  s.addText("https://www.youtube.com/watch?v=E7GzJl0fALg", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=RCDI_Jy6bEk" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=E7GzJl0fALg" },
   });
 }
 
@@ -504,9 +504,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.gold }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=eZZMrP9bET4", {
+  s.addText("https://www.youtube.com/watch?v=GCuaN-WjEWs", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.darkBg, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=eZZMrP9bET4" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=GCuaN-WjEWs" },
   });
 }
 
@@ -645,9 +645,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=6dJmqSi_qlM", {
+  s.addText("https://www.youtube.com/watch?v=PV4VRPIwbYw", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=6dJmqSi_qlM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=PV4VRPIwbYw" },
   });
 }
 
@@ -705,9 +705,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 5.0, w: 9.2, h: 0.4, fill: { color: C.olive }, rectRadius: 0.06 });
-  s.addText("https://www.youtube.com/watch?v=1OyyJb3WNGI", {
+  s.addText("https://www.youtube.com/watch?v=DsaYKQI6elQ", {
     x: 0.5, y: 5.0, w: 9, h: 0.4, fontSize: 18, color: C.cream, fontFace: "Calibri", align: "center", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=1OyyJb3WNGI" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=DsaYKQI6elQ" },
   });
 }
 
@@ -834,13 +834,13 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 5.2, y: 1.08, w: 4.4, h: 4.28, fill: { color: C.sand }, rectRadius: 0.08 });
   s.addText("NAWM Listening 聆聽清單", { x: 5.3, y: 1.15, w: 4.2, h: 0.32, fontSize: 18, bold: true, color: C.olive, fontFace: "Georgia" });
   const links = [
-    ["82  Monteverdi, Ohimè dov'è il mio ben", "https://www.youtube.com/watch?v=bJfHoxZlMYw"],
-    ["83  Grandi, O quam tu pulchra es", "https://www.youtube.com/watch?v=KkDj_rJCk6E"],
-    ["84  Carissimi, Historia di Jephte", "https://www.youtube.com/watch?v=2s1Gf3b2wRs"],
-    ["85  Schütz, Saul, was verfolgst du mich", "https://www.youtube.com/watch?v=RCDI_Jy6bEk"],
-    ["86  Schütz, O lieber Herre Gott", "https://www.youtube.com/watch?v=eZZMrP9bET4"],
-    ["87  Frescobaldi, Toccata No. 3", "https://www.youtube.com/watch?v=6dJmqSi_qlM"],
-    ["88  Marini, Sonata IV, Op. 8", "https://www.youtube.com/watch?v=1OyyJb3WNGI"],
+    ["82  Monteverdi, Ohimè dov'è il mio ben", "https://www.youtube.com/watch?v=GH0PLm6Q8V4"],
+    ["83  Grandi, O quam tu pulchra es", "https://www.youtube.com/watch?v=b9x6eFXZqd0"],
+    ["84  Carissimi, Historia di Jephte", "https://www.youtube.com/watch?v=2PLnla_I9gQ"],
+    ["85  Schütz, Saul, was verfolgst du mich", "https://www.youtube.com/watch?v=E7GzJl0fALg"],
+    ["86  Schütz, O lieber Herre Gott", "https://www.youtube.com/watch?v=GCuaN-WjEWs"],
+    ["87  Frescobaldi, Toccata No. 3", "https://www.youtube.com/watch?v=PV4VRPIwbYw"],
+    ["88  Marini, Sonata IV, Op. 8", "https://www.youtube.com/watch?v=DsaYKQI6elQ"],
   ];
   links.forEach(([label, url], i) => {
     s.addText(label, {

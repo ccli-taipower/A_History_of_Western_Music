@@ -240,9 +240,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 5.0, w: 7, h: 0.4, fill: { color: C.navy }, rectRadius: 0.08 });
-  s.addText("https://www.youtube.com/watch?v=P1N_FYfcqMg", {
+  s.addText("https://www.youtube.com/watch?v=7FcAzxSa1xo", {
     x: 1.5, y: 5.0, w: 7, h: 0.4, fontSize: 18, color: C.gold, align: "center", fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=P1N_FYfcqMg" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=7FcAzxSa1xo" },
   });
 }
 
@@ -411,9 +411,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 5.05, w: 7, h: 0.38, fill: { color: C.navy }, rectRadius: 0.08 });
-  s.addText("https://www.youtube.com/watch?v=xPgHQpp_tBM", {
+  s.addText("https://www.youtube.com/watch?v=_wYhLVX5kPQ", {
     x: 1.5, y: 5.05, w: 7, h: 0.38, fontSize: 16, color: C.gold, align: "center", fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=xPgHQpp_tBM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=_wYhLVX5kPQ" },
   });
 }
 
@@ -580,9 +580,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   });
 
   s.addShape(pres.ShapeType.rect, { x: 1.5, y: 5.05, w: 7, h: 0.38, fill: { color: C.navy }, rectRadius: 0.08 });
-  s.addText("https://www.youtube.com/watch?v=GjfbMBSzzXg", {
+  s.addText("https://www.youtube.com/watch?v=_EkjmEFk6uk", {
     x: 1.5, y: 5.05, w: 7, h: 0.38, fontSize: 16, color: C.gold, align: "center", fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=GjfbMBSzzXg" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=_EkjmEFk6uk" },
   });
 }
 
@@ -783,12 +783,12 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.82, w: 9.2, h: 0.03, fill: { color: C.sand } });
 
   const works = [
-    ["NAWM 85", "Lully, Armide (overture, divertissement, monologue)", "https://www.youtube.com/watch?v=P1N_FYfcqMg"],
+    ["NAWM 85", "Lully, Armide (overture, divertissement, monologue)", "https://www.youtube.com/watch?v=7FcAzxSa1xo"],
     ["NAWM 86", "Lully, Te Deum (conclusion)", "https://www.youtube.com/watch?v=r798LTlyZTU"],
     ["NAWM 87", "Charpentier, Le reniement de Saint Pierre", ""],
     ["NAWM 88", "Denis Gaultier, La coquette virtuose", ""],
-    ["NAWM 89", "Jacquet de la Guerre, Suite No. 3 in A Minor", "https://www.youtube.com/watch?v=xPgHQpp_tBM"],
-    ["NAWM 90", "Purcell, Dido and Aeneas (recit, lament, chorus)", "https://www.youtube.com/watch?v=GjfbMBSzzXg"],
+    ["NAWM 89", "Jacquet de la Guerre, Suite No. 3 in A Minor", "https://www.youtube.com/watch?v=_wYhLVX5kPQ"],
+    ["NAWM 90", "Purcell, Dido and Aeneas (recit, lament, chorus)", "https://www.youtube.com/watch?v=_EkjmEFk6uk"],
     ["NAWM 91", "Torrejon y Velasco, La purpura de la rosa", ""],
     ["NAWM 92", "Padilla, Albricias pastores (villancico)", ""],
   ];

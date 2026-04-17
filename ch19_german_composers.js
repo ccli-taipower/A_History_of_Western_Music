@@ -386,7 +386,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   // Right: NAWM Listening
   s.addShape(pres.ShapeType.rect, { x:5.1, y:1.0, w:4.6, h:4.3, fill:{color:C.slate}, rounding:true });
   s.addText("■ NAWM 聆聽 Listening", { x:5.3, y:1.05, w:4.2, h:0.3, fontSize:14, bold:true, color:C.gold, fontFace:"Georgia" });
-  s.addText("101 Telemann Paris Quartet No. 1\nyoutube.com/watch?v=V1PaFr3wlQs\n102 Bach Prelude & Fugue A min\nyoutube.com/watch?v=_mjofPMWbAE\n103 Bach Durch Adams Fall\nyoutube.com/watch?v=fNU-cEwFnOo\n104 Bach Cantata BWV 62\nyoutube.com/watch?v=aaCsAmr6bj4\n106 Bach Brandenburg No. 5\nyoutube.com/watch?v=49IOKMagQ3c\n107 Handel Giulio Cesare\nyoutube.com/watch?v=MiJnSHKaOsc\n108 Handel Saul\nyoutube.com/watch?v=e5Ib9FjPfJk", {
+  s.addText("101 Telemann Paris Quartet No. 1\nyoutube.com/watch?v=Dh2vPuqXw84\n102 Bach Prelude & Fugue A min\nyoutube.com/watch?v=_xhThihIIC4\n103 Bach Durch Adams Fall\nyoutube.com/watch?v=Z8Dpe0gjesg\n104 Bach Cantata BWV 62\nyoutube.com/watch?v=7oj63klgeEg\n106 Bach Brandenburg No. 5\nyoutube.com/watch?v=LHjbRMIIhuM\n107 Handel Giulio Cesare\nyoutube.com/watch?v=xRImsDQbaYY\n108 Handel Saul\nyoutube.com/watch?v=jQ9lz1fDkug", {
     x:5.3, y:1.4, w:4.2, h:3.8, fontSize:14, color:C.sand, fontFace:"Calibri", paraSpaceAfter:0,
   });
 }

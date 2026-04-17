@@ -426,7 +426,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   // Right: NAWM Listening
   s.addShape(pres.ShapeType.rect, { x:5.1, y:1.0, w:4.6, h:4.3, fill:{color:C.violet}, rounding:true });
   s.addText("■ NAWM 聆聽 YouTube", { x:5.3, y:1.05, w:4.2, h:0.3, fontSize:14, bold:true, color:C.gold, fontFace:"Georgia" });
-  s.addText("NAWM 98  Vivaldi, Concerto Op. 3/6\nyoutu.be/xaJm4OPxp-w\n\nNAWM 99a  Couperin, La Visionnaire\nNAWM 99b  La Muse victorieuse\nNAWM 99c  Les ombres errantes\nyoutu.be/uy7CSAM_qRo\n\nNAWM 100  Rameau, Hippolyte\nyoutu.be/AOe08v6FIxU", {
+  s.addText("NAWM 98  Vivaldi, Concerto Op. 3/6\nyoutu.be/BL-KzcwHDbY\n\nNAWM 99a  Couperin, La Visionnaire\nNAWM 99b  La Muse victorieuse\nNAWM 99c  Les ombres errantes\nyoutu.be/Gn5z0Hb-bb8\n\nNAWM 100  Rameau, Hippolyte\nyoutu.be/86rY74qyVSA", {
     x:5.3, y:1.4, w:4.2, h:3.8, fontSize:14, color:C.sand, fontFace:"Calibri", paraSpaceAfter:1,
   });
 }

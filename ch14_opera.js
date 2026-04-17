@@ -187,9 +187,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     { x: 0.5, y: 1.5, w: 9.0, h: 3.4, fontSize: 19, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.2 }
   );
 
-  s.addText("https://www.youtube.com/watch?v=bt8KaCIGBEk", {
+  s.addText("https://www.youtube.com/watch?v=RdboBUZg1g0", {
     x: 0.5, y: 5.15, w: 9.0, h: 0.3, fontSize: 16, color: C.gold, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=bt8KaCIGBEk" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=RdboBUZg1g0" },
   });
 }
 
@@ -297,9 +297,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.lightText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
   );
 
-  s.addText("https://www.youtube.com/watch?v=LUvJmIcp7z0", {
+  s.addText("https://www.youtube.com/watch?v=5CZnZwb3u_g", {
     x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.gold, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=LUvJmIcp7z0" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=5CZnZwb3u_g" },
   });
 }
 
@@ -325,9 +325,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     { x: 0.5, y: 1.5, w: 9.0, h: 3.8, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
   );
 
-  s.addText("https://www.youtube.com/watch?v=MIadFIEB1cg", {
+  s.addText("https://www.youtube.com/watch?v=9TYKbMuIuVY", {
     x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.wine, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=MIadFIEB1cg" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=9TYKbMuIuVY" },
   });
 }
 
@@ -465,9 +465,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
   );
 
-  s.addText("https://www.youtube.com/watch?v=v_Se1XVkOiU", {
+  s.addText("https://www.youtube.com/watch?v=YpMd9Oh-6po", {
     x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.plum, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=v_Se1XVkOiU" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=YpMd9Oh-6po" },
   });
 }
 
@@ -516,9 +516,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     { x: 0.5, y: 1.5, w: 9.0, h: 3.5, fontSize: 22, color: C.darkText, fontFace: "Calibri", valign: "top", lineSpacingMultiple: 1.5 }
   );
 
-  s.addText("https://www.youtube.com/watch?v=WjrNblgYAhw", {
+  s.addText("https://www.youtube.com/watch?v=2L9zwTfq2CQ", {
     x: 0.5, y: 5.05, w: 9.0, h: 0.35, fontSize: 18, color: C.plum, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=WjrNblgYAhw" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=2L9zwTfq2CQ" },
   });
 }
 
@@ -663,11 +663,11 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
   s.addShape(pres.ShapeType.rect, { x: 0.4, y: 0.9, w: 9.2, h: 0.03, fill: { color: C.gold } });
 
   const pieces = [
-    ["NAWM 77", "Peri · Euridice 選段", "bt8KaCIGBEk"],
-    ["NAWM 78a", "Monteverdi · Possente spirto", "LUvJmIcp7z0"],
-    ["NAWM 78b", "Monteverdi · Tu se' morta", "MIadFIEB1cg"],
-    ["NAWM 79", "Monteverdi · Pur ti miro", "v_Se1XVkOiU"],
-    ["NAWM 80", "Cesti · Orontea (Intorno all'idol mio)", "WjrNblgYAhw"],
+    ["NAWM 77", "Peri · Euridice 選段", "RdboBUZg1g0"],
+    ["NAWM 78a", "Monteverdi · Possente spirto", "5CZnZwb3u_g"],
+    ["NAWM 78b", "Monteverdi · Tu se' morta", "9TYKbMuIuVY"],
+    ["NAWM 79", "Monteverdi · Pur ti miro", "YpMd9Oh-6po"],
+    ["NAWM 80", "Cesti · Orontea (Intorno all'idol mio)", "2L9zwTfq2CQ"],
   ];
 
   pieces.forEach(([nawm, desc, vid], i) => {

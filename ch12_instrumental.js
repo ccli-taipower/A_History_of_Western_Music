@@ -292,7 +292,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   });
 
   s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
-  s.addText("YouTube: https://www.youtube.com/watch?v=fMPVMFpONRU", {
+  s.addText("YouTube: https://www.youtube.com/watch?v=Ln7ea-5dsoo", {
     x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
   });
 }
@@ -345,7 +345,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   });
 
   s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.brown}, rounding:true });
-  s.addText("YouTube: https://www.youtube.com/watch?v=8E7zcsal98U", {
+  s.addText("YouTube: https://www.youtube.com/watch?v=xKAeB5nDCmA", {
     x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
   });
 }
@@ -422,7 +422,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   });
 
   s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
-  s.addText("YouTube: https://www.youtube.com/watch?v=5C1gfQ3I_8E", {
+  s.addText("YouTube: https://www.youtube.com/watch?v=DD7luwIuM40", {
     x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
   });
 }
@@ -475,7 +475,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   });
 
   s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
-  s.addText("YouTube: https://www.youtube.com/watch?v=Ud0WKFMiZfg", {
+  s.addText("YouTube: https://www.youtube.com/watch?v=DRYBJDFxQo8", {
     x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
   });
 }
@@ -633,7 +633,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   });
 
   s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
-  s.addText("YouTube: https://www.youtube.com/watch?v=U_FMsBmtI7g", {
+  s.addText("YouTube: https://www.youtube.com/watch?v=QXRITlQBitc", {
     x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
   });
 }
@@ -662,7 +662,7 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   });
 
   s.addShape(pres.ShapeType.rect, { x:0.4, y:5.05, w:9.2, h:0.4, fill:{color:C.forest}, rounding:true });
-  s.addText("YouTube: https://www.youtube.com/watch?v=Xsuz4p3PdkM", {
+  s.addText("YouTube: https://www.youtube.com/watch?v=Xf8oWn1Hj_8", {
     x:0.6, y:5.05, w:8.8, h:0.4, fontSize:18, color:C.lightText, fontFace:"Calibri",
   });
 }
@@ -739,13 +739,13 @@ function bottomBar(s, c) { s.addShape(pres.ShapeType.rect, { x:0, y:5.5, w:"100%
   s.addShape(pres.ShapeType.rect, { x:0.4, y:0.88, w:4, h:0.03, fill:{color:C.amber} });
 
   const nawms = [
-    ["NAWM 67", "Susato: Pavane & Galliard (Danserye)", "youtube.com/watch?v=fMPVMFpONRU"],
-    ["NAWM 68", "Narvaez: Cancion Mille regretz (vihuela)", "youtube.com/watch?v=8E7zcsal98U"],
-    ["NAWM 69", "Byrd: John come kiss me now (virginal)", "youtube.com/watch?v=5C1gfQ3I_8E"],
-    ["NAWM 70", "A. Gabrieli: Ricercar del 12 tuono", "youtube.com/watch?v=Ud0WKFMiZfg"],
+    ["NAWM 67", "Susato: Pavane & Galliard (Danserye)", "youtube.com/watch?v=Ln7ea-5dsoo"],
+    ["NAWM 68", "Narvaez: Cancion Mille regretz (vihuela)", "youtube.com/watch?v=xKAeB5nDCmA"],
+    ["NAWM 69", "Byrd: John come kiss me now (virginal)", "youtube.com/watch?v=DD7luwIuM40"],
+    ["NAWM 70", "A. Gabrieli: Ricercar del 12 tuono", "youtube.com/watch?v=DRYBJDFxQo8"],
     ["NAWM 71", "Merulo: Toccata IV (6th Mode)", "search: Merulo Toccata quarta"],
-    ["NAWM 72", "G. Gabrieli: Sonata pian' e forte", "youtube.com/watch?v=U_FMsBmtI7g"],
-    ["NAWM 73", "G. Gabrieli: In ecclesiis", "youtube.com/watch?v=Xsuz4p3PdkM"],
+    ["NAWM 72", "G. Gabrieli: Sonata pian' e forte", "youtube.com/watch?v=QXRITlQBitc"],
+    ["NAWM 73", "G. Gabrieli: In ecclesiis", "youtube.com/watch?v=Xf8oWn1Hj_8"],
   ];
 
   nawms.forEach(([num, title, url], i) => {

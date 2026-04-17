@@ -133,9 +133,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     });
   });
 
-  s.addText("https://www.youtube.com/watch?v=O_XLw6WOgPo", {
+  s.addText("https://www.youtube.com/watch?v=iNXNdI-usmA", {
     x: 0.5, y: 5.1, w: 9, h: 0.35, fontSize: 18, color: C.copper, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=O_XLw6WOgPo" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=iNXNdI-usmA" },
   });
 }
 
@@ -236,9 +236,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     x: 5.4, y: 2.05, w: 4.2, h: 2.2, fontSize: 19, color: C.lightText, fontFace: "Calibri", lineSpacingMultiple: 1.1, valign: "top",
   });
 
-  s.addText("NAWM 95: https://www.youtube.com/watch?v=BVpFPt2lXCU", {
+  s.addText("NAWM 95: https://www.youtube.com/watch?v=PG4Rgg3ujjo", {
     x: 0.5, y: 4.9, w: 9, h: 0.35, fontSize: 18, color: C.copper, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=BVpFPt2lXCU" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=PG4Rgg3ujjo" },
   });
 }
 
@@ -385,9 +385,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     });
   });
 
-  s.addText("https://www.youtube.com/watch?v=iRCMYgWcwXM", {
+  s.addText("https://www.youtube.com/watch?v=wH64J5f-DHY", {
     x: 0.5, y: 5.1, w: 9, h: 0.35, fontSize: 18, color: C.copper, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=iRCMYgWcwXM" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=wH64J5f-DHY" },
   });
 }
 
@@ -526,9 +526,9 @@ function bottomBar(s, color) { s.addShape(pres.ShapeType.rect, { x: 0, y: 5.5, w
     });
   });
 
-  s.addText("https://www.youtube.com/watch?v=5DW5GnCFCFo", {
+  s.addText("https://www.youtube.com/watch?v=URt-9qZZxPU", {
     x: 0.5, y: 5.1, w: 9, h: 0.35, fontSize: 18, color: C.copper, fontFace: "Calibri", valign: "top",
-    hyperlink: { url: "https://www.youtube.com/watch?v=5DW5GnCFCFo" },
+    hyperlink: { url: "https://www.youtube.com/watch?v=URt-9qZZxPU" },
   });
 }
 
