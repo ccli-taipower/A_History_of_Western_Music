@@ -1,0 +1,95 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project purpose
+
+Slide generator for Burkholder/Grout/Palisca *A History of Western Music* (10th ed.), 30 chapters, bilingual (繁中 + English), 16:9. Each chapter lives in `chXX_name.js`, builds `ChXX_Name.pptx` via [pptxgenjs](https://github.com/gitbrent/PptxGenJS); LibreOffice converts to `ChXX_Name.pdf`. Only PDFs (and README.md) are committed — the repo is published on GitHub for students to download.
+
+## Build pipeline
+
+```bash
+# 1. Generate .pptx
+node ch26_romantic_classical.js
+
+# 2. Convert to PDF (requires LibreOffice installed as `soffice`)
+soffice --headless --convert-to pdf Ch26_Romantic_Classical.pptx
+
+# 3. Render specific page(s) for visual verification
+pdftoppm -r 70 -png -f 4 -l 4 Ch26_Romantic_Classical.pdf /tmp/verify/p
+# Then Read the PNG to check layout
+```
+
+Standard 7-step per-chapter workflow (memory `project_workflow.md`): JS → YouTube links → PPTX → PDF → push to GitHub → update README.md → clean tmp files.
+
+## Reference format: Ch26 (definitive template)
+
+`ch26_romantic_classical.js` is the format standard. All chapters are being aligned to it. Required structural elements:
+
+1. **Cover** — chapter title page (not textbook intro)
+2. **Outline 1 & 2** — per-chapter TOC (14 entries × 2 slides)
+3. **Overview** — chapter concept summary
+4. **~16 content slides** using the two-column panel layout
+5. **~7 NAWM slides** each with a `youtu.be/...` listening link
+6. **Timeline** — dated events
+7. **Key Terms** — glossary
+
+## Two-column panel layout (critical coordinates)
+
+These must be followed exactly. Title ends at y=1.78 and content starts at y=1.70 — the 0.08" nominal overlap is deliberate (the 14pt title only fills the top of its 0.4" box). Deviation causes visible overlap or bottom truncation.
+
+```javascript
+// Panel background
+s.addShape(pres.ShapeType.rect, { x: 0.3, y: 1.30, w: 4.6, h: 4.1, fill: { color: C.panel } });
+// Panel title
+s.addText("■ 小節標題", { x: 0.45, y: 1.38, w: 4.3, h: 0.4, fontSize: 14, bold: true, color: C.gold, fontFace: "Georgia", margin: 0 });
+// Panel content (paraSpaceAfter MUST be 0)
+s.addText("• bullet\n• bullet", { x: 0.5, y: 1.70, w: 4.35, h: 3.65, fontSize: 14, color: C.ivory, fontFace: "Calibri", valign: "top", paraSpaceAfter: 0 });
+```
+
+Right panel mirrors at x: 5.1 (background) / 5.25 (title) / 5.3 (content).
+
+**Known bug pattern** — earlier chapters used `y: 1.58` + `paraSpaceAfter: 2`, which produced panel-title/content overlap. Sed fix:
+
+```bash
+sed -i '' 's/y: 1.58, w: 4.35, h: 3.65/y: 1.70, w: 4.35, h: 3.65/g' chXX_*.js
+sed -i '' 's/paraSpaceAfter: 2/paraSpaceAfter: 0/g' chXX_*.js
+```
+
+Before applying blindly: chapters whose content was sized for the old coordinates will overflow at the bottom (e.g. Ch06 p20). Always rebuild and render-verify after.
+
+Other recurring overflow cause: blank-line spacers (`\n\n`) consume the same vertical space as a content line — main culprit at 17+ effective lines. Remove spacers before shrinking text.
+
+## Layout verification rule (non-negotiable)
+
+From memory `feedback_layout_first.md`: never ship slides with overlapping or truncated text. Spot-checking 4-5 pages is insufficient — the Ch09 p16 overflow was missed that way. **Render every page and visually verify before claiming a chapter is done.** Every row-based or stacked-panel layout has its own overflow risk even if the standard two-column template renders clean.
+
+## Font size floor
+
+Minimum 14pt anywhere on a slide. Don't shrink text to fix overflow — trim content instead (combine bullets, shorten phrases). Textbook-level detail is fine to cut; the slide is a talking point, not a transcript.
+
+## Unicode glyph caveat
+
+U+30FB (Katakana middle dot ・) does not render in some fonts via LibreOffice → boxes appear. Use U+00B7 (·) instead.
+
+## Chapter format status (ongoing unification, 2026-04-19)
+
+See `memory/project_ch01_30_unify_order.md` for the full plan. Summary:
+
+| Class | Chapters | Status |
+|---|---|---|
+| ✅ Compliant (verified page-by-page) | Ch06, 08, 09, 26-30 | Done |
+| 🔧 (D) sed only | Ch07 | 5-min fix |
+| 🔄 (C) variant layout | Ch10-17 | TB-intro cover + horizontal rows → convert to Ch26 two-column |
+| 🔄 (B) structure incomplete | Ch18-25 | Missing timeline, horizontal rows, wrong cover type |
+| 🔨 (A) rework from scratch | Ch01-05 | Short (15-19 pages), no outline, no panels |
+
+Recommended order when resuming: **D → C → B → A**.
+
+## Git conventions
+
+`.gitignore` excludes `*.pptx`, `*.js` (via `ch*.js`), `node_modules/`, `package*.json`, and `*.jpg` except the textbook cover. **Only commit PDFs and README.md.** Commit message pattern: `ChNN: <short description>` (see `git log`).
+
+## Color palettes
+
+Each chapter defines its own `C` object at the top of its JS file, matching the period (e.g. Ch26 = forest green + gold for early-Romantic orchestral). Helpers `darkSlide()`, `lightSlide()`, `topBar()`, `bottomBar()`, `header()` are defined per-file — intentionally duplicated rather than shared, so each chapter can tweak visuals independently.
