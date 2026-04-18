@@ -5,3 +5,7 @@ qa_all/
 qa_slides/
 docs/
 *.jpg
+!textbook_cover.jpg
+*.pptx
+ch*.js
+package*.json
