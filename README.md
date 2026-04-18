@@ -54,7 +54,8 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 15 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
 | 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 13 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
 | 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 13 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
-| | | **總計 Total** | **368** | |
+| 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 13 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
+| | | **總計 Total** | **381** | |
 
 ---
 
