@@ -53,7 +53,8 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 18 | 十八世紀初 | The Early Eighteenth Century | 15 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
 | 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 15 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
 | 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 13 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
-| | | **總計 Total** | **355** | |
+| 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 13 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
+| | | **總計 Total** | **368** | |
 
 ---
 
