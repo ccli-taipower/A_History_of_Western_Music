@@ -42,7 +42,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 7  | 文藝復興 | The Renaissance | 15 | [`Ch07_Renaissance.pdf`](Ch07_Renaissance.pdf) |
 | 8  | 英格蘭與勃艮第 | England and Burgundy | 15 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
 | 9  | 法蘭德斯作曲家 | Franco-Flemish Composers | 15 | [`Ch09_Franco_Flemish.pdf`](Ch09_Franco_Flemish.pdf) |
-| 10 | 牧歌 | The Madrigal | 15 | [`Ch10_Madrigal.pdf`](Ch10_Madrigal.pdf) |
+| 10 | 牧歌 | The Madrigal | 29 | [`Ch10_Madrigal.pdf`](Ch10_Madrigal.pdf) |
 | 11 | 宗教改革 | The Reformation | 15 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
 | 12 | 器樂音樂 | Instrumental Music | 28 | [`Ch12_Instrumental.pdf`](Ch12_Instrumental.pdf) |
 | 13 | 十七世紀新風格 | New Styles in the 17th Century | 25 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
