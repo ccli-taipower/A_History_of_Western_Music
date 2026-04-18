@@ -43,7 +43,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 8  | 英格蘭與勃艮第 | England and Burgundy | 15 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
 | 9  | 法蘭德斯作曲家 | Franco-Flemish Composers | 15 | [`Ch09_Franco_Flemish.pdf`](Ch09_Franco_Flemish.pdf) |
 | 10 | 牧歌 | The Madrigal | 29 | [`Ch10_Madrigal.pdf`](Ch10_Madrigal.pdf) |
-| 11 | 宗教改革 | The Reformation | 15 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
+| 11 | 宗教改革 | The Reformation | 28 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
 | 12 | 器樂音樂 | Instrumental Music | 28 | [`Ch12_Instrumental.pdf`](Ch12_Instrumental.pdf) |
 | 13 | 十七世紀新風格 | New Styles in the 17th Century | 25 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
 | 14 | 歌劇 | Opera | 25 | [`Ch14_Opera.pdf`](Ch14_Opera.pdf) |
@@ -63,7 +63,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 28 | 十九世紀後期歌劇與音樂劇 | Opera and Musical Theater in the Later 19th Century | 13 | [`Ch28_Late_19C_Opera.pdf`](Ch28_Late_19C_Opera.pdf) |
 | 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 13 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
 | 30 | 分歧傳統：十九世紀後期 | Diverging Traditions in the Later Nineteenth Century | 13 | [`Ch30_Diverging_Traditions.pdf`](Ch30_Diverging_Traditions.pdf) |
-| | | **總計 Total** | **485** | |
+| | | **總計 Total** | **512** | |
 
 ---
 
