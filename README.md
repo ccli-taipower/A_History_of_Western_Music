@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至浪漫世代** 28 章，共 **459 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至浪漫世代** 29 章，共 **472 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Romantic Generation** in 28 chapters, totaling **459 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Romantic Generation** in 29 chapters, totaling **472 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -61,7 +61,8 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 26 | 古典曲式中的浪漫主義：合唱、室內、管弦 | Romanticism in Classical Forms: Choral, Chamber, and Orchestral Music | 13 | [`Ch26_Romantic_Classical.pdf`](Ch26_Romantic_Classical.pdf) |
 | 27 | 浪漫歌劇與音樂劇至世紀中葉 | Romantic Opera and Musical Theater to Midcentury | 13 | [`Ch27_Romantic_Opera.pdf`](Ch27_Romantic_Opera.pdf) |
 | 28 | 十九世紀後期歌劇與音樂劇 | Opera and Musical Theater in the Later 19th Century | 13 | [`Ch28_Late_19C_Opera.pdf`](Ch28_Late_19C_Opera.pdf) |
-| | | **總計 Total** | **459** | |
+| 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 13 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
+| | | **總計 Total** | **472** | |
 
 ---
 
