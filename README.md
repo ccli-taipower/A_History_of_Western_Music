@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至古典/早期浪漫時期** 24 章，共 **407 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至浪漫世代** 25 章，共 **420 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the early Romantic era** in 24 chapters, totaling **407 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Romantic Generation** in 25 chapters, totaling **420 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -57,7 +57,8 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 13 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
 | 23 | 古典晚期：海頓與莫札特 | Classic Music in the Late Eighteenth Century | 13 | [`Ch23_Classic_Late_18C.pdf`](Ch23_Classic_Late_18C.pdf) |
 | 24 | 革命與變革：貝多芬 | Revolution and Change (Beethoven) | 13 | [`Ch24_Beethoven.pdf`](Ch24_Beethoven.pdf) |
-| | | **總計 Total** | **407** | |
+| 25 | 浪漫世代：藝術歌曲與鋼琴音樂 | The Romantic Generation: Song and Piano Music | 13 | [`Ch25_Romantic_Generation.pdf`](Ch25_Romantic_Generation.pdf) |
+| | | **總計 Total** | **420** | |
 
 ---
 
