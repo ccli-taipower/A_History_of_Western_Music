@@ -25,6 +25,7 @@ Programmatically generated lecture slides for **A History of Western Music, 10th
 | 17 | Italy and Germany in the Late 17th Century | `ch17_italy_germany.js` | `Ch17_Italy_Germany.pptx` | `Ch17_Italy_Germany.pdf` |
 | 18 | The Early Eighteenth Century | `ch18_early_eighteenth.js` | `Ch18_Early_Eighteenth.pptx` | `Ch18_Early_Eighteenth.pdf` |
 | 19 | German Composers of the Late Baroque | `ch19_german_composers.js` | `Ch19_German_Composers.pptx` | `Ch19_German_Composers.pdf` |
+| 20 | Musical Taste and Style in the Enlightenment | `ch20_enlightenment.js` | `Ch20_Enlightenment.pptx` | `Ch20_Enlightenment.pdf` |
 
 ## Features
 
