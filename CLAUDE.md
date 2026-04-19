@@ -15,9 +15,11 @@ node ch26_romantic_classical.js
 # 2. Convert to PDF (requires LibreOffice installed as `soffice`)
 soffice --headless --convert-to pdf Ch26_Romantic_Classical.pptx
 
-# 3. Render specific page(s) for visual verification
+# 3a. Render specific page(s) for visual verification
 pdftoppm -r 70 -png -f 4 -l 4 Ch26_Romantic_Classical.pdf /tmp/verify/p
-# Then Read the PNG to check layout
+# 3b. Render every page (required before claiming a chapter done)
+pdftoppm -r 70 -png Ch26_Romantic_Classical.pdf /tmp/verify/p
+# Then Read each PNG to check layout
 ```
 
 Standard 7-step per-chapter workflow (memory `project_workflow.md`): JS → YouTube links → PPTX → PDF → push to GitHub → update README.md → clean tmp files.
@@ -49,6 +51,8 @@ s.addText("• bullet\n• bullet", { x: 0.5, y: 1.70, w: 4.35, h: 3.65, fontSiz
 
 Right panel mirrors at x: 5.1 (background) / 5.25 (title) / 5.3 (content).
 
+**C-phase row→column recipe** — when converting a 4-bullet horizontal-row slide to two-column: split bullets 2+2 into left/right panels, name each panel by its combined theme (e.g. 「神學起點 / 政治與印刷」, 「定義與來源 / 合集與影響」). Hand-wrap content with `\n` to keep each panel at ~12-14 visible lines (6-7 per bullet group) at 14pt within the 4.35w × 3.65h container.
+
 **Known bug pattern** — earlier chapters used `y: 1.58` + `paraSpaceAfter: 2`, which produced panel-title/content overlap. Sed fix:
 
 ```bash
@@ -78,9 +82,9 @@ See `memory/project_ch01_30_unify_order.md` for the full plan. Summary:
 
 | Class | Chapters | Status |
 |---|---|---|
-| ✅ Compliant (verified page-by-page) | Ch06, 08, 09, 26-30 | Done |
+| ✅ Compliant (verified page-by-page) | Ch06, 08-11, 26-30 | Done |
 | 🔧 (D) sed only | Ch07 | 5-min fix |
-| 🔄 (C) variant layout | Ch10-17 | TB-intro cover + horizontal rows → convert to Ch26 two-column |
+| 🔄 (C) variant layout | Ch12-17 | TB-intro cover + horizontal rows → convert to Ch26 two-column |
 | 🔄 (B) structure incomplete | Ch18-25 | Missing timeline, horizontal rows, wrong cover type |
 | 🔨 (A) rework from scratch | Ch01-05 | Short (15-19 pages), no outline, no panels |
 
