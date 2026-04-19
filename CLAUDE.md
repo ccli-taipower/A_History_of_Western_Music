@@ -51,6 +51,10 @@ s.addText("• bullet\n• bullet", { x: 0.5, y: 1.70, w: 4.35, h: 3.65, fontSiz
 
 Right panel mirrors at x: 5.1 (background) / 5.25 (title) / 5.3 (content).
 
+**Special-case layouts** — two recurring exceptions that must NOT be converted to standard two-column:
+- **Reduced-panel + bottom bar** (e.g. Sonata Types slides): panel `h: 3.10`, content `h: 2.55`, bottom bar at `y: 4.52`. Keeps a summary bar visible below the panels.
+- **3-card format** (e.g. Concerto Types slides): three horizontally-arranged cards spanning the full slide width. Keep as-is.
+
 **C-phase row→column recipe** — when converting a 4-bullet horizontal-row slide to two-column: split bullets 2+2 into left/right panels, name each panel by its combined theme (e.g. 「神學起點 / 政治與印刷」, 「定義與來源 / 合集與影響」). Hand-wrap content with `\n` to keep each panel at ~12-14 visible lines (6-7 per bullet group) at 14pt within the 4.35w × 3.65h container.
 
 **Known bug pattern** — earlier chapters used `y: 1.58` + `paraSpaceAfter: 2`, which produced panel-title/content overlap. Sed fix:
@@ -63,6 +67,8 @@ sed -i '' 's/paraSpaceAfter: 2/paraSpaceAfter: 0/g' chXX_*.js
 Before applying blindly: chapters whose content was sized for the old coordinates will overflow at the bottom (e.g. Ch06 p20). Always rebuild and render-verify after.
 
 Other recurring overflow cause: blank-line spacers (`\n\n`) consume the same vertical space as a content line — main culprit at 17+ effective lines. Remove spacers before shrinking text.
+
+**`\n\nyoutu.be/` anti-pattern** — a blank line before the YouTube link in a panel creates a visible gap between content and link, making the link look orphaned. Always use `\nyoutu.be/...` (single newline) at the end of panel content.
 
 ## Layout verification rule (non-negotiable)
 
@@ -82,13 +88,11 @@ See `memory/project_ch01_30_unify_order.md` for the full plan. Summary:
 
 | Class | Chapters | Status |
 |---|---|---|
-| ✅ Compliant (verified page-by-page) | Ch06, 08-11, 26-30 | Done |
-| 🔧 (D) sed only | Ch07 | 5-min fix |
-| 🔄 (C) variant layout | Ch12-17 | TB-intro cover + horizontal rows → convert to Ch26 two-column |
+| ✅ Compliant (verified page-by-page) | Ch06-17, 26-30 | Done |
 | 🔄 (B) structure incomplete | Ch18-25 | Missing timeline, horizontal rows, wrong cover type |
 | 🔨 (A) rework from scratch | Ch01-05 | Short (15-19 pages), no outline, no panels |
 
-Recommended order when resuming: **D → C → B → A**.
+Recommended order when resuming: **B → A**.
 
 ## Git conventions
 
