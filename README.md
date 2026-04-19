@@ -27,6 +27,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 📐 **16:9 寬螢幕 Widescreen** | 適用現代投影機、電視、平板與筆電 · Ready for modern projectors, TVs, tablets, and laptops |
 | ⏱ **章節時間軸 Per-chapter Timeline** | 每章附獨立時間軸投影片，列出該時代雙語關鍵事件年表 · Every chapter includes a dedicated bilingual timeline slide charting key events of the period |
 | 📄 **純 PDF 格式 Pure PDF** | 無需安裝 PowerPoint、字型、程式，下載即讀 · No PowerPoint, fonts, or software required — just download and read |
+| 📝 **重要術語 Key Terms** | 每章末附雙語詞彙表格，整理該章核心術語與定義 · Every chapter closes with a bilingual glossary grid of core terms and definitions |
 
 ---
 
