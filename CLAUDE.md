@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project purpose
 
-Slide generator for Burkholder/Grout/Palisca *A History of Western Music* (10th ed.), 32 chapters, bilingual (繁中 + English), 16:9. Each chapter lives in `chXX_name.js`, builds `ChXX_Name.pptx` via [pptxgenjs](https://github.com/gitbrent/PptxGenJS); LibreOffice converts to `ChXX_Name.pdf`. Only PDFs (and README.md) are committed — the repo is published on GitHub for students to download.
+Slide generator for Burkholder/Grout/Palisca *A History of Western Music* (10th ed.), 39 chapters, bilingual (繁中 + English), 16:9. Each chapter lives in `chXX_name.js`, builds `ChXX_Name.pptx` via [pptxgenjs](https://github.com/gitbrent/PptxGenJS); LibreOffice converts to `ChXX_Name.pdf`. Only PDFs (and README.md) are committed — the repo is published on GitHub for students to download.
 
 ## Build pipeline
 
@@ -26,15 +26,17 @@ Standard 7-step per-chapter workflow (memory `project_workflow.md`): JS → YouT
 
 ## Reference format: Ch26 (definitive template)
 
-`ch26_romantic_classical.js` is the format standard. All chapters are being aligned to it. Required structural elements:
+`ch26_romantic_classical.js` is the format standard. All 39 chapters conform to it. Required structural elements:
 
 1. **Cover** — chapter title page (not textbook intro)
-2. **Outline 1 & 2** — per-chapter TOC (14 entries × 2 slides)
-3. **Overview** — chapter concept summary
-4. **~16 content slides** using the two-column panel layout
-5. **~7 NAWM slides** each with a `youtu.be/...` listening link
-6. **Timeline** — dated events
-7. **Key Terms** — glossary
+2. **Outline** — per-chapter TOC; Ch26 uses two slides (14 entries × 2); Ch33–39 use one two-column slide (~13 entries)
+3. **Overview** — chapter concept summary (row-table format on light background)
+4. **Content slides** — two-column panel layout (varies per chapter length)
+5. **NAWM slides** — one per Norton Anthology piece, each with a `youtu.be/...` listening link
+6. **Timeline** — dated events (light background, two-column)
+7. **Key Terms** — glossary grid (light background, two-column)
+
+**NAWM sequence by chapter:** Ch31=169a/b, Ch32=170–172, Ch33=173–175 (Jazz/Pop only; Ch33 has no NAWM in some editions), Ch34=176–179, Ch35=180–182, Ch36=183–185, Ch37=186–188, Ch38=189–191, Ch39=192–194.
 
 ## Two-column panel layout (critical coordinates)
 
