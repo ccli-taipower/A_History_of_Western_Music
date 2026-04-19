@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十世紀中期** 34 章，共 **774 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十世紀中期** 36 章，共 **825 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Mid-Twentieth Century** in 34 chapters, totaling **774 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Mid-Twentieth Century** in 36 chapters, totaling **825 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -68,7 +68,9 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 32 | 二十世紀初：古典傳統 | The Classical Tradition in the Early Twentieth Century | 28 | [`Ch32_Classical_Tradition.pdf`](Ch32_Classical_Tradition.pdf) |
 | 33 | 大戰之間：爵士與流行音樂 | Between the World Wars: Jazz and Popular Music | 26 | [`Ch33_Jazz_Popular.pdf`](Ch33_Jazz_Popular.pdf) |
 | 34 | 大戰之間：古典傳統 | Between the World Wars: The Classical Tradition | 28 | [`Ch34_Between_Wars_Classical.pdf`](Ch34_Between_Wars_Classical.pdf) |
-| | | **總計 Total** | **774** | |
+| 35 | 戰後交流潮流 | Postwar Crosscurrents | 26 | [`Ch35_Postwar_Crosscurrents.pdf`](Ch35_Postwar_Crosscurrents.pdf) |
+| 36 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 25 | [`Ch36_Postwar_Heirs.pdf`](Ch36_Postwar_Heirs.pdf) |
+| | | **總計 Total** | **825** | |
 
 ---
 
