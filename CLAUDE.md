@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project purpose
 
-Slide generator for Burkholder/Grout/Palisca *A History of Western Music* (10th ed.), 30 chapters, bilingual (繁中 + English), 16:9. Each chapter lives in `chXX_name.js`, builds `ChXX_Name.pptx` via [pptxgenjs](https://github.com/gitbrent/PptxGenJS); LibreOffice converts to `ChXX_Name.pdf`. Only PDFs (and README.md) are committed — the repo is published on GitHub for students to download.
+Slide generator for Burkholder/Grout/Palisca *A History of Western Music* (10th ed.), 32 chapters, bilingual (繁中 + English), 16:9. Each chapter lives in `chXX_name.js`, builds `ChXX_Name.pptx` via [pptxgenjs](https://github.com/gitbrent/PptxGenJS); LibreOffice converts to `ChXX_Name.pdf`. Only PDFs (and README.md) are committed — the repo is published on GitHub for students to download.
 
 ## Build pipeline
 
@@ -82,17 +82,9 @@ Minimum 14pt anywhere on a slide. Don't shrink text to fix overflow — trim con
 
 U+30FB (Katakana middle dot ・) does not render in some fonts via LibreOffice → boxes appear. Use U+00B7 (·) instead.
 
-## Chapter format status (ongoing unification, 2026-04-19)
+## Chapter format status
 
-See `memory/project_ch01_30_unify_order.md` for the full plan. Summary:
-
-| Class | Chapters | Status |
-|---|---|---|
-| ✅ Compliant (verified page-by-page) | Ch06-17, 26-30 | Done |
-| 🔄 (B) structure incomplete | Ch18-25 | Missing timeline, horizontal rows, wrong cover type |
-| 🔨 (A) rework from scratch | Ch01-05 | Short (15-19 pages), no outline, no panels |
-
-Recommended order when resuming: **B → A**.
+All 39 chapters (Ch01–Ch39) are complete and verified page-by-page as of 2026-04-19. All conform to the Ch26 two-column panel format.
 
 ## Git conventions
 
