@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至十九世紀末** 30 章，共 **485 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至十九世紀末** 30 章，共 **664 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Late Nineteenth Century** in 30 chapters, totaling **485 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Late Nineteenth Century** in 30 chapters, totaling **664 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -25,6 +25,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 🎨 **章節專屬配色 Per-chapter color theme** | 各章配色呼應時代氛圍（古代赭紅、哥德靛藍、巴洛克金棕、啟蒙鼠尾草綠等） · Each chapter has its own palette matching the period |
 | 🎵 **NAWM 聆賞連結 NAWM listening links** | 每首 Norton Anthology 曲目附直接可點擊的 YouTube 連結（均經驗證可用） · Every Norton Anthology piece includes a verified YouTube link |
 | 📐 **16:9 寬螢幕 Widescreen** | 適用現代投影機、電視、平板與筆電 · Ready for modern projectors, TVs, tablets, and laptops |
+| ⏱ **章節時間軸 Per-chapter Timeline** | 每章附獨立時間軸投影片，列出該時代雙語關鍵事件年表 · Every chapter includes a dedicated bilingual timeline slide charting key events of the period |
 | 📄 **純 PDF 格式 Pure PDF** | 無需安裝 PowerPoint、字型、程式，下載即讀 · No PowerPoint, fonts, or software required — just download and read |
 
 ---
@@ -33,37 +34,37 @@ This repository provides a complete set of lecture slides for **A History of Wes
 
 | # | 中文標題 Title (ZH) | 英文標題 Title (EN) | 頁數 Slides | 下載 Download |
 |---:|---|---|---:|---|
-| 1  | 古代音樂 | Music in Antiquity | 19 | [`Ch01_Music_in_Antiquity.pdf`](Ch01_Music_in_Antiquity.pdf) |
-| 2  | 基督教會 | The Christian Church | 15 | [`Ch02_Christian_Church.pdf`](Ch02_Christian_Church.pdf) |
-| 3  | 羅馬禮儀 | Roman Liturgy | 17 | [`Ch03_Roman_Liturgy.pdf`](Ch03_Roman_Liturgy.pdf) |
-| 4  | 歌謠與舞蹈 | Song and Dance | 16 | [`Ch04_Song_and_Dance.pdf`](Ch04_Song_and_Dance.pdf) |
-| 5  | 複音音樂 | Polyphony | 16 | [`Ch05_Polyphony.pdf`](Ch05_Polyphony.pdf) |
-| 6  | 十四世紀 | The Fourteenth Century | 15 | [`Ch06_Fourteenth_Century.pdf`](Ch06_Fourteenth_Century.pdf) |
-| 7  | 文藝復興 | The Renaissance | 15 | [`Ch07_Renaissance.pdf`](Ch07_Renaissance.pdf) |
-| 8  | 英格蘭與勃艮第 | England and Burgundy | 15 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
-| 9  | 法蘭德斯作曲家 | Franco-Flemish Composers | 15 | [`Ch09_Franco_Flemish.pdf`](Ch09_Franco_Flemish.pdf) |
+| 1  | 古代音樂 | Music in Antiquity | 14 | [`Ch01_Music_in_Antiquity.pdf`](Ch01_Music_in_Antiquity.pdf) |
+| 2  | 基督教會 | The Christian Church | 14 | [`Ch02_Christian_Church.pdf`](Ch02_Christian_Church.pdf) |
+| 3  | 羅馬禮儀 | Roman Liturgy | 14 | [`Ch03_Roman_Liturgy.pdf`](Ch03_Roman_Liturgy.pdf) |
+| 4  | 歌謠與舞蹈 | Song and Dance | 14 | [`Ch04_Song_and_Dance.pdf`](Ch04_Song_and_Dance.pdf) |
+| 5  | 複音音樂 | Polyphony | 14 | [`Ch05_Polyphony.pdf`](Ch05_Polyphony.pdf) |
+| 6  | 十四世紀 | The Fourteenth Century | 28 | [`Ch06_Fourteenth_Century.pdf`](Ch06_Fourteenth_Century.pdf) |
+| 7  | 文藝復興 | The Renaissance | 28 | [`Ch07_Renaissance.pdf`](Ch07_Renaissance.pdf) |
+| 8  | 英格蘭與勃艮第 | England and Burgundy | 28 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
+| 9  | 法蘭德斯作曲家 | Franco-Flemish Composers | 28 | [`Ch09_Franco_Flemish.pdf`](Ch09_Franco_Flemish.pdf) |
 | 10 | 牧歌 | The Madrigal | 29 | [`Ch10_Madrigal.pdf`](Ch10_Madrigal.pdf) |
 | 11 | 宗教改革 | The Reformation | 28 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
 | 12 | 器樂音樂 | Instrumental Music | 28 | [`Ch12_Instrumental.pdf`](Ch12_Instrumental.pdf) |
-| 13 | 十七世紀新風格 | New Styles in the 17th Century | 25 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
-| 14 | 歌劇 | Opera | 25 | [`Ch14_Opera.pdf`](Ch14_Opera.pdf) |
+| 13 | 十七世紀新風格 | New Styles in the 17th Century | 28 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
+| 14 | 歌劇 | Opera | 28 | [`Ch14_Opera.pdf`](Ch14_Opera.pdf) |
 | 15 | 室內樂與教會音樂 | Chamber and Church Music | 28 | [`Ch15_Chamber_Church.pdf`](Ch15_Chamber_Church.pdf) |
 | 16 | 法、英、西、新世界、俄 | France, England, Spain, the New World, and Russia | 28 | [`Ch16_France_England.pdf`](Ch16_France_England.pdf) |
-| 17 | 十七世紀晚期義大利與德意志 | Italy and Germany in the Late 17th Century | 28 | [`Ch17_Italy_Germany.pdf`](Ch17_Italy_Germany.pdf) |
-| 18 | 十八世紀初 | The Early Eighteenth Century | 15 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
-| 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 15 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
-| 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 13 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
-| 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 13 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
-| 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 13 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
-| 23 | 古典晚期：海頓與莫札特 | Classic Music in the Late Eighteenth Century | 13 | [`Ch23_Classic_Late_18C.pdf`](Ch23_Classic_Late_18C.pdf) |
-| 24 | 革命與變革：貝多芬 | Revolution and Change (Beethoven) | 13 | [`Ch24_Beethoven.pdf`](Ch24_Beethoven.pdf) |
-| 25 | 浪漫世代：藝術歌曲與鋼琴音樂 | The Romantic Generation: Song and Piano Music | 13 | [`Ch25_Romantic_Generation.pdf`](Ch25_Romantic_Generation.pdf) |
-| 26 | 古典曲式中的浪漫主義：合唱、室內、管弦 | Romanticism in Classical Forms: Choral, Chamber, and Orchestral Music | 13 | [`Ch26_Romantic_Classical.pdf`](Ch26_Romantic_Classical.pdf) |
-| 27 | 浪漫歌劇與音樂劇至世紀中葉 | Romantic Opera and Musical Theater to Midcentury | 13 | [`Ch27_Romantic_Opera.pdf`](Ch27_Romantic_Opera.pdf) |
-| 28 | 十九世紀後期歌劇與音樂劇 | Opera and Musical Theater in the Later 19th Century | 13 | [`Ch28_Late_19C_Opera.pdf`](Ch28_Late_19C_Opera.pdf) |
-| 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 13 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
-| 30 | 分歧傳統：十九世紀後期 | Diverging Traditions in the Later Nineteenth Century | 13 | [`Ch30_Diverging_Traditions.pdf`](Ch30_Diverging_Traditions.pdf) |
-| | | **總計 Total** | **512** | |
+| 17 | 十七世紀晚期義大利與德意志 | Italy and Germany in the Late 17th Century | 29 | [`Ch17_Italy_Germany.pdf`](Ch17_Italy_Germany.pdf) |
+| 18 | 十八世紀初 | The Early Eighteenth Century | 16 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
+| 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 16 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
+| 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 14 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
+| 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 14 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
+| 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 14 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
+| 23 | 古典晚期：海頓與莫札特 | Classic Music in the Late Eighteenth Century | 14 | [`Ch23_Classic_Late_18C.pdf`](Ch23_Classic_Late_18C.pdf) |
+| 24 | 革命與變革：貝多芬 | Revolution and Change (Beethoven) | 14 | [`Ch24_Beethoven.pdf`](Ch24_Beethoven.pdf) |
+| 25 | 浪漫世代：藝術歌曲與鋼琴音樂 | The Romantic Generation: Song and Piano Music | 14 | [`Ch25_Romantic_Generation.pdf`](Ch25_Romantic_Generation.pdf) |
+| 26 | 古典曲式中的浪漫主義：合唱、室內、管弦 | Romanticism in Classical Forms: Choral, Chamber, and Orchestral Music | 28 | [`Ch26_Romantic_Classical.pdf`](Ch26_Romantic_Classical.pdf) |
+| 27 | 浪漫歌劇與音樂劇至世紀中葉 | Romantic Opera and Musical Theater to Midcentury | 28 | [`Ch27_Romantic_Opera.pdf`](Ch27_Romantic_Opera.pdf) |
+| 28 | 十九世紀後期歌劇與音樂劇 | Opera and Musical Theater in the Later 19th Century | 28 | [`Ch28_Late_19C_Opera.pdf`](Ch28_Late_19C_Opera.pdf) |
+| 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 28 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
+| 30 | 分歧傳統：十九世紀後期 | Diverging Traditions in the Later Nineteenth Century | 28 | [`Ch30_Diverging_Traditions.pdf`](Ch30_Diverging_Traditions.pdf) |
+| | | **總計 Total** | **664** | |
 
 ---
 
