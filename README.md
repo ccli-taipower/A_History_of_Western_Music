@@ -75,6 +75,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 38 | 後現代主義與尋求聽眾 | Postmodernism and the Search for an Audience | 26 | [`Ch38_Postmodern_Pluralist.pdf`](Ch38_Postmodern_Pluralist.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 25 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
 | | | **總計 Total** | **901** | |
+| ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 
 ---
 
