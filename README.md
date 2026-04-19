@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十世紀初** 31 章，共 **692 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十世紀初** 32 章，共 **720 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Early Twentieth Century** in 31 chapters, totaling **692 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Early Twentieth Century** in 32 chapters, totaling **720 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -65,7 +65,8 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 28 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
 | 30 | 分歧傳統：十九世紀後期 | Diverging Traditions in the Later Nineteenth Century | 28 | [`Ch30_Diverging_Traditions.pdf`](Ch30_Diverging_Traditions.pdf) |
 | 31 | 二十世紀初：俗樂 | The Early Twentieth Century: Vernacular Music | 28 | [`Ch31_Vernacular_Music.pdf`](Ch31_Vernacular_Music.pdf) |
-| | | **總計 Total** | **692** | |
+| 32 | 二十世紀初：古典傳統 | The Classical Tradition in the Early Twentieth Century | 28 | [`Ch32_Classical_Tradition.pdf`](Ch32_Classical_Tradition.pdf) |
+| | | **總計 Total** | **720** | |
 
 ---
 
