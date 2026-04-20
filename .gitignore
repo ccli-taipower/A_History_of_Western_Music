@@ -7,6 +7,6 @@ docs/
 *.jpg
 !textbook_cover.jpg
 *.pptx
-ch*.js
+*.js
 package*.json
 CLAUDE.md
