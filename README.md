@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **901 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **911 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **901 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **911 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -71,13 +71,13 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 31 | 二十世紀初：俗樂 | The Early Twentieth Century: Vernacular Music | 28 | [`Ch31_Vernacular_Music.pdf`](Ch31_Vernacular_Music.pdf) |
 | 32 | 二十世紀初：古典傳統 | The Classical Tradition in the Early Twentieth Century | 28 | [`Ch32_Classical_Tradition.pdf`](Ch32_Classical_Tradition.pdf) |
 | 33 | 激進現代主義者 | Radical Modernists | 28 | [`Ch33_Radical_Modernists.pdf`](Ch33_Radical_Modernists.pdf) |
-| 34 | 大戰之間：爵士與流行音樂 | Between the World Wars: Jazz and Popular Music | 26 | [`Ch34_Jazz_Popular.pdf`](Ch34_Jazz_Popular.pdf) |
-| 35 | 大戰之間：古典傳統 | Between the World Wars: The Classical Tradition | 28 | [`Ch35_Between_Wars_Classical.pdf`](Ch35_Between_Wars_Classical.pdf) |
-| 36 | 戰後交流潮流 | Postwar Crosscurrents | 26 | [`Ch36_Postwar_Crosscurrents.pdf`](Ch36_Postwar_Crosscurrents.pdf) |
-| 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 25 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
-| 38 | 二十世紀晚期 | The Late Twentieth Century | 25 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
+| 34 | 大戰之間：爵士與流行音樂 | Between the World Wars: Jazz and Popular Music | 27 | [`Ch34_Jazz_Popular.pdf`](Ch34_Jazz_Popular.pdf) |
+| 35 | 大戰之間：古典傳統 | Between the World Wars: The Classical Tradition | 27 | [`Ch35_Between_Wars_Classical.pdf`](Ch35_Between_Wars_Classical.pdf) |
+| 36 | 戰後交流潮流 | Postwar Crosscurrents | 25 | [`Ch36_Postwar_Crosscurrents.pdf`](Ch36_Postwar_Crosscurrents.pdf) |
+| 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 30 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
+| 38 | 二十世紀晚期 | The Late Twentieth Century | 29 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 25 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **903** | |
+| | | **總計 Total** | **911** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
