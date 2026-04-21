@@ -70,14 +70,14 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 30 | 分歧傳統：十九世紀後期 | Diverging Traditions in the Later Nineteenth Century | 28 | [`Ch30_Diverging_Traditions.pdf`](Ch30_Diverging_Traditions.pdf) |
 | 31 | 二十世紀初：俗樂 | The Early Twentieth Century: Vernacular Music | 28 | [`Ch31_Vernacular_Music.pdf`](Ch31_Vernacular_Music.pdf) |
 | 32 | 二十世紀初：古典傳統 | The Classical Tradition in the Early Twentieth Century | 28 | [`Ch32_Classical_Tradition.pdf`](Ch32_Classical_Tradition.pdf) |
-| 33 | 大戰之間：爵士與流行音樂 | Between the World Wars: Jazz and Popular Music | 26 | [`Ch33_Jazz_Popular.pdf`](Ch33_Jazz_Popular.pdf) |
-| 34 | 大戰之間：古典傳統 | Between the World Wars: The Classical Tradition | 28 | [`Ch34_Between_Wars_Classical.pdf`](Ch34_Between_Wars_Classical.pdf) |
-| 35 | 戰後交流潮流 | Postwar Crosscurrents | 26 | [`Ch35_Postwar_Crosscurrents.pdf`](Ch35_Postwar_Crosscurrents.pdf) |
-| 36 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 25 | [`Ch36_Postwar_Heirs.pdf`](Ch36_Postwar_Heirs.pdf) |
-| 37 | 二十世紀晚期 | The Late Twentieth Century | 25 | [`Ch37_Late_Twentieth.pdf`](Ch37_Late_Twentieth.pdf) |
-| 38 | 後現代主義與尋求聽眾 | Postmodernism and the Search for an Audience | 26 | [`Ch38_Postmodern_Pluralist.pdf`](Ch38_Postmodern_Pluralist.pdf) |
+| 33 | 激進現代主義者 | Radical Modernists | 28 | [`Ch33_Radical_Modernists.pdf`](Ch33_Radical_Modernists.pdf) |
+| 34 | 大戰之間：爵士與流行音樂 | Between the World Wars: Jazz and Popular Music | 26 | [`Ch34_Jazz_Popular.pdf`](Ch34_Jazz_Popular.pdf) |
+| 35 | 大戰之間：古典傳統 | Between the World Wars: The Classical Tradition | 28 | [`Ch35_Between_Wars_Classical.pdf`](Ch35_Between_Wars_Classical.pdf) |
+| 36 | 戰後交流潮流 | Postwar Crosscurrents | 26 | [`Ch36_Postwar_Crosscurrents.pdf`](Ch36_Postwar_Crosscurrents.pdf) |
+| 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 25 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
+| 38 | 二十世紀晚期 | The Late Twentieth Century | 25 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 25 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **901** | |
+| | | **總計 Total** | **903** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
