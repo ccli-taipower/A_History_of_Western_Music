@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **919 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **927 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **919 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **927 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -39,11 +39,11 @@ This repository provides a complete set of lecture slides for **A History of Wes
 
 | # | 中文標題 Title (ZH) | 英文標題 Title (EN) | 頁數 Slides | 下載 Download |
 |---:|---|---|---:|---|
-| 1  | 古代音樂 | Music in Antiquity | 14 | [`Ch01_Music_in_Antiquity.pdf`](Ch01_Music_in_Antiquity.pdf) |
-| 2  | 基督教會 | The Christian Church | 14 | [`Ch02_Christian_Church.pdf`](Ch02_Christian_Church.pdf) |
-| 3  | 羅馬禮儀 | Roman Liturgy | 14 | [`Ch03_Roman_Liturgy.pdf`](Ch03_Roman_Liturgy.pdf) |
-| 4  | 歌謠與舞蹈 | Song and Dance | 14 | [`Ch04_Song_and_Dance.pdf`](Ch04_Song_and_Dance.pdf) |
-| 5  | 複音音樂 | Polyphony | 14 | [`Ch05_Polyphony.pdf`](Ch05_Polyphony.pdf) |
+| 1  | 古代音樂 | Music in Antiquity | 16 | [`Ch01_Music_in_Antiquity.pdf`](Ch01_Music_in_Antiquity.pdf) |
+| 2  | 基督教會 | The Christian Church | 15 | [`Ch02_Christian_Church.pdf`](Ch02_Christian_Church.pdf) |
+| 3  | 羅馬禮儀 | Roman Liturgy | 16 | [`Ch03_Roman_Liturgy.pdf`](Ch03_Roman_Liturgy.pdf) |
+| 4  | 歌謠與舞蹈 | Song and Dance | 16 | [`Ch04_Song_and_Dance.pdf`](Ch04_Song_and_Dance.pdf) |
+| 5  | 複音音樂 | Polyphony | 15 | [`Ch05_Polyphony.pdf`](Ch05_Polyphony.pdf) |
 | 6  | 十四世紀 | The Fourteenth Century | 28 | [`Ch06_Fourteenth_Century.pdf`](Ch06_Fourteenth_Century.pdf) |
 | 7  | 文藝復興 | The Renaissance | 28 | [`Ch07_Renaissance.pdf`](Ch07_Renaissance.pdf) |
 | 8  | 英格蘭與勃艮第 | England and Burgundy | 28 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
@@ -78,7 +78,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 30 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
 | 38 | 二十世紀晚期 | The Late Twentieth Century | 29 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 25 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **919** | |
+| | | **總計 Total** | **927** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
