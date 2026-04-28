@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **927 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **933 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **927 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **933 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -49,11 +49,11 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 8  | 英格蘭與勃艮第 | England and Burgundy | 28 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
 | 9  | 法蘭德斯作曲家 | Franco-Flemish Composers | 28 | [`Ch09_Franco_Flemish.pdf`](Ch09_Franco_Flemish.pdf) |
 | 10 | 牧歌 | The Madrigal | 29 | [`Ch10_Madrigal.pdf`](Ch10_Madrigal.pdf) |
-| 11 | 宗教改革 | The Reformation | 28 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
-| 12 | 器樂音樂 | Instrumental Music | 28 | [`Ch12_Instrumental.pdf`](Ch12_Instrumental.pdf) |
-| 13 | 十七世紀新風格 | New Styles in the 17th Century | 28 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
-| 14 | 歌劇 | Opera | 28 | [`Ch14_Opera.pdf`](Ch14_Opera.pdf) |
-| 15 | 室內樂與教會音樂 | Chamber and Church Music | 28 | [`Ch15_Chamber_Church.pdf`](Ch15_Chamber_Church.pdf) |
+| 11 | 宗教改革 | The Reformation | 30 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
+| 12 | 器樂音樂 | Instrumental Music | 29 | [`Ch12_Instrumental.pdf`](Ch12_Instrumental.pdf) |
+| 13 | 十七世紀新風格 | New Styles in the 17th Century | 27 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
+| 14 | 歌劇 | Opera | 29 | [`Ch14_Opera.pdf`](Ch14_Opera.pdf) |
+| 15 | 室內樂與教會音樂 | Chamber and Church Music | 31 | [`Ch15_Chamber_Church.pdf`](Ch15_Chamber_Church.pdf) |
 | 16 | 法、英、西、新世界、俄 | France, England, Spain, the New World, and Russia | 28 | [`Ch16_France_England.pdf`](Ch16_France_England.pdf) |
 | 17 | 十七世紀晚期義大利與德意志 | Italy and Germany in the Late 17th Century | 29 | [`Ch17_Italy_Germany.pdf`](Ch17_Italy_Germany.pdf) |
 | 18 | 十八世紀初 | The Early Eighteenth Century | 16 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
@@ -78,7 +78,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 30 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
 | 38 | 二十世紀晚期 | The Late Twentieth Century | 29 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 25 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **927** | |
+| | | **總計 Total** | **933** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
