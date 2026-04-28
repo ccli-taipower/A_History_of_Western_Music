@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **938 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **933 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **938 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **933 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -58,7 +58,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 17 | 十七世紀晚期義大利與德意志 | Italy and Germany in the Late 17th Century | 29 | [`Ch17_Italy_Germany.pdf`](Ch17_Italy_Germany.pdf) |
 | 18 | 十八世紀初 | The Early Eighteenth Century | 16 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
 | 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 16 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
-| 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 14 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
+| 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 9 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
 | 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 14 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
 | 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 14 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
 | 23 | 古典晚期：海頓與莫札特 | Classic Music in the Late Eighteenth Century | 14 | [`Ch23_Classic_Late_18C.pdf`](Ch23_Classic_Late_18C.pdf) |
@@ -78,7 +78,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 30 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
 | 38 | 二十世紀晚期 | The Late Twentieth Century | 29 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 25 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **938** | |
+| | | **總計 Total** | **933** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
