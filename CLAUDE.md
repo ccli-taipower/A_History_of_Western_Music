@@ -112,33 +112,18 @@ U+30FB (Katakana middle dot ・) does not render in some fonts via LibreOffice �
 
 ## Chapter format status
 
-All 39 chapters (Ch01–Ch39) are complete and verified page-by-page. All conform to the Ch26 two-column panel format. Total: **933 slides** (as of 2026-04-28).
+All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **933 slides**.
 
-**Ch01–Ch20 content audit (2026-04-28):** Systematic comparison of every chapter against textbook pages (using official NAWM Guide and PDF extraction). All NAWM numbers verified, fabricated content removed, missing NAWM slides added. Key fixes per group:
+**NAWM audit status** — all NAWM numbers verified against textbook in-text citations using `pdftotext`:
 
-- **Ch01–Ch05 (2026-04-27):** Added missing NAWM analysis slides, score-analysis content, conclusion slides. Ch03: Ordo virtutum corrected to "earliest NON-LITURGICAL music drama" (not simply earliest drama — Quem queritis liturgical dramas predate it).
-- **Ch06–Ch10 (2026-04-27/28):** Fixed fabricated content (Gothic Voices, Messiaen/Ligeti for Ars Subtilior). Ch10: added Castiglione *Book of the Courtier* (1528) reference to amateur music market slide.
-- **Ch11–Ch15 (2026-04-28):** NAWM numbers were systematically wrong (off by 1–5). Fixed all: Gombert NAWM 62, Holborne NAWM 67, Strozzi NAWM 77, G.Gabrieli In ecclesiis NAWM 78, Frescobaldi Ricercare NAWM 83, etc. Removed fabricated NAWMs (Franco Salve regina, Zefiro torna as NAWM, Brandenburg No.5 as NAWM 106). Fixed all cover page ranges.
-- **Ch16–Ch20 (2026-04-28):** Ch16: added 5 missing NAWM slides (86–88, 91–92). Ch17: NAWM 97 corrected Torelli→Buxtehude. Ch19: NAWM 104/105 swapped, NAWM 106 corrected to St. Matthew Passion. Ch20: completely rebuilt to align with textbook pp.454–470 only (removed Ch21/Ch22 content; added NAWM 116 Galuppi as the chapter's primary textbook example, textbook Example 20.1 pp.465–469).
+| Range | Audited | Notes |
+|-------|---------|-------|
+| Ch01–Ch20 | ✓ 2026-04-28 | NAWM off-by-1–5 in Ch11–15; fabricated NAWMs removed; Ch20 rebuilt |
+| Ch21–Ch25 | ✓ 2026-04-29 | Ch24/25 had multiple fabricated and absent NAWMs; all corrected |
+| Ch26–Ch30 | ✓ 2026-04-29 | Wagner↔Verdi swap (Ch28); Barbieri/Franck/Fauré/Beach absent; all corrected |
+| Ch31–Ch39 | ⚠ NOT YET AUDITED | NAWM sequences in this file are from NAWM Guide; not verified against textbook in-text citations |
 
-**Ch21–Ch25 content audit (2026-04-29):** Verified all NAWM numbers against textbook in-text citations. Major errors found and corrected:
-
-- **Ch21 (2026-04-29):** Added missing "Song and Church Music" section (Graun *Der Tod Jesu*, Pergolesi *Stabat mater*, German Lied, French Romance) into slide 12.
-- **Ch23 (2026-04-29):** NAWM 124 Mozart K.332 was missing from listening guide; restored.
-- **Ch24 (2026-04-29):** Cover range 554–587→554–579. NAWM 130 was wrongly labeled Razumovsky (correct: Eroica Op.55). NAWM 131 was wrongly labeled Eroica (correct: Op.132 A minor, Heiliger Dankgesang). NAWMs 132/133/134 were entirely fabricated; removed. Slide 10 content replaced from Op.131 C♯ minor (7 mvts) to Op.132 A minor (5 mvts, 131a–c).
-- **Ch25 (2026-04-29):** Cover range 588–616→580–617. All 10 NAWM numbers and pieces corrected. Entirely absent: Schubert Gretchen am Spinnrade (132), Stephen Foster Jeanie (134), Fanny Hensel Das Jahr (137), Gottschalk Souvenir de Porto Rico (141). Wrong pieces: NAWM 135 was Erlkönig (correct: Schubert Impromptu Op.90/3), NAWM 138 was Chopin Mazurka Op.6/1 f♯ (correct: Op.7/1 B♭), NAWM 139 was Chopin Ballade No.1 (correct: Nocturne Op.27/2), NAWM 140 was Liszt Transcendental Étude No.10 (correct: Un sospiro).
-
-**Ch26–Ch30 content audit (2026-04-29):** All 5 cover page ranges wrong; all corrected. Key NAWM errors:
-
-- **Ch26 (2026-04-29):** NAWM 145 was Clara Schumann Piano Trio Op.17 (correct: Schubert String Quintet D.956 Adagio). NAWM 148 was Schumann Piano Quintet Op.44 (correct: Schumann Symphony No.1 Spring Op.38, with trumpet/horn motto in slow introduction).
-- **Ch27 (2026-04-29):** NAWM 149-152 content verified correct (Rossini, Bellini Norma, Meyerbeer Les Huguenots, Weber Wolf's Glen).
-- **Ch28 (2026-04-29):** Wagner and Verdi SWAPPED (153↔154); Verdi scene wrong (Act I "Sempre libera" → correct: Act III reconciliation duet); Puccini was at 159 (correct: 155); Bizet Carmen was at 155 (correct: 156); Barbieri El barberillo de Lavapiés (157a-b) was entirely absent; Musorgsky and Sullivan each shifted by 1.
-- **Ch29 (2026-04-29):** NAWM 162 was Wolf Goethe-Lieder (correct: Strauss Don Quixote Op.35); Wolf and Mahler have no Ch29 NAWM numbers. Fabricated NAWMs 163 and 164 removed.
-- **Ch30 (2026-04-29):** NAWM 163 (Franck Violin Sonata A major) and 164 (Fauré La bonne chanson Op.61 No.6) were both missing. NAWM 165 was Tchaikovsky Onegin (correct: Pathétique III G major march). NAWM 166 was Dvořák Symphony 9 Largo (correct: Slavonic Dances Op.46/1 furiant). NAWM 167 was Grieg Piano Concerto (correct: Amy Beach Gaelic Symphony II with Irish tune 12/8). NAWM 168 = Chadwick Jubilee. Joplin Maple Leaf Rag removed (NAWM 169 belongs to Ch31).
-
-**Outline slide pairing rule (critical — from 2026-04-28 fixes):** For chapters with N slides, the two-column TOC array must have exactly N items interleaved as `[left_item], [right_item], ...`. For odd N: left column = slides 1–⌈N/2⌉, right column = slides ⌈N/2⌉+1–N, last pair left-only. Violation causes "15 appearing in bottom-right" or numbered-but-empty entries. Always verify the rendered outline page after editing slide count.
-
-**Earlier history:** Ch33 added 2026-04-21; Ch34–Ch38 renumbered and corrected 2026-04-21 (NAWM numbers, Ch36 content rewritten, Ch35 recreated); Ch32 expanded 28→36 slides 2026-04-21.
+**Outline slide pairing rule:** For chapters with N slides, the two-column TOC array must have exactly N items interleaved as `[left_item], [right_item], ...`. For odd N: left column = slides 1–⌈N/2⌉, right column = slides ⌈N/2⌉+1–N, last pair left-only. Violation causes "15 appearing in bottom-right" or numbered-but-empty entries. Always verify the rendered outline page after editing slide count.
 
 **YouTube links status** — All NAWM YouTube links are filled; no `youtu.be/PENDING` placeholders remain anywhere.
 
