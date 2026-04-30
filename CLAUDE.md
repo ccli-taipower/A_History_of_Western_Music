@@ -112,7 +112,7 @@ U+30FB (Katakana middle dot ・) does not render in some fonts via LibreOffice �
 
 ## Chapter format status
 
-All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **933 slides**.
+All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **930 slides**.
 
 **NAWM audit status** — all NAWM numbers verified against textbook in-text citations using `pdftotext`:
 
