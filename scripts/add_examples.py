@@ -34,6 +34,35 @@ PDF_OFFSET = 37
 # For side-by-side layout: rendered W = 4.55" × asp; split if asp < 0.70 (W < 3.2")
 SPLIT_THRESHOLD = 0.70
 
+# Manual y_end_pct overrides for examples where auto-detection includes body text.
+# Key: (chapter_int, example_num_str)  Value: y_end_pct (fraction of PDF page height)
+MANUAL_Y_END = {
+    (5,  '7'):  0.83,    # stop before "in Example 5.7" body text (3 discant systems)
+    (5,  '8'):  0.3507,  # clausulae: 2 systems only, body text at 51%
+    (5,  '9'):  0.7008,  # Pérotin 4-voice: 3 systems, body text at 75%
+    (5,  '13'): 0.4480,  # Adam de la Halle motet: keep score + translation
+    (5,  '14'): 0.4251,  # Petrus de Cruce: keep score + translation
+    (5,  '15'): 0.5885,  # Cadence forms: very short score, body text at 22%
+    (22, '1'):  0.96,    # all a–e sections fill the page (was cut at a,b only)
+    (23, '3'):  0.96,    # all a–e sections fill the page (was cut at a,b only)
+    (23, '4'):  0.3548,  # Haydn 104 finale: 2 systems, body text at 35%
+    (23, '6'):  0.46,    # stop before "FREELANCING" body text (at 48%); include both a,b
+    (23, '8'):  0.2020,  # Mozart Jupiter theme: 1 system, body text at 21%
+    (25, '1'):  0.96,    # all a–d sections fill the page (was cut at a only)
+    (25, '7'):  0.96,    # all a–d sections fill the page (was cut at a only)
+    (25, '8'):  0.765,   # stop just before body text (at 76.4%); includes a,b complete
+    (27, '2'):  0.61,    # stop before "taking place on stage" body text (include a,b)
+    (33, '3'):  0.2557,  # Schoenberg row: row diagram only, body text at 30%
+    (33, '7'):  0.2498,  # Stravinsky Petrushka: short passage, body text at 20%
+    (33, '11'): 0.96,    # all a–g sections fill the page (was cut at a,b only)
+    (33, '12'): 0.2393,  # Bartók xylophone palindrome: 1 system, body text at 18%
+}
+
+# x_start override for two-column pages where body text is in the left column
+MANUAL_X_START = {
+    (13, '2'): 0.49,   # right column only: body text on left, EXAMPLE 13.2 on right
+}
+
 # Chapter page ranges (printed-book pagination)
 CH_PAGES = {
      1: ( 4,  19),  2: ( 20,  41),  3: ( 42,  62),  4: ( 63,  79),
@@ -259,7 +288,9 @@ def crop_example(ch: int, ex_num: str, pdf_page: int, out_path: str,
     y2 = min(y2, H)
 
     # Crop with small horizontal margins (remove page gutters)
-    left  = int(0.04 * W)
+    # MANUAL_X_START overrides left edge for two-column pages
+    x_start = MANUAL_X_START.get((ch, ex_num), 0.04)
+    left  = int(x_start * W)
     right = int(0.96 * W)
     cropped = img.crop((left, y1, right, y2))
 
@@ -376,7 +407,8 @@ def extract_all_examples(ch: int, pages: dict, dry_run: bool = False) -> dict:
 
         print(f"  Cropping ex{ch}.{num} from PDF page {page}…", end=" ", flush=True)
         try:
-            w, h = crop_example(ch, num, page, out_path, y_end_pct=y_end.get(num))
+            manual = MANUAL_Y_END.get((ch, num))
+            w, h = crop_example(ch, num, page, out_path, y_end_pct=manual if manual is not None else y_end.get(num))
             asp = w / h if h > 0 else 2.0
             print(f"{w}×{h}px (asp={asp:.2f})", end="")
 
@@ -493,7 +525,7 @@ def build_example_slide_js(ch: int, ex_num: str, palette: dict,
         # ── Stacked layout ──────────────────────────────────────────────────
         H_img = 2.65 if asp >= 2.0 else 3.05
         W_img = min(9.0, round(H_img * asp, 2))
-        H_img = round(H_img, 2)
+        H_img = round(W_img / asp, 2)  # natural height — no whitespace for very wide images
         y0 = 1.05
         x0 = round(0.5 + (9.0 - W_img) / 2, 2)
         fx = round(x0 - 0.08, 2); fy = round(y0 - 0.06, 2)
@@ -555,6 +587,22 @@ def patch_js(ch: int, js_path: Path, examples_data: dict,
     """
     js = js_path.read_text(encoding='utf-8')
     palette = read_c_palette(js)
+
+    # ── Remove any previously inserted example blocks ─────────────────────
+    marker = f'// ── EXAMPLE {ch}.'
+    if marker in js:
+        first_ex_pos = js.find(marker)
+        insertion_idx_old = find_insertion_point(js)
+        old_block = js[first_ex_pos:insertion_idx_old]
+        old_count = old_block.count(marker)
+        old_first_slide = count_slides_before(js[:first_ex_pos], len(js[:first_ex_pos])) + 1
+        # Remove old blocks
+        js = js[:first_ex_pos] + js[insertion_idx_old:]
+        # Reverse TOC increments: decrement entries >= old_first_slide by old_count
+        def decrement(m):
+            n = int(m.group(1))
+            return f'[{n - old_count},' if n >= old_first_slide + old_count else f'[{n},'
+        js = re.sub(r'\[\s*(\d+)\s*,', decrement, js)
 
     insertion_idx = find_insertion_point(js)
     first_example_slide = count_slides_before(js, insertion_idx) + 1

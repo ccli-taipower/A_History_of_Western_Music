@@ -1,4 +1,102 @@
 {
+  "5": {
+    "1": {
+      "title_zh": "譜例 5.1　平行奧爾加農",
+      "subtitle_en": "Example 5.1 — Parallel organum from Musica enchiriadis (NAWM 14a–b)",
+      "explanation_title": "譜例說明  教科書第 81 頁",
+      "explanation_zh": "• 九世紀理論書《音樂百科》（Musica enchiriadis）中的平行奧爾加農示例：主聲部（principal voice）在上，歌唱聲部（organal voice）嚴格以完全五度在下平行運動。\n• 完全五度在中世紀被視為「完美而美麗」的諧音程；此例是西方多聲部音樂最早的記譜示範之一，奠定了複音音樂（polyphony）的起點。（第 81 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 5.2　混合斜行奧爾加農（NAWM 14c）",
+      "subtitle_en": "Example 5.2 — Rex caeli domine, mixed parallel and oblique organum (NAWM 14c)",
+      "explanation_title": "譜例說明  教科書第 82 頁",
+      "explanation_zh": "• 當平行進行會產生三全音（tritone）時，歌唱聲部保持靜止（斜行 oblique motion），直到可以回到平行四度進行為止，形成「混合斜行奧爾加農」。\n• 此技術揭示中世紀複音音樂如何以功能性手段規避不諧和的三全音（「魔鬼音程」），也說明了早期和聲規則的形成邏輯。（第 82 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 5.3　花腔奧爾加農（聲部置於素歌之上）",
+      "subtitle_en": "Example 5.3 — Florid organum, organal voice above the chant",
+      "explanation_title": "譜例說明  教科書第 84 頁",
+      "explanation_zh": "• 在此風格中，加入的聲部改為位於素歌旋律之上（而非早期的下方），常以級進為主，並頻繁形成反向運動（contrary motion）。\n• 此種花腔式奧爾加農是十到十一世紀阿奎丹（Aquitanian）地區的重要發展，標誌著複音音樂從機械平行進入更自由聲部設計的關鍵轉變。（第 84 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 5.4　花腔奧爾加農與定量聲部對比（NAWM 16）",
+      "subtitle_en": "Example 5.4 — Florid organum vs. discant style, versus (NAWM 16)",
+      "explanation_title": "譜例說明  教科書第 85 頁",
+      "explanation_zh": "• 5.4a 為花腔奧爾加農（florid organum）風格：次中音保持長音，上聲部以三至十五音的裝飾音群對應每個次中音音（倚音以 plica 記號標示）。\n• 5.4b 為定量聲部（discant）風格：上聲部縮減至每個次中音音一至三個音，比例相對均等，反向進行更為頻繁；兩種風格交替出現，是十二世紀多聲部音樂的典型手法。（第 85 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 5.5　節奏模式與連音記譜",
+      "subtitle_en": "Example 5.5 — Rhythmic mode notation: ligatures and transcription",
+      "explanation_title": "譜例說明  教科書第 88 頁",
+      "explanation_zh": "• 5.5a 以連音符（ligature）記譜：一個三音連音符後接一系列二音連音符，指示演唱者使用第一節奏模式（長—短—長—短）。\n• 5.5b 為現代譯譜，以橫括號標示連音符範圍；連音符是中世紀模態節奏記譜的核心工具，不同連音符組合對應不同節奏模式，為複音音樂提供了有規律的時值框架。（第 88 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 5.6　萊奧南《Viderunt omnes》奧爾加農開頭",
+      "subtitle_en": "Example 5.6 — Léonin, Viderunt omnes, opening in organum purum style",
+      "explanation_title": "譜例說明  教科書第 91 頁",
+      "explanation_zh": "• 次中音（tenor）以無定量長音呈現素歌旋律，雙音聲部（duplum）在其上以廣闊的裝飾性旋律展開，常在不諧和音上停留並以 a、b 標示的反覆樂句公式（formulae）構成。\n• 這些公式貫穿整個奧爾加農庫存，歌手可藉此記憶並即興演唱；此例是巴黎聖母院樂派（Notre Dame school）奧爾加農純粹風格（organum purum）的核心示範。（第 91 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 5.7　《大奧爾加農書》中的定量孔科特",
+      "subtitle_en": "Example 5.7 — Discant clausula within Léonin's Magnus Liber Organi",
+      "explanation_title": "譜例說明  教科書第 91 頁",
+      "explanation_zh": "• 在素歌中最長的裝飾音型段落，萊奧南以定量聲部（discant）風格取代奧爾加農風格——若繼續使用拉長次中音的奧爾加農風格，樂曲將過於冗長。\n• 奧爾加農與定量聲部的交替恰對應素歌旋律的結構特徵，是《大奧爾加農書》（Magnus Liber Organi）整體設計的重要邏輯。（第 91 頁）"
+    },
+    "8": {
+      "title_zh": "譜例 5.8　兩首「Dominus」孔科特開頭（NAWM 18）",
+      "subtitle_en": "Example 5.8 — Two clausulae on the tenor \"Dominus\" (NAWM 18)",
+      "explanation_title": "譜例說明  教科書第 93 頁",
+      "explanation_zh": "• 兩首孔科特（clausulae）均以「Dominus」素歌旋律為次中音：第一首次中音以第五節奏模式反覆，第二首以第二節奏模式反覆，各呈現不同的節奏架構。\n• 次中音的反覆（節奏反覆或旋律反覆）為孔科特提供音樂凝聚力，是十三世紀複音音樂從即興走向作曲組織的關鍵發展。（第 93 頁）"
+    },
+    "9": {
+      "title_zh": "譜例 5.9　佩羅坦四聲部奧爾加農（NAWM 19）",
+      "subtitle_en": "Example 5.9 — Pérotin, four-voice organum (NAWM 19)",
+      "explanation_title": "譜例說明  教科書第 95 頁",
+      "explanation_zh": "• 佩羅坦在次中音長音之上以三個上聲部展現模態節奏，形成四聲部奧爾加農的宏偉音響；此段奧爾加農風格段落與最長的定量定量段落（Dominus 音節）交替出現。\n• 佩羅坦運用序列（sequence）、模仿（imitation）等手法為奧爾加農段落創造連貫性與多樣性，代表聖母院樂派複音創作的最高成就。（第 95 頁）"
+    },
+    "10": {
+      "title_zh": "譜例 5.10　早期拉丁經文歌《Factum est》（NAWM 20a）",
+      "subtitle_en": "Example 5.10 — Early motet: Factum est salutare/Dominus (NAWM 20a)",
+      "explanation_title": "譜例說明  教科書第 96 頁",
+      "explanation_zh": "• 此早期拉丁文經文歌以譜例 5.8a 的定量孔科特為基礎，詩人將新歌詞填入既有的雙音旋律，使不規則的句長、重音與韻腳配合旋律的短句結構。\n• 經文歌以各聲部首字組成複合名稱（最高聲部/次中音），標誌著一種全新的複音音樂體裁誕生——詩與音樂共生，開啟後代數百年發展的序章。（第 96 頁）"
+    },
+    "11": {
+      "title_zh": "譜例 5.11　世俗法文經文歌《Fole acostumance》（NAWM 20b）",
+      "subtitle_en": "Example 5.11 — Secular motet: Fole acostumance/Dominus (NAWM 20b)",
+      "explanation_title": "譜例說明  教科書第 98 頁",
+      "explanation_zh": "• 以譜例 5.10 相同的次中音為基礎，但次中音重複兩遍、雙音聲部換為更快速流動的新旋律，容納更長的世俗法文歌詞——一首以音樂諷刺嫉妒與偽善毀壞法國的苦澀詩文。\n• 此例說明十三世紀經文歌如何從教堂拉丁禮儀音樂衍生出世俗娛樂用途，是複音音樂風格化與多樣化的重要里程碑。（第 98 頁）"
+    },
+    "12": {
+      "title_zh": "譜例 5.12　三聲部經文歌，蒙彼利埃抄本（NAWM 20c）",
+      "subtitle_en": "Example 5.12 — Three-voice motet from the Montpellier Codex (NAWM 20c)",
+      "explanation_title": "譜例說明  教科書第 98 頁",
+      "explanation_zh": "• 十三世紀後期法國主要經文歌手抄本蒙彼利埃抄本（Montpellier Codex）中的三聲部版本，並附有英格蘭版本的第四聲部（未加文字）。\n• 不同版本的並存說明當時的複音音樂並非不可改動的固定作品，而是作為共同財產開放再創作；此例也展示了「附有詞的多聲部孔科特」（motet）的基本三聲部織體。（第 98 頁）"
+    },
+    "13": {
+      "title_zh": "譜例 5.13　法蘭科記譜法手稿與譯譜",
+      "subtitle_en": "Example 5.13 — Franconian notation: manuscript and modern transcription",
+      "explanation_title": "譜例說明  教科書第 101 頁",
+      "explanation_zh": "• 展示科隆的法蘭科（Franco of Cologne）體系中不同音值記號（倍長音、長音、短音、半短音）的外形，及其在手稿中的實際使用樣貌，並附現代譯譜對照。\n• 法蘭科記譜法（c.1260）是中世紀多聲部音樂最重要的記譜革新：以音符形狀直接決定絕對時值，取代依賴連音符組合推算節奏模式的舊法，為後世量化記譜奠定基礎。（第 101 頁）"
+    },
+    "14": {
+      "title_zh": "譜例 5.14　彼得魯斯·德克魯切，《Aucun ont trouvé》（NAWM 22）",
+      "subtitle_en": "Example 5.14 — Petrus de Cruce, Aucun ont trouvé/Lonc tans/Annuntiantes (NAWM 22)",
+      "explanation_title": "譜例說明  教科書第 102 頁",
+      "explanation_zh": "• 次中音以長音（long）移動，雙音聲部不超過每個時值三個半短音（如法蘭科體系），但三音聲部（triplum）每個時值可多達七個平均半短音，三個聲部速度差異極大，形成高度層次化的織體。\n• 此種速度分層是十三世紀末彼得魯斯·德克魯切（Petrus de Cruce）對記譜法的關鍵擴展，直接導致十四世紀法國新藝術（Ars nova）更精密時值分割體系的誕生。（第 102 頁）"
+    },
+    "15": {
+      "title_zh": "譜例 5.15　1–5–8 音響終止式",
+      "subtitle_en": "Example 5.15 — The 1–5–8 cadential sonority",
+      "explanation_title": "譜例說明  教科書第 102 頁",
+      "explanation_zh": "• 十三世紀典型終止式：次中音以級進下行，上聲部以級進上行，最終匯聚為根音加完全五度加八度（1–5–8）的開放音響。\n• 此終止模式延續了此後兩個世紀，是中世紀晚期與文藝復興早期多聲部音樂最具識別性的結束手法之一，也體現了這一時期對完全諧音程的偏好。（第 102 頁）"
+    },
+    "16": {
+      "title_zh": "譜例 5.16　《夏天已來臨》（NAWM 23）",
+      "subtitle_en": "Example 5.16 — Sumer is icumen in, rota (NAWM 23)",
+      "explanation_title": "譜例說明  教科書第 104 頁",
+      "explanation_zh": "• 約 1250 年的英格蘭輪唱曲（rota）：兩個聲部輪流演唱 pes（地基旋律）作為次中音，二至四個上聲部以卡農方式進入，歌頌夏日到來，產生交替的 F–A–C–F 與 G–B♭–D 和聲效果。\n• 此曲是中世紀現存最早、最精密的多聲部輪唱曲，也體現英格蘭複音傳統對三度、六度音程的偏好——與同期大陸音樂以完全音程為主的審美截然不同。（第 104 頁）"
+    }
+  },
   "13": {
     "1": {
       "title_zh": "譜例 13.1　蒙台威爾第，《殘忍的阿瑪麗莉》",
@@ -39,6 +137,124 @@
       "explanation_zh": "• 開頭八小節在精簡空間內呈現五個對比鮮明的音形：錘打式八度音、上行音階、重複旋律動機、衝刺音階段落，以及震動低音上方的上行分解和弦。\n• 每個樂句均帶有獨特個性，使聽者易於追蹤曲式；這種多樣對比的素材正是古典早期義大利交響曲確立自身語彙的重要特徵。（第 509 頁）"
     }
   },
+  "23": {
+    "1": {
+      "title_zh": "譜例 23.1　海頓，弦樂四重奏《玩笑》終樂章主題（NAWM 121d）",
+      "subtitle_en": "Example 23.1 — Haydn, String Quartet Op. 33, No. 2 \"The Joke\", finale theme (NAWM 121d)",
+      "explanation_title": "譜例說明  教科書第 520 頁",
+      "explanation_zh": "• 圓角二段式（rounded binary）主題表面簡單，實則整段完全衍生自開頭兩小節（括弧標示）的單一動機，包含三個子動機（a、b、c）。\n• 正規的八小節樂段、頻繁的終止及保持在單一調性的和聲進行，使主題輪廓清晰可辨；海頓以最小素材達到最豐富發展，是古典風格動機經濟原則的完美示範。（第 520 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 23.2　海頓，《玩笑》四重奏結尾段落",
+      "subtitle_en": "Example 23.2 — Haydn, \"The Joke\" quartet, closing passage",
+      "explanation_title": "譜例說明  教科書第 521 頁",
+      "explanation_zh": "• 主題在長休止之間被拆分為兩小節短句，觀眾因此察覺自己對音樂延續的預期；最長的一次休止後主題再次出現，令人以為樂曲要重新循環，直到演奏者放鬆才確認結束。\n• 海頓藉此「玩笑」（joke）讓聽者體驗音樂預期被打破的樂趣，同時也示範古典風格如何將結構本身轉化為幽默的工具。（第 521 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 23.3　海頓，第 88 號交響曲動機發展",
+      "subtitle_en": "Example 23.3 — Haydn, Symphony No. 88, thematic economy (a–e)",
+      "explanation_title": "譜例說明  教科書第 525 頁",
+      "explanation_zh": "• 五個片段（a–e）展示第一樂章從開頭主題到第二主題的整體動機關聯：a 為開頭主題（每句均變化動機 a），b 為重複時加入的伴奏音形（動機 b），c 為過渡段（融合 a、b），d 為第二主題（與第一主題節奏呼應），e 為結束主題（結合兩主題元素）。\n• 整個呈示部幾乎全以兩個短小動機建構，是海頓「以有限素材創造最大多樣性」的動機發展藝術（motivic economy）之最佳範例。（第 525 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 23.4　海頓，第 104 號交響曲終樂章風笛模仿",
+      "subtitle_en": "Example 23.4 — Haydn, Symphony No. 104, finale, bagpipe drone imitation",
+      "explanation_title": "譜例說明  教科書第 528 頁",
+      "explanation_zh": "• 終樂章以低音弦樂模仿風笛（bagpipe）的持續低音（drone），旋律在其上以民間舞曲風格展開，強烈暗示農村舞蹈場景。\n• 此類效果反映了海頓的創作目標——同時取悅「音樂愛好者」（business people）與「專家」（connoisseur）；鄉村色彩的引用是他吸引倫敦廣大聽眾的有效手段之一。（第 528 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 23.5　海頓，詼諧曲式小步舞曲中的節奏遊戲",
+      "subtitle_en": "Example 23.5 — Haydn, scherzo/minuet with hemiola and sudden silences",
+      "explanation_title": "譜例說明  教科書第 529 頁",
+      "explanation_zh": "• 展示海頓小步舞曲（或標題為「諧謔曲」）中的節奏遊戲：交叉節奏（hemiola）打破正常的三拍律動，突然的靜默造成意外效果，違背聽眾的節奏預期。\n• 此種以節奏突破禮儀舞曲規範的寫法，體現古典時期詼諧風格（Witz）的精髓——以機巧的結構設計引發聽者的喜悅與驚奇。（第 529 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 23.6　肖貝爾奏鳴曲與莫札特對比",
+      "subtitle_en": "Example 23.6 — Comparison of Schobert sonata and Mozart passage",
+      "explanation_title": "譜例說明  教科書第 537 頁",
+      "explanation_zh": "• 對比肖貝爾（Schobert）奏鳴曲的一段與莫札特對應段落：肖貝爾善用管弦樂效果、快速音形與厚重和弦織體，莫札特後來學習並發展了這種鋼琴語彙。\n• 此例說明莫札特如何從巴黎及其他地方汲取多元影響，並將其融入個人創作語言；肖貝爾的管弦式寫法是連接前古典過渡到成熟古典風格的重要橋梁。（第 537 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 23.7　莫札特，K.332 鋼琴奏鳴曲第一主題及過渡段",
+      "subtitle_en": "Example 23.7 — Mozart, Piano Sonata K. 332, first theme and beginning of transition",
+      "explanation_title": "譜教說明  教科書第 540 頁",
+      "explanation_zh": "• 第一主題以「歌唱的快板」（singing allegro）風格開始，附點和弦伴奏上方展開如歌旋律；後句引入模仿與對位；過渡段中多種風格快速交替（加蘭式、對位式、進行曲式）。\n• 莫札特主題的自然流暢感出自精心雕琢：前後句平衡、多元風格並置卻渾然天成，是他有別於海頓的個人標誌——歌唱性旋律與多風格雜糅的高超整合能力。（第 540 頁）"
+    },
+    "8": {
+      "title_zh": "譜例 23.8　莫札特，《朱比特》交響曲開頭主題（K.551）",
+      "subtitle_en": "Example 23.8 — Mozart, Symphony No. 41 \"Jupiter\" K. 551, opening theme",
+      "explanation_title": "譜例說明  教科書第 545 頁",
+      "explanation_zh": "• 主題以兩種截然對比的素材構成：宏亮齊奏、鋪墊和弦後，輕巧的歌唱旋律接續，兩者形成「交響曲式」壯麗宏觀與「加蘭式」典雅精巧的並置。\n• 這五個音的主要動機（do–re–fa–mi）後來在終樂章發展為宏大賦格——莫札特以最精簡的素材貫穿整部交響曲，完成古典風格中加蘭式優雅與學術對位的最高整合。（第 545 頁）"
+    },
+    "9": {
+      "title_zh": "譜例 23.9　莫札特，《朱比特》終樂章尾聲對位",
+      "subtitle_en": "Example 23.9 — Mozart, Jupiter Symphony, excerpt from coda showing themes in counterpoint",
+      "explanation_title": "譜例說明  教科書第 545 頁",
+      "explanation_zh": "• 尾聲高潮段落：第一主題動機（a、c）、過渡素材（d）與第二主題動機（e、f）在五聲部賦格中同時結合，互相形成對位，顯示所有素材均可相互對位演奏。\n• 此對位高潮是莫札特最精妙的結構設計之一——在加蘭式優雅外表之下預伏嚴格對位的潛力，於終樂章完全揭示，達成整部交響曲在智識與感官兩層面的最終整合。（第 545 頁）"
+    },
+    "10": {
+      "title_zh": "譜例 23.10　莫札特，《唐·喬凡尼》，艾薇拉的憤怒詠嘆調",
+      "subtitle_en": "Example 23.10 — Mozart, Don Giovanni, Donna Elvira's rage aria Ah fuggi il traditor",
+      "explanation_title": "譜例說明  教科書第 549 頁",
+      "explanation_zh": "• 詠嘆調以薩拉邦德節奏（sarabande rhythm）表現艾薇拉試圖莊重的姿態，但極快的速度使她聽來歇斯底里；過時的巴洛克裝飾音形（仿史卡拉帝/韓德爾風格）暗示她如在朗讀老掉牙的劇本，顯得虛偽而不真誠。\n• 莫札特以風格引用與表演風格的落差製造喜劇效果：音樂的「過時感」讓觀眾看穿人物的假正經——這是他描繪多層次人物心理的高超手法。（第 549 頁）"
+    }
+  },
+  "25": {
+    "1": {
+      "title_zh": "譜例 25.1　舒伯特藝術歌曲的多元伴奏風格（a–d）",
+      "subtitle_en": "Example 25.1 — Schubert, four Lieder showing variety of accompaniment styles",
+      "explanation_title": "譜例說明  教科書第 594 頁",
+      "explanation_zh": "• 四段摘錄展示舒伯特伴奏的多樣性：a《小玫瑰》（Heidenröslein）低音音符加和弦交替、質樸民謠感；b《漫遊》（Das Wandern）步行律動；c《小夜曲》（Ständchen）撥弦吉他甜蜜憂鬱；d《阿特拉斯》（Der Atlas）強烈震音與八度，如擎天神般戲劇張力。\n• 每首伴奏均精準映照詩文的意象與主人公的情感：伴奏不只伴奏，而是詮釋詩的意境、賦予旋律靈魂，體現舒伯特藝術歌曲（Lied）的核心美學。（第 594 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 25.2　舒伯特，〈紡車旁的葛麗珍〉鋼琴伴奏（NAWM 132）",
+      "subtitle_en": "Example 25.2 — Schubert, Gretchen am Spinnrade D.118 (NAWM 132), piano accompaniment",
+      "explanation_title": "譜例說明  教科書第 595 頁",
+      "explanation_zh": "• 鋼琴右手持續的圓形動機描繪紡輪的旋轉，左手反覆短音模仿踏板的推動；當葛麗珍回想愛人親吻時，伴奏突然中斷，隨後遲疑地重啟——音樂無聲地說明她停下紡輪，因情感湧現而失神。\n• 此例是「鋼琴伴奏作為第二詩人」（Schubert's piano as co-narrator）的完美示範：伴奏中藏有歌詞未明言的心理活動，鋼琴是聽者理解故事的隱藏線索。（第 595 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 25.3　舒曼，《詩人之戀》第一首開頭（NAWM 133）",
+      "subtitle_en": "Example 25.3 — Schumann, Dichterliebe Op. 48, No. 1, opening (NAWM 133)",
+      "explanation_title": "譜例說明  教科書第 596 頁",
+      "explanation_zh": "• 鋼琴前奏以懸留音與倚音表達「渴望與欲求」，拒絕落入穩定調性、以屬七和弦結束，暗示愛情可能永無回應的未竟感——這是海涅詩文未明言的情感，由舒曼的音樂創造出來。\n• 此例體現舒曼的核心美學：鋼琴不僅伴奏，而是與人聲同等重要的共同創作者，作曲家以音樂成為詩人的「共同創造者」，在歌詞之外補充內心隱藏的深層情感。（第 596 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 25.4　福斯特，〈珍妮〉第一節最後樂句（NAWM 134）",
+      "subtitle_en": "Example 25.4 — Stephen Foster, Jeanie with the Light Brown Hair (NAWM 134), last phrase of verse 1",
+      "explanation_title": "譜例說明  教科書第 599 頁",
+      "explanation_zh": "• 第一節最後樂句中和聲與旋律的刻意簡樸，使「Jeanie」、「floating」等詞落在的不諧和音格外觸動人心；簡明的和聲語言令不諧和音的效果更為鮮明。\n• 福斯特的「客廳歌曲」（parlor song）以不複雜但感染力強的旋律和直接的情感表達服務廣大美國家庭聽眾，是十九世紀美國流行音樂文化的代表聲音。（第 599 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 25.5　孟德爾頌，《無詞歌》第一首",
+      "subtitle_en": "Example 25.5 — Mendelssohn, Songs Without Words, No. 1 (1830)",
+      "explanation_title": "譜例說明  教科書第 603 頁",
+      "explanation_zh": "• 鋼琴曲可分解為三個層次：低音（左手低音）、琶音伴奏（左手高音）、旋律（高音聲部），彷彿鋼琴一人同時演唱三個聲部；以兩手涵蓋三個聲部的挑戰，正是孟德爾頌鋼琴音樂的特色之一。\n• 《無詞歌》（Lieder ohne Worte）將藝術歌曲的抒情旋律性移植到純鋼琴語境，是孟德爾頌最具個人標誌性的鋼琴體裁，也是浪漫時期鋼琴小品（character piece）的早期典範。（第 603 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 25.6　舒曼，《嘉年華》，〈佛羅雷斯坦〉與〈尤瑟比烏斯〉（NAWM 136a/b）",
+      "subtitle_en": "Example 25.6 — Schumann, Carnaval Op. 9, Eusebius (136a) and Florestan (136b)",
+      "explanation_title": "譜例說明  教科書第 604 頁",
+      "explanation_zh": "• 25.6a〈尤瑟比烏斯〉（Eusebius）：緩慢、夢幻的七連音下方以半音化低音支撐，曲線旋律象徵內省沉思的詩人氣質。25.6b〈佛羅雷斯坦〉（Florestan）：快速激情的圓舞曲，稜角分明的旋律、悸動的不諧和音與強拍外的突強（sforzando），象徵熱烈衝動的個性。\n• 兩段均含有貫穿全曲的動機（A♭–C–B，即 ASCH 字母遊戲的一部分），為整套作品提供有機連結，也展示舒曼以文學人格（literary persona）作為音樂結構的浪漫式創作理念。（第 604 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 25.7　蕭邦，《前奏曲》Op.28，第 1 與第 2 首",
+      "subtitle_en": "Example 25.7 — Chopin, Preludes Op. 28, Nos. 1 and 2",
+      "explanation_title": "譜例說明  教科書第 609 頁",
+      "explanation_zh": "• 第 1 首（C 大調）：延音踏板持續和聲，雙手以琶音分解和弦環繞一個中音域旋律，最頂層以向上符幹標示右手、向下符幹標示左手——視覺上需要三隻手，實際以兩手分工完成。\n• 第 2 首：寬距二音程在左手交替，右手在中段拾出旋律；蕭邦的觸鍵藝術（articulation）與踏板使用充分體現他的鋼琴音響美學——延音踏板製造非傳統的和聲模糊感，魯巴托（rubato）賦予時值彈性。（第 609 頁）"
+    },
+    "8": {
+      "title_zh": "譜例 25.8　蕭邦，降 B 大調馬厝卡（NAWM 138）",
+      "subtitle_en": "Example 25.8 — Chopin, Mazurka in B-flat Major Op. 7, No. 1 (NAWM 138)",
+      "explanation_title": "譜例說明  教科書第 610 頁",
+      "explanation_zh": "• 展示馬厝卡舞曲（mazurka）的體裁特徵：四三拍中第二或第三拍常有重音、附點音型、四小節樂句組合成‖:A:‖:BA:‖:CA:‖結構；25.8b 的第三段以持續踏板、五度持續低音（drone fifth）、罕見和聲及增二度，創造波蘭民俗音樂的異國音響。\n• 魯巴托標記（rubato）指示右手旋律在左手保持嚴格律動的同時略微提前或延後，是蕭邦風格演奏不可或缺的表情元素，也是浪漫鋼琴美學「呼吸感」的具體實踐。（第 610 頁）"
+    },
+    "9": {
+      "title_zh": "譜例 25.9　李斯特，《嘆息》音詩練習曲（NAWM 140）",
+      "subtitle_en": "Example 25.9 — Liszt, Un sospiro, Three Concert Études No. 3 (NAWM 140)",
+      "explanation_title": "譜例說明  教科書第 614 頁",
+      "explanation_zh": "• 25.9a 開頭：踏板持續和聲，雙手交替躍過彼此拾出一個五聲音階旋律（向上符幹=右手，向下=左手）；25.9b 高潮：旋律移至右手中段，左手在上下方分別琶音，技術上極為複雜。\n• 李斯特將鋼琴推向管弦樂規模的技術極限：每一音型設計均指向特定情感表現目標，技術炫技與音樂意境合一，體現他作為鋼琴演奏神話的美學理念。（第 614 頁）"
+    }
+  },
   "27": {
     "1": {
       "title_zh": "譜例 27.1　羅西尼親筆裝飾版，《Una voce poco fa》",
@@ -57,6 +273,99 @@
       "subtitle_en": "Example 27.3 — Bellini, Norma (NAWM 150), Casta diva",
       "explanation_title": "譜例說明  教科書第 657 頁",
       "explanation_zh": "• 貝里尼歌劇《諾瑪》主角入場詠嘆調坎提雷段落，以悠長的旋律線條展示貝里尼的抒情天賦——長弓形句法、流動裝飾、克制的半音，成就了義大利美聲歌劇的不朽典範。\n• 諾瑪祈禱月神的場景，選材反映浪漫時期對遙遠時空的迷戀，也寄寓了義大利人渴望擺脫奧地利統治的民族情感。（第 657 頁）"
+    }
+  },
+  "33": {
+    "1": {
+      "title_zh": "譜例 33.1　荀貝格，無調性藝術歌曲開頭兩個樂句",
+      "subtitle_en": "Example 33.1 — Schoenberg, atonal Lied, first two phrases",
+      "explanation_title": "譜例說明  教科書第 809 頁",
+      "explanation_zh": "• 此無調性藝術歌曲在形式上保留了十九世紀藝術歌曲的傳統：聲音加鋼琴的織體、旋律的起伏、動態的樂句塑形，以及以下行姿態標示樂句結束。\n• 開頭兩小節即出現全部十二個半音（最後兩音 D 與 A♯ 在第二拍鋼琴和弦中補足），而第二小節的和弦同時啟動下一輪十二音——荀貝格以「半音飽和」（chromatic saturation）取代調性功能，作為強化樂句感的手段。（第 809 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 33.2　荀貝格，十二音組列與《鋼琴組曲》應用（NAWM 181）",
+      "subtitle_en": "Example 33.2 — Schoenberg, twelve-tone row and Suite Op. 25 (NAWM 181)",
+      "explanation_title": "譜例說明  教科書第 814 頁",
+      "explanation_gz": "• 33.2a 展示組列的八種形式（P–0、P–6、I–0、I–6 及其逆行版本），荀貝格設計組列使所有形式均以 E 或 B♭ 開始、以另一音結束，G 與 D♭ 固定在第二對音位；33.2b 為前奏（NAWM 173a）開頭，P–0 在右手分為三個四音組（tetrachord），P–6 在左手伴奏；33.2c 為小步舞曲中 P–0 與 I–6 的對答。\n• 此組列設計使十二音技法能產生類似調性作品中「保持調性」的一致性——固定音高在樂句首尾出現，使結構可被感知（儘管比調性中心更難聽辨）。（第 814 頁）",
+      "explanation_zh": "• 33.2a 展示組列的八種形式（P–0、P–6、I–0、I–6 及其逆行版本），荀貝格設計組列使所有形式均以 E 或 B♭ 開始、以另一音結束，G 與 D♭ 固定在第二對音位；33.2b 為前奏（NAWM 181）開頭，P–0 在右手分為三個四音組（tetrachord），P–6 在左手伴奏；33.2c 為小步舞曲中 P–0 與 I–6 的對答。\n• 此組列設計使十二音技法能產生類似調性作品中「保持調性」的一致性——固定音高在樂句首尾出現，使結構可被感知（儘管比調性中心更難聽辨）。（第 814 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 33.3　荀貝格，第四號弦樂四重奏組列",
+      "subtitle_en": "Example 33.3 — Schoenberg, String Quartet No. 4 Op. 37, twelve-tone row",
+      "explanation_title": "譜例說明  教科書第 815 頁",
+      "explanation_zh": "• 展示第四號弦樂四重奏的組列：末六音（第二六音組）為前六音（第一六音組）的倒置形式（不同順序）；因此 P–0 與 I–5 的第一六音組與第二六音組互補，兩列結合後各自完成所有十二音各出現一次。\n• 此種組列設計允許建立「十二音域」（twelve-tone regions），是荀貝格在成熟十二音技法中追求更嚴格秩序的創新手段，也是他回應「無調性缺乏結構基礎」批評的技術回答。（第 815 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 33.4　貝爾格，《伍采克》主導動機與場景",
+      "subtitle_en": "Example 33.4 — Berg, Wozzeck, leitmotives and scenes",
+      "explanation_title": "譜例說明  教科書第 817 頁",
+      "explanation_zh": "• 33.4a 為伍采克的主導動機（「我們可憐的人！」），包含他的特徵音集（characteristic set）；33.4b 為第二幕第四場鋒芒酒館鋼琴演奏走調的狂野波爾卡——無調性的音符恰好構成伍采克的音集，但聽來如通俗舞曲（三和弦伴奏、旋律以級進與跳進結合）。\n• 貝爾格的「雙重現實」：舞台上的人物在表演角色，音樂也在「扮演」通俗舞曲的角色——無調性音樂與流行音樂形式的共存，是他折衷融通現代與傳統的標誌性手法。（第 817 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 33.5　貝爾格，《小提琴協奏曲》組列與巴赫聖詠",
+      "subtitle_en": "Example 33.5 — Berg, Violin Concerto, twelve-tone row and Bach chorale",
+      "explanation_title": "譜例說明  教科書第 819 頁",
+      "explanation_zh": "• 33.5a 展示協奏曲的組列：以交鎖的小調與大調三和弦構成（允許對調性和弦的頻繁引用），同時包含全音音階尾段（組列第 9–12 音）；33.5b 為引入的巴赫聖詠旋律，其開頭三個全音上行音程恰與組列末四音相同，巴赫的和聲化更凸顯組列衍生的和弦。\n• 巴赫聖詠引用並非外來插入，而是直接從組列生長出來——貝爾格以此紀念因波爾卡瘓逝世的十八歲少女瑪儂，作品成為廣受聆聽的二十世紀協奏曲之一。（第 819 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 33.6　韋本，第二號交響曲雙重反向卡農（NAWM 183）",
+      "subtitle_en": "Example 33.6 — Webern, Symphony Op. 21, double canon in inversion (NAWM 183)",
+      "explanation_title": "譜例說明  教科書第 821 頁",
+      "explanation_zh": "• 整個樂章為雙重反向卡農：卡農 1 在上兩行，卡農 2 在下兩行；每條旋律充滿休止、頻繁換音色、在三個八度範圍內縱橫交叉，使卡農線條有意被整合而非突出。\n• 韋本的音色旋律（Klangfarbenmelodie）：音色的連續變換與音高和節奏同樣構成旋律的一部分；這種極致稀疏而高度組織的音響，是韋本個人風格的終極體現。（第 821 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 33.7　史特拉文斯基，《彼得魯希卡》民間素材片段",
+      "subtitle_en": "Example 33.7 — Stravinsky, Petrushka, folk-based passage for the drunken merrymakers",
+      "explanation_title": "譜例說明  教科書第 824 頁",
+      "explanation_zh": "• 此段伴隨醉漢狂歡者的音樂以俄羅斯民間旋律素材為基礎，節奏上的層層疊加與鮮明音色對比，使每個聲音區塊盡量個性化。\n• 史特拉文斯基在三部芭蕾舞劇中廣泛借用俄羅斯民間旋律，以強烈的節奏對比、不規則重音與風格化的並置，建立他獨特的「俄羅斯風格」（Russian period）語彙。（第 824 頁）"
+    },
+    "8": {
+      "title_zh": "譜例 33.8　史特拉文斯基，「彼得魯希卡和弦」（八聲音階）",
+      "subtitle_en": "Example 33.8 — Stravinsky, Petrushka, the \"Petrushka chord\" (octatonic scale)",
+      "explanation_title": "譜例說明  教科書第 824 頁",
+      "explanation_zh": "• 「彼得魯希卡和弦」將升 F 大三和弦與 C 大三和弦同時疊置（以方括號標示），兩者均屬同一個八聲音階（octatonic scale），因此共存和諧——這個和弦代表由魔術師賦予生命的木偶彼得魯希卡。\n• 此例是二十世紀音樂中多調性（polytonality）與八聲音階使用的標誌性案例，也是史特拉文斯基成熟俄羅斯時期個人和聲語言的核心標識。（第 824 頁）"
+    },
+    "9": {
+      "title_zh": "譜例 33.9　史特拉文斯基，《春之祭》少女之舞（NAWM 184a）",
+      "subtitle_en": "Example 33.9 — Stravinsky, The Rite of Spring, Danse des adolescentes (NAWM 184a)",
+      "explanation_title": "譜例說明  教科書第 826 頁",
+      "explanation_zh": "• 開頭數小節每個拍點的強度相同，消除了拍強弱的階層感；八支法國號奏出不規則重音模式，完全瓦解任何拍子感——但此段對芭蕾舞而言設計精巧，形成完整的八小節架構。\n• 整段建構於固定音型（ostinato）之上：拍擊或琶音和弦、英國管的旋律固定音型；不規則重音與固定音型的組合是史特拉文斯基此時期最具識別性的節奏手法，對二十世紀音樂影響深遠。（第 826 頁）"
+    },
+    "10": {
+      "title_zh": "譜例 33.10　史特拉文斯基，《詩篇交響曲》主題（NAWM 185）",
+      "subtitle_en": "Example 33.10 — Stravinsky, Symphony of Psalms (NAWM 185), first and second themes",
+      "explanation_title": "譜例說明  教科書第 830 頁",
+      "explanation_zh": "• 33.10a 第一主題：古典式上行跳進後下行級進、齊奏後多聲部展開、動機模進——但含平行五度、拍號頻繁更換與聲部間的隨意不諧和，莫札特絕不會這樣寫。33.10b 第二主題：小號一唱如巴赫聖詠，其餘聲部形成對位伴奏，但旋律切分、拍號更換、伴奏聲部幾乎全程不諧和。\n• 兩主題均以旋律音集確立調性中心（而非功能和聲），形成調式性調性（modal tonality）；對位、模進等傳統手法與現代不諧和並置，是史特拉文斯基新古典主義（neoclassicism）時期的核心手法。（第 830 頁）"
+    },
+    "11": {
+      "title_zh": "譜例 33.11　巴爾托克，《弦樂、打擊樂與鋼片琴音樂》主題與終止式",
+      "subtitle_en": "Example 33.11 — Bartók, Music for Strings, Percussion and Celesta, principal themes and cadences (a–f)",
+      "explanation_title": "譜例說明  教科書第 837 頁",
+      "explanation_zh": "• 六個片段（a–f）展示四個樂章主題與終止式均圍繞增四度（tritone）關係：第一樂章主題（a）以 A 為中心上升後回返，末樂章（f）以利底亞調式下降至中心音；終止式（b/d）以反向進行或模擬屬–主進行回到主音。\n• 巴爾托克將增四度作為結構性框架，配合主題以短動機反覆變化（模仿古典與東歐農民音樂雙重傳統），以及利底亞調式、混合調式等民俗音階，創造出現代主義與民間傳統深度融合的獨特語言。（第 837 頁）"
+    },
+    "12": {
+      "title_zh": "譜例 33.12　巴爾托克，《弦樂、打擊樂與鋼片琴》回文木琴獨奏",
+      "subtitle_en": "Example 33.12 — Bartók, Music for Strings, Percussion and Celesta, palindromic xylophone solo",
+      "explanation_title": "譜例說明  教科書第 838 頁",
+      "explanation_zh": "• 第三樂章開頭的木琴獨奏呈現完美回文（palindrome）：從第三小節的中點開始，正向與逆向演奏完全相同，左右完全對稱。\n• 巴爾托克對對稱結構的熱愛貫穿此曲（參見第一樂章結尾的鏡像對位）；回文形式使音樂具有抽象的數學之美，同時也呼應了農民音樂中短動機反覆衍生的美學。（第 838 頁）"
+    },
+    "13": {
+      "title_zh": "譜例 33.13　巴爾托克，農民裝飾奏法的引用",
+      "subtitle_en": "Example 33.13 — Bartók, Music for Strings, Percussion and Celesta, evocation of peasant ornamentation",
+      "explanation_title": "譜例說明  教科書第 839 頁",
+      "explanation_zh": "• 33.13a 為塞爾維亞—克羅埃西亞農民歌曲中巴爾托克描述的「散板—自由速度」（parlando-rubato）風格：裝飾性強、部分半音化，通常建立在持續低音上方；33.13b 為第三樂章開頭附近對此風格的呼應。\n• 巴爾托克並非直接引用農民音樂，而是提取其元素（持續低音旋律、弦樂撥弦、滑音、敲擊和弦、密集二度不諧和）加以再詮釋，創造出既現代又根植於中東歐傳統的音響世界。（第 839 頁）"
+    },
+    "14": {
+      "title_zh": "譜例 33.14　艾夫斯，實驗小品兩則",
+      "subtitle_en": "Example 33.14 — Charles Ives, two experimental pieces (NAWM 188)",
+      "explanation_title": "譜例說明  教科書第 842 頁",
+      "explanation_zh": "• 33.14a《進行曲》管風琴部分（約 1902）：在 C 持續低音上方，和弦由二度堆疊逐漸擴展至三度、四度、五度、六度、七度，最終解決為純八度——探索可能的和弦結構。\n• 33.14b《詼諧曲：一路繞回來》（ca.1908）：幾乎完美的回文結構，逐層疊入不諧和的固定音型直至高潮，此時二、三、五、七、十一等分的均分單位同時發聲（前五個質數）；之後以逆行方式解除各層。（第 842 頁）"
+    },
+    "15": {
+      "title_zh": "譜例 33.15　艾夫斯，《康科德奏鳴曲》〈阿爾科特家〉的多元風格（NAWM 189）",
+      "subtitle_en": "Example 33.15 — Ives, Concord Sonata, \"The Alcotts\" (NAWM 189), contrasting styles",
+      "explanation_title": "譜例說明  教科書第 845 頁",
+      "explanation_zh": "• 五個片段（a–e）展示同一樂章中並置的多種風格：a 讚美詩式旋律與和聲（Missionary Chant）；b 雙調性（B♭ 大調旋律疊於 A♭ 大調三和弦）；c 全音音階伴奏上的調式旋律層疊；d 仿福斯特客廳歌曲風格；e 強力敲擊和弦（呼應貝多芬《鎚子奏鳴曲》）。\n• 艾夫斯以「累積曲式」（cumulative form）逐步建立各種風格，再在高潮整合贊美詩與貝多芬，藉此再現奧爾科特家的家庭音樂生活，並連結愛默生的超驗主義哲學——美國民主精神中「共同靈魂的力量」。（第 845 頁）"
     }
   }
 }
