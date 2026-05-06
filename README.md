@@ -63,7 +63,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 14 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
 | 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 17 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
 | 23 | 古典晚期：海頓與莫札特 | Classic Music in the Late Eighteenth Century | 14 | [`Ch23_Classic_Late_18C.pdf`](Ch23_Classic_Late_18C.pdf) |
-| 24 | 革命與變革：貝多芬 | Revolution and Change (Beethoven) | 14 | [`Ch24_Beethoven.pdf`](Ch24_Beethoven.pdf) |
+| 24 | 革命與變革：貝多芬 | Revolution and Change (Beethoven) | 23 | [`Ch24_Beethoven.pdf`](Ch24_Beethoven.pdf) |
 | 25 | 浪漫世代：藝術歌曲與鋼琴音樂 | The Romantic Generation: Song and Piano Music | 14 | [`Ch25_Romantic_Generation.pdf`](Ch25_Romantic_Generation.pdf) |
 | 26 | 古典曲式中的浪漫主義：合唱、室內、管弦 | Romanticism in Classical Forms: Choral, Chamber, and Orchestral Music | 28 | [`Ch26_Romantic_Classical.pdf`](Ch26_Romantic_Classical.pdf) |
 | 27 | 浪漫歌劇與音樂劇至世紀中葉 | Romantic Opera and Musical Theater to Midcentury | 31 | [`Ch27_Romantic_Opera.pdf`](Ch27_Romantic_Opera.pdf) |
@@ -79,7 +79,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 30 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
 | 38 | 二十世紀晚期 | The Late Twentieth Century | 29 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 29 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **946** | |
+| | | **總計 Total** | **955** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
