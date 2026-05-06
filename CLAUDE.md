@@ -112,7 +112,7 @@ U+30FB (Katakana middle dot ・) does not render in some fonts via LibreOffice �
 
 ## Chapter format status
 
-All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **934 slides**.
+All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **946 slides** (6 chapters have Example slides added: Ch04/13/20/22/27/31; remaining 30 chapters still pending).
 
 **NAWM audit status** — all NAWM numbers verified against textbook in-text citations using `pdftotext`:
 
@@ -204,9 +204,104 @@ pdftoppm -r 250 -png Lineage_Map.pdf /tmp/verify/p   # visual check
 
 Only `Lineage_Map.pdf` is committed; `lineage_map.js` is gitignored.
 
+## Textbook Example slides
+
+Each chapter can include slides showing the musical score **Examples** printed in the textbook (e.g. "EXAMPLE 24.2 Main motive…"). Ch24 is the completed reference implementation (9 example slides, slides 5–19 of 23).
+
+### Example image pipeline
+
+Score images are **cropped from the textbook PDF** — not re-engraved. Each PNG lives in `examples/chXX/` (gitignored).
+
+**Automated pipeline** (`scripts/add_examples.py`) handles all phases:
+
+```bash
+# Dry-run (preview only, no writes):
+python3 scripts/add_examples.py --chapters 5 23 --dry-run
+
+# Real run (crops images, patches JS, rebuilds PDF):
+python3 scripts/add_examples.py --chapters 5 23 33
+
+# All 36 chapters at once:
+python3 scripts/add_examples.py --all
+```
+
+**Chinese translations** — required for every example, stored in `scripts/translations.json`:
+```json
+{
+  "5": {
+    "1": {
+      "title_zh": "譜例 5.1　...",
+      "subtitle_en": "Example 5.1 — ...",
+      "explanation_title": "譜例說明  教科書第 N 頁",
+      "explanation_zh": "• 中文說明…\n• 第二點…（第 N 頁）"
+    }
+  }
+}
+```
+If a chapter/example key is absent from `translations.json`, the pipeline falls back to auto-extracted English (not acceptable for final output — always provide translations first).
+
+**Workflow for each new batch:**
+1. `--dry-run` to see extracted English context for each example
+2. Translate to Chinese, add to `translations.json`
+3. Real run → visual QA → commit PDFs
+
+Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each (total ~211 across 36 chapters, ~12 done as of 2026-05-06). The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
+
+### Example slide layout
+
+Three layout modes chosen automatically by `build_example_slide_js()` based on the cropped image aspect ratio (W/H):
+
+| Aspect | Layout | Score zone |
+|--------|--------|-----------|
+| ≥ 1.3 | **Stacked** (score top, text bottom) | H=2.65" (asp≥2.0) or H=3.05" (asp<2.0) |
+| < 1.3 | **Side-by-side** (score left, text right) | H=4.55", W=H×asp |
+| < 0.70 | **Auto-split** into N pages (each part has asp≥1.3) | See below |
+
+**Auto-split:** the pipeline splits a tall image vertically at natural white rows between staff systems, generating `exNN_Ma.png` / `exNN_Mb.png`. Explanation text appears only on the last part. `N = ceil(1.3 / asp)`, capped at 4.
+
+**Crop boundary detection** (auto, via `find_example_bottom_y_pct`):
+- Finds the first gap > 80pt after the EX AMPLE label = score image area
+- After score: finds next gap > 22pt = paragraph break before body commentary
+- If no paragraph break (body text begins immediately) = stops at score image end
+- Lines at y > page_h × 0.93 are excluded (running heads/footers)
+- Label itself excluded by `y ≤ y_label_abs + 4pt` tolerance
+
+**Explanation text rule:** bullet text must be a faithful Chinese translation of the textbook sentence that describes the example — extract with `pdftotext`, translate accurately, never fabricate. Attach page number as `（第 N 頁）`. All translations stored in `scripts/translations.json` before running the pipeline.
+
+**Insertion point:** all example slides are inserted just before the final Key Terms slide. TOC slide numbers are updated accordingly.
+
+The `EXDIR` pattern (used in manually-written chapters like Ch24):
+```javascript
+const EXDIR = __dirname + "/examples/ch24/";
+```
+
 ## Git conventions
 
-`.gitignore` excludes `*.pptx`, `*.js` (all generators: chapter files, `cheat_sheet.js`, `condensed_review.js`, `qa_100.js`, etc.), `node_modules/`, `package*.json`, and `*.jpg` except the textbook cover. **Only PDFs and README.md are committed — source JS stays local.** Commit message prefixes: `ChNN:` (single chapter edit), `ChNN-MM:` (multi-chapter batch), `Add:` (new artifacts), `Condensed_Review:`, `Lineage_Map:`, `README:`.
+`.gitignore` excludes `*.pptx`, `*.js` (all generators: chapter files, `cheat_sheet.js`, `condensed_review.js`, `qa_100.js`, etc.), `node_modules/`, `package*.json`, `examples/` (score PNGs), and `*.jpg` except the textbook cover. **Only PDFs and README.md are committed — source JS and PNG assets stay local.** Commit message prefixes: `ChNN:` (single chapter edit), `ChNN-MM:` (multi-chapter batch), `Add:` (new artifacts), `Condensed_Review:`, `Lineage_Map:`, `README:`.
+
+## Composer Biographies (`biographies.js`)
+
+54-slide deck (`Biographies.pdf`) covering all 27 composer biographies printed in the textbook — **complete and committed**. Design spec: `docs/superpowers/specs/2026-05-05-composer-biographies-design.md`.
+
+**Structure — 2 slides per composer:**
+- **Slide 1 (dark bg):** Portrait image (left, extracted from textbook PDF via `pdfimages`) + info card (right): name 24pt, dates, era·nationality, 3 representative works
+- **Slide 2 (light bg):** Full-width Chinese prose translation of the textbook biography — no additions, strict translation only
+
+**27 biographies and their pages** (printed-book pagination):
+Hildegard p.61 · Strozzi p.321 · Schütz p.327 · Lully p.345 · Jacquet de la Guerre p.354 · Vivaldi p.408 · Rameau p.419 · Bach p.428 · Handel p.442 · Haydn p.515 · Mozart p.534 · Beethoven p.558 · Schubert p.592 · R.Schumann+C.Schumann p.596 (same page) · Mendelssohn p.602 · Chopin p.608 · Berlioz p.638 · Rossini p.650 · Wagner p.676 · Verdi p.689 · Brahms p.716 · Tchaikovsky p.737 · Debussy p.783 · Schoenberg p.806 · Bartók p.833 · Ellington p.864
+
+**Color palette:** each composer inherits the `C` object from their corresponding chapter JS file (e.g. Beethoven → Ch24 deep crimson/gold, Debussy → Ch32 charcoal/silver). See spec for full mapping.
+
+**Portrait extraction:**
+```bash
+pdfimages -png -f PDF_PAGE -l $((PDF_PAGE+1)) "A HISTORY of WESTERN TENTН MUSIC.pdf" /tmp/bio_imgs/p
+# Inspect ALL extracted PNGs — the largest by file size is NOT always the portrait.
+# Some pages have a large architectural/scene image alongside a smaller portrait (e.g. Bach → St Thomas Church).
+# Always visually verify (Read each PNG) before copying to examples/biographies/.
+```
+Portraits saved to `examples/biographies/` (gitignored). `biographies.js` is done and committed as `Biographies.pdf` (54 slides).
+
+**Content rule:** biography text must be a faithful Chinese translation of the textbook prose only — verify against the source PDF page, do not add biographical facts not present in the book.
 
 ## Color palettes
 
