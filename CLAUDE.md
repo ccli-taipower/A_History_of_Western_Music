@@ -254,7 +254,7 @@ Three layout modes chosen automatically by `build_example_slide_js()` based on t
 | Aspect | Layout | Score zone |
 |--------|--------|-----------|
 | ≥ 1.3 | **Stacked** (score top, text bottom) | H=2.65" (asp≥2.0) or H=3.05" (asp<2.0) |
-| < 1.3 | **Side-by-side** (score left, text right) | H=4.55", W=H×asp |
+| < 1.3 | **Side-by-side** (score left, text right) | H=4.55", W=H×asp（兩欄不等寬，樂譜取自然寬度，文字取剩餘空間，文字欄最小 2.8"）|
 | < 0.70 | **Auto-split** into N pages (each part has asp≥1.3) | See below |
 
 **Auto-split:** the pipeline splits a tall image vertically at natural white rows between staff systems, generating `exNN_Ma.png` / `exNN_Mb.png`. Explanation text appears only on the last part. `N = ceil(1.3 / asp)`, capped at 4.
