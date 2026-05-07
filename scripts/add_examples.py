@@ -37,6 +37,29 @@ SPLIT_THRESHOLD = 0.70
 # Manual y_end_pct overrides for examples where auto-detection includes body text.
 # Key: (chapter_int, example_num_str)  Value: y_end_pct (fraction of PDF page height)
 MANUAL_Y_END = {
+    # ── Ch08 ─────────────────────────────────────────────────────────────────
+    (8,  '2'):  0.46,    # Carol burden: score 2 sections, body text "elaborated" at ~48%
+    (8,  '3'):  0.34,    # Dunstable cantus vs chant: score ends ~31%, body text at 36%
+    (8,  '4'):  0.795,   # Binchois chanson: label at 58%, score+translation ends ~79%, body text at 80%
+    (8,  '6'):  0.472,   # Se la face ay pale: score + translation, body text "a ballade" just after
+    (8,  '7'):  0.96,    # Missa Gloria a-d: full page (all 4 versions)
+    # ── Ch09 ─────────────────────────────────────────────────────────────────
+    (9,  '1'):  0.57,    # Busnoys a+b: body text "Popularity" at ~60%
+    (9,  '2'):  0.32,    # Range comparison diagram: body text "The bassus" at ~34%
+    (9,  '3'):  0.725,   # Ockeghem prolationum: keep 9.3b caption, stop before "Canon" sidebar
+    (9,  '4'):  0.42,    # Obrecht Gloria: score ends ~40%, body text at 43%
+    (9,  '5'):  0.92,    # Isaac Puer natus: label at ~55%, score a+b at bottom of page
+    (9,  '6'):  0.36,    # Carnival song: score+translation, body text at actual ~38%
+    (9,  '7'):  0.53,    # Isaac Innsbruck: 2 systems, Josquin bio at ~58%
+    (9,  '8'):  0.32,    # Josquin Mille regretz: 1 system, body text at ~35%
+    (9,  '9'):  0.734,   # Josquin Ave Maria a-c: stop before "projection of the text" body text
+    (9,  '10'): 0.79,    # Févin Missa a+b: body text "Lord God..." at ~80%
+    # ── Ch10 ─────────────────────────────────────────────────────────────────
+    (10, '2'):  0.79,    # Willaert a+b: body text at ~82%
+    (10, '3'):  0.46,    # Rore Da le belle: score ends ~44%, body text at 48%
+    (10, '5'):  0.63,    # Gesualdo Io parto: 2 systems, body text "Carlo Gesualdo" at ~67%
+    (10, '6'):  0.345,   # Sermisy Tant que vivray: score + translation, exclude body text
+    # ── Ch05 ─────────────────────────────────────────────────────────────────
     (5,  '7'):  0.83,    # stop before "in Example 5.7" body text (3 discant systems)
     (5,  '8'):  0.3507,  # clausulae: 2 systems only, body text at 51%
     (5,  '9'):  0.7008,  # Pérotin 4-voice: 3 systems, body text at 75%
