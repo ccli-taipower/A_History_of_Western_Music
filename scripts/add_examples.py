@@ -47,6 +47,7 @@ MANUAL_Y_END = {
     (23, '3'):  0.96,    # all a–e sections fill the page (was cut at a,b only)
     (23, '4'):  0.3548,  # Haydn 104 finale: 2 systems, body text at 35%
     (23, '6'):  0.46,    # stop before "FREELANCING" body text (at 48%); include both a,b
+    (23, '7'):  0.635,   # stop before "Contrasting styles" body text (at 64%); 3 score systems
     (23, '8'):  0.2020,  # Mozart Jupiter theme: 1 system, body text at 21%
     (25, '1'):  0.96,    # all a–d sections fill the page (was cut at a only)
     (25, '7'):  0.96,    # all a–d sections fill the page (was cut at a only)
