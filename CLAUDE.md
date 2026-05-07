@@ -245,7 +245,7 @@ If a chapter/example key is absent from `translations.json`, the pipeline falls 
 2. Translate to Chinese, add to `translations.json`
 3. Real run → visual QA → commit PDFs
 
-Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each (total ~211 across 36 chapters, ~12 done as of 2026-05-06). The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
+Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each (total ~211 across 36 chapters, ~50 done as of 2026-05-07 across 14 chapters). The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
 
 ### Example slide layout
 
@@ -253,7 +253,7 @@ Three layout modes chosen automatically by `build_example_slide_js()` based on t
 
 | Aspect | Layout | Score zone |
 |--------|--------|-----------|
-| ≥ 1.3 | **Stacked** (score top, text bottom) | H=2.65" (asp≥2.0) or H=3.05" (asp<2.0) |
+| ≥ 1.3 | **Stacked** (score top, text bottom) | H = W/asp (natural height, no whitespace); W = min(9.0", std_H × asp) where std_H = 2.65" (asp≥2.0) or 3.05" |
 | < 1.3 | **Side-by-side** (score left, text right) | H=4.55", W=H×asp（兩欄不等寬，樂譜取自然寬度，文字取剩餘空間，文字欄最小 2.8"）|
 | < 0.70 | **Auto-split** into N pages (each part has asp≥1.3) | See below |
 
@@ -265,6 +265,30 @@ Three layout modes chosen automatically by `build_example_slide_js()` based on t
 - If no paragraph break (body text begins immediately) = stops at score image end
 - Lines at y > page_h × 0.93 are excluded (running heads/footers)
 - Label itself excluded by `y ≤ y_label_abs + 4pt` tolerance
+
+**MANUAL_Y_END** — override the auto-detected crop bottom for a specific example. Key in `scripts/add_examples.py`:
+```python
+MANUAL_Y_END = { (ch, 'ex_num'): 0.52, ... }  # y_pct of FULL PAGE height
+```
+Auto-detection fails when body text follows the score immediately with no gap. Calibration workflow:
+1. Check bottom of cropped PNG: `img.crop((0, H-80, W, H))`
+2. If body text visible: reduce y_end by `delta = pixels_to_remove / H_render` where H_render ≈ 1961px for standard pages
+3. Repeat until bottom shows only score/translation content
+
+**MANUAL_X_START** — for two-column textbook pages where body text is in the LEFT column and the score is in the RIGHT column:
+```python
+MANUAL_X_START = { (13, '2'): 0.49 }  # crop starts at 49% of page width
+```
+
+**Automated post-run QA:** after rebuilding, check all score PNGs for body text leakage:
+```python
+from PIL import Image; import numpy as np
+arr = np.array(Image.open('examples/chNN/exNN_N.png').convert('L'))
+H = arr.shape[0]
+density = (arr[H-60:, 50:750] < 180).mean()
+# density > 0.10 → likely body text (musical notation density is typically 0.05–0.09)
+```
+Note: the last row of a score (staff lines + notes) can reach density ≈ 0.10–0.12 — visually verify before adjusting.
 
 **Explanation text rule:** bullet text must be a faithful Chinese translation of the textbook sentence that describes the example — extract with `pdftotext`, translate accurately, never fabricate. Attach page number as `（第 N 頁）`. All translations stored in `scripts/translations.json` before running the pipeline.
 
@@ -281,7 +305,7 @@ const EXDIR = __dirname + "/examples/ch24/";
 
 ## Composer Biographies (`biographies.js`)
 
-54-slide deck (`Biographies.pdf`) covering all 27 composer biographies printed in the textbook — **complete and committed**. Design spec: `docs/superpowers/specs/2026-05-05-composer-biographies-design.md`.
+55-slide deck (`Biographies.pdf`) covering all 27 composer biographies printed in the textbook — **complete and committed**. Slide 1 is a color-coded era TOC (中世紀/巴洛克/古典/浪漫/現代 × 5 colors, 27 composers in 3 chronological columns). Design spec: `docs/superpowers/specs/2026-05-05-composer-biographies-design.md`.
 
 **Structure — 2 slides per composer:**
 - **Slide 1 (dark bg):** Portrait image (left, extracted from textbook PDF via `pdfimages`) + info card (right): name 24pt, dates, era·nationality, 3 representative works
