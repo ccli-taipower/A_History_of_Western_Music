@@ -32,7 +32,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 🖼️ **A3 海報 Cheat Sheet** | 一頁融會貫通的 A3 橫式海報：時間軸 + 6 條國籍作曲家生平、9 時期色帶、體裁演進、9 張時期風格卡，可列印掛牆 · One-page A3 landscape poster synthesizing the entire book: timeline with 6 color-coded composer tracks, 9 era bands, genre evolution, and 9 period summary cards — printable for wall reference |
 | ❓ **A3 百大 Q&A 海報** | 一頁 A3 橫式百題問答：9 時期 × 11–12 題（申論／名詞／短答三型混搭），每題附精確 Burkholder 10e 書頁頁碼（如 pp. 192–203） · One-page A3 landscape Q&A sheet: 100 questions across 9 periods (mixed essay / term / short-answer), each with exact Burkholder 10e page references |
 | 🔗 **A3 傳承關係圖 Lineage Map** | 一頁 A3 橫式海報：~110 位關鍵作曲家師徒傳承、風格影響、跨期影響、敵對論爭與夫妻／愛慕關係，以時間軸 × 六國籍軌道視覺化呈現 · One-page A3 landscape poster: ~110 key composers with teacher-student chains, stylistic influence, cross-era influence, rivalries, and romantic relationships, visualized on a 900–2025 timeline × 6 nationality tracks |
-| 🎭 **作曲家小傳 Composer Biographies** | 55 張投影片，含彩色時代目錄頁 + 27 篇傳記（希德嘉至艾靈頓），每位作曲家 2 頁：肖像資訊卡 + 中文傳記正文，配色跟隨對應章節 · 55 slides: color-coded era index + 27 composer biographies (Hildegard to Ellington), 2 slides per composer: portrait info card + Chinese biography, colors matching each chapter palette |
+| 🎭 **作曲家小傳 Composer Biographies** | 56 張投影片，含封面（1098–1974 時代色點時間軸）+ 彩色時代目錄頁 + 27 篇傳記（希德嘉至艾靈頓），每位作曲家 2 頁：肖像資訊卡 + 中文傳記正文，配色跟隨對應章節 · 56 slides: cover with era-colored timeline (1098–1974) + color-coded era index + 27 composer biographies (Hildegard to Ellington), 2 slides per composer: portrait info card + Chinese biography, colors matching each chapter palette |
 
 ---
 
@@ -84,7 +84,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
 | 🔗 | A3 傳承關係圖 | A3 Lineage Map (Composer Relationships) | 1 | [`Lineage_Map.pdf`](Lineage_Map.pdf) |
-| 🎭 | 作曲家小傳 | Composer Biographies (TOC + 27 composers × 2 slides) | 55 | [`Biographies.pdf`](Biographies.pdf) |
+| 🎭 | 作曲家小傳 | Composer Biographies (Cover + TOC + 27 composers × 2 slides) | 56 | [`Biographies.pdf`](Biographies.pdf) |
 
 ---
 

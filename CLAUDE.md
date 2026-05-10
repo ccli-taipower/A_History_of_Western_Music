@@ -305,7 +305,7 @@ const EXDIR = __dirname + "/examples/ch24/";
 
 ## Composer Biographies (`biographies.js`)
 
-55-slide deck (`Biographies.pdf`) covering all 27 composer biographies printed in the textbook — **complete and committed**. Slide 1 is a color-coded era TOC (中世紀/巴洛克/古典/浪漫/現代 × 5 colors, 27 composers in 3 chronological columns). Design spec: `docs/superpowers/specs/2026-05-05-composer-biographies-design.md`.
+56-slide deck (`Biographies.pdf`) covering all 27 composer biographies printed in the textbook — **complete and committed**. Slide 1 is a cover (大標 + 1098–1974 時代色點 timeline + 教科書出處). Slide 2 is a color-coded era TOC (中世紀/巴洛克/古典/浪漫/現代 × 5 colors, 27 composers in 3 chronological columns). Design spec: `docs/superpowers/specs/2026-05-05-composer-biographies-design.md`.
 
 **Structure — 2 slides per composer:**
 - **Slide 1 (dark bg):** Portrait image (left, extracted from textbook PDF via `pdfimages`) + info card (right): name 24pt, dates, era·nationality, 3 representative works
