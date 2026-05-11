@@ -59,6 +59,13 @@ MANUAL_Y_END = {
     (6,  '5'):  0.510,   # Caserta En remirant: body text at 52%
     (6,  '6'):  0.920,   # Landini Non avrà: label 53%, score + translation at 88%, footer 98.5%
     (6,  '7'):  0.320,   # Cadence alterations: left-col score only (x_end=0.52); full-width body at 34%
+    # ── Ch11 ─────────────────────────────────────────────────────────────────
+    (11, '1'):  0.510,   # Veni redemptor + Luther chorale: scores + 2 translations; body at 53.7%
+    (11, '2'):  0.470,   # Luther Ein feste Burg: chorale w/ text + translation; body at 48.8%
+    (11, '3'):  0.590,   # Walter + Hellinck settings: 2 polyphonic versions; body at 60.2%
+    (11, '4'):  0.920,   # Bourgeois Psalm 134: bottom of page; score + translation, footer 98.5%
+    (11, '5'):  0.470,   # Palestrina Agnus Dei: 6-voice score; body text at 48.8%
+    (11, '7'):  0.860,   # Palestrina Credo (2nd on page): score + translation; body at 86.5%
     # ── Ch08 ─────────────────────────────────────────────────────────────────
     (8,  '2'):  0.46,    # Carol burden: score 2 sections, body text "elaborated" at ~48%
     (8,  '3'):  0.34,    # Dunstable cantus vs chant: score ends ~31%, body text at 36%

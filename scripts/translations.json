@@ -663,5 +663,49 @@
       "explanation_title": "譜例說明  教科書第 132 頁",
       "explanation_zh": "• a. 嚴格按調式的終止式 → b. 經 musica ficta 調整後的版本：兩個上聲部均以半音上行解決，稱「雙導音終止式」（double leading-tone cadence）——是十四、十五世紀的標誌性聲響。\n• c. 弗里吉亞調式（Phrygian mode）的終止式：下聲部以半音下行、上聲部以全音上行——自然產生於此調式，不需變化；亦可出現於 B 或 A 音上。（第 132 頁）"
     }
+  },
+  "11": {
+    "1": {
+      "title_zh": "譜例 11.1　Luther 將聖歌改編為合唱聖詠（NAWM 58a-b）",
+      "subtitle_en": "Example 11.1 — Martin Luther's adaptation of a chorale from a chant hymn",
+      "explanation_title": "譜例說明  教科書第 233 頁",
+      "explanation_zh": "• a. 聖歌《Veni redemptor gentium》（NAWM 58a）→ b. Luther 改編成德語合唱聖詠《Nun komm, der Heiden Heiland》（NAWM 58b）：歌詞為拉丁文的押韻、有節律的翻譯。\n• 共用音以 ★ 標示——Luther 保留多數旋律但改動關鍵幾音：中間樂句首尾音改變，每句形成單一高點；首末樂句改為相同以加強封閉感；最關鍵的是節奏輪廓有長短音變化——使旋律更易於信徒齊唱。（第 233 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 11.2　Luther《Ein feste Burg》（NAWM 58c）",
+      "subtitle_en": "Example 11.2 — Luther, Ein feste Burg",
+      "explanation_title": "譜例說明  教科書第 234 頁",
+      "explanation_zh": "• 「上帝是堅固堡壘」——宗教改革運動的標誌性聖詠；Luther 取材自詩篇 46。重複的開頭強音與下行音階生動傳達詩中力量意象。\n• 原始節奏採長短音交替以契合歌詞重音；十八世紀以後改用較平均的節奏成為主流。（第 234 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 11.3　《Ein feste Burg》的兩種多聲部編配（NAWM 58d）",
+      "subtitle_en": "Example 11.3 — Two settings of Ein feste Burg",
+      "explanation_title": "譜例說明  教科書第 235 頁",
+      "explanation_zh": "• a. Johann Walter（1496–1570）的編配——將聖詠旋律置於 tenor 聲部，其他聲部以自由或模仿對位織體環繞（cantus firmus 風格）。\n• b. Lupus Hellinck 的合唱聖詠 motet——每樂句以模仿方式在各聲部展開，類似 Isaac《Puer natus est》。十六世紀末因 Calvin 派詩篇曲影響轉為「cantional 風格」：旋律在最高聲部、其他聲部以塊狀和弦伴奏——成為新教讚美詩集主流。（第 235 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 11.4　Bourgeois 詩篇 134《Or sus, serviteurs》（NAWM 59）",
+      "subtitle_en": "Example 11.4 — Loys Bourgeois, Psalm 134, Or sus, serviteurs du Seigneur",
+      "explanation_title": "譜例說明  教科書第 237 頁",
+      "explanation_zh": "• Calvin 派的 Geneva 詩篇集（1539、1542、1562 完整本）：堅持只能用《聖經》文本，特別是詩篇；採押韻的「韻律詩篇」（metrical psalm）以利會眾齊唱。\n• 此曲為 Bourgeois（編輯者之一）為詩篇 134 譜寫的單音旋律。簡樸、嚴肅——所有奢華裝飾、樂器、複音都被剔除，僅留純粹文本與旋律。（第 237 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 11.5　Palestrina《教皇彌撒》Agnus Dei I 開頭（NAWM 63a）",
+      "subtitle_en": "Example 11.5 — Opening of Agnus Dei I from Palestrina's Pope Marcellus Mass",
+      "explanation_title": "譜例說明  教科書第 246 頁",
+      "explanation_zh": "• 六聲部模仿對位的範例。每拍（每個半音符）為協和聲響，僅在留音（S）處例外——幾乎每個終止式都有。拍間不協和音須以級進進出，如經過音（P）、輔助音（N）。\n• 「掉換音」（cambiata，C）：某聲部從不協和音以三度下行跳至協和音、而非逐步解決——此處在第 6 小節 D 跳越 B 到 A，B 隨後成為下一音；如此優雅延緩、環繞、強調解決音。（第 246 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 11.6　Palestrina Agnus Dei 中相同和聲的不同排列",
+      "subtitle_en": "Example 11.6 — Varied spacings in Palestrina's Agnus Dei",
+      "explanation_title": "譜例說明  教科書第 247 頁",
+      "explanation_zh": "• 譜例 11.5 中 G–D 或 G–B–D 三和弦每次出現的垂直排列均不同：透過聲部位置（spacing）變化，Palestrina 從有限的和聲詞彙中產生豐富的聲響色彩。\n• 此手法是 Palestrina 風格透明、寧靜卻不單調的關鍵——和聲純潔，但音色組合千變萬化，維持聽者注意力。（第 247 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 11.7　Palestrina《教皇彌撒》Credo 片段（NAWM 63b）",
+      "subtitle_en": "Example 11.7 — From the Credo of Palestrina's Pope Marcellus Mass",
+      "explanation_title": "譜例說明  教科書第 247 頁",
+      "explanation_zh": "• 為求歌詞清晰（特倫多會議要求），Gloria 與 Credo（歌詞長）多採齊聲（homophonic）寫作；Kyrie、Sanctus、Agnus Dei（歌詞短）則用模仿複音。\n• 此片段運用聲部組合對比：「Genitum, non factum」與「consubstantialem」各以四聲部對唱、「Patri」三聲部（象徵三位一體）、「per quem omnia facta sunt」六聲部齊全——既清晰又具戲劇張力，並暗藏精緻的文字描繪。（第 247 頁）"
+    }
   }
 }
