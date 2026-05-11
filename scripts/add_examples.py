@@ -46,9 +46,9 @@ MANUAL_Y_END = {
     # ── Ch09 ─────────────────────────────────────────────────────────────────
     (9,  '1'):  0.57,    # Busnoys a+b: body text "Popularity" at ~60%
     (9,  '2'):  0.32,    # Range comparison diagram: body text "The bassus" at ~34%
-    (9,  '3'):  0.725,   # Ockeghem prolationum: keep 9.3b caption, stop before "Canon" sidebar
+    (9,  '3'):  0.690,   # Ockeghem prolationum: score b ends ~68%, "Example 9.3b." body text at 70.1%
     (9,  '4'):  0.42,    # Obrecht Gloria: score ends ~40%, body text at 43%
-    (9,  '5'):  0.92,    # Isaac Puer natus: label at ~55%, score a+b at bottom of page
+    (9,  '5'):  0.980,   # Isaac Puer natus: 4-voice motet b section extends to 98%, footer at 98.5%
     (9,  '6'):  0.36,    # Carnival song: score+translation, body text at actual ~38%
     (9,  '7'):  0.53,    # Isaac Innsbruck: 2 systems, Josquin bio at ~58%
     (9,  '8'):  0.32,    # Josquin Mille regretz: 1 system, body text at ~35%
@@ -73,13 +73,16 @@ MANUAL_Y_END = {
     (23, '7'):  0.635,   # stop before "Contrasting styles" body text (at 64%); 3 score systems
     (23, '8'):  0.2020,  # Mozart Jupiter theme: 1 system, body text at 21%
     (25, '1'):  0.96,    # all a–d sections fill the page (was cut at a only)
+    (25, '3'):  0.960,   # Schumann Dichterliebe: label at 80.7%, single system fills to ~96%, footer 98.5%
     (25, '7'):  0.96,    # all a–d sections fill the page (was cut at a only)
-    (25, '8'):  0.765,   # stop just before body text (at 76.4%); includes a,b complete
-    (27, '2'):  0.61,    # stop before "taking place on stage" body text (include a,b)
+    (25, '8'):  0.960,   # Chopin Mazurka: a at 56.9%, b at 70.9%, both sections fill to footer
+    (27, '2'):  0.700,   # Rossini Una voce: a+b + translations to 66.6%, body text at 71.7%
+    (33, '2'):  0.960,   # Schoenberg Op.25: a/b/c sections at 13.4%/40.2%/73.0%, no body text on page
     (33, '3'):  0.2557,  # Schoenberg row: row diagram only, body text at 30%
     (33, '7'):  0.2498,  # Stravinsky Petrushka: short passage, body text at 20%
     (33, '11'): 0.96,    # all a–g sections fill the page (was cut at a,b only)
     (33, '12'): 0.2393,  # Bartók xylophone palindrome: 1 system, body text at 18%
+    (33, '15'): 0.820,   # Ives Concord Alcotts: a-e sections at 13%/28%/45%/61%, body text at 83.2%
 }
 
 # x_start override for two-column pages where body text is in the left column
