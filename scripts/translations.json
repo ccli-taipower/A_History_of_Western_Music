@@ -4,7 +4,7 @@
       "title_zh": "譜例 1.1　四音音列的三種類別 Tetrachords",
       "subtitle_en": "Example 1.1 — Tetrachords (diatonic, chromatic, enharmonic)",
       "explanation_title": "譜例說明  教科書第 14 頁",
-      "explanation_zh": "• 四音音列（tetrachord，「四弦」）為跨越純四度的四個音；外側兩音音高固定，內側兩音可變動以形成三種類別（genera）。\n• 自然類（diatonic）：兩全音＋半音；半音類（chromatic）：頂端小三度＋兩半音；等音類（enharmonic）：頂端大三度＋兩個約四分之一音。三類構成希臘音樂體系的基本單位。（第 14 頁）"
+      "explanation_zh": "• 四音音列（tetrachord，「四弦」）為跨越純四度的四個音；外側兩音音高固定，內側兩音可變動以形成三種類別（genera）。\n• 自然類（diatonic）：兩全音＋半音；半音類（chromatic）：頂端小三度＋兩半音；等音類（enharmonic）：頂端大三度＋兩個約四分之一音。三類構成希臘音樂體系的基本單位。\n• 亞里斯多塞諾斯（Aristoxenus）認為自然類最古老、自然，半音類較晚出，等音類最精緻也最難聽辨——巴比倫早於希臘逾千年已使用自然類，可見其根源深遠。（第 14 頁）"
     },
     "2": {
       "title_zh": "譜例 1.2　希臘音階系統 Scale systems",
@@ -543,7 +543,7 @@
       "title_zh": "譜例 2.1　Tract《Deus, Deus meus》前四節的第二樂句",
       "subtitle_en": "Example 2.1 — The second phrases of the first four verses of the Tract Deus, Deus meus",
       "explanation_title": "譜例說明  教科書第 29 頁",
-      "explanation_zh": "• 連唱詠（Tract）的標準詩篇結構：每節的第二樂句使用同一旋律公式重複——以低音復誦音開始、上行至誦讀音停留、再以裝飾性的下行收束至 final。\n• 此公式化作曲法（formulaic composition）是早期格里高利聖詠的核心技巧：節省記憶負擔、加強文本連貫，也讓會眾能辨認常規應對。（第 29 頁）"
+      "explanation_zh": "• 連唱詠（Tract）的標準詩篇結構：每節的第二樂句使用同一旋律公式重複——以低音復誦音開始、上行至誦讀音停留、再以裝飾性的下行收束至 final。\n• 此公式化作曲法（formulaic composition）是早期格里高利聖詠的核心技巧：節省記憶負擔、加強文本連貫，也讓會眾能辨認常規應對。\n• Tract 為四旬期（Lent）及亡者彌撒專用，取代慶典中的 Alleluia；原本由獨唱者擔綱，故能在數百年口傳中發展出此種一般輪廓加幾個慣用公式的折衷結構，書面化後變體被保存下來。（第 29 頁）"
     },
     "2": {
       "title_zh": "譜例 2.2　Gradual《Viderunt omnes》Solesmes 符紙記譜版",
@@ -561,7 +561,7 @@
       "title_zh": "譜例 2.4　Guido of Arezzo 的音名字母系統",
       "subtitle_en": "Example 2.4 — Guido of Arezzo's letter names for the notes of the tone-system",
       "explanation_title": "譜例說明  教科書第 35 頁",
-      "explanation_zh": "• 十世紀末義大利論著《Dialogus de musica》引入字母記譜，Guido 採納並沿用至今：大寫 A–G 標記大完整系統最低七音、小寫 a–g 標上一八度、再上以雙字母 aa–dd 標記。\n• 中央音 a 之上音可為全音或半音：方形 b（後演化為 ♮ 與 ♯）= 全音；圓形 b（後演化為 ♭）= 半音。Guido 將音域延伸至 dd，超越古希臘兩八度的範圍。（第 35 頁）"
+      "explanation_zh": "• 十世紀末義大利論著《Dialogus de musica》引入字母記譜，Guido 採納並沿用至今：大寫 A–G 標記大完整系統最低七音、小寫 a–g 標上一八度、再上以雙字母 aa–dd 標記。\n• 中央音 a 之上音可為全音或半音：方形 b（後演化為 natural 還原與 sharp 升記號）= 全音；圓形 b（後演化為 flat 降記號）= 半音。Guido 將音域延伸至 dd，超越古希臘兩八度的範圍。\n• 此系統因易學易用，自 Guido 以來成為音樂教育的核心；今日 A–G 七字母循環全世界通行，可說是西方音樂理論中影響最久遠的單一創舉。（第 35 頁）"
     },
     "5": {
       "title_zh": "譜例 2.5　八個教會調式 Church modes",
@@ -573,19 +573,19 @@
       "title_zh": "譜例 2.6　聖歌《Ut queant laxis》（唱名系統的源頭）",
       "subtitle_en": "Example 2.6 — Hymn, Ut queant laxis",
       "explanation_title": "譜例說明  教科書第 39 頁",
-      "explanation_zh": "• Guido 注意到此聖歌的前六樂句依序起於 C、D、E、F、G、A，遂取每樂句首字母音節 ut–re–mi–fa–sol–la 作為唱名（solmization syllables）。\n• 此六音節包含聖詠所需的所有音程：mi–fa 為半音，其餘為全音；含兩個小三度、兩個大三度、所有四度與五度均為純。現代多以 do 取代 ut 並加上 ti。（第 39 頁）"
+      "explanation_zh": "• Guido 注意到此聖歌的前六樂句依序起於 C、D、E、F、G、A，遂取每樂句首字母音節 ut–re–mi–fa–sol–la 作為唱名（solmization syllables）。\n• 此六音節包含聖詠所需的所有音程：mi–fa 為半音，其餘為全音；含兩個小三度、兩個大三度、所有四度與五度均為純。現代多以 do 取代 ut 並加上 ti。\n• 此聖歌祭洗者約翰，每年 6 月 24 日唱誦；歌詞請求約翰除去信徒的罪污，使他們得以歌頌神蹟——Guido 從此選擇音節，巧妙地把音樂教學與祈求約翰賜予歌喉的禱告連結在一起。（第 39 頁）"
     },
     "7": {
       "title_zh": "譜例 2.7　中世紀音域的唱名七個位置",
       "subtitle_en": "Example 2.7 — Solmization syllables in the medieval gamut",
       "explanation_title": "譜例說明  教科書第 40 頁",
-      "explanation_zh": "• 半音 E–F、B–C、A–B♭ 都須以 mi–fa 唱出，因此六音節組必須在中世紀音域中以七個不同起點位置定位。\n• 每音兼具字母名與位於不同八度時的唱名組合，例如最低音 gamma ut（gamut 一字由此而來）、中央 C 為 c sol fa ut。歌者只需記住七個位置，便能演唱任何旋律。（第 40 頁）"
+      "explanation_zh": "• 半音 E–F、B–C、A–B♭ 都須以 mi–fa 唱出，因此六音節組必須在中世紀音域中以七個不同起點位置定位。\n• 每音兼具字母名與位於不同八度時的唱名組合，例如最低音 gamma ut（gamut 一字由此而來）、中央 C 為 c sol fa ut。歌者只需記住七個位置，便能演唱任何旋律。\n• 七個位置分別以 G、C、F、G、C、F、G 為起點，三種「自然/堅硬/柔軟」六音節組交替使用——「自然」（naturale）由 C 起、「堅硬」（durum）由 G 起含 B♮、「柔軟」（molle）由 F 起含 B♭，奠定後世升降記號的根源。（第 40 頁）"
     },
     "8": {
       "title_zh": "譜例 2.8　《Viderunt omnes》結尾段的唱名標示（變位示例）",
       "subtitle_en": "Example 2.8 — End of Gradual Viderunt omnes in solmization syllables",
       "explanation_title": "譜例說明  教科書第 40 頁",
-      "explanation_zh": "• 旋律超出六音範圍時須行「變位（mutation）」：歌者在不離開某音的情況下將其重新命名以接續下一組唱名位置。\n• 此例的第一個十音可用以 G 為起點的第 4 位（Ex 2.7）唱出，再下移一位以容納 B♭，再下移一位以容納低音 E，最後回升以唱出 C 與終止句的 B♭。（第 40 頁）"
+      "explanation_zh": "• 旋律超出六音範圍時須行「變位（mutation）」：歌者在不離開某音的情況下將其重新命名以接續下一組唱名位置。\n• 此例的第一個十音可用以 G 為起點的第 4 位（Ex 2.7）唱出，再下移一位以容納 B♭，再下移一位以容納低音 E，最後回升以唱出 C 與終止句的 B♭。\n• 變位通常選在 re/sol（穩定音）執行，避免在 mi/fa 半音處跳組；此技法為西方視唱訓練奠基，後世「移動 do」系統與 Kodály 教學法均直接源自 Guido 的這套設計。（第 40 頁）"
     }
   },
   "3": {
@@ -625,13 +625,13 @@
       "title_zh": "譜例 6.1　Vitry《Cum statua》motet 之 color（NAWM 24）",
       "subtitle_en": "Example 6.1 — Philippe de Vitry, color from tenor of Cum statua/Hugo, Hugo/Magister invidie",
       "explanation_title": "譜例說明  教科書第 112 頁",
-      "explanation_zh": "• 等節奏（isorhythm）motet 的核心：tenor 中重複的節奏單位稱 talea、重複的旋律段稱 color。\n• 此 motet 的 tenor 包含三次 color 陳述，每次 color 又分為三等分以容納三次 talea（標 I、II、III）。色彩與節奏分屬獨立循環，常使二者起訖不重合，產生結構張力。（第 112 頁）"
+      "explanation_zh": "• 等節奏（isorhythm）motet 的核心：tenor 中重複的節奏單位稱 talea、重複的旋律段稱 color。\n• 此 motet 的 tenor 包含三次 color 陳述，每次 color 又分為三等分以容納三次 talea（標 I、II、III）。色彩與節奏分屬獨立循環，常使二者起訖不重合，產生結構張力。\n• Vitry 的 motet 由 Roman de Fauvel 手稿傳世；十四世紀理論家以「等節奏」概括這項手法，視為 Ars Nova 抽象思維的典範——讓長作品在繁複織體中仍能憑藉節奏循環獲得統一。（第 112 頁）"
     },
     "2": {
       "title_zh": "譜例 6.2　Vitry，最後兩 talea 開頭——上聲部齊節奏與 hocket",
       "subtitle_en": "Example 6.2 — Opening measures of the last two taleae, showing parallel rhythms in all voices",
       "explanation_title": "譜例說明  教科書第 113 頁",
-      "explanation_zh": "• Duplum 與 triplum 在兩次 talea 中採同一節奏（部分等節奏），讓 talea 的回返聽得見；6/8 反映 breve 的二分與 semibreve 的三分（不完全時值＋大延長）。\n• 上聲部以 hocket（hoquet「打嗝」）技法交錯：一聲部休息時另一聲部進入，急速接力。此技法常配合 talea 回返出現，是十四世紀等節奏作品的標誌性手法。（第 113 頁）"
+      "explanation_zh": "• Duplum 與 triplum 在兩次 talea 中採同一節奏（部分等節奏），讓 talea 的回返聽得見；6/8 反映 breve 的二分與 semibreve 的三分（不完全時值＋大延長）。\n• 上聲部以 hocket（hoquet「打嗝」）技法交錯：一聲部休息時另一聲部進入，急速接力。配合 talea 回返出現時，是十四世紀等節奏作品最戲劇性的標誌；許多 motet 在最後一次 talea 集中使用，把結構推向高潮。（第 113 頁）"
     },
     "3": {
       "title_zh": "譜例 6.3　Machaut《聖母彌撒》Christe 開頭（NAWM 25a）",
@@ -655,7 +655,7 @@
       "title_zh": "譜例 6.6　Landini，《Non avrà ma' pietà》開頭（NAWM 31）",
       "subtitle_en": "Example 6.6 — Francesco Landini, beginning of Non avrà ma' pietà",
       "explanation_title": "譜例說明  教科書第 126 頁",
-      "explanation_zh": "• 三聲部 ballata：上聲部有歌詞、下兩聲部無詞（可演唱或器樂演奏）——主導旋律式（treble-dominated）織體，類似 Machaut 的 chanson。\n• Landini 的旋律魅力在於和聲甘美：三度與六度的諧音程豐富，但從不開始或結束樂段；上聲部呈現優雅弧線，多以級進為主、加上同步切分節奏——較 Machaut 旋律更平滑。（第 126 頁）"
+      "explanation_zh": "• 三聲部 ballata：上聲部有歌詞、下兩聲部無詞（可演唱或器樂演奏）——主導旋律式（treble-dominated）織體，類似 Machaut 的 chanson。\n• Landini 的旋律魅力在於和聲甘美：三度與六度的諧音程豐富，但從不開始或結束樂段；旋律以級進為主、加同步切分節奏——較 Machaut 更平滑。此曲尾常出現以下行第三音解決至主音的「Landini 終止式」，成為十四世紀末南北歐共通的時代標誌。（第 126 頁）"
     },
     "7": {
       "title_zh": "譜例 6.7　終止式的變化（musica ficta）",
@@ -699,7 +699,7 @@
       "title_zh": "譜例 11.6　Palestrina Agnus Dei 中相同和聲的不同排列",
       "subtitle_en": "Example 11.6 — Varied spacings in Palestrina's Agnus Dei",
       "explanation_title": "譜例說明  教科書第 247 頁",
-      "explanation_zh": "• 譜例 11.5 中 G–D 或 G–B–D 三和弦每次出現的垂直排列均不同：透過聲部位置（spacing）變化，Palestrina 從有限的和聲詞彙中產生豐富的聲響色彩。\n• 此手法是 Palestrina 風格透明、寧靜卻不單調的關鍵——和聲純潔，但音色組合千變萬化，維持聽者注意力。（第 247 頁）"
+      "explanation_zh": "• 譜例 11.5 中 G–D 或 G–B–D 三和弦每次出現的垂直排列均不同：透過聲部位置（spacing）變化，Palestrina 從有限的和聲詞彙中產生豐富的聲響色彩。\n• 此手法是 Palestrina 風格透明、寧靜卻不單調的關鍵——和聲純潔，但音色組合千變萬化，維持聽者注意力。\n• 此種對「同一和弦多種排列」的細膩經營，後來被十八世紀的 Fux《Gradus ad Parnassum》（嚴格對位教科書）視為「舊風格」（stile antico）的精髓；直到今日，西方音樂院的對位課仍以 Palestrina 風格為起點。（第 247 頁）"
     },
     "7": {
       "title_zh": "譜例 11.7　Palestrina《教皇彌撒》Credo 片段（NAWM 63b）",
