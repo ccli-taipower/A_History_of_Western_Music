@@ -619,5 +619,49 @@
       "explanation_title": "譜例說明  教科書第 53 頁",
       "explanation_zh": "• Alleluia 結構：合唱「Alleluia」應答 → 詩篇詩節 → 再回唱應答。屬「華彩式」（melismatic chant），由獨唱者擔綱——「ij.」記號表示應答需唱兩次。\n• 「Alleluia」結尾的長花腔（jubilus）為禮儀音樂最具裝飾性的段落之一；獨唱者得以炫技，旋律似乎主宰了文本——這些聖歌是禮拜中的音樂巔峰時刻。（第 53 頁）"
     }
+  },
+  "6": {
+    "1": {
+      "title_zh": "譜例 6.1　Vitry《Cum statua》motet 之 color（NAWM 24）",
+      "subtitle_en": "Example 6.1 — Philippe de Vitry, color from tenor of Cum statua/Hugo, Hugo/Magister invidie",
+      "explanation_title": "譜例說明  教科書第 112 頁",
+      "explanation_zh": "• 等節奏（isorhythm）motet 的核心：tenor 中重複的節奏單位稱 talea、重複的旋律段稱 color。\n• 此 motet 的 tenor 包含三次 color 陳述，每次 color 又分為三等分以容納三次 talea（標 I、II、III）。色彩與節奏分屬獨立循環，常使二者起訖不重合，產生結構張力。（第 112 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 6.2　Vitry，最後兩 talea 開頭——上聲部齊節奏與 hocket",
+      "subtitle_en": "Example 6.2 — Opening measures of the last two taleae, showing parallel rhythms in all voices",
+      "explanation_title": "譜例說明  教科書第 113 頁",
+      "explanation_zh": "• Duplum 與 triplum 在兩次 talea 中採同一節奏（部分等節奏），讓 talea 的回返聽得見；6/8 反映 breve 的二分與 semibreve 的三分（不完全時值＋大延長）。\n• 上聲部以 hocket（hoquet「打嗝」）技法交錯：一聲部休息時另一聲部進入，急速接力。此技法常配合 talea 回返出現，是十四世紀等節奏作品的標誌性手法。（第 113 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 6.3　Machaut《聖母彌撒》Christe 開頭（NAWM 25a）",
+      "subtitle_en": "Example 6.3 — Guillaume de Machaut, La Messe de Nostre Dame, beginning of Christe",
+      "explanation_title": "譜例說明  教科書第 116 頁",
+      "explanation_zh": "• 四聲部（Triplum、Motetus、Tenor、Contratenor）的等節奏架構；tenor 以七小節為一 talea 重複三次（標 I、II、III）。上兩聲部則以 Machaut 慣用的切分節奏快速移動。\n• 上聲部於第二次 talea 期間幾乎完全採用第一次的節奏（partly isorhythmic）——除每 talea 的第 2 與第 6 小節外節奏相同。長持音與活潑節奏交替形成 Machaut 典型的「塊狀」結構，似哥德式教堂厚實石柱與彩繪玻璃窗交替的視覺。（第 116 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 6.4　Machaut《聖母彌撒》Gloria 片段（NAWM 25b）",
+      "subtitle_en": "Example 6.4 — Machaut, La Messe de Nostre Dame, excerpt from Gloria",
+      "explanation_title": "譜例說明  教科書第 117 頁",
+      "explanation_zh": "• Gloria 與 Credo 因歌詞較長，採「簡單對位」（simple counterpoint）以求字字清晰——四聲部多以同節奏（homorhythmic）齊唱，類似 conductus 的「以塊狀織度誦讀文本」。\n• 此片段為「Domine, Fili unigenite, Jesu Christe」一句的開頭。雖整體齊唱，但常在樂句結尾出現自由的裝飾收束（Amen 與 Agnus Dei 段亦如此）。（第 117 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 6.5　Caserta《En remirant vo douce》開頭（NAWM 28）",
+      "subtitle_en": "Example 6.5 — Philipoctus de Caserta, beginning of En remirant vo douce pourtraiture",
+      "explanation_title": "譜例說明  教科書第 123 頁",
+      "explanation_zh": "• Ars Subtilior 的代表：以紅色記譜（red notation）標記異常節奏分劃；單一聲部出現多重節奏層次與精緻切分，需歌者高度技藝。\n• Caserta（活躍於 1370–1390）服務於亞維儂教廷與義大利北部宮廷；此曲為極致精巧風格的範例——技術上展示作曲家對節奏細節的炫技，卻仍維持優雅旋律的法式 chanson 風格。（第 123 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 6.6　Landini，《Non avrà ma' pietà》開頭（NAWM 31）",
+      "subtitle_en": "Example 6.6 — Francesco Landini, beginning of Non avrà ma' pietà",
+      "explanation_title": "譜例說明  教科書第 126 頁",
+      "explanation_zh": "• 三聲部 ballata：上聲部有歌詞、下兩聲部無詞（可演唱或器樂演奏）——主導旋律式（treble-dominated）織體，類似 Machaut 的 chanson。\n• Landini 的旋律魅力在於和聲甘美：三度與六度的諧音程豐富，但從不開始或結束樂段；上聲部呈現優雅弧線，多以級進為主、加上同步切分節奏——較 Machaut 旋律更平滑。（第 126 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 6.7　終止式的變化（musica ficta）",
+      "subtitle_en": "Example 6.7 — Alterations at cadences",
+      "explanation_title": "譜例說明  教科書第 132 頁",
+      "explanation_zh": "• a. 嚴格按調式的終止式 → b. 經 musica ficta 調整後的版本：兩個上聲部均以半音上行解決，稱「雙導音終止式」（double leading-tone cadence）——是十四、十五世紀的標誌性聲響。\n• c. 弗里吉亞調式（Phrygian mode）的終止式：下聲部以半音下行、上聲部以全音上行——自然產生於此調式，不需變化；亦可出現於 B 或 A 音上。（第 132 頁）"
+    }
   }
 }

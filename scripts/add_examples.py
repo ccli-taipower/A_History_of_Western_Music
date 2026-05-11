@@ -51,6 +51,14 @@ MANUAL_Y_END = {
     (3,  '2'):  0.340,   # Tecum principium: score + translation; body text "OFFICE ANTIPHONS" at 35.5%
     (3,  '3'):  0.920,   # Christe Redemptor: label at 74.7%, score + translation to 91.4%
     (3,  '5'):  0.740,   # Alleluia Dies sanctificatus (2nd on page): incl translation; body at 75.0%
+    # ── Ch06 ─────────────────────────────────────────────────────────────────
+    (6,  '1'):  0.96,    # Vitry color: score at bottom of page (label 74%, footer 98.5%)
+    (6,  '2'):  0.430,   # Vitry last taleae: body text at 43.8%
+    (6,  '3'):  0.96,    # Machaut Christe: label 27%, score fills to bottom
+    (6,  '4'):  0.470,   # Machaut Gloria: incl translation at 43.5%; body at 48.8%
+    (6,  '5'):  0.510,   # Caserta En remirant: body text at 52%
+    (6,  '6'):  0.920,   # Landini Non avrà: label 53%, score + translation at 88%, footer 98.5%
+    (6,  '7'):  0.320,   # Cadence alterations: left-col score only (x_end=0.52); full-width body at 34%
     # ── Ch08 ─────────────────────────────────────────────────────────────────
     (8,  '2'):  0.46,    # Carol burden: score 2 sections, body text "elaborated" at ~48%
     (8,  '3'):  0.34,    # Dunstable cantus vs chant: score ends ~31%, body text at 36%
@@ -103,6 +111,11 @@ MANUAL_Y_END = {
 MANUAL_X_START = {
     (13, '2'): 0.49,   # right column only: body text on left, EXAMPLE 13.2 on right
     (1,  '4'): 0.52,   # right column only: Seikilos epitaph + translation in right col
+}
+
+# x_end override for two-column pages where the SCORE is in the left column and body text on right
+MANUAL_X_END = {
+    (6,  '7'): 0.40,   # left column only: EXAMPLE 6.7 score on left (ends 37.5%), body text starts 42.5%
 }
 
 # Chapter page ranges (printed-book pagination)
@@ -330,10 +343,11 @@ def crop_example(ch: int, ex_num: str, pdf_page: int, out_path: str,
     y2 = min(y2, H)
 
     # Crop with small horizontal margins (remove page gutters)
-    # MANUAL_X_START overrides left edge for two-column pages
+    # MANUAL_X_START/MANUAL_X_END override for two-column pages
     x_start = MANUAL_X_START.get((ch, ex_num), 0.04)
+    x_end   = MANUAL_X_END.get((ch, ex_num), 0.96)
     left  = int(x_start * W)
-    right = int(0.96 * W)
+    right = int(x_end * W)
     cropped = img.crop((left, y1, right, y2))
 
     # White-out running head (top 65px)
