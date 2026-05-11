@@ -587,5 +587,37 @@
       "explanation_title": "譜例說明  教科書第 40 頁",
       "explanation_zh": "• 旋律超出六音範圍時須行「變位（mutation）」：歌者在不離開某音的情況下將其重新命名以接續下一組唱名位置。\n• 此例的第一個十音可用以 G 為起點的第 4 位（Ex 2.7）唱出，再下移一位以容納 B♭，再下移一位以容納低音 E，最後回升以唱出 C 與終止句的 B♭。（第 40 頁）"
     }
+  },
+  "3": {
+    "1": {
+      "title_zh": "譜例 3.1　日課詩篇《Dixit Dominus》（NAWM 4a）",
+      "subtitle_en": "Example 3.1 — Office psalm, Dixit Dominus, Psalm 109 (110)",
+      "explanation_title": "譜例說明  教科書第 49 頁",
+      "explanation_zh": "• 第 1 調式詩篇調（psalm tone）的完整結構：起音（intonation，僅用於第一節）→ 誦讀音上的吟誦 → 中介終止（mediant，每節中點）→ 再吟誦 → 終止式（termination，每節結尾）。\n• 末節後加唱「小光榮頌」（Lesser Doxology，第 9–10 行）：讚美聖父、聖子、聖靈——將希伯來經文鑲嵌於基督教架構。日課讚歌與彌撒進台聖歌的詩篇節用變體更為精緻。（第 49 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 3.2　日課對唱聖歌《Tecum principium》（NAWM 4a）",
+      "subtitle_en": "Example 3.2 — Office antiphon, Tecum principium",
+      "explanation_title": "譜例說明  教科書第 50 頁",
+      "explanation_zh": "• 對唱聖歌（antiphon）框住詩篇：詩篇 150 首每週循環一遍，但對唱聖歌依教曆每日變換，把詩篇放入當日紀念的脈絡。聖誕日 Vespers 配對此對唱聖歌（NAWM 4a）。\n• 對唱聖歌的調式（mode 1）決定詩篇節的調式。歌末的母音 E u o u a e（取自 saEcUlOrUm AmEn）標示終止式。此處選 G 為結尾以順接對唱聖歌開頭 E–C–D；詩篇節不必落在調式 final，但對唱聖歌必須。（第 50 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 3.3　日課聖歌《Christe Redemptor omnium》（NAWM 4b）",
+      "subtitle_en": "Example 3.3 — Hymn, Christe Redemptor omnium",
+      "explanation_title": "譜例說明  教科書第 51 頁",
+      "explanation_zh": "• 聖誕日 Vespers 的聖歌，分節曲式（strophic）——多段詩節共用同一旋律；歌詞迎接基督道成肉身。如多數格里高利聖歌，多為一字一音，偶爾兩三音。\n• 第 1 調式；每樂句呈現典型的弧線輪廓：第一句從 C 上行至 G 再落於 final D；第二句攀至高音 C 並停於誦讀音 A；第三句下降至低 C 再回升至 E；末句重複第一句並收於 D。此種曲線造型成為後世西方旋律的範本。（第 51 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 3.4　聖體聖事《Viderunt omnes》（NAWM 3j）",
+      "subtitle_en": "Example 3.4 — Communion, Viderunt omnes",
+      "explanation_title": "譜例說明  教科書第 53 頁",
+      "explanation_zh": "• 彌撒對唱聖歌比日課更華麗：屬「散音式」（neumatic）——多數音節用一至五音、偶爾 8–9 音的短花腔（melisma），仍以階進與三度為主、形成弧線收於調式重要音上。\n• 此處每音節音數差異標誌重音字與重要詞。為第 1 調式；雖比一字一音的對唱聖歌華麗，仍遠遠不及第 3.5 例 Alleluia 等華彩聖歌（melismatic chants）的長花腔。（第 53 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 3.5　Alleluia《Dies sanctificatus》",
+      "subtitle_en": "Example 3.5 — Alleluia Dies sanctificatus",
+      "explanation_title": "譜例說明  教科書第 53 頁",
+      "explanation_zh": "• Alleluia 結構：合唱「Alleluia」應答 → 詩篇詩節 → 再回唱應答。屬「華彩式」（melismatic chant），由獨唱者擔綱——「ij.」記號表示應答需唱兩次。\n• 「Alleluia」結尾的長花腔（jubilus）為禮儀音樂最具裝飾性的段落之一；獨唱者得以炫技，旋律似乎主宰了文本——這些聖歌是禮拜中的音樂巔峰時刻。（第 53 頁）"
+    }
   }
 }

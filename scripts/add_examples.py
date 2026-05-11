@@ -46,6 +46,11 @@ MANUAL_Y_END = {
     (2,  '5'):  0.720,   # Church modes diagram; body text "listeners may find" at 73.4%
     (2,  '6'):  0.290,   # Ut queant laxis + translation; body text "Greek names" at 30.7%
     (2,  '8'):  0.420,   # Viderunt solmization (2nd of two on page); body text "required shifting" at 42.2%
+    # ── Ch03 ─────────────────────────────────────────────────────────────────
+    (3,  '1'):  0.920,   # Dixit Dominus: score + 10 verse translations to ~90%, footer 98.5%
+    (3,  '2'):  0.340,   # Tecum principium: score + translation; body text "OFFICE ANTIPHONS" at 35.5%
+    (3,  '3'):  0.920,   # Christe Redemptor: label at 74.7%, score + translation to 91.4%
+    (3,  '5'):  0.740,   # Alleluia Dies sanctificatus (2nd on page): incl translation; body at 75.0%
     # ── Ch08 ─────────────────────────────────────────────────────────────────
     (8,  '2'):  0.46,    # Carol burden: score 2 sections, body text "elaborated" at ~48%
     (8,  '3'):  0.34,    # Dunstable cantus vs chant: score ends ~31%, body text at 36%
