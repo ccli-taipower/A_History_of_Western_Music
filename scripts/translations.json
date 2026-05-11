@@ -1,4 +1,30 @@
 {
+  "1": {
+    "1": {
+      "title_zh": "譜例 1.1　四音音列的三種類別 Tetrachords",
+      "subtitle_en": "Example 1.1 — Tetrachords (diatonic, chromatic, enharmonic)",
+      "explanation_title": "譜例說明  教科書第 14 頁",
+      "explanation_zh": "• 四音音列（tetrachord，「四弦」）為跨越純四度的四個音；外側兩音音高固定，內側兩音可變動以形成三種類別（genera）。\n• 自然類（diatonic）：兩全音＋半音；半音類（chromatic）：頂端小三度＋兩半音；等音類（enharmonic）：頂端大三度＋兩個約四分之一音。三類構成希臘音樂體系的基本單位。（第 14 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 1.2　希臘音階系統 Scale systems",
+      "subtitle_en": "Example 1.2 — The Greater Perfect System (a) and Lesser Perfect System (b)",
+      "explanation_title": "譜例說明  教科書第 15 頁",
+      "explanation_zh": "• a. 大完整系統（Greater Perfect System）：四個四音列加最低附加音，涵蓋兩個八度；相連（conjunct）共用一音、分離（disjunct）以全音相隔。\n• b. 小完整系統（Lesser Perfect System）：跨越八度加四度，中央音 mese 上方有一個共用音的 synemmenon 四音列。系統不指絕對音高，僅指音與音之間的音程關係。（第 15 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 1.3　克列翁尼底斯的諧音程種類 Species of consonances",
+      "subtitle_en": "Example 1.3 — Cleonides’s species of fourths (a), fifths (b), and octaves (c)",
+      "explanation_title": "譜例說明  教科書第 16 頁",
+      "explanation_zh": "• 純四度只有三種排列：半音在底、在頂、或在中（a）；純五度有四種（b）；八度為四度與五度的組合，共七種（c）。\n• 克列翁尼底斯（Cleonides）以古老名稱命名七種八度形式：Mixolydian、Lydian、Phrygian、Dorian、Hypolydian、Hypophrygian、Hypodorian——後為中世紀調式所借用，但意涵已不同。（第 16 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 1.4　〈塞基洛斯墓誌歌〉Seikilos epitaph（NAWM 1）",
+      "subtitle_en": "Example 1.4 — Seikilos song in original notation (above staff) and modern transcription",
+      "explanation_title": "譜例說明  教科書第 17 頁",
+      "explanation_zh": "• 約一世紀的希臘墓碑刻文：上方字母記號標示音高，再上方符號標示節奏。完整保存的最早古希臘音樂之一（NAWM 1）。\n• 旋律為自然類、八度音域、採 Phrygian 八度種類；記譜屬 Iastian tonos（將標準系統上移一個全音，產生升 F 與升 C）。歌詞「在你活著的時候，要心情輕快……」呼應 Iastian 調性介於高低之間的中庸特質。（第 17 頁）"
+    }
+  },
   "5": {
     "1": {
       "title_zh": "譜例 5.1　平行奧爾加農",

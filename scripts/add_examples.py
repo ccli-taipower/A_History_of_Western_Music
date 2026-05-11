@@ -37,6 +37,8 @@ SPLIT_THRESHOLD = 0.70
 # Manual y_end_pct overrides for examples where auto-detection includes body text.
 # Key: (chapter_int, example_num_str)  Value: y_end_pct (fraction of PDF page height)
 MANUAL_Y_END = {
+    # ── Ch01 ─────────────────────────────────────────────────────────────────
+    (1,  '4'):  0.460,   # Seikilos: score + 2-line English translation; stop before FIGURE 1.10 photo at 75%
     # ── Ch08 ─────────────────────────────────────────────────────────────────
     (8,  '2'):  0.46,    # Carol burden: score 2 sections, body text "elaborated" at ~48%
     (8,  '3'):  0.34,    # Dunstable cantus vs chant: score ends ~31%, body text at 36%
@@ -88,6 +90,7 @@ MANUAL_Y_END = {
 # x_start override for two-column pages where body text is in the left column
 MANUAL_X_START = {
     (13, '2'): 0.49,   # right column only: body text on left, EXAMPLE 13.2 on right
+    (1,  '4'): 0.52,   # right column only: Seikilos epitaph + translation in right col
 }
 
 # Chapter page ranges (printed-book pagination)
