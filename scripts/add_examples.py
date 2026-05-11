@@ -120,6 +120,16 @@ MANUAL_X_START = {
     (1,  '4'): 0.52,   # right column only: Seikilos epitaph + translation in right col
 }
 
+# Display-width override (in inches) for stacked-layout examples whose PNG has lots of
+# right-side whitespace, so the score appears at near-natural size rather than stretched to 9".
+# Natural size for PNGs at 200dpi reference is W_in_px/200 ≈ 6.98" (textbook page width).
+# Key: (chapter_int, example_num_str)  Value: target W_img in inches
+MANUAL_W_IMG = {
+    (5,  '5'):  7.0,   # Two short ligature samples + "etc.": display at natural size
+    (5,  '15'): 7.0,   # Cadence forms — short row: display at natural size
+    (11, '6'):  7.0,   # Varied spacings chord chart: display at natural size
+}
+
 # x_end override for two-column pages where the SCORE is in the left column and body text on right
 MANUAL_X_END = {
     (6,  '7'): 0.40,   # left column only: EXAMPLE 6.7 score on left (ends 37.5%), body text starts 42.5%
@@ -589,6 +599,12 @@ def build_example_slide_js(ch: int, ex_num: str, palette: dict,
         H_img = 2.65 if asp >= 2.0 else 3.05
         W_img = min(9.0, round(H_img * asp, 2))
         H_img = round(W_img / asp, 2)  # natural height — no whitespace for very wide images
+        # MANUAL_W_IMG override: for PNGs with significant right-side whitespace,
+        # display at near-natural width instead of stretching to 9".
+        manual_w = MANUAL_W_IMG.get((ch, ex_num))
+        if manual_w is not None:
+            W_img = manual_w
+            H_img = round(W_img / asp, 2)
         y0 = 1.05
         x0 = round(0.5 + (9.0 - W_img) / 2, 2)
         fx = round(x0 - 0.08, 2); fy = round(y0 - 0.06, 2)
