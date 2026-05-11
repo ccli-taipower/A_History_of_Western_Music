@@ -245,7 +245,21 @@ If a chapter/example key is absent from `translations.json`, the pipeline falls 
 2. Translate to Chinese, add to `translations.json`
 3. Real run → visual QA → commit PDFs
 
-Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each (total ~211 across 36 chapters, ~50 done as of 2026-05-07 across 14 chapters). The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
+Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each (total ~211 across 36 chapters, **127 done as of 2026-05-11 across 19 chapters**: Ch01/02/03/04/05/06/08/09/10/11/13/20/22/23/24/25/27/31/33; 17 still pending). The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
+
+### Example slide design principles
+
+User-stated rules for textbook example slides (non-negotiable):
+
+1. **維持譜的原始形狀與大小** — textbook prints small, slide shows small. Don't stretch a thin chord chart to 9" wide.
+2. **太大放不下一張投影片就切成好幾張** — vertical auto-split (already handled when aspect < 0.7).
+3. **太小不用硬拉大，可以用文字編排的方式去補空白的地方** — for small scores, expand the explanation text panel (add a 3rd bullet of historical context); never enlarge the image.
+4. **版面不固定，不同形狀的譜可以用不同的編排方式** — per-example overrides (`MANUAL_W_IMG`, `MANUAL_X_START`, `MANUAL_X_END`, `MANUAL_Y_END`) are the established mechanism; reach for them rather than rewriting the layout engine.
+
+**Crop QA rules** (verify before commit):
+- Crop start must NOT include textbook body text (the descriptive paragraphs before the EX AMPLE label).
+- Crop end must NOT truncate score content (don't cut mid-system or omit later sub-sections like d/e of an a–e example).
+- Translation text directly under the score (e.g. Latin/English under chant) IS part of the example and should be included.
 
 ### Example slide layout
 
@@ -278,6 +292,16 @@ Auto-detection fails when body text follows the score immediately with no gap. C
 **MANUAL_X_START** — for two-column textbook pages where body text is in the LEFT column and the score is in the RIGHT column:
 ```python
 MANUAL_X_START = { (13, '2'): 0.49 }  # crop starts at 49% of page width
+```
+
+**MANUAL_X_END** — mirror of the above for when the score is in the LEFT column and body text on the right:
+```python
+MANUAL_X_END = { (6, '7'): 0.40 }  # crop ends at 40% of page width — left col only
+```
+
+**MANUAL_W_IMG** — for stacked layouts where the PNG has significant right-side whitespace (e.g. short rhythm samples + "etc."). Without this override the score is stretched to 9" wide and the right whitespace is preserved inside the white frame; with it the score appears at near-natural size and the freed vertical space goes to the text panel:
+```python
+MANUAL_W_IMG = { (5, '5'): 7.0 }  # natural width: PNG_px ÷ 200dpi ≈ 7" for full-page-width crops
 ```
 
 **Automated post-run QA:** after rebuilding, check all score PNGs for body text leakage:
@@ -323,7 +347,7 @@ pdfimages -png -f PDF_PAGE -l $((PDF_PAGE+1)) "A HISTORY of WESTERN TENTН MUSIC
 # Some pages have a large architectural/scene image alongside a smaller portrait (e.g. Bach → St Thomas Church).
 # Always visually verify (Read each PNG) before copying to examples/biographies/.
 ```
-Portraits saved to `examples/biographies/` (gitignored). `biographies.js` is done and committed as `Biographies.pdf` (54 slides).
+Portraits saved to `examples/biographies/` (gitignored). `biographies.js` is done and committed as `Biographies.pdf` (56 slides: cover + TOC + 27 × 2).
 
 **Content rule:** biography text must be a faithful Chinese translation of the textbook prose only — verify against the source PDF page, do not add biographical facts not present in the book.
 
