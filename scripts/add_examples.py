@@ -112,6 +112,24 @@ MANUAL_Y_END = {
     (33, '11'): 0.96,    # all a–g sections fill the page (was cut at a,b only)
     (33, '12'): 0.2393,  # Bartók xylophone palindrome: 1 system, body text at 18%
     (33, '15'): 0.820,   # Ives Concord Alcotts: a-e sections at 13%/28%/45%/61%, body text at 83.2%
+    # ── Ch12 ─────────────────────────────────────────────────────────────────
+    (12, '2'):  0.220,   # Gervaise pavane/galliard: 3-system score at top, body+engraving below
+    (12, '3'):  0.275,   # Cavazzoni Kyrie: short score (3 staves), body text "alternate between..." at 28%
+    (12, '4'):  0.700,   # Narváez Diferencias a–e variations end ~68%, body text "suggesting a link" at 71%
+    (12, '5'):  0.465,   # Martini La Martinella a+b: 6 staves (3 per part), body text at 47%
+    (12, '6'):  0.755,   # Merulo Toccata IV a/b/c sections end ~73%, body text "speech, preparing" at 77%
+    # ── Ch14 ─────────────────────────────────────────────────────────────────
+    (14, '3'):  0.430,   # Monteverdi Orfeo's lament: 2 systems + translation, body text at 45%
+    # ── Ch15 ─────────────────────────────────────────────────────────────────
+    (15, '2'):  0.800,   # Monteverdi Zefiro torna a+b at bottom of shared page; body text at 83%
+    (15, '3'):  0.270,   # Strozzi Lagrime mie: short score + translation; body text "while two tenors" at 30%
+    (15, '5'):  0.520,   # Grandi a+b + translations; body text "Scriptures whose dialogue" at 53%
+    (15, '8'):  0.460,   # Marini Sonata IV: 2 systems; body text "Schütz's sacred concertos" at 47%
+    # ── Ch16 ─────────────────────────────────────────────────────────────────
+    (16, '3'):  0.960,   # Jacquet de la Guerre suite a–f sections fill full page (footer 98.5%)
+    (16, '4'):  0.420,   # Purcell Dido recitative: 3 systems, body text "of dance for dramatic" at 45%
+    # ── Ch17 ─────────────────────────────────────────────────────────────────
+    (17, '1'):  0.480,   # Scarlatti Clori vezzosa: 2 systems + translation; body text "In Scarlatti's hands" at 52%
 }
 
 # x_start override for two-column pages where body text is in the left column
