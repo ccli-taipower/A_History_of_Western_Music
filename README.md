@@ -40,17 +40,17 @@ This repository provides a complete set of lecture slides for **A History of Wes
 
 | # | 中文標題 Title (ZH) | 英文標題 Title (EN) | 頁數 Slides | 下載 Download |
 |---:|---|---|---:|---|
-| 1  | 古代音樂 | Music in Antiquity | 16 | [`Ch01_Music_in_Antiquity.pdf`](Ch01_Music_in_Antiquity.pdf) |
-| 2  | 基督教會 | The Christian Church | 15 | [`Ch02_Christian_Church.pdf`](Ch02_Christian_Church.pdf) |
-| 3  | 羅馬禮儀 | Roman Liturgy | 16 | [`Ch03_Roman_Liturgy.pdf`](Ch03_Roman_Liturgy.pdf) |
+| 1  | 古代音樂 | Music in Antiquity | 20 | [`Ch01_Music_in_Antiquity.pdf`](Ch01_Music_in_Antiquity.pdf) |
+| 2  | 基督教會 | The Christian Church | 23 | [`Ch02_Christian_Church.pdf`](Ch02_Christian_Church.pdf) |
+| 3  | 羅馬禮儀 | Roman Liturgy | 21 | [`Ch03_Roman_Liturgy.pdf`](Ch03_Roman_Liturgy.pdf) |
 | 4  | 歌謠與舞蹈 | Song and Dance | 17 | [`Ch04_Song_and_Dance.pdf`](Ch04_Song_and_Dance.pdf) |
 | 5  | 複音音樂 | Polyphony | 31 | [`Ch05_Polyphony.pdf`](Ch05_Polyphony.pdf) |
-| 6  | 十四世紀 | The Fourteenth Century | 28 | [`Ch06_Fourteenth_Century.pdf`](Ch06_Fourteenth_Century.pdf) |
+| 6  | 十四世紀 | The Fourteenth Century | 35 | [`Ch06_Fourteenth_Century.pdf`](Ch06_Fourteenth_Century.pdf) |
 | 7  | 文藝復興 | The Renaissance | 28 | [`Ch07_Renaissance.pdf`](Ch07_Renaissance.pdf) |
 | 8  | 英格蘭與勃艮第 | England and Burgundy | 35 | [`Ch08_England_Burgundy.pdf`](Ch08_England_Burgundy.pdf) |
 | 9  | 法蘭德斯作曲家 | Franco-Flemish Composers | 38 | [`Ch09_Franco_Flemish.pdf`](Ch09_Franco_Flemish.pdf) |
 | 10 | 牧歌 | The Madrigal | 35 | [`Ch10_Madrigal.pdf`](Ch10_Madrigal.pdf) |
-| 11 | 宗教改革 | The Reformation | 30 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
+| 11 | 宗教改革 | The Reformation | 37 | [`Ch11_Reformation.pdf`](Ch11_Reformation.pdf) |
 | 12 | 器樂音樂 | Instrumental Music | 29 | [`Ch12_Instrumental.pdf`](Ch12_Instrumental.pdf) |
 | 13 | 十七世紀新風格 | New Styles in the 17th Century | 30 | [`Ch13_New_Styles.pdf`](Ch13_New_Styles.pdf) |
 | 14 | 歌劇 | Opera | 29 | [`Ch14_Opera.pdf`](Ch14_Opera.pdf) |
