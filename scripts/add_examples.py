@@ -39,6 +39,13 @@ SPLIT_THRESHOLD = 0.70
 MANUAL_Y_END = {
     # ── Ch01 ─────────────────────────────────────────────────────────────────
     (1,  '4'):  0.460,   # Seikilos: score + 2-line English translation; stop before FIGURE 1.10 photo at 75%
+    # ── Ch02 ─────────────────────────────────────────────────────────────────
+    (2,  '1'):  0.340,   # Deus Deus meus 4 verse phrases: body text at 35.6%
+    (2,  '2'):  0.620,   # Viderunt Solesmes notation + English translation; body text "editions" at 65.2%
+    (2,  '3'):  0.640,   # Viderunt modern notation; body text "small notes" at 65.2%
+    (2,  '5'):  0.720,   # Church modes diagram; body text "listeners may find" at 73.4%
+    (2,  '6'):  0.290,   # Ut queant laxis + translation; body text "Greek names" at 30.7%
+    (2,  '8'):  0.420,   # Viderunt solmization (2nd of two on page); body text "required shifting" at 42.2%
     # ── Ch08 ─────────────────────────────────────────────────────────────────
     (8,  '2'):  0.46,    # Carol burden: score 2 sections, body text "elaborated" at ~48%
     (8,  '3'):  0.34,    # Dunstable cantus vs chant: score ends ~31%, body text at 36%

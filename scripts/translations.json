@@ -537,5 +537,55 @@
       "explanation_title": "譜例說明  教科書第 221 頁",
       "explanation_zh": "• 法語香頌（chanson）典型範例：短小分段結構、輕快和聲式（homophonic）織體，各聲部多半同時唱詞，旋律簡潔易記；「只要我身強體健，我將服侍強大的愛之君王。」\n• 此種輕型香頌由巴黎出版商阿提尼揚（Attaingnant）大量出版推廣，與義大利複雜牧歌形成鮮明對比，展示十六世紀法語世俗音樂更傾向通俗、宮廷娛樂的美學方向。（第 221 頁）"
     }
+  },
+  "2": {
+    "1": {
+      "title_zh": "譜例 2.1　Tract《Deus, Deus meus》前四節的第二樂句",
+      "subtitle_en": "Example 2.1 — The second phrases of the first four verses of the Tract Deus, Deus meus",
+      "explanation_title": "譜例說明  教科書第 29 頁",
+      "explanation_zh": "• 連唱詠（Tract）的標準詩篇結構：每節的第二樂句使用同一旋律公式重複——以低音復誦音開始、上行至誦讀音停留、再以裝飾性的下行收束至 final。\n• 此公式化作曲法（formulaic composition）是早期格里高利聖詠的核心技巧：節省記憶負擔、加強文本連貫，也讓會眾能辨認常規應對。（第 29 頁）"
+    },
+    "2": {
+      "title_zh": "譜例 2.2　Gradual《Viderunt omnes》Solesmes 符紙記譜版",
+      "subtitle_en": "Example 2.2 — The Gradual Viderunt omnes in Solesmes chant notation",
+      "explanation_title": "譜例說明  教科書第 32 頁",
+      "explanation_zh": "• Solesmes 修道院於 19 世紀整理出版的官方梵蒂岡記譜版本（教宗 Pius X 於 1903 年認可），保留中世紀符紙（neumes）外觀並加入詮釋符號：點延長一倍、橫線略加長、垂直線標分段。\n• 升 B / 還原 B 是聖詠唯一允許的變化音；行內升降記號僅在當字內有效，新字以還原開始。星號表示獨唱者交棒給合唱。（第 32 頁）"
+    },
+    "3": {
+      "title_zh": "譜例 2.3　Gradual《Viderunt omnes》現代記譜版",
+      "subtitle_en": "Example 2.3 — The Gradual Viderunt omnes transcribed in modern notation",
+      "explanation_title": "譜例說明  教科書第 33 頁",
+      "explanation_zh": "• 同一首 Gradual 用現代五線譜轉寫：起音 F、繞行誦讀音 C、高 F 上端與低 E 下端共用全音域，結束於 F——典型的第 5 調式（Lydian authentic）。\n• 字下小音符（如 Viderunt 的 n）代表發濁子音時的部分閉口；上升弧線符號 quilisma（如 omnis）可能指某種裝飾。（第 33 頁）"
+    },
+    "4": {
+      "title_zh": "譜例 2.4　Guido of Arezzo 的音名字母系統",
+      "subtitle_en": "Example 2.4 — Guido of Arezzo's letter names for the notes of the tone-system",
+      "explanation_title": "譜例說明  教科書第 35 頁",
+      "explanation_zh": "• 十世紀末義大利論著《Dialogus de musica》引入字母記譜，Guido 採納並沿用至今：大寫 A–G 標記大完整系統最低七音、小寫 a–g 標上一八度、再上以雙字母 aa–dd 標記。\n• 中央音 a 之上音可為全音或半音：方形 b（後演化為 ♮ 與 ♯）= 全音；圓形 b（後演化為 ♭）= 半音。Guido 將音域延伸至 dd，超越古希臘兩八度的範圍。（第 35 頁）"
+    },
+    "5": {
+      "title_zh": "譜例 2.5　八個教會調式 Church modes",
+      "subtitle_en": "Example 2.5 — The eight church modes (a. authentic/plagal pairs; b. with Greek names)",
+      "explanation_title": "譜例說明  教科書第 37 頁",
+      "explanation_zh": "• a. 八調式依 final（D/E/F/G 四音）配對：1+2 = D，3+4 = E，5+6 = F，7+8 = G；奇數為正調式（authentic，音域上行至八度），偶數為下副調式（plagal，音域上下對稱於 final）。\n• b. 九世紀後誤讀 Boethius，將希臘音階名套用至教會調式，順序由低至高升排——與克列翁尼底斯原意相反。Plagal 加 Hypo- 前綴。現代教科書與爵士討論常用希臘名。（第 37 頁）"
+    },
+    "6": {
+      "title_zh": "譜例 2.6　聖歌《Ut queant laxis》（唱名系統的源頭）",
+      "subtitle_en": "Example 2.6 — Hymn, Ut queant laxis",
+      "explanation_title": "譜例說明  教科書第 39 頁",
+      "explanation_zh": "• Guido 注意到此聖歌的前六樂句依序起於 C、D、E、F、G、A，遂取每樂句首字母音節 ut–re–mi–fa–sol–la 作為唱名（solmization syllables）。\n• 此六音節包含聖詠所需的所有音程：mi–fa 為半音，其餘為全音；含兩個小三度、兩個大三度、所有四度與五度均為純。現代多以 do 取代 ut 並加上 ti。（第 39 頁）"
+    },
+    "7": {
+      "title_zh": "譜例 2.7　中世紀音域的唱名七個位置",
+      "subtitle_en": "Example 2.7 — Solmization syllables in the medieval gamut",
+      "explanation_title": "譜例說明  教科書第 40 頁",
+      "explanation_zh": "• 半音 E–F、B–C、A–B♭ 都須以 mi–fa 唱出，因此六音節組必須在中世紀音域中以七個不同起點位置定位。\n• 每音兼具字母名與位於不同八度時的唱名組合，例如最低音 gamma ut（gamut 一字由此而來）、中央 C 為 c sol fa ut。歌者只需記住七個位置，便能演唱任何旋律。（第 40 頁）"
+    },
+    "8": {
+      "title_zh": "譜例 2.8　《Viderunt omnes》結尾段的唱名標示（變位示例）",
+      "subtitle_en": "Example 2.8 — End of Gradual Viderunt omnes in solmization syllables",
+      "explanation_title": "譜例說明  教科書第 40 頁",
+      "explanation_zh": "• 旋律超出六音範圍時須行「變位（mutation）」：歌者在不離開某音的情況下將其重新命名以接續下一組唱名位置。\n• 此例的第一個十音可用以 G 為起點的第 4 位（Ex 2.7）唱出，再下移一位以容納 B♭，再下移一位以容納低音 E，最後回升以唱出 C 與終止句的 B♭。（第 40 頁）"
+    }
   }
 }
