@@ -99,9 +99,9 @@ This repository provides a complete set of lecture slides for **A History of Wes
 
 ## 授權與引用 · License & Citation
 
-**中文：** 本投影片內容依據原書章節整理，僅供學術研究與教學參考。原書著作權屬於 W. W. Norton & Company 及原作者群 (Burkholder, Grout, Palisca) 所有。
+**中文：** 本投影片的整理、翻譯與排版設計依 **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hant)** 授權釋出——可自由分享與改作，**惟限非商業用途，並須註明出處**。教科書原始內容之著作權仍屬於 W. W. Norton & Company 及原作者群 (Burkholder, Grout, Palisca)，散布／改作時請同時尊重原出版者與作者之權利。詳見根目錄 [`LICENSE`](LICENSE) 檔。
 
-**English:** These slides summarize chapters of the original textbook for academic and teaching reference only. Copyright of the source material belongs to W. W. Norton & Company and the authors (Burkholder, Grout, Palisca).
+**English:** The organization, translation, and design of these slides are released under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** — you are free to share and adapt them, **for non-commercial purposes with proper attribution**. The copyright of the underlying textbook content remains with W. W. Norton & Company and the original authors (Burkholder, Grout, Palisca); please respect their rights when redistributing or adapting this work. See the [`LICENSE`](LICENSE) file in the repository root for full details.
 
 > Burkholder, J. Peter, Donald Jay Grout, and Claude V. Palisca.
 > *A History of Western Music*, 10th ed. New York: W. W. Norton, 2019.
