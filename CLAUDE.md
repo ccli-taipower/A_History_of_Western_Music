@@ -112,7 +112,7 @@ U+30FB (Katakana middle dot ・) does not render in some fonts via LibreOffice �
 
 ## Chapter format status
 
-All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **1124 slides** (30 chapters have Example slides added: Ch01/02/03/04/05/06/08/09/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/31/33; remaining 6 chapters still pending).
+All 39 chapters (Ch01–Ch39) are complete and conform to the Ch26 two-column panel format. Total: **1155 slides** — all 36 chapters with Examples are now done (Ch01–Ch06, Ch08–Ch35, Ch37, Ch38). Ch07/Ch36/Ch39 have no Examples by design.
 
 **NAWM audit status** — all NAWM numbers verified against textbook in-text citations using `pdftotext`:
 
@@ -245,7 +245,7 @@ If a chapter/example key is absent from `translations.json`, the pipeline falls 
 2. Translate to Chinese, add to `translations.json`
 3. Real run → visual QA → commit PDFs
 
-Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each (total ~211 across 36 chapters, **192 done as of 2026-05-12 across 30 chapters**: Ch01/02/03/04/05/06/08/09/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/31/33; 6 still pending). The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
+Chapters with no Examples: **Ch07, Ch36, Ch39**. All others have 1–16 Examples each — **all 36 chapters complete as of 2026-05-12 (223 Examples total)**: Ch01–Ch06, Ch08–Ch35, Ch37, Ch38. The full plan is at `docs/superpowers/plans/2026-05-05-add-examples-all-chapters.md`.
 
 ### Example slide design principles
 

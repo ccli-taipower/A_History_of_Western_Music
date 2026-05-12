@@ -144,6 +144,23 @@ MANUAL_Y_END = {
     (28, '7'):  0.235,   # Rimsky-Korsakov Sadko Scene 2: label at 10.6%, 2-staff score; body text at 25%
     # ── Ch29 ─────────────────────────────────────────────────────────────────
     (29, '2'):  0.415,   # Brahms Sym3 finale theme: label at 27.4%, score multi-staff to ~41%; body "The conflict" at 42%
+    # ── Ch30 ─────────────────────────────────────────────────────────────────
+    (30, '5'):  0.340,   # After the Ball chorus: body text "since" at 35.9%
+    # ── Ch32 ─────────────────────────────────────────────────────────────────
+    (32, '4'):  0.600,   # Rachmaninoff Prelude themes a+b: body "by the harmonic" at 61.1%
+    (32, '5'):  0.950,   # Scriabin Vers la flamme b-f sections fill page
+    (32, '6'):  0.475,   # Sibelius Sym 4 a-c stages: body "subsequent" at 48.5%
+    # ── Ch34 ─────────────────────────────────────────────────────────────────
+    (34, '1'):  0.255,   # Gershwin I Got Rhythm rhythm comparison: body "Both the style" at 26.4%
+    (34, '2'):  0.380,   # Bessie Smith Back Water Blues stanza: body "lesbian" at 39%
+    # ── Ch35 ─────────────────────────────────────────────────────────────────
+    (35, '2'):  0.415,   # Hindemith Mathis der Maler 2nd mvt: body "Other notable" at 42.2%
+    # ── Ch37 ─────────────────────────────────────────────────────────────────
+    (37, '3'):  0.200,   # Messiaen Liturgie de cristal: short rhythm notation a/b ends ~18%, body at 20%
+    (37, '4'):  0.210,   # Babbitt String Quartet 3 row+number row: body "Pierre" at 21.6%
+    (37, '6'):  0.940,   # Carter String Quartet 2 metric modulation: label at 41.7%, score fills to footer
+    # ── Ch38 ─────────────────────────────────────────────────────────────────
+    (38, '4'):  0.265,   # Del Tredici Final Alice Accusation: body "akin" at 28%
 }
 
 # x_start override for two-column pages where body text is in the left column
