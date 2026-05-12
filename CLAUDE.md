@@ -261,6 +261,8 @@ User-stated rules for textbook example slides (non-negotiable):
 - Crop end must NOT truncate score content (don't cut mid-system or omit later sub-sections like d/e of an a–e example).
 - Translation text directly under the score (e.g. Latin/English under chant) IS part of the example and should be included.
 
+**Side-by-side aspect (0.7–1.3) caveat**: density check often gives false positives for staff lines (≥ 0.10) and false negatives for body text bleeding into the right column. For these examples, always visually inspect the full PNG, not just the bottom 60px slice — the right column may show body text on a side-by-side layout while the bottom band still reads "clean".
+
 ### Example slide layout
 
 Three layout modes chosen automatically by `build_example_slide_js()` based on the cropped image aspect ratio (W/H):
@@ -284,10 +286,28 @@ Three layout modes chosen automatically by `build_example_slide_js()` based on t
 ```python
 MANUAL_Y_END = { (ch, 'ex_num'): 0.52, ... }  # y_pct of FULL PAGE height
 ```
-Auto-detection fails when body text follows the score immediately with no gap. Calibration workflow:
-1. Check bottom of cropped PNG: `img.crop((0, H-80, W, H))`
-2. If body text visible: reduce y_end by `delta = pixels_to_remove / H_render` where H_render ≈ 1961px for standard pages
-3. Repeat until bottom shows only score/translation content
+Auto-detection fails when body text follows the score immediately with no gap.
+
+**Preferred calibration via `pdftotext -bbox`** (faster & more accurate than visual estimation):
+```bash
+# Get exact y positions of the EX AMPLE label and following body-text words
+pdftotext -bbox -f <PDF_PAGE> -l <PDF_PAGE> "A HISTORY of WESTERN TENTН MUSIC.pdf" - \
+  | python3 -c "
+import re, sys
+prev_y = 0
+for line in sys.stdin:
+    m = re.search(r'yMin=\"([\d.]+)\".*>(.+)</word>', line)
+    if m:
+        y, w = float(m.group(1)), m.group(2)
+        if w == 'AMPLE' or y - prev_y > 30:
+            print(f'  y={y:6.1f}  {w}')
+        prev_y = y
+"
+# Page height ≈ 792pt. Set MANUAL_Y_END = (y_body_start / 792) - small buffer (~0.005)
+# Score+translation typically ends 12-24pt before the next body-text line.
+```
+
+Fallback (visual estimation): crop bottom 200px of the PNG, inspect, then reduce y_end by `delta = pixels_to_remove / H_render` where H_render ≈ 1961px for standard pages.
 
 **MANUAL_X_START** — for two-column textbook pages where body text is in the LEFT column and the score is in the RIGHT column:
 ```python
@@ -326,6 +346,10 @@ const EXDIR = __dirname + "/examples/ch24/";
 ## Git conventions
 
 `.gitignore` excludes `*.pptx`, `*.js` (all generators: chapter files, `cheat_sheet.js`, `condensed_review.js`, `qa_100.js`, etc.), `node_modules/`, `package*.json`, `examples/` (score PNGs), and `*.jpg` except the textbook cover. **Only PDFs and README.md are committed — source JS and PNG assets stay local.** Commit message prefixes: `ChNN:` (single chapter edit), `ChNN-MM:` (multi-chapter batch), `Add:` (new artifacts), `Condensed_Review:`, `Lineage_Map:`, `README:`.
+
+## License & repo metadata
+
+Slide organization, translation, and design are under **CC BY-NC 4.0** (see `LICENSE` in repo root); the underlying textbook content remains copyright of W. W. Norton & Company. The repo is published on GitHub with topics: `music-history`, `music-education`, `traditional-chinese`, `lecture-slides`, `bilingual`, `classical-music`, `musicology`, `burkholder`, `grout-palisca`, `nawm`, `teaching-materials`, `study-materials`.
 
 ## Composer Biographies (`biographies.js`)
 
