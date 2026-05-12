@@ -130,6 +130,20 @@ MANUAL_Y_END = {
     (16, '4'):  0.420,   # Purcell Dido recitative: 3 systems, body text "of dance for dramatic" at 45%
     # ── Ch17 ─────────────────────────────────────────────────────────────────
     (17, '1'):  0.480,   # Scarlatti Clori vezzosa: 2 systems + translation; body text "In Scarlatti's hands" at 52%
+    # ── Ch18 ─────────────────────────────────────────────────────────────────
+    (18, '4'):  0.725,   # Rameau Hippolyte: score + translation (ends 72%); body "Rameau's impact" at 74%
+    # ── Ch19 ─────────────────────────────────────────────────────────────────
+    (19, '4'):  0.275,   # Bach Art of Fugue theme: label at 19.4%, score to ~26%; body text "entrances" at 28%
+    (19, '8'):  0.970,   # Messiah a-d sections: full page, footer 98.5%
+    # ── Ch21 ─────────────────────────────────────────────────────────────────
+    (21, '3'):  0.970,   # Hasse Digli ch'io son fedele with embellishments: full page below box
+    # ── Ch26 ─────────────────────────────────────────────────────────────────
+    (26, '3'):  0.305,   # Schubert Unfinished a+b themes: a at 10%, b at 21%, body "mature Schubert" at 31%
+    (26, '5'):  0.970,   # Berlioz Symph fantastique a-d sections: full page
+    # ── Ch28 ─────────────────────────────────────────────────────────────────
+    (28, '7'):  0.235,   # Rimsky-Korsakov Sadko Scene 2: label at 10.6%, 2-staff score; body text at 25%
+    # ── Ch29 ─────────────────────────────────────────────────────────────────
+    (29, '2'):  0.415,   # Brahms Sym3 finale theme: label at 27.4%, score multi-staff to ~41%; body "The conflict" at 42%
 }
 
 # x_start override for two-column pages where body text is in the left column

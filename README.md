@@ -10,10 +10,10 @@
 ## 關於本專案 · About This Project
 
 **中文：**
-本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **1089 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
+本專案為 Burkholder、Grout、Palisca 合著《**A History of Western Music**, Tenth Edition》的完整配套講義投影片，涵蓋**古代至二十一世紀** 39 章，共 **1124 張** 16:9 寬螢幕投影片，全部以 PDF 格式提供，方便閱讀、列印與教學使用。
 
 **English:**
-This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **1089 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
+This repository provides a complete set of lecture slides for **A History of Western Music**, 10th Edition by Burkholder, Grout, and Palisca. It covers **Antiquity through the Twenty-First Century** in 39 chapters, totaling **1124 widescreen (16:9) slides**, all delivered as PDFs for easy reading, printing, and classroom use.
 
 ---
 
@@ -57,18 +57,18 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 15 | 室內樂與教會音樂 | Chamber and Church Music | 40 | [`Ch15_Chamber_Church.pdf`](Ch15_Chamber_Church.pdf) |
 | 16 | 法、英、西、新世界、俄 | France, England, Spain, the New World, and Russia | 39 | [`Ch16_France_England.pdf`](Ch16_France_England.pdf) |
 | 17 | 十七世紀晚期義大利與德意志 | Italy and Germany in the Late 17th Century | 34 | [`Ch17_Italy_Germany.pdf`](Ch17_Italy_Germany.pdf) |
-| 18 | 十八世紀初 | The Early Eighteenth Century | 16 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
-| 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 16 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
+| 18 | 十八世紀初 | The Early Eighteenth Century | 20 | [`Ch18_Early_Eighteenth.pdf`](Ch18_Early_Eighteenth.pdf) |
+| 19 | 德意志晚期巴洛克作曲家 | German Composers of the Late Baroque | 24 | [`Ch19_German_Composers.pdf`](Ch19_German_Composers.pdf) |
 | 20 | 啟蒙時代音樂品味與風格 | Musical Taste and Style in the Enlightenment | 10 | [`Ch20_Enlightenment.pdf`](Ch20_Enlightenment.pdf) |
-| 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 14 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
+| 21 | 早期古典時期的歌劇與聲樂 | Opera and Vocal Music in the Early Classic Period | 18 | [`Ch21_Early_Classic_Opera.pdf`](Ch21_Early_Classic_Opera.pdf) |
 | 22 | 器樂音樂：奏鳴曲、交響曲、協奏曲 | Instrumental Music: Sonata, Symphony, and Concerto | 17 | [`Ch22_Instrumental_Classic.pdf`](Ch22_Instrumental_Classic.pdf) |
 | 23 | 古典晚期：海頓與莫札特 | Classic Music in the Late Eighteenth Century | 24 | [`Ch23_Classic_Late_18C.pdf`](Ch23_Classic_Late_18C.pdf) |
 | 24 | 革命與變革：貝多芬 | Revolution and Change (Beethoven) | 23 | [`Ch24_Beethoven.pdf`](Ch24_Beethoven.pdf) |
 | 25 | 浪漫世代：藝術歌曲與鋼琴音樂 | The Romantic Generation: Song and Piano Music | 23 | [`Ch25_Romantic_Generation.pdf`](Ch25_Romantic_Generation.pdf) |
-| 26 | 古典曲式中的浪漫主義：合唱、室內、管弦 | Romanticism in Classical Forms: Choral, Chamber, and Orchestral Music | 28 | [`Ch26_Romantic_Classical.pdf`](Ch26_Romantic_Classical.pdf) |
+| 26 | 古典曲式中的浪漫主義：合唱、室內、管弦 | Romanticism in Classical Forms: Choral, Chamber, and Orchestral Music | 34 | [`Ch26_Romantic_Classical.pdf`](Ch26_Romantic_Classical.pdf) |
 | 27 | 浪漫歌劇與音樂劇至世紀中葉 | Romantic Opera and Musical Theater to Midcentury | 31 | [`Ch27_Romantic_Opera.pdf`](Ch27_Romantic_Opera.pdf) |
-| 28 | 十九世紀後期歌劇與音樂劇 | Opera and Musical Theater in the Later 19th Century | 28 | [`Ch28_Late_19C_Opera.pdf`](Ch28_Late_19C_Opera.pdf) |
-| 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 28 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
+| 28 | 十九世紀後期歌劇與音樂劇 | Opera and Musical Theater in the Later 19th Century | 35 | [`Ch28_Late_19C_Opera.pdf`](Ch28_Late_19C_Opera.pdf) |
+| 29 | 德意志晚期浪漫音樂文化 | Late Romanticism in German Musical Culture | 34 | [`Ch29_Late_Romantic_German.pdf`](Ch29_Late_Romantic_German.pdf) |
 | 30 | 分歧傳統：十九世紀後期 | Diverging Traditions in the Later Nineteenth Century | 28 | [`Ch30_Diverging_Traditions.pdf`](Ch30_Diverging_Traditions.pdf) |
 | 31 | 二十世紀初：俗樂 | The Early Twentieth Century: Vernacular Music | 29 | [`Ch31_Vernacular_Music.pdf`](Ch31_Vernacular_Music.pdf) |
 | 32 | 二十世紀初：古典傳統 | The Classical Tradition in the Early Twentieth Century | 33 | [`Ch32_Classical_Tradition.pdf`](Ch32_Classical_Tradition.pdf) |
@@ -79,7 +79,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 37 | 戰後古典傳統繼承者 | Postwar Heirs to the Classical Tradition | 30 | [`Ch37_Postwar_Heirs.pdf`](Ch37_Postwar_Heirs.pdf) |
 | 38 | 二十世紀晚期 | The Late Twentieth Century | 29 | [`Ch38_Late_Twentieth.pdf`](Ch38_Late_Twentieth.pdf) |
 | 39 | 二十一世紀 | The Twenty-First Century | 29 | [`Ch39_Twenty_First_Century.pdf`](Ch39_Twenty_First_Century.pdf) |
-| | | **總計 Total** | **1089** | |
+| | | **總計 Total** | **1124** | |
 | ★  | 期末總複習 | Condensed Review (9 Periods) | 100 | [`Condensed_Review.pdf`](Condensed_Review.pdf) |
 | 🖼️ | A3 海報 | A3 Cheat Sheet (Landscape Poster) | 1 | [`Cheat_Sheet.pdf`](Cheat_Sheet.pdf) |
 | ❓ | A3 百大 Q&A | A3 Top 100 Q&A (Landscape, with page refs) | 1 | [`QA_100.pdf`](QA_100.pdf) |
