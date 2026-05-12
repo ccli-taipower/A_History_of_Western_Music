@@ -24,6 +24,7 @@ This repository provides a complete set of lecture slides for **A History of Wes
 | 🌐 **中英雙語 Bilingual** | 每頁術語、敘述與聆賞要點同時提供繁體中文與英文 · Every term, narrative, and listening note appears in both Traditional Chinese and English |
 | 🎨 **章節專屬配色 Per-chapter color theme** | 各章配色呼應時代氛圍（古代赭紅、哥德靛藍、巴洛克金棕、啟蒙鼠尾草綠等） · Each chapter has its own palette matching the period |
 | 🎵 **NAWM 聆賞連結 NAWM listening links** | 每首 Norton Anthology 曲目附直接可點擊的 YouTube 連結（均經驗證可用） · Every Norton Anthology piece includes a verified YouTube link |
+| 🎼 **教科書譜例 Textbook score examples** | 36 章共 **223 個原書譜例**從教科書直接擷取，每個譜例獨立投影片並附該段落的中譯解說與精確頁碼（如「第 432 頁」） · 223 textbook score examples extracted directly from the source across 36 chapters; each example has its own slide with a faithful Chinese translation of the textbook passage plus exact page reference |
 | 📐 **16:9 寬螢幕 Widescreen** | 適用現代投影機、電視、平板與筆電 · Ready for modern projectors, TVs, tablets, and laptops |
 | ⏱ **章節時間軸 Per-chapter Timeline** | 每章附獨立時間軸投影片，列出該時代雙語關鍵事件年表 · Every chapter includes a dedicated bilingual timeline slide charting key events of the period |
 | 📄 **純 PDF 格式 Pure PDF** | 無需安裝 PowerPoint、字型、程式，下載即讀 · No PowerPoint, fonts, or software required — just download and read |
